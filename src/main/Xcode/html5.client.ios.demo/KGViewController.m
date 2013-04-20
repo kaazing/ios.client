@@ -108,16 +108,16 @@ extern SecIdentityRef KGWebSocketIdentity;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    //add client identify
-    // Load Certificate
+    //import client identify certificate from "client.p12" file
     NSString *path = [[NSBundle mainBundle] pathForResource:@"client" ofType:@"p12"];
     NSData *p12data = [NSData dataWithContentsOfFile:path];
     CFDataRef inP12data = (__bridge CFDataRef)p12data;
-    SecIdentityRef myIdentity;
-    SecTrustRef myTrust;
     NSString* keyPassword = @"ab987c";
     
-    if (extractIdentityAndTrust(inP12data, &myTrust, &myIdentity, (__bridge CFStringRef)(keyPassword)) == noErr) {
+    SecIdentityRef myIdentity = importPKCS12(inP12data, (__bridge CFDataRef)(keyPassword));
+    if (myIdentity) {
+        NSString* certicateInfo = [self copySummaryString:myIdentity];
+        [self log:[NSString stringWithFormat:@"Imported certificate: [%@]", certicateInfo]];
         KGWebSocketIdentity = myIdentity;
     }
 }
@@ -273,16 +273,15 @@ extern SecIdentityRef KGWebSocketIdentity;
     }
 }
 
-/* code from apple doc 
+//import certificate from p12 file
+/* code from apple doc
  https://developer.apple.com/library/ios/#documentation/Security/Conceptual/CertKeyTrustProgGuide/iPhone_Tasks/iPhone_Tasks.html#//apple_ref/doc/uid/TP40001358-CH208-DontLinkElementID_10
 */
-OSStatus extractIdentityAndTrust(CFDataRef inPKCS12Data,
-                                 SecIdentityRef *outIdentity,
-                                 SecTrustRef *outTrust,
-                                 CFStringRef keyPassword)
+SecIdentityRef importPKCS12(CFDataRef inPKCS12Data,
+                                 CFDataRef keyPassword)
 {
-    OSStatus securityError = errSecSuccess;
-    
+    OSStatus                err;
+    SecIdentityRef  identity = NULL;
     
     const void *keys[] =   { kSecImportExportPassphrase };
     const void *values[] = { keyPassword };
@@ -296,34 +295,47 @@ OSStatus extractIdentityAndTrust(CFDataRef inPKCS12Data,
                                            NULL, NULL);  // 1
     
     CFArrayRef items = NULL;
-    securityError = SecPKCS12Import(inPKCS12Data,
+    err = SecPKCS12Import(inPKCS12Data,
                                     optionsDictionary,
                                     &items);                    // 2
     
     
     //
-    if (securityError == 0) {                                   // 3
+    if (err == noErr) {                                   // 3
         CFDictionaryRef myIdentityAndTrust = CFArrayGetValueAtIndex (items, 0);
         const void *tempIdentity = NULL;
         tempIdentity = CFDictionaryGetValue (myIdentityAndTrust,
                                              kSecImportItemIdentity);
         CFRetain(tempIdentity);
-        *outIdentity = (SecIdentityRef)tempIdentity;
-        const void *tempTrust = NULL;
-        tempTrust = CFDictionaryGetValue (myIdentityAndTrust, kSecImportItemTrust);
-        
-        CFRetain(tempTrust);
-        *outTrust = (SecTrustRef)tempTrust;
+        identity = (SecIdentityRef)tempIdentity;
+    }
+   return identity;
+}
+
+
+- (NSString*) copySummaryString:(SecIdentityRef) identity
+{
+    // Get the certificate from the identity.
+    SecCertificateRef myReturnedCertificate = NULL;
+    OSStatus status = SecIdentityCopyCertificate (identity,
+                                                  &myReturnedCertificate);  // 1
+    
+    if (status) {
+        NSLog(@"SecIdentityCopyCertificate failed.\n");
+        return NULL;
     }
     
-    if (optionsDictionary)                                      // 4
-        CFRelease(optionsDictionary);
+    CFStringRef certSummary = SecCertificateCopySubjectSummary
+    (myReturnedCertificate);  // 2
     
-    if (items)
-        CFRelease(items);
+    NSString* summaryString = [[NSString alloc]
+                               initWithString:(__bridge NSString *)certSummary];  // 3
     
-    return securityError;
+    CFRelease(certSummary);
+    
+    return summaryString;
 }
+
 
 @end
 
