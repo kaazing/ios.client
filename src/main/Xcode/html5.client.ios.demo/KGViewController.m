@@ -307,6 +307,17 @@ SecIdentityRef importPKCS12(CFDataRef inPKCS12Data,
                                              kSecImportItemIdentity);
         CFRetain(tempIdentity);
         identity = (SecIdentityRef)tempIdentity;
+    
+        err = SecItemAdd(
+                     (__bridge CFDictionaryRef) [NSDictionary dictionaryWithObjectsAndKeys:
+                                        (__bridge id)identity,              kSecValueRef,
+                                        nil
+                                        ],
+                     NULL
+                     );
+    }
+    if (err == errSecDuplicateItem) {
+        err = noErr;
     }
    return identity;
 }
