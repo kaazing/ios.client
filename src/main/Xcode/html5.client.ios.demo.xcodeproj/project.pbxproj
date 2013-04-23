@@ -26,6 +26,7 @@
 		A0A65FB9159DCBB800135AB6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A65FB8159DCBB800135AB6 /* Default.png */; };
 		A0D5E2E515A488420022A77C /* Kaazing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D5E2E415A488420022A77C /* Kaazing.png */; };
 		A0D5E2E715A488B50022A77C /* Kaazing2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D5E2E615A488B50022A77C /* Kaazing2.png */; };
+		AF26FDE117265B3A00FAED38 /* KGSecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26FDE017265B3A00FAED38 /* KGSecurityUtil.m */; };
 		AFFFF0C7172206C4009E34B5 /* KGApnsWebSocketExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFEFFF172206C4009E34B5 /* KGApnsWebSocketExtension.m */; };
 		AFFFF0C8172206C4009E34B5 /* KGBaseSoundNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF001172206C4009E34B5 /* KGBaseSoundNotification.m */; };
 		AFFFF0C9172206C4009E34B5 /* KGLocalizedAlertNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF003172206C4009E34B5 /* KGLocalizedAlertNotification.m */; };
@@ -149,6 +150,8 @@
 		A0A65FB8159DCBB800135AB6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A0D5E2E415A488420022A77C /* Kaazing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kaazing.png; sourceTree = "<group>"; };
 		A0D5E2E615A488B50022A77C /* Kaazing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kaazing2.png; sourceTree = "<group>"; };
+		AF26FDDF17265B3A00FAED38 /* KGSecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSecurityUtil.h; sourceTree = "<group>"; };
+		AF26FDE017265B3A00FAED38 /* KGSecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSecurityUtil.m; sourceTree = "<group>"; };
 		AFFFEFFD172206C4009E34B5 /* KGAlertNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAlertNotification.h; sourceTree = "<group>"; };
 		AFFFEFFE172206C4009E34B5 /* KGApnsWebSocketExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGApnsWebSocketExtension.h; sourceTree = "<group>"; };
 		AFFFEFFF172206C4009E34B5 /* KGApnsWebSocketExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGApnsWebSocketExtension.m; sourceTree = "<group>"; };
@@ -689,6 +692,8 @@
 		AFFFF093172206C4009E34B5 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				AF26FDDF17265B3A00FAED38 /* KGSecurityUtil.h */,
+				AF26FDE017265B3A00FAED38 /* KGSecurityUtil.m */,
 				AFFFF094172206C4009E34B5 /* KGGenericURI.h */,
 				AFFFF095172206C4009E34B5 /* KGGenericURI.m */,
 				AFFFF096172206C4009E34B5 /* KGHexUtil.h */,
@@ -953,6 +958,7 @@
 				AFFFF118172206C4009E34B5 /* KGLoginHandler.m in Sources */,
 				AFFFF119172206C4009E34B5 /* KGNegotiableChallengeHandler.m in Sources */,
 				AFFFF11A172206C4009E34B5 /* KGNegotiateChallengeHandler.m in Sources */,
+				AF26FDE117265B3A00FAED38 /* KGSecurityUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -118,7 +118,6 @@ extern SecIdentityRef KGWebSocketIdentity;
     if (myIdentity) {
         NSString* certicateInfo = [self copySummaryString:myIdentity];
         [self log:[NSString stringWithFormat:@"Imported certificate: [%@]", certicateInfo]];
-        KGWebSocketIdentity = myIdentity;
     }
 }
 
@@ -335,7 +334,5 @@ SecIdentityRef importPKCS12(CFDataRef inPKCS12Data,
     
     return summaryString;
 }
-
-
 @end
 
