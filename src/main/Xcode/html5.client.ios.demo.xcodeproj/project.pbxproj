@@ -26,91 +26,92 @@
 		A0A65FB9159DCBB800135AB6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A65FB8159DCBB800135AB6 /* Default.png */; };
 		A0D5E2E515A488420022A77C /* Kaazing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D5E2E415A488420022A77C /* Kaazing.png */; };
 		A0D5E2E715A488B50022A77C /* Kaazing2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D5E2E615A488B50022A77C /* Kaazing2.png */; };
-		AF26FDE117265B3A00FAED38 /* KGSecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26FDE017265B3A00FAED38 /* KGSecurityUtil.m */; };
-		AFFFF0C7172206C4009E34B5 /* KGApnsWebSocketExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFEFFF172206C4009E34B5 /* KGApnsWebSocketExtension.m */; };
-		AFFFF0C8172206C4009E34B5 /* KGBaseSoundNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF001172206C4009E34B5 /* KGBaseSoundNotification.m */; };
-		AFFFF0C9172206C4009E34B5 /* KGLocalizedAlertNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF003172206C4009E34B5 /* KGLocalizedAlertNotification.m */; };
-		AFFFF0CA172206C4009E34B5 /* KGNotificationPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF005172206C4009E34B5 /* KGNotificationPayload.m */; };
-		AFFFF0CB172206C4009E34B5 /* KGSimpleAlertNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF007172206C4009E34B5 /* KGSimpleAlertNotification.m */; };
-		AFFFF0CC172206C4009E34B5 /* KGAuthenticationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF00E172206C4009E34B5 /* KGAuthenticationUtil.m */; };
-		AFFFF0CD172206C4009E34B5 /* KGHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF011172206C4009E34B5 /* KGHttpRequest.m */; };
-		AFFFF0CE172206C4009E34B5 /* KGHttpRequestAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF013172206C4009E34B5 /* KGHttpRequestAuthenticationHandler.m */; };
-		AFFFF0CF172206C4009E34B5 /* KGHttpRequestHandlerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF017172206C4009E34B5 /* KGHttpRequestHandlerAdapter.m */; };
-		AFFFF0D0172206C4009E34B5 /* KGHttpRequestIoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF01A172206C4009E34B5 /* KGHttpRequestIoHandler.m */; };
-		AFFFF0D1172206C4009E34B5 /* KGHttpRequestLoggingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF01D172206C4009E34B5 /* KGHttpRequestLoggingHandler.m */; };
-		AFFFF0D2172206C4009E34B5 /* KGHttpRequestRedirectHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF01F172206C4009E34B5 /* KGHttpRequestRedirectHandler.m */; };
-		AFFFF0D3172206C4009E34B5 /* KGHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF021172206C4009E34B5 /* KGHttpResponse.m */; };
-		AFFFF0D4172206C4009E34B5 /* KGChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF023172206C4009E34B5 /* KGChannel.m */; };
-		AFFFF0D5172206C4009E34B5 /* KGDecoderInput.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF026172206C4009E34B5 /* KGDecoderInput.m */; };
-		AFFFF0D6172206C4009E34B5 /* KGTransportFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF02B172206C4009E34B5 /* KGTransportFactory.m */; };
-		AFFFF0D7172206C4009E34B5 /* KGWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF02D172206C4009E34B5 /* KGWebSocketChannel.m */; };
-		AFFFF0D8172206C4009E34B5 /* KGWebSocketExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF02F172206C4009E34B5 /* KGWebSocketExtensionDelegate.m */; };
-		AFFFF0D9172206C4009E34B5 /* KGWebSocketFactoryDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF031172206C4009E34B5 /* KGWebSocketFactoryDelegate.m */; };
-		AFFFF0DA172206C4009E34B5 /* KGWebSocketHandlerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF034172206C4009E34B5 /* KGWebSocketHandlerAdapter.m */; };
-		AFFFF0DB172206C4009E34B5 /* KGAuthenticateEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF038172206C4009E34B5 /* KGAuthenticateEvent.m */; };
-		AFFFF0DC172206C4009E34B5 /* KGCloseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF03A172206C4009E34B5 /* KGCloseEvent.m */; };
-		AFFFF0DD172206C4009E34B5 /* KGErrorEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF03C172206C4009E34B5 /* KGErrorEvent.m */; };
-		AFFFF0DE172206C4009E34B5 /* KGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF03E172206C4009E34B5 /* KGEvent.m */; };
-		AFFFF0DF172206C4009E34B5 /* KGMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF040172206C4009E34B5 /* KGMessageEvent.m */; };
-		AFFFF0E0172206C4009E34B5 /* KGOpenEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF042172206C4009E34B5 /* KGOpenEvent.m */; };
-		AFFFF0E1172206C4009E34B5 /* KGRedirectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF044172206C4009E34B5 /* KGRedirectEvent.m */; };
-		AFFFF0E2172206C4009E34B5 /* KGWebSocketDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF046172206C4009E34B5 /* KGWebSocketDelegateImpl.m */; };
-		AFFFF0E3172206C4009E34B5 /* KGWsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF04A172206C4009E34B5 /* KGWsMessage.m */; };
-		AFFFF0E4172206C4009E34B5 /* KGWebSocketCompositeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF04D172206C4009E34B5 /* KGWebSocketCompositeChannel.m */; };
-		AFFFF0E5172206C4009E34B5 /* KGWebSocketCompositeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF04F172206C4009E34B5 /* KGWebSocketCompositeHandler.m */; };
-		AFFFF0E6172206C4009E34B5 /* KGWebSocketHandshakeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF051172206C4009E34B5 /* KGWebSocketHandshakeObject.m */; };
-		AFFFF0E7172206C4009E34B5 /* KGWebSocketLogginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF053172206C4009E34B5 /* KGWebSocketLogginHandler.m */; };
-		AFFFF0E8172206C4009E34B5 /* KGWebSocketReAuthenticateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF055172206C4009E34B5 /* KGWebSocketReAuthenticateHandler.m */; };
-		AFFFF0E9172206C4009E34B5 /* KGWebSocketSelectedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF057172206C4009E34B5 /* KGWebSocketSelectedChannel.m */; };
-		AFFFF0EA172206C4009E34B5 /* KGWebSocketSelectedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF059172206C4009E34B5 /* KGWebSocketSelectedHandler.m */; };
-		AFFFF0EB172206C4009E34B5 /* KGCreateChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF05C172206C4009E34B5 /* KGCreateChannel.m */; };
-		AFFFF0EC172206C4009E34B5 /* KGCreateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF05E172206C4009E34B5 /* KGCreateHandler.m */; };
-		AFFFF0ED172206C4009E34B5 /* KGDownstreamChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF061172206C4009E34B5 /* KGDownstreamChannel.m */; };
-		AFFFF0EE172206C4009E34B5 /* KGDownstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF063172206C4009E34B5 /* KGDownstreamHandler.m */; };
-		AFFFF0EF172206C4009E34B5 /* KGUpstreamChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF066172206C4009E34B5 /* KGUpstreamChannel.m */; };
-		AFFFF0F0172206C4009E34B5 /* KGUpstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF068172206C4009E34B5 /* KGUpstreamHandler.m */; };
-		AFFFF0F1172206C4009E34B5 /* KGWebSocketEmulatedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF06B172206C4009E34B5 /* KGWebSocketEmulatedChannel.m */; };
-		AFFFF0F2172206C4009E34B5 /* KGWebSocketEmulatedDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF06D172206C4009E34B5 /* KGWebSocketEmulatedDecoder.m */; };
-		AFFFF0F3172206C4009E34B5 /* KGWebSocketEmulatedEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF070172206C4009E34B5 /* KGWebSocketEmulatedEncoder.m */; };
-		AFFFF0F4172206C4009E34B5 /* KGWebSocketEmulatedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF072172206C4009E34B5 /* KGWebSocketEmulatedHandler.m */; };
-		AFFFF0F5172206C4009E34B5 /* KGWebSocketNativeAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF075172206C4009E34B5 /* KGWebSocketNativeAuthenticationHandler.m */; };
-		AFFFF0F6172206C4009E34B5 /* KGWebSocketNativeBalancingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF077172206C4009E34B5 /* KGWebSocketNativeBalancingHandler.m */; };
-		AFFFF0F7172206C4009E34B5 /* KGWebSocketNativeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF079172206C4009E34B5 /* KGWebSocketNativeChannel.m */; };
-		AFFFF0F8172206C4009E34B5 /* KGWebSocketNativeCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF07B172206C4009E34B5 /* KGWebSocketNativeCodec.m */; };
-		AFFFF0F9172206C4009E34B5 /* KGWebSocketNativeControlFrameHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF07D172206C4009E34B5 /* KGWebSocketNativeControlFrameHandler.m */; };
-		AFFFF0FA172206C4009E34B5 /* KGWebSocketNativeDelegateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF07F172206C4009E34B5 /* KGWebSocketNativeDelegateHandler.m */; };
-		AFFFF0FB172206C4009E34B5 /* KGWebSocketNativeEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF081172206C4009E34B5 /* KGWebSocketNativeEncoder.m */; };
-		AFFFF0FC172206C4009E34B5 /* KGWebSocketNativeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF083172206C4009E34B5 /* KGWebSocketNativeHandler.m */; };
-		AFFFF0FD172206C4009E34B5 /* KGWebSocketNativeHandshakeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF085172206C4009E34B5 /* KGWebSocketNativeHandshakeHandler.m */; };
-		AFFFF0FE172206C4009E34B5 /* KGBase64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF087172206C4009E34B5 /* KGBase64Util.m */; };
-		AFFFF0FF172206C4009E34B5 /* KGByteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF089172206C4009E34B5 /* KGByteBuffer.m */; };
-		AFFFF100172206C4009E34B5 /* KGWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF08B172206C4009E34B5 /* KGWebSocket.m */; };
-		AFFFF101172206C4009E34B5 /* KGWebSocketExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF08E172206C4009E34B5 /* KGWebSocketExtension.m */; };
-		AFFFF102172206C4009E34B5 /* KGWebSocketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF090172206C4009E34B5 /* KGWebSocketFactory.m */; };
-		AFFFF103172206C4009E34B5 /* NSString+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF092172206C4009E34B5 /* NSString+KZNGAdditions.m */; };
-		AFFFF104172206C4009E34B5 /* KGGenericURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF095172206C4009E34B5 /* KGGenericURI.m */; };
-		AFFFF105172206C4009E34B5 /* KGHexUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF097172206C4009E34B5 /* KGHexUtil.m */; };
-		AFFFF106172206C4009E34B5 /* KGHttpURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF099172206C4009E34B5 /* KGHttpURI.m */; };
-		AFFFF107172206C4009E34B5 /* KGWSCompositeURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF09B172206C4009E34B5 /* KGWSCompositeURI.m */; };
-		AFFFF108172206C4009E34B5 /* KGWSURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF09D172206C4009E34B5 /* KGWSURI.m */; };
-		AFFFF109172206C4009E34B5 /* NSArray+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF09F172206C4009E34B5 /* NSArray+KZNGAdditions.m */; };
-		AFFFF10A172206C4009E34B5 /* NSURL+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0A1172206C4009E34B5 /* NSURL+KZNGAdditions.m */; };
-		AFFFF10B172206C4009E34B5 /* BasicChallengeResponseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0A8172206C4009E34B5 /* BasicChallengeResponseFactory.m */; };
-		AFFFF10C172206C4009E34B5 /* DefaultBasicChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0AA172206C4009E34B5 /* DefaultBasicChallengeHandler.m */; };
-		AFFFF10D172206C4009E34B5 /* DefaultDispatchChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0AC172206C4009E34B5 /* DefaultDispatchChallengeHandler.m */; };
-		AFFFF10E172206C4009E34B5 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0AE172206C4009E34B5 /* Node.m */; };
-		AFFFF10F172206C4009E34B5 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0B0172206C4009E34B5 /* OrderedDictionary.m */; };
-		AFFFF110172206C4009E34B5 /* RealmUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0B2172206C4009E34B5 /* RealmUtils.m */; };
-		AFFFF111172206C4009E34B5 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0B4172206C4009E34B5 /* Token.m */; };
-		AFFFF112172206C4009E34B5 /* KGBasicChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0B6172206C4009E34B5 /* KGBasicChallengeHandler.m */; };
-		AFFFF113172206C4009E34B5 /* KGChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0B8172206C4009E34B5 /* KGChallengeHandler.m */; };
-		AFFFF114172206C4009E34B5 /* KGChallengeHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0BA172206C4009E34B5 /* KGChallengeHandlers.m */; };
-		AFFFF115172206C4009E34B5 /* KGChallengeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0BC172206C4009E34B5 /* KGChallengeRequest.m */; };
-		AFFFF116172206C4009E34B5 /* KGChallengeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0BE172206C4009E34B5 /* KGChallengeResponse.m */; };
-		AFFFF117172206C4009E34B5 /* KGDispatchChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0C0172206C4009E34B5 /* KGDispatchChallengeHandler.m */; };
-		AFFFF118172206C4009E34B5 /* KGLoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0C2172206C4009E34B5 /* KGLoginHandler.m */; };
-		AFFFF119172206C4009E34B5 /* KGNegotiableChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0C4172206C4009E34B5 /* KGNegotiableChallengeHandler.m */; };
-		AFFFF11A172206C4009E34B5 /* KGNegotiateChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF0C6172206C4009E34B5 /* KGNegotiateChallengeHandler.m */; };
+		AF0550ED17469C44001C32E2 /* KGApnsExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05501E17469C44001C32E2 /* KGApnsExtension.m */; };
+		AF0550EE17469C44001C32E2 /* KGBaseSoundNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05502017469C44001C32E2 /* KGBaseSoundNotification.m */; };
+		AF0550EF17469C44001C32E2 /* KGLocalizedAlertNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05502217469C44001C32E2 /* KGLocalizedAlertNotification.m */; };
+		AF0550F017469C44001C32E2 /* KGNotificationPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05502417469C44001C32E2 /* KGNotificationPayload.m */; };
+		AF0550F117469C44001C32E2 /* KGSimpleAlertNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05502617469C44001C32E2 /* KGSimpleAlertNotification.m */; };
+		AF0550F217469C44001C32E2 /* KGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05502A17469C44001C32E2 /* KGConstants.m */; };
+		AF0550F317469C44001C32E2 /* BasicChallengeResponseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503017469C44001C32E2 /* BasicChallengeResponseFactory.m */; };
+		AF0550F417469C44001C32E2 /* DefaultBasicChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503217469C44001C32E2 /* DefaultBasicChallengeHandler.m */; };
+		AF0550F517469C44001C32E2 /* DefaultDispatchChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503417469C44001C32E2 /* DefaultDispatchChallengeHandler.m */; };
+		AF0550F617469C44001C32E2 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503617469C44001C32E2 /* Node.m */; };
+		AF0550F717469C44001C32E2 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503817469C44001C32E2 /* OrderedDictionary.m */; };
+		AF0550F817469C44001C32E2 /* RealmUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503A17469C44001C32E2 /* RealmUtils.m */; };
+		AF0550F917469C44001C32E2 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503C17469C44001C32E2 /* Token.m */; };
+		AF0550FA17469C44001C32E2 /* KGBasicChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05503E17469C44001C32E2 /* KGBasicChallengeHandler.m */; };
+		AF0550FB17469C44001C32E2 /* KGChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05504117469C44001C32E2 /* KGChallengeHandler.m */; };
+		AF0550FC17469C44001C32E2 /* KGChallengeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05504317469C44001C32E2 /* KGChallengeRequest.m */; };
+		AF0550FD17469C44001C32E2 /* KGChallengeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05504517469C44001C32E2 /* KGChallengeResponse.m */; };
+		AF0550FE17469C44001C32E2 /* KGDispatchChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05504717469C44001C32E2 /* KGDispatchChallengeHandler.m */; };
+		AF0550FF17469C44001C32E2 /* KGLoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05504917469C44001C32E2 /* KGLoginHandler.m */; };
+		AF05510017469C44001C32E2 /* KGNegotiableChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05504B17469C44001C32E2 /* KGNegotiableChallengeHandler.m */; };
+		AF05510117469C44001C32E2 /* KGNegotiateChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05504D17469C44001C32E2 /* KGNegotiateChallengeHandler.m */; };
+		AF05510217469C44001C32E2 /* KGAuthenticationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05505217469C44001C32E2 /* KGAuthenticationUtil.m */; };
+		AF05510317469C44001C32E2 /* KGHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05505517469C44001C32E2 /* KGHttpRequest.m */; };
+		AF05510417469C44001C32E2 /* KGHttpRequestAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05505717469C44001C32E2 /* KGHttpRequestAuthenticationHandler.m */; };
+		AF05510517469C44001C32E2 /* KGHttpRequestHandlerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05505B17469C44001C32E2 /* KGHttpRequestHandlerAdapter.m */; };
+		AF05510617469C44001C32E2 /* KGHttpRequestIoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05505E17469C44001C32E2 /* KGHttpRequestIoHandler.m */; };
+		AF05510717469C44001C32E2 /* KGHttpRequestLoggingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05506117469C44001C32E2 /* KGHttpRequestLoggingHandler.m */; };
+		AF05510817469C44001C32E2 /* KGHttpRequestRedirectHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05506317469C44001C32E2 /* KGHttpRequestRedirectHandler.m */; };
+		AF05510917469C44001C32E2 /* KGHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05506517469C44001C32E2 /* KGHttpResponse.m */; };
+		AF05510A17469C44001C32E2 /* KGChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05506717469C44001C32E2 /* KGChannel.m */; };
+		AF05510B17469C44001C32E2 /* KGDecoderInput.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05506A17469C44001C32E2 /* KGDecoderInput.m */; };
+		AF05510C17469C44001C32E2 /* KGTransportFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05506F17469C44001C32E2 /* KGTransportFactory.m */; };
+		AF05510D17469C44001C32E2 /* KGWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05507117469C44001C32E2 /* KGWebSocketChannel.m */; };
+		AF05510E17469C44001C32E2 /* KGWebSocketHandlerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05507417469C44001C32E2 /* KGWebSocketHandlerAdapter.m */; };
+		AF05510F17469C44001C32E2 /* KGAuthenticateEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05507817469C44001C32E2 /* KGAuthenticateEvent.m */; };
+		AF05511017469C44001C32E2 /* KGCloseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05507A17469C44001C32E2 /* KGCloseEvent.m */; };
+		AF05511117469C44001C32E2 /* KGErrorEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05507C17469C44001C32E2 /* KGErrorEvent.m */; };
+		AF05511217469C44001C32E2 /* KGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05507E17469C44001C32E2 /* KGEvent.m */; };
+		AF05511317469C44001C32E2 /* KGMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05508017469C44001C32E2 /* KGMessageEvent.m */; };
+		AF05511417469C44001C32E2 /* KGOpenEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05508217469C44001C32E2 /* KGOpenEvent.m */; };
+		AF05511517469C44001C32E2 /* KGRedirectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05508417469C44001C32E2 /* KGRedirectEvent.m */; };
+		AF05511617469C44001C32E2 /* KGWebSocketDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05508617469C44001C32E2 /* KGWebSocketDelegateImpl.m */; };
+		AF05511717469C44001C32E2 /* KGWsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05508A17469C44001C32E2 /* KGWsMessage.m */; };
+		AF05511817469C44001C32E2 /* KGWebSocketCompositeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05508D17469C44001C32E2 /* KGWebSocketCompositeChannel.m */; };
+		AF05511917469C44001C32E2 /* KGWebSocketCompositeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05508F17469C44001C32E2 /* KGWebSocketCompositeHandler.m */; };
+		AF05511A17469C44001C32E2 /* KGWebSocketHandshakeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05509117469C44001C32E2 /* KGWebSocketHandshakeObject.m */; };
+		AF05511B17469C44001C32E2 /* KGWebSocketLoggingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05509317469C44001C32E2 /* KGWebSocketLoggingHandler.m */; };
+		AF05511C17469C44001C32E2 /* KGWebSocketReAuthenticateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05509517469C44001C32E2 /* KGWebSocketReAuthenticateHandler.m */; };
+		AF05511D17469C44001C32E2 /* KGWebSocketSelectedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05509717469C44001C32E2 /* KGWebSocketSelectedChannel.m */; };
+		AF05511E17469C44001C32E2 /* KGWebSocketSelectedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05509917469C44001C32E2 /* KGWebSocketSelectedHandler.m */; };
+		AF05511F17469C44001C32E2 /* KGCreateChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05509C17469C44001C32E2 /* KGCreateChannel.m */; };
+		AF05512017469C44001C32E2 /* KGCreateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF05509E17469C44001C32E2 /* KGCreateHandler.m */; };
+		AF05512117469C44001C32E2 /* KGDownstreamChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550A117469C44001C32E2 /* KGDownstreamChannel.m */; };
+		AF05512217469C44001C32E2 /* KGDownstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550A317469C44001C32E2 /* KGDownstreamHandler.m */; };
+		AF05512317469C44001C32E2 /* KGUpstreamChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550A617469C44001C32E2 /* KGUpstreamChannel.m */; };
+		AF05512417469C44001C32E2 /* KGUpstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550A817469C44001C32E2 /* KGUpstreamHandler.m */; };
+		AF05512517469C44001C32E2 /* KGWebSocketEmulatedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550AB17469C44001C32E2 /* KGWebSocketEmulatedChannel.m */; };
+		AF05512617469C44001C32E2 /* KGWebSocketEmulatedDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550AD17469C44001C32E2 /* KGWebSocketEmulatedDecoder.m */; };
+		AF05512717469C44001C32E2 /* KGWebSocketEmulatedEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550B017469C44001C32E2 /* KGWebSocketEmulatedEncoder.m */; };
+		AF05512817469C44001C32E2 /* KGWebSocketEmulatedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550B217469C44001C32E2 /* KGWebSocketEmulatedHandler.m */; };
+		AF05512917469C44001C32E2 /* KGWebSocketNativeAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550B517469C44001C32E2 /* KGWebSocketNativeAuthenticationHandler.m */; };
+		AF05512A17469C44001C32E2 /* KGWebSocketNativeBalancingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550B717469C44001C32E2 /* KGWebSocketNativeBalancingHandler.m */; };
+		AF05512B17469C44001C32E2 /* KGWebSocketNativeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550B917469C44001C32E2 /* KGWebSocketNativeChannel.m */; };
+		AF05512C17469C44001C32E2 /* KGWebSocketNativeCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550BB17469C44001C32E2 /* KGWebSocketNativeCodec.m */; };
+		AF05512D17469C44001C32E2 /* KGWebSocketNativeControlFrameHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550BD17469C44001C32E2 /* KGWebSocketNativeControlFrameHandler.m */; };
+		AF05512E17469C44001C32E2 /* KGWebSocketNativeDelegateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550BF17469C44001C32E2 /* KGWebSocketNativeDelegateHandler.m */; };
+		AF05512F17469C44001C32E2 /* KGWebSocketNativeEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550C117469C44001C32E2 /* KGWebSocketNativeEncoder.m */; };
+		AF05513017469C44001C32E2 /* KGWebSocketNativeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550C317469C44001C32E2 /* KGWebSocketNativeHandler.m */; };
+		AF05513117469C44001C32E2 /* KGWebSocketNativeHandshakeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550C517469C44001C32E2 /* KGWebSocketNativeHandshakeHandler.m */; };
+		AF05513217469C44001C32E2 /* KGBase64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550C717469C44001C32E2 /* KGBase64Util.m */; };
+		AF05513317469C44001C32E2 /* KGByteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550C917469C44001C32E2 /* KGByteBuffer.m */; };
+		AF05513417469C44001C32E2 /* KGParameterValuesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550CB17469C44001C32E2 /* KGParameterValuesContainer.m */; };
+		AF05513517469C44001C32E2 /* KGRevalidateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550CD17469C44001C32E2 /* KGRevalidateExtension.m */; };
+		AF05513617469C44001C32E2 /* KGWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550D017469C44001C32E2 /* KGWebSocket.m */; };
+		AF05513717469C44001C32E2 /* KGWebSocketExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550D317469C44001C32E2 /* KGWebSocketExtension.m */; };
+		AF05513817469C44001C32E2 /* KGWebSocketExtensionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550D617469C44001C32E2 /* KGWebSocketExtensionParameter.m */; };
+		AF05513917469C44001C32E2 /* KGWebSocketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550D817469C44001C32E2 /* KGWebSocketFactory.m */; };
+		AF05513A17469C44001C32E2 /* NSString+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550DA17469C44001C32E2 /* NSString+KZNGAdditions.m */; };
+		AF05513B17469C44001C32E2 /* KGGenericURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550DD17469C44001C32E2 /* KGGenericURI.m */; };
+		AF05513C17469C44001C32E2 /* KGHexUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550DF17469C44001C32E2 /* KGHexUtil.m */; };
+		AF05513D17469C44001C32E2 /* KGHttpURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550E117469C44001C32E2 /* KGHttpURI.m */; };
+		AF05513E17469C44001C32E2 /* KGTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550E317469C44001C32E2 /* KGTracer.m */; };
+		AF05513F17469C44001C32E2 /* KGWSCompositeURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550E517469C44001C32E2 /* KGWSCompositeURI.m */; };
+		AF05514017469C44001C32E2 /* KGWSURI.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550E717469C44001C32E2 /* KGWSURI.m */; };
+		AF05514117469C44001C32E2 /* NSArray+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550E917469C44001C32E2 /* NSArray+KZNGAdditions.m */; };
+		AF05514217469C44001C32E2 /* NSURL+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0550EB17469C44001C32E2 /* NSURL+KZNGAdditions.m */; };
 		AFFFF11C172207A9009E34B5 /* client.p12 in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF11B172207A9009E34B5 /* client.p12 */; };
 /* End PBXBuildFile section */
 
@@ -150,199 +151,204 @@
 		A0A65FB8159DCBB800135AB6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A0D5E2E415A488420022A77C /* Kaazing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kaazing.png; sourceTree = "<group>"; };
 		A0D5E2E615A488B50022A77C /* Kaazing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kaazing2.png; sourceTree = "<group>"; };
-		AF26FDDF17265B3A00FAED38 /* KGSecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSecurityUtil.h; sourceTree = "<group>"; };
-		AF26FDE017265B3A00FAED38 /* KGSecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSecurityUtil.m; sourceTree = "<group>"; };
-		AFFFEFFD172206C4009E34B5 /* KGAlertNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAlertNotification.h; sourceTree = "<group>"; };
-		AFFFEFFE172206C4009E34B5 /* KGApnsWebSocketExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGApnsWebSocketExtension.h; sourceTree = "<group>"; };
-		AFFFEFFF172206C4009E34B5 /* KGApnsWebSocketExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGApnsWebSocketExtension.m; sourceTree = "<group>"; };
-		AFFFF000172206C4009E34B5 /* KGBaseSoundNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBaseSoundNotification.h; sourceTree = "<group>"; };
-		AFFFF001172206C4009E34B5 /* KGBaseSoundNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBaseSoundNotification.m; sourceTree = "<group>"; };
-		AFFFF002172206C4009E34B5 /* KGLocalizedAlertNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLocalizedAlertNotification.h; sourceTree = "<group>"; };
-		AFFFF003172206C4009E34B5 /* KGLocalizedAlertNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLocalizedAlertNotification.m; sourceTree = "<group>"; };
-		AFFFF004172206C4009E34B5 /* KGNotificationPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGNotificationPayload.h; sourceTree = "<group>"; };
-		AFFFF005172206C4009E34B5 /* KGNotificationPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGNotificationPayload.m; sourceTree = "<group>"; };
-		AFFFF006172206C4009E34B5 /* KGSimpleAlertNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSimpleAlertNotification.h; sourceTree = "<group>"; };
-		AFFFF007172206C4009E34B5 /* KGSimpleAlertNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSimpleAlertNotification.m; sourceTree = "<group>"; };
-		AFFFF008172206C4009E34B5 /* KGSoundNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSoundNotification.h; sourceTree = "<group>"; };
-		AFFFF009172206C4009E34B5 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
-		AFFFF00D172206C4009E34B5 /* KGAuthenticationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAuthenticationUtil.h; sourceTree = "<group>"; };
-		AFFFF00E172206C4009E34B5 /* KGAuthenticationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAuthenticationUtil.m; sourceTree = "<group>"; };
-		AFFFF010172206C4009E34B5 /* KGHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequest.h; sourceTree = "<group>"; };
-		AFFFF011172206C4009E34B5 /* KGHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequest.m; sourceTree = "<group>"; };
-		AFFFF012172206C4009E34B5 /* KGHttpRequestAuthenticationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestAuthenticationHandler.h; sourceTree = "<group>"; };
-		AFFFF013172206C4009E34B5 /* KGHttpRequestAuthenticationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestAuthenticationHandler.m; sourceTree = "<group>"; };
-		AFFFF014172206C4009E34B5 /* KGHttpRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestFactory.h; sourceTree = "<group>"; };
-		AFFFF015172206C4009E34B5 /* KGHttpRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestHandler.h; sourceTree = "<group>"; };
-		AFFFF016172206C4009E34B5 /* KGHttpRequestHandlerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestHandlerAdapter.h; sourceTree = "<group>"; };
-		AFFFF017172206C4009E34B5 /* KGHttpRequestHandlerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestHandlerAdapter.m; sourceTree = "<group>"; };
-		AFFFF018172206C4009E34B5 /* KGHttpRequestHandlerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestHandlerFactory.h; sourceTree = "<group>"; };
-		AFFFF019172206C4009E34B5 /* KGHttpRequestIoHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestIoHandler.h; sourceTree = "<group>"; };
-		AFFFF01A172206C4009E34B5 /* KGHttpRequestIoHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestIoHandler.m; sourceTree = "<group>"; };
-		AFFFF01B172206C4009E34B5 /* KGHttpRequestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestListener.h; sourceTree = "<group>"; };
-		AFFFF01C172206C4009E34B5 /* KGHttpRequestLoggingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestLoggingHandler.h; sourceTree = "<group>"; };
-		AFFFF01D172206C4009E34B5 /* KGHttpRequestLoggingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestLoggingHandler.m; sourceTree = "<group>"; };
-		AFFFF01E172206C4009E34B5 /* KGHttpRequestRedirectHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestRedirectHandler.h; sourceTree = "<group>"; };
-		AFFFF01F172206C4009E34B5 /* KGHttpRequestRedirectHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestRedirectHandler.m; sourceTree = "<group>"; };
-		AFFFF020172206C4009E34B5 /* KGHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpResponse.h; sourceTree = "<group>"; };
-		AFFFF021172206C4009E34B5 /* KGHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpResponse.m; sourceTree = "<group>"; };
-		AFFFF022172206C4009E34B5 /* KGChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChannel.h; sourceTree = "<group>"; };
-		AFFFF023172206C4009E34B5 /* KGChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChannel.m; sourceTree = "<group>"; };
-		AFFFF024172206C4009E34B5 /* KGCommandMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCommandMessage.h; sourceTree = "<group>"; };
-		AFFFF025172206C4009E34B5 /* KGDecoderInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDecoderInput.h; sourceTree = "<group>"; };
-		AFFFF026172206C4009E34B5 /* KGDecoderInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDecoderInput.m; sourceTree = "<group>"; };
-		AFFFF027172206C4009E34B5 /* KGDecoderListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDecoderListener.h; sourceTree = "<group>"; };
-		AFFFF028172206C4009E34B5 /* KGEncoderOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGEncoderOutput.h; sourceTree = "<group>"; };
-		AFFFF029172206C4009E34B5 /* KGHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHandler.h; sourceTree = "<group>"; };
-		AFFFF02A172206C4009E34B5 /* KGTransportFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGTransportFactory.h; sourceTree = "<group>"; };
-		AFFFF02B172206C4009E34B5 /* KGTransportFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGTransportFactory.m; sourceTree = "<group>"; };
-		AFFFF02C172206C4009E34B5 /* KGWebSocketChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketChannel.h; sourceTree = "<group>"; };
-		AFFFF02D172206C4009E34B5 /* KGWebSocketChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketChannel.m; sourceTree = "<group>"; };
-		AFFFF02E172206C4009E34B5 /* KGWebSocketExtensionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketExtensionDelegate.h; sourceTree = "<group>"; };
-		AFFFF02F172206C4009E34B5 /* KGWebSocketExtensionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketExtensionDelegate.m; sourceTree = "<group>"; };
-		AFFFF030172206C4009E34B5 /* KGWebSocketFactoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketFactoryDelegate.h; sourceTree = "<group>"; };
-		AFFFF031172206C4009E34B5 /* KGWebSocketFactoryDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketFactoryDelegate.m; sourceTree = "<group>"; };
-		AFFFF032172206C4009E34B5 /* KGWebSocketHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandler.h; sourceTree = "<group>"; };
-		AFFFF033172206C4009E34B5 /* KGWebSocketHandlerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandlerAdapter.h; sourceTree = "<group>"; };
-		AFFFF034172206C4009E34B5 /* KGWebSocketHandlerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketHandlerAdapter.m; sourceTree = "<group>"; };
-		AFFFF035172206C4009E34B5 /* KGWebSocketHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandlerListener.h; sourceTree = "<group>"; };
-		AFFFF037172206C4009E34B5 /* KGAuthenticateEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAuthenticateEvent.h; sourceTree = "<group>"; };
-		AFFFF038172206C4009E34B5 /* KGAuthenticateEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAuthenticateEvent.m; sourceTree = "<group>"; };
-		AFFFF039172206C4009E34B5 /* KGCloseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCloseEvent.h; sourceTree = "<group>"; };
-		AFFFF03A172206C4009E34B5 /* KGCloseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGCloseEvent.m; sourceTree = "<group>"; };
-		AFFFF03B172206C4009E34B5 /* KGErrorEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGErrorEvent.h; sourceTree = "<group>"; };
-		AFFFF03C172206C4009E34B5 /* KGErrorEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGErrorEvent.m; sourceTree = "<group>"; };
-		AFFFF03D172206C4009E34B5 /* KGEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGEvent.h; sourceTree = "<group>"; };
-		AFFFF03E172206C4009E34B5 /* KGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGEvent.m; sourceTree = "<group>"; };
-		AFFFF03F172206C4009E34B5 /* KGMessageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMessageEvent.h; sourceTree = "<group>"; };
-		AFFFF040172206C4009E34B5 /* KGMessageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMessageEvent.m; sourceTree = "<group>"; };
-		AFFFF041172206C4009E34B5 /* KGOpenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGOpenEvent.h; sourceTree = "<group>"; };
-		AFFFF042172206C4009E34B5 /* KGOpenEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGOpenEvent.m; sourceTree = "<group>"; };
-		AFFFF043172206C4009E34B5 /* KGRedirectEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRedirectEvent.h; sourceTree = "<group>"; };
-		AFFFF044172206C4009E34B5 /* KGRedirectEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRedirectEvent.m; sourceTree = "<group>"; };
-		AFFFF045172206C4009E34B5 /* KGWebSocketDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketDelegateImpl.h; sourceTree = "<group>"; };
-		AFFFF046172206C4009E34B5 /* KGWebSocketDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketDelegateImpl.m; sourceTree = "<group>"; };
-		AFFFF047172206C4009E34B5 /* KGWebSocketDelegateListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketDelegateListener.h; sourceTree = "<group>"; };
-		AFFFF048172206C4009E34B5 /* KGWebSocketNaiveDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNaiveDelegate.h; sourceTree = "<group>"; };
-		AFFFF049172206C4009E34B5 /* KGWsMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWsMessage.h; sourceTree = "<group>"; };
-		AFFFF04A172206C4009E34B5 /* KGWsMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWsMessage.m; sourceTree = "<group>"; };
-		AFFFF04C172206C4009E34B5 /* KGWebSocketCompositeChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketCompositeChannel.h; sourceTree = "<group>"; };
-		AFFFF04D172206C4009E34B5 /* KGWebSocketCompositeChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketCompositeChannel.m; sourceTree = "<group>"; };
-		AFFFF04E172206C4009E34B5 /* KGWebSocketCompositeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketCompositeHandler.h; sourceTree = "<group>"; };
-		AFFFF04F172206C4009E34B5 /* KGWebSocketCompositeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketCompositeHandler.m; sourceTree = "<group>"; };
-		AFFFF050172206C4009E34B5 /* KGWebSocketHandshakeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandshakeObject.h; sourceTree = "<group>"; };
-		AFFFF051172206C4009E34B5 /* KGWebSocketHandshakeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketHandshakeObject.m; sourceTree = "<group>"; };
-		AFFFF052172206C4009E34B5 /* KGWebSocketLogginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketLogginHandler.h; sourceTree = "<group>"; };
-		AFFFF053172206C4009E34B5 /* KGWebSocketLogginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketLogginHandler.m; sourceTree = "<group>"; };
-		AFFFF054172206C4009E34B5 /* KGWebSocketReAuthenticateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketReAuthenticateHandler.h; sourceTree = "<group>"; };
-		AFFFF055172206C4009E34B5 /* KGWebSocketReAuthenticateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketReAuthenticateHandler.m; sourceTree = "<group>"; };
-		AFFFF056172206C4009E34B5 /* KGWebSocketSelectedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketSelectedChannel.h; sourceTree = "<group>"; };
-		AFFFF057172206C4009E34B5 /* KGWebSocketSelectedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketSelectedChannel.m; sourceTree = "<group>"; };
-		AFFFF058172206C4009E34B5 /* KGWebSocketSelectedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketSelectedHandler.h; sourceTree = "<group>"; };
-		AFFFF059172206C4009E34B5 /* KGWebSocketSelectedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketSelectedHandler.m; sourceTree = "<group>"; };
-		AFFFF05B172206C4009E34B5 /* KGCreateChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCreateChannel.h; sourceTree = "<group>"; };
-		AFFFF05C172206C4009E34B5 /* KGCreateChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGCreateChannel.m; sourceTree = "<group>"; };
-		AFFFF05D172206C4009E34B5 /* KGCreateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCreateHandler.h; sourceTree = "<group>"; };
-		AFFFF05E172206C4009E34B5 /* KGCreateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGCreateHandler.m; sourceTree = "<group>"; };
-		AFFFF05F172206C4009E34B5 /* KGCreateHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCreateHandlerListener.h; sourceTree = "<group>"; };
-		AFFFF060172206C4009E34B5 /* KGDownstreamChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDownstreamChannel.h; sourceTree = "<group>"; };
-		AFFFF061172206C4009E34B5 /* KGDownstreamChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDownstreamChannel.m; sourceTree = "<group>"; };
-		AFFFF062172206C4009E34B5 /* KGDownstreamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDownstreamHandler.h; sourceTree = "<group>"; };
-		AFFFF063172206C4009E34B5 /* KGDownstreamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDownstreamHandler.m; sourceTree = "<group>"; };
-		AFFFF064172206C4009E34B5 /* KGDownstreamHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDownstreamHandlerListener.h; sourceTree = "<group>"; };
-		AFFFF065172206C4009E34B5 /* KGUpstreamChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUpstreamChannel.h; sourceTree = "<group>"; };
-		AFFFF066172206C4009E34B5 /* KGUpstreamChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUpstreamChannel.m; sourceTree = "<group>"; };
-		AFFFF067172206C4009E34B5 /* KGUpstreamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUpstreamHandler.h; sourceTree = "<group>"; };
-		AFFFF068172206C4009E34B5 /* KGUpstreamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUpstreamHandler.m; sourceTree = "<group>"; };
-		AFFFF069172206C4009E34B5 /* KGUpstreamHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUpstreamHandlerListener.h; sourceTree = "<group>"; };
-		AFFFF06A172206C4009E34B5 /* KGWebSocketEmulatedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedChannel.h; sourceTree = "<group>"; };
-		AFFFF06B172206C4009E34B5 /* KGWebSocketEmulatedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedChannel.m; sourceTree = "<group>"; };
-		AFFFF06C172206C4009E34B5 /* KGWebSocketEmulatedDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedDecoder.h; sourceTree = "<group>"; };
-		AFFFF06D172206C4009E34B5 /* KGWebSocketEmulatedDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedDecoder.m; sourceTree = "<group>"; };
-		AFFFF06E172206C4009E34B5 /* KGWebSocketEmulatedDecoderListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedDecoderListener.h; sourceTree = "<group>"; };
-		AFFFF06F172206C4009E34B5 /* KGWebSocketEmulatedEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedEncoder.h; sourceTree = "<group>"; };
-		AFFFF070172206C4009E34B5 /* KGWebSocketEmulatedEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedEncoder.m; sourceTree = "<group>"; };
-		AFFFF071172206C4009E34B5 /* KGWebSocketEmulatedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedHandler.h; sourceTree = "<group>"; };
-		AFFFF072172206C4009E34B5 /* KGWebSocketEmulatedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedHandler.m; sourceTree = "<group>"; };
-		AFFFF074172206C4009E34B5 /* KGWebSocketNativeAuthenticationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeAuthenticationHandler.h; sourceTree = "<group>"; };
-		AFFFF075172206C4009E34B5 /* KGWebSocketNativeAuthenticationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeAuthenticationHandler.m; sourceTree = "<group>"; };
-		AFFFF076172206C4009E34B5 /* KGWebSocketNativeBalancingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeBalancingHandler.h; sourceTree = "<group>"; };
-		AFFFF077172206C4009E34B5 /* KGWebSocketNativeBalancingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeBalancingHandler.m; sourceTree = "<group>"; };
-		AFFFF078172206C4009E34B5 /* KGWebSocketNativeChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeChannel.h; sourceTree = "<group>"; };
-		AFFFF079172206C4009E34B5 /* KGWebSocketNativeChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeChannel.m; sourceTree = "<group>"; };
-		AFFFF07A172206C4009E34B5 /* KGWebSocketNativeCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeCodec.h; sourceTree = "<group>"; };
-		AFFFF07B172206C4009E34B5 /* KGWebSocketNativeCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeCodec.m; sourceTree = "<group>"; };
-		AFFFF07C172206C4009E34B5 /* KGWebSocketNativeControlFrameHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeControlFrameHandler.h; sourceTree = "<group>"; };
-		AFFFF07D172206C4009E34B5 /* KGWebSocketNativeControlFrameHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeControlFrameHandler.m; sourceTree = "<group>"; };
-		AFFFF07E172206C4009E34B5 /* KGWebSocketNativeDelegateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeDelegateHandler.h; sourceTree = "<group>"; };
-		AFFFF07F172206C4009E34B5 /* KGWebSocketNativeDelegateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeDelegateHandler.m; sourceTree = "<group>"; };
-		AFFFF080172206C4009E34B5 /* KGWebSocketNativeEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeEncoder.h; sourceTree = "<group>"; };
-		AFFFF081172206C4009E34B5 /* KGWebSocketNativeEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeEncoder.m; sourceTree = "<group>"; };
-		AFFFF082172206C4009E34B5 /* KGWebSocketNativeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeHandler.h; sourceTree = "<group>"; };
-		AFFFF083172206C4009E34B5 /* KGWebSocketNativeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeHandler.m; sourceTree = "<group>"; };
-		AFFFF084172206C4009E34B5 /* KGWebSocketNativeHandshakeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeHandshakeHandler.h; sourceTree = "<group>"; };
-		AFFFF085172206C4009E34B5 /* KGWebSocketNativeHandshakeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeHandshakeHandler.m; sourceTree = "<group>"; };
-		AFFFF086172206C4009E34B5 /* KGBase64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBase64Util.h; sourceTree = "<group>"; };
-		AFFFF087172206C4009E34B5 /* KGBase64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBase64Util.m; sourceTree = "<group>"; };
-		AFFFF088172206C4009E34B5 /* KGByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGByteBuffer.h; sourceTree = "<group>"; };
-		AFFFF089172206C4009E34B5 /* KGByteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGByteBuffer.m; sourceTree = "<group>"; };
-		AFFFF08A172206C4009E34B5 /* KGWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocket.h; sourceTree = "<group>"; };
-		AFFFF08B172206C4009E34B5 /* KGWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocket.m; sourceTree = "<group>"; };
-		AFFFF08C172206C4009E34B5 /* KGWebSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketDelegate.h; sourceTree = "<group>"; };
-		AFFFF08D172206C4009E34B5 /* KGWebSocketExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketExtension.h; sourceTree = "<group>"; };
-		AFFFF08E172206C4009E34B5 /* KGWebSocketExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketExtension.m; sourceTree = "<group>"; };
-		AFFFF08F172206C4009E34B5 /* KGWebSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketFactory.h; sourceTree = "<group>"; };
-		AFFFF090172206C4009E34B5 /* KGWebSocketFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketFactory.m; sourceTree = "<group>"; };
-		AFFFF091172206C4009E34B5 /* NSString+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KZNGAdditions.h"; sourceTree = "<group>"; };
-		AFFFF092172206C4009E34B5 /* NSString+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KZNGAdditions.m"; sourceTree = "<group>"; };
-		AFFFF094172206C4009E34B5 /* KGGenericURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGenericURI.h; sourceTree = "<group>"; };
-		AFFFF095172206C4009E34B5 /* KGGenericURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGenericURI.m; sourceTree = "<group>"; };
-		AFFFF096172206C4009E34B5 /* KGHexUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHexUtil.h; sourceTree = "<group>"; };
-		AFFFF097172206C4009E34B5 /* KGHexUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHexUtil.m; sourceTree = "<group>"; };
-		AFFFF098172206C4009E34B5 /* KGHttpURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpURI.h; sourceTree = "<group>"; };
-		AFFFF099172206C4009E34B5 /* KGHttpURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpURI.m; sourceTree = "<group>"; };
-		AFFFF09A172206C4009E34B5 /* KGWSCompositeURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWSCompositeURI.h; sourceTree = "<group>"; };
-		AFFFF09B172206C4009E34B5 /* KGWSCompositeURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWSCompositeURI.m; sourceTree = "<group>"; };
-		AFFFF09C172206C4009E34B5 /* KGWSURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWSURI.h; sourceTree = "<group>"; };
-		AFFFF09D172206C4009E34B5 /* KGWSURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWSURI.m; sourceTree = "<group>"; };
-		AFFFF09E172206C4009E34B5 /* NSArray+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+KZNGAdditions.h"; sourceTree = "<group>"; };
-		AFFFF09F172206C4009E34B5 /* NSArray+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KZNGAdditions.m"; sourceTree = "<group>"; };
-		AFFFF0A0172206C4009E34B5 /* NSURL+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+KZNGAdditions.h"; sourceTree = "<group>"; };
-		AFFFF0A1172206C4009E34B5 /* NSURL+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+KZNGAdditions.m"; sourceTree = "<group>"; };
-		AFFFF0A2172206C4009E34B5 /* HTML5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTML5.h; sourceTree = "<group>"; };
-		AFFFF0A3172206C4009E34B5 /* HttpRequestIoHandler-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HttpRequestIoHandler-Prefix.pch"; sourceTree = "<group>"; };
-		AFFFF0A4172206C4009E34B5 /* LoginHandlerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHandlerProvider.h; sourceTree = "<group>"; };
-		AFFFF0A7172206C4009E34B5 /* BasicChallengeResponseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicChallengeResponseFactory.h; sourceTree = "<group>"; };
-		AFFFF0A8172206C4009E34B5 /* BasicChallengeResponseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicChallengeResponseFactory.m; sourceTree = "<group>"; };
-		AFFFF0A9172206C4009E34B5 /* DefaultBasicChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultBasicChallengeHandler.h; sourceTree = "<group>"; };
-		AFFFF0AA172206C4009E34B5 /* DefaultBasicChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultBasicChallengeHandler.m; sourceTree = "<group>"; };
-		AFFFF0AB172206C4009E34B5 /* DefaultDispatchChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultDispatchChallengeHandler.h; sourceTree = "<group>"; };
-		AFFFF0AC172206C4009E34B5 /* DefaultDispatchChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultDispatchChallengeHandler.m; sourceTree = "<group>"; };
-		AFFFF0AD172206C4009E34B5 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		AFFFF0AE172206C4009E34B5 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
-		AFFFF0AF172206C4009E34B5 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
-		AFFFF0B0172206C4009E34B5 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
-		AFFFF0B1172206C4009E34B5 /* RealmUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmUtils.h; sourceTree = "<group>"; };
-		AFFFF0B2172206C4009E34B5 /* RealmUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmUtils.m; sourceTree = "<group>"; };
-		AFFFF0B3172206C4009E34B5 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
-		AFFFF0B4172206C4009E34B5 /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Token.m; sourceTree = "<group>"; };
-		AFFFF0B5172206C4009E34B5 /* KGBasicChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBasicChallengeHandler.h; sourceTree = "<group>"; };
-		AFFFF0B6172206C4009E34B5 /* KGBasicChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBasicChallengeHandler.m; sourceTree = "<group>"; };
-		AFFFF0B7172206C4009E34B5 /* KGChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeHandler.h; sourceTree = "<group>"; };
-		AFFFF0B8172206C4009E34B5 /* KGChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeHandler.m; sourceTree = "<group>"; };
-		AFFFF0B9172206C4009E34B5 /* KGChallengeHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeHandlers.h; sourceTree = "<group>"; };
-		AFFFF0BA172206C4009E34B5 /* KGChallengeHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeHandlers.m; sourceTree = "<group>"; };
-		AFFFF0BB172206C4009E34B5 /* KGChallengeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeRequest.h; sourceTree = "<group>"; };
-		AFFFF0BC172206C4009E34B5 /* KGChallengeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeRequest.m; sourceTree = "<group>"; };
-		AFFFF0BD172206C4009E34B5 /* KGChallengeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeResponse.h; sourceTree = "<group>"; };
-		AFFFF0BE172206C4009E34B5 /* KGChallengeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeResponse.m; sourceTree = "<group>"; };
-		AFFFF0BF172206C4009E34B5 /* KGDispatchChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDispatchChallengeHandler.h; sourceTree = "<group>"; };
-		AFFFF0C0172206C4009E34B5 /* KGDispatchChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDispatchChallengeHandler.m; sourceTree = "<group>"; };
-		AFFFF0C1172206C4009E34B5 /* KGLoginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLoginHandler.h; sourceTree = "<group>"; };
-		AFFFF0C2172206C4009E34B5 /* KGLoginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLoginHandler.m; sourceTree = "<group>"; };
-		AFFFF0C3172206C4009E34B5 /* KGNegotiableChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGNegotiableChallengeHandler.h; sourceTree = "<group>"; };
-		AFFFF0C4172206C4009E34B5 /* KGNegotiableChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGNegotiableChallengeHandler.m; sourceTree = "<group>"; };
-		AFFFF0C5172206C4009E34B5 /* KGNegotiateChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGNegotiateChallengeHandler.h; sourceTree = "<group>"; };
-		AFFFF0C6172206C4009E34B5 /* KGNegotiateChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGNegotiateChallengeHandler.m; sourceTree = "<group>"; };
+		AF05501C17469C44001C32E2 /* KGAlertNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAlertNotification.h; sourceTree = "<group>"; };
+		AF05501D17469C44001C32E2 /* KGApnsExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGApnsExtension.h; sourceTree = "<group>"; };
+		AF05501E17469C44001C32E2 /* KGApnsExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGApnsExtension.m; sourceTree = "<group>"; };
+		AF05501F17469C44001C32E2 /* KGBaseSoundNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBaseSoundNotification.h; sourceTree = "<group>"; };
+		AF05502017469C44001C32E2 /* KGBaseSoundNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBaseSoundNotification.m; sourceTree = "<group>"; };
+		AF05502117469C44001C32E2 /* KGLocalizedAlertNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLocalizedAlertNotification.h; sourceTree = "<group>"; };
+		AF05502217469C44001C32E2 /* KGLocalizedAlertNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLocalizedAlertNotification.m; sourceTree = "<group>"; };
+		AF05502317469C44001C32E2 /* KGNotificationPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGNotificationPayload.h; sourceTree = "<group>"; };
+		AF05502417469C44001C32E2 /* KGNotificationPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGNotificationPayload.m; sourceTree = "<group>"; };
+		AF05502517469C44001C32E2 /* KGSimpleAlertNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSimpleAlertNotification.h; sourceTree = "<group>"; };
+		AF05502617469C44001C32E2 /* KGSimpleAlertNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSimpleAlertNotification.m; sourceTree = "<group>"; };
+		AF05502717469C44001C32E2 /* KGSoundNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSoundNotification.h; sourceTree = "<group>"; };
+		AF05502817469C44001C32E2 /* HttpRequestIoHandler-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HttpRequestIoHandler-Prefix.pch"; sourceTree = "<group>"; };
+		AF05502917469C44001C32E2 /* KGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGConstants.h; sourceTree = "<group>"; };
+		AF05502A17469C44001C32E2 /* KGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGConstants.m; sourceTree = "<group>"; };
+		AF05502B17469C44001C32E2 /* KGWebSocketExtension+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KGWebSocketExtension+Internal.h"; sourceTree = "<group>"; };
+		AF05502C17469C44001C32E2 /* LoginHandlerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHandlerProvider.h; sourceTree = "<group>"; };
+		AF05502F17469C44001C32E2 /* BasicChallengeResponseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicChallengeResponseFactory.h; sourceTree = "<group>"; };
+		AF05503017469C44001C32E2 /* BasicChallengeResponseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicChallengeResponseFactory.m; sourceTree = "<group>"; };
+		AF05503117469C44001C32E2 /* DefaultBasicChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultBasicChallengeHandler.h; sourceTree = "<group>"; };
+		AF05503217469C44001C32E2 /* DefaultBasicChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultBasicChallengeHandler.m; sourceTree = "<group>"; };
+		AF05503317469C44001C32E2 /* DefaultDispatchChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultDispatchChallengeHandler.h; sourceTree = "<group>"; };
+		AF05503417469C44001C32E2 /* DefaultDispatchChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultDispatchChallengeHandler.m; sourceTree = "<group>"; };
+		AF05503517469C44001C32E2 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		AF05503617469C44001C32E2 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		AF05503717469C44001C32E2 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		AF05503817469C44001C32E2 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		AF05503917469C44001C32E2 /* RealmUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmUtils.h; sourceTree = "<group>"; };
+		AF05503A17469C44001C32E2 /* RealmUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmUtils.m; sourceTree = "<group>"; };
+		AF05503B17469C44001C32E2 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		AF05503C17469C44001C32E2 /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Token.m; sourceTree = "<group>"; };
+		AF05503D17469C44001C32E2 /* KGBasicChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBasicChallengeHandler.h; sourceTree = "<group>"; };
+		AF05503E17469C44001C32E2 /* KGBasicChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBasicChallengeHandler.m; sourceTree = "<group>"; };
+		AF05503F17469C44001C32E2 /* KGChallengeHandler+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KGChallengeHandler+Internal.h"; sourceTree = "<group>"; };
+		AF05504017469C44001C32E2 /* KGChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeHandler.h; sourceTree = "<group>"; };
+		AF05504117469C44001C32E2 /* KGChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeHandler.m; sourceTree = "<group>"; };
+		AF05504217469C44001C32E2 /* KGChallengeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeRequest.h; sourceTree = "<group>"; };
+		AF05504317469C44001C32E2 /* KGChallengeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeRequest.m; sourceTree = "<group>"; };
+		AF05504417469C44001C32E2 /* KGChallengeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeResponse.h; sourceTree = "<group>"; };
+		AF05504517469C44001C32E2 /* KGChallengeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeResponse.m; sourceTree = "<group>"; };
+		AF05504617469C44001C32E2 /* KGDispatchChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDispatchChallengeHandler.h; sourceTree = "<group>"; };
+		AF05504717469C44001C32E2 /* KGDispatchChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDispatchChallengeHandler.m; sourceTree = "<group>"; };
+		AF05504817469C44001C32E2 /* KGLoginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLoginHandler.h; sourceTree = "<group>"; };
+		AF05504917469C44001C32E2 /* KGLoginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLoginHandler.m; sourceTree = "<group>"; };
+		AF05504A17469C44001C32E2 /* KGNegotiableChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGNegotiableChallengeHandler.h; sourceTree = "<group>"; };
+		AF05504B17469C44001C32E2 /* KGNegotiableChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGNegotiableChallengeHandler.m; sourceTree = "<group>"; };
+		AF05504C17469C44001C32E2 /* KGNegotiateChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGNegotiateChallengeHandler.h; sourceTree = "<group>"; };
+		AF05504D17469C44001C32E2 /* KGNegotiateChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGNegotiateChallengeHandler.m; sourceTree = "<group>"; };
+		AF05505117469C44001C32E2 /* KGAuthenticationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAuthenticationUtil.h; sourceTree = "<group>"; };
+		AF05505217469C44001C32E2 /* KGAuthenticationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAuthenticationUtil.m; sourceTree = "<group>"; };
+		AF05505417469C44001C32E2 /* KGHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequest.h; sourceTree = "<group>"; };
+		AF05505517469C44001C32E2 /* KGHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequest.m; sourceTree = "<group>"; };
+		AF05505617469C44001C32E2 /* KGHttpRequestAuthenticationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestAuthenticationHandler.h; sourceTree = "<group>"; };
+		AF05505717469C44001C32E2 /* KGHttpRequestAuthenticationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestAuthenticationHandler.m; sourceTree = "<group>"; };
+		AF05505817469C44001C32E2 /* KGHttpRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestFactory.h; sourceTree = "<group>"; };
+		AF05505917469C44001C32E2 /* KGHttpRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestHandler.h; sourceTree = "<group>"; };
+		AF05505A17469C44001C32E2 /* KGHttpRequestHandlerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestHandlerAdapter.h; sourceTree = "<group>"; };
+		AF05505B17469C44001C32E2 /* KGHttpRequestHandlerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestHandlerAdapter.m; sourceTree = "<group>"; };
+		AF05505C17469C44001C32E2 /* KGHttpRequestHandlerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestHandlerFactory.h; sourceTree = "<group>"; };
+		AF05505D17469C44001C32E2 /* KGHttpRequestIoHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestIoHandler.h; sourceTree = "<group>"; };
+		AF05505E17469C44001C32E2 /* KGHttpRequestIoHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestIoHandler.m; sourceTree = "<group>"; };
+		AF05505F17469C44001C32E2 /* KGHttpRequestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestListener.h; sourceTree = "<group>"; };
+		AF05506017469C44001C32E2 /* KGHttpRequestLoggingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestLoggingHandler.h; sourceTree = "<group>"; };
+		AF05506117469C44001C32E2 /* KGHttpRequestLoggingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestLoggingHandler.m; sourceTree = "<group>"; };
+		AF05506217469C44001C32E2 /* KGHttpRequestRedirectHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpRequestRedirectHandler.h; sourceTree = "<group>"; };
+		AF05506317469C44001C32E2 /* KGHttpRequestRedirectHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpRequestRedirectHandler.m; sourceTree = "<group>"; };
+		AF05506417469C44001C32E2 /* KGHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpResponse.h; sourceTree = "<group>"; };
+		AF05506517469C44001C32E2 /* KGHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpResponse.m; sourceTree = "<group>"; };
+		AF05506617469C44001C32E2 /* KGChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChannel.h; sourceTree = "<group>"; };
+		AF05506717469C44001C32E2 /* KGChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChannel.m; sourceTree = "<group>"; };
+		AF05506817469C44001C32E2 /* KGCommandMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCommandMessage.h; sourceTree = "<group>"; };
+		AF05506917469C44001C32E2 /* KGDecoderInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDecoderInput.h; sourceTree = "<group>"; };
+		AF05506A17469C44001C32E2 /* KGDecoderInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDecoderInput.m; sourceTree = "<group>"; };
+		AF05506B17469C44001C32E2 /* KGDecoderListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDecoderListener.h; sourceTree = "<group>"; };
+		AF05506C17469C44001C32E2 /* KGEncoderOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGEncoderOutput.h; sourceTree = "<group>"; };
+		AF05506D17469C44001C32E2 /* KGHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHandler.h; sourceTree = "<group>"; };
+		AF05506E17469C44001C32E2 /* KGTransportFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGTransportFactory.h; sourceTree = "<group>"; };
+		AF05506F17469C44001C32E2 /* KGTransportFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGTransportFactory.m; sourceTree = "<group>"; };
+		AF05507017469C44001C32E2 /* KGWebSocketChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketChannel.h; sourceTree = "<group>"; };
+		AF05507117469C44001C32E2 /* KGWebSocketChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketChannel.m; sourceTree = "<group>"; };
+		AF05507217469C44001C32E2 /* KGWebSocketHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandler.h; sourceTree = "<group>"; };
+		AF05507317469C44001C32E2 /* KGWebSocketHandlerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandlerAdapter.h; sourceTree = "<group>"; };
+		AF05507417469C44001C32E2 /* KGWebSocketHandlerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketHandlerAdapter.m; sourceTree = "<group>"; };
+		AF05507517469C44001C32E2 /* KGWebSocketHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandlerListener.h; sourceTree = "<group>"; };
+		AF05507717469C44001C32E2 /* KGAuthenticateEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAuthenticateEvent.h; sourceTree = "<group>"; };
+		AF05507817469C44001C32E2 /* KGAuthenticateEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAuthenticateEvent.m; sourceTree = "<group>"; };
+		AF05507917469C44001C32E2 /* KGCloseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCloseEvent.h; sourceTree = "<group>"; };
+		AF05507A17469C44001C32E2 /* KGCloseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGCloseEvent.m; sourceTree = "<group>"; };
+		AF05507B17469C44001C32E2 /* KGErrorEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGErrorEvent.h; sourceTree = "<group>"; };
+		AF05507C17469C44001C32E2 /* KGErrorEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGErrorEvent.m; sourceTree = "<group>"; };
+		AF05507D17469C44001C32E2 /* KGEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGEvent.h; sourceTree = "<group>"; };
+		AF05507E17469C44001C32E2 /* KGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGEvent.m; sourceTree = "<group>"; };
+		AF05507F17469C44001C32E2 /* KGMessageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMessageEvent.h; sourceTree = "<group>"; };
+		AF05508017469C44001C32E2 /* KGMessageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMessageEvent.m; sourceTree = "<group>"; };
+		AF05508117469C44001C32E2 /* KGOpenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGOpenEvent.h; sourceTree = "<group>"; };
+		AF05508217469C44001C32E2 /* KGOpenEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGOpenEvent.m; sourceTree = "<group>"; };
+		AF05508317469C44001C32E2 /* KGRedirectEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRedirectEvent.h; sourceTree = "<group>"; };
+		AF05508417469C44001C32E2 /* KGRedirectEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRedirectEvent.m; sourceTree = "<group>"; };
+		AF05508517469C44001C32E2 /* KGWebSocketDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketDelegateImpl.h; sourceTree = "<group>"; };
+		AF05508617469C44001C32E2 /* KGWebSocketDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketDelegateImpl.m; sourceTree = "<group>"; };
+		AF05508717469C44001C32E2 /* KGWebSocketDelegateListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketDelegateListener.h; sourceTree = "<group>"; };
+		AF05508817469C44001C32E2 /* KGWebSocketNativeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeDelegate.h; sourceTree = "<group>"; };
+		AF05508917469C44001C32E2 /* KGWsMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWsMessage.h; sourceTree = "<group>"; };
+		AF05508A17469C44001C32E2 /* KGWsMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWsMessage.m; sourceTree = "<group>"; };
+		AF05508C17469C44001C32E2 /* KGWebSocketCompositeChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketCompositeChannel.h; sourceTree = "<group>"; };
+		AF05508D17469C44001C32E2 /* KGWebSocketCompositeChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketCompositeChannel.m; sourceTree = "<group>"; };
+		AF05508E17469C44001C32E2 /* KGWebSocketCompositeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketCompositeHandler.h; sourceTree = "<group>"; };
+		AF05508F17469C44001C32E2 /* KGWebSocketCompositeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketCompositeHandler.m; sourceTree = "<group>"; };
+		AF05509017469C44001C32E2 /* KGWebSocketHandshakeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketHandshakeObject.h; sourceTree = "<group>"; };
+		AF05509117469C44001C32E2 /* KGWebSocketHandshakeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketHandshakeObject.m; sourceTree = "<group>"; };
+		AF05509217469C44001C32E2 /* KGWebSocketLoggingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketLoggingHandler.h; sourceTree = "<group>"; };
+		AF05509317469C44001C32E2 /* KGWebSocketLoggingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketLoggingHandler.m; sourceTree = "<group>"; };
+		AF05509417469C44001C32E2 /* KGWebSocketReAuthenticateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketReAuthenticateHandler.h; sourceTree = "<group>"; };
+		AF05509517469C44001C32E2 /* KGWebSocketReAuthenticateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketReAuthenticateHandler.m; sourceTree = "<group>"; };
+		AF05509617469C44001C32E2 /* KGWebSocketSelectedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketSelectedChannel.h; sourceTree = "<group>"; };
+		AF05509717469C44001C32E2 /* KGWebSocketSelectedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketSelectedChannel.m; sourceTree = "<group>"; };
+		AF05509817469C44001C32E2 /* KGWebSocketSelectedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketSelectedHandler.h; sourceTree = "<group>"; };
+		AF05509917469C44001C32E2 /* KGWebSocketSelectedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketSelectedHandler.m; sourceTree = "<group>"; };
+		AF05509B17469C44001C32E2 /* KGCreateChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCreateChannel.h; sourceTree = "<group>"; };
+		AF05509C17469C44001C32E2 /* KGCreateChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGCreateChannel.m; sourceTree = "<group>"; };
+		AF05509D17469C44001C32E2 /* KGCreateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCreateHandler.h; sourceTree = "<group>"; };
+		AF05509E17469C44001C32E2 /* KGCreateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGCreateHandler.m; sourceTree = "<group>"; };
+		AF05509F17469C44001C32E2 /* KGCreateHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCreateHandlerListener.h; sourceTree = "<group>"; };
+		AF0550A017469C44001C32E2 /* KGDownstreamChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDownstreamChannel.h; sourceTree = "<group>"; };
+		AF0550A117469C44001C32E2 /* KGDownstreamChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDownstreamChannel.m; sourceTree = "<group>"; };
+		AF0550A217469C44001C32E2 /* KGDownstreamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDownstreamHandler.h; sourceTree = "<group>"; };
+		AF0550A317469C44001C32E2 /* KGDownstreamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDownstreamHandler.m; sourceTree = "<group>"; };
+		AF0550A417469C44001C32E2 /* KGDownstreamHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDownstreamHandlerListener.h; sourceTree = "<group>"; };
+		AF0550A517469C44001C32E2 /* KGUpstreamChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUpstreamChannel.h; sourceTree = "<group>"; };
+		AF0550A617469C44001C32E2 /* KGUpstreamChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUpstreamChannel.m; sourceTree = "<group>"; };
+		AF0550A717469C44001C32E2 /* KGUpstreamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUpstreamHandler.h; sourceTree = "<group>"; };
+		AF0550A817469C44001C32E2 /* KGUpstreamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUpstreamHandler.m; sourceTree = "<group>"; };
+		AF0550A917469C44001C32E2 /* KGUpstreamHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUpstreamHandlerListener.h; sourceTree = "<group>"; };
+		AF0550AA17469C44001C32E2 /* KGWebSocketEmulatedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedChannel.h; sourceTree = "<group>"; };
+		AF0550AB17469C44001C32E2 /* KGWebSocketEmulatedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedChannel.m; sourceTree = "<group>"; };
+		AF0550AC17469C44001C32E2 /* KGWebSocketEmulatedDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedDecoder.h; sourceTree = "<group>"; };
+		AF0550AD17469C44001C32E2 /* KGWebSocketEmulatedDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedDecoder.m; sourceTree = "<group>"; };
+		AF0550AE17469C44001C32E2 /* KGWebSocketEmulatedDecoderListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedDecoderListener.h; sourceTree = "<group>"; };
+		AF0550AF17469C44001C32E2 /* KGWebSocketEmulatedEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedEncoder.h; sourceTree = "<group>"; };
+		AF0550B017469C44001C32E2 /* KGWebSocketEmulatedEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedEncoder.m; sourceTree = "<group>"; };
+		AF0550B117469C44001C32E2 /* KGWebSocketEmulatedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketEmulatedHandler.h; sourceTree = "<group>"; };
+		AF0550B217469C44001C32E2 /* KGWebSocketEmulatedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketEmulatedHandler.m; sourceTree = "<group>"; };
+		AF0550B417469C44001C32E2 /* KGWebSocketNativeAuthenticationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeAuthenticationHandler.h; sourceTree = "<group>"; };
+		AF0550B517469C44001C32E2 /* KGWebSocketNativeAuthenticationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeAuthenticationHandler.m; sourceTree = "<group>"; };
+		AF0550B617469C44001C32E2 /* KGWebSocketNativeBalancingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeBalancingHandler.h; sourceTree = "<group>"; };
+		AF0550B717469C44001C32E2 /* KGWebSocketNativeBalancingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeBalancingHandler.m; sourceTree = "<group>"; };
+		AF0550B817469C44001C32E2 /* KGWebSocketNativeChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeChannel.h; sourceTree = "<group>"; };
+		AF0550B917469C44001C32E2 /* KGWebSocketNativeChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeChannel.m; sourceTree = "<group>"; };
+		AF0550BA17469C44001C32E2 /* KGWebSocketNativeCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeCodec.h; sourceTree = "<group>"; };
+		AF0550BB17469C44001C32E2 /* KGWebSocketNativeCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeCodec.m; sourceTree = "<group>"; };
+		AF0550BC17469C44001C32E2 /* KGWebSocketNativeControlFrameHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeControlFrameHandler.h; sourceTree = "<group>"; };
+		AF0550BD17469C44001C32E2 /* KGWebSocketNativeControlFrameHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeControlFrameHandler.m; sourceTree = "<group>"; };
+		AF0550BE17469C44001C32E2 /* KGWebSocketNativeDelegateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeDelegateHandler.h; sourceTree = "<group>"; };
+		AF0550BF17469C44001C32E2 /* KGWebSocketNativeDelegateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeDelegateHandler.m; sourceTree = "<group>"; };
+		AF0550C017469C44001C32E2 /* KGWebSocketNativeEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeEncoder.h; sourceTree = "<group>"; };
+		AF0550C117469C44001C32E2 /* KGWebSocketNativeEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeEncoder.m; sourceTree = "<group>"; };
+		AF0550C217469C44001C32E2 /* KGWebSocketNativeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeHandler.h; sourceTree = "<group>"; };
+		AF0550C317469C44001C32E2 /* KGWebSocketNativeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeHandler.m; sourceTree = "<group>"; };
+		AF0550C417469C44001C32E2 /* KGWebSocketNativeHandshakeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketNativeHandshakeHandler.h; sourceTree = "<group>"; };
+		AF0550C517469C44001C32E2 /* KGWebSocketNativeHandshakeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketNativeHandshakeHandler.m; sourceTree = "<group>"; };
+		AF0550C617469C44001C32E2 /* KGBase64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBase64Util.h; sourceTree = "<group>"; };
+		AF0550C717469C44001C32E2 /* KGBase64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBase64Util.m; sourceTree = "<group>"; };
+		AF0550C817469C44001C32E2 /* KGByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGByteBuffer.h; sourceTree = "<group>"; };
+		AF0550C917469C44001C32E2 /* KGByteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGByteBuffer.m; sourceTree = "<group>"; };
+		AF0550CA17469C44001C32E2 /* KGParameterValuesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGParameterValuesContainer.h; sourceTree = "<group>"; };
+		AF0550CB17469C44001C32E2 /* KGParameterValuesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGParameterValuesContainer.m; sourceTree = "<group>"; };
+		AF0550CC17469C44001C32E2 /* KGRevalidateExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRevalidateExtension.h; sourceTree = "<group>"; };
+		AF0550CD17469C44001C32E2 /* KGRevalidateExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRevalidateExtension.m; sourceTree = "<group>"; };
+		AF0550CE17469C44001C32E2 /* KGWebSocket+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KGWebSocket+Internal.h"; sourceTree = "<group>"; };
+		AF0550CF17469C44001C32E2 /* KGWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocket.h; sourceTree = "<group>"; };
+		AF0550D017469C44001C32E2 /* KGWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocket.m; sourceTree = "<group>"; };
+		AF0550D117469C44001C32E2 /* KGWebSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketDelegate.h; sourceTree = "<group>"; };
+		AF0550D217469C44001C32E2 /* KGWebSocketExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketExtension.h; sourceTree = "<group>"; };
+		AF0550D317469C44001C32E2 /* KGWebSocketExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketExtension.m; sourceTree = "<group>"; };
+		AF0550D417469C44001C32E2 /* KGWebSocketExtensionParameter+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KGWebSocketExtensionParameter+Internal.h"; sourceTree = "<group>"; };
+		AF0550D517469C44001C32E2 /* KGWebSocketExtensionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketExtensionParameter.h; sourceTree = "<group>"; };
+		AF0550D617469C44001C32E2 /* KGWebSocketExtensionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketExtensionParameter.m; sourceTree = "<group>"; };
+		AF0550D717469C44001C32E2 /* KGWebSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketFactory.h; sourceTree = "<group>"; };
+		AF0550D817469C44001C32E2 /* KGWebSocketFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketFactory.m; sourceTree = "<group>"; };
+		AF0550D917469C44001C32E2 /* NSString+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KZNGAdditions.h"; sourceTree = "<group>"; };
+		AF0550DA17469C44001C32E2 /* NSString+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KZNGAdditions.m"; sourceTree = "<group>"; };
+		AF0550DC17469C44001C32E2 /* KGGenericURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGenericURI.h; sourceTree = "<group>"; };
+		AF0550DD17469C44001C32E2 /* KGGenericURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGenericURI.m; sourceTree = "<group>"; };
+		AF0550DE17469C44001C32E2 /* KGHexUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHexUtil.h; sourceTree = "<group>"; };
+		AF0550DF17469C44001C32E2 /* KGHexUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHexUtil.m; sourceTree = "<group>"; };
+		AF0550E017469C44001C32E2 /* KGHttpURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGHttpURI.h; sourceTree = "<group>"; };
+		AF0550E117469C44001C32E2 /* KGHttpURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGHttpURI.m; sourceTree = "<group>"; };
+		AF0550E217469C44001C32E2 /* KGTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGTracer.h; sourceTree = "<group>"; };
+		AF0550E317469C44001C32E2 /* KGTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGTracer.m; sourceTree = "<group>"; };
+		AF0550E417469C44001C32E2 /* KGWSCompositeURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWSCompositeURI.h; sourceTree = "<group>"; };
+		AF0550E517469C44001C32E2 /* KGWSCompositeURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWSCompositeURI.m; sourceTree = "<group>"; };
+		AF0550E617469C44001C32E2 /* KGWSURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWSURI.h; sourceTree = "<group>"; };
+		AF0550E717469C44001C32E2 /* KGWSURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWSURI.m; sourceTree = "<group>"; };
+		AF0550E817469C44001C32E2 /* NSArray+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+KZNGAdditions.h"; sourceTree = "<group>"; };
+		AF0550E917469C44001C32E2 /* NSArray+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KZNGAdditions.m"; sourceTree = "<group>"; };
+		AF0550EA17469C44001C32E2 /* NSURL+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+KZNGAdditions.h"; sourceTree = "<group>"; };
+		AF0550EB17469C44001C32E2 /* NSURL+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+KZNGAdditions.m"; sourceTree = "<group>"; };
+		AF0550EC17469C44001C32E2 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
 		AFFFF11B172207A9009E34B5 /* client.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = client.p12; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -454,309 +460,314 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AFFFEFFA172206A2009E34B5 /* Core */ = {
+		AF05501A17469C44001C32E2 /* objc */ = {
 			isa = PBXGroup;
 			children = (
-				AFFFEFFB172206C4009E34B5 /* objc */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		AFFFEFFB172206C4009E34B5 /* objc */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFEFFC172206C4009E34B5 /* apns */,
-				AFFFF009172206C4009E34B5 /* Core.h */,
-				AFFFF00A172206C4009E34B5 /* html5 */,
-				AFFFF0A2172206C4009E34B5 /* HTML5.h */,
-				AFFFF0A3172206C4009E34B5 /* HttpRequestIoHandler-Prefix.pch */,
-				AFFFF0A4172206C4009E34B5 /* LoginHandlerProvider.h */,
-				AFFFF0A5172206C4009E34B5 /* security */,
+				AF05501B17469C44001C32E2 /* apns */,
+				AF05502817469C44001C32E2 /* HttpRequestIoHandler-Prefix.pch */,
+				AF05502917469C44001C32E2 /* KGConstants.h */,
+				AF05502A17469C44001C32E2 /* KGConstants.m */,
+				AF05502B17469C44001C32E2 /* KGWebSocketExtension+Internal.h */,
+				AF05502C17469C44001C32E2 /* LoginHandlerProvider.h */,
+				AF05502D17469C44001C32E2 /* security */,
+				AF05504E17469C44001C32E2 /* websocket */,
+				AF0550EC17469C44001C32E2 /* WebSocket.h */,
 			);
 			name = objc;
-			path = ../../../../../../branches/gateway/gateway.client.ios/3.5.x.y/src/main/objc;
+			path = ../../../../gateway.client.ios/src/main/objc;
 			sourceTree = "<group>";
 		};
-		AFFFEFFC172206C4009E34B5 /* apns */ = {
+		AF05501B17469C44001C32E2 /* apns */ = {
 			isa = PBXGroup;
 			children = (
-				AFFFEFFD172206C4009E34B5 /* KGAlertNotification.h */,
-				AFFFEFFE172206C4009E34B5 /* KGApnsWebSocketExtension.h */,
-				AFFFEFFF172206C4009E34B5 /* KGApnsWebSocketExtension.m */,
-				AFFFF000172206C4009E34B5 /* KGBaseSoundNotification.h */,
-				AFFFF001172206C4009E34B5 /* KGBaseSoundNotification.m */,
-				AFFFF002172206C4009E34B5 /* KGLocalizedAlertNotification.h */,
-				AFFFF003172206C4009E34B5 /* KGLocalizedAlertNotification.m */,
-				AFFFF004172206C4009E34B5 /* KGNotificationPayload.h */,
-				AFFFF005172206C4009E34B5 /* KGNotificationPayload.m */,
-				AFFFF006172206C4009E34B5 /* KGSimpleAlertNotification.h */,
-				AFFFF007172206C4009E34B5 /* KGSimpleAlertNotification.m */,
-				AFFFF008172206C4009E34B5 /* KGSoundNotification.h */,
+				AF05501C17469C44001C32E2 /* KGAlertNotification.h */,
+				AF05501D17469C44001C32E2 /* KGApnsExtension.h */,
+				AF05501E17469C44001C32E2 /* KGApnsExtension.m */,
+				AF05501F17469C44001C32E2 /* KGBaseSoundNotification.h */,
+				AF05502017469C44001C32E2 /* KGBaseSoundNotification.m */,
+				AF05502117469C44001C32E2 /* KGLocalizedAlertNotification.h */,
+				AF05502217469C44001C32E2 /* KGLocalizedAlertNotification.m */,
+				AF05502317469C44001C32E2 /* KGNotificationPayload.h */,
+				AF05502417469C44001C32E2 /* KGNotificationPayload.m */,
+				AF05502517469C44001C32E2 /* KGSimpleAlertNotification.h */,
+				AF05502617469C44001C32E2 /* KGSimpleAlertNotification.m */,
+				AF05502717469C44001C32E2 /* KGSoundNotification.h */,
 			);
 			path = apns;
 			sourceTree = "<group>";
 		};
-		AFFFF00A172206C4009E34B5 /* html5 */ = {
+		AF05502D17469C44001C32E2 /* security */ = {
 			isa = PBXGroup;
 			children = (
-				AFFFF00B172206C4009E34B5 /* impl */,
-				AFFFF086172206C4009E34B5 /* KGBase64Util.h */,
-				AFFFF087172206C4009E34B5 /* KGBase64Util.m */,
-				AFFFF088172206C4009E34B5 /* KGByteBuffer.h */,
-				AFFFF089172206C4009E34B5 /* KGByteBuffer.m */,
-				AFFFF08A172206C4009E34B5 /* KGWebSocket.h */,
-				AFFFF08B172206C4009E34B5 /* KGWebSocket.m */,
-				AFFFF08C172206C4009E34B5 /* KGWebSocketDelegate.h */,
-				AFFFF08D172206C4009E34B5 /* KGWebSocketExtension.h */,
-				AFFFF08E172206C4009E34B5 /* KGWebSocketExtension.m */,
-				AFFFF08F172206C4009E34B5 /* KGWebSocketFactory.h */,
-				AFFFF090172206C4009E34B5 /* KGWebSocketFactory.m */,
-				AFFFF091172206C4009E34B5 /* NSString+KZNGAdditions.h */,
-				AFFFF092172206C4009E34B5 /* NSString+KZNGAdditions.m */,
-				AFFFF093172206C4009E34B5 /* util */,
-			);
-			path = html5;
-			sourceTree = "<group>";
-		};
-		AFFFF00B172206C4009E34B5 /* impl */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF00C172206C4009E34B5 /* auth */,
-				AFFFF00F172206C4009E34B5 /* http */,
-				AFFFF022172206C4009E34B5 /* KGChannel.h */,
-				AFFFF023172206C4009E34B5 /* KGChannel.m */,
-				AFFFF024172206C4009E34B5 /* KGCommandMessage.h */,
-				AFFFF025172206C4009E34B5 /* KGDecoderInput.h */,
-				AFFFF026172206C4009E34B5 /* KGDecoderInput.m */,
-				AFFFF027172206C4009E34B5 /* KGDecoderListener.h */,
-				AFFFF028172206C4009E34B5 /* KGEncoderOutput.h */,
-				AFFFF029172206C4009E34B5 /* KGHandler.h */,
-				AFFFF02A172206C4009E34B5 /* KGTransportFactory.h */,
-				AFFFF02B172206C4009E34B5 /* KGTransportFactory.m */,
-				AFFFF02C172206C4009E34B5 /* KGWebSocketChannel.h */,
-				AFFFF02D172206C4009E34B5 /* KGWebSocketChannel.m */,
-				AFFFF02E172206C4009E34B5 /* KGWebSocketExtensionDelegate.h */,
-				AFFFF02F172206C4009E34B5 /* KGWebSocketExtensionDelegate.m */,
-				AFFFF030172206C4009E34B5 /* KGWebSocketFactoryDelegate.h */,
-				AFFFF031172206C4009E34B5 /* KGWebSocketFactoryDelegate.m */,
-				AFFFF032172206C4009E34B5 /* KGWebSocketHandler.h */,
-				AFFFF033172206C4009E34B5 /* KGWebSocketHandlerAdapter.h */,
-				AFFFF034172206C4009E34B5 /* KGWebSocketHandlerAdapter.m */,
-				AFFFF035172206C4009E34B5 /* KGWebSocketHandlerListener.h */,
-				AFFFF036172206C4009E34B5 /* transport */,
-				AFFFF04B172206C4009E34B5 /* ws */,
-				AFFFF05A172206C4009E34B5 /* wseb */,
-				AFFFF073172206C4009E34B5 /* wsn */,
-			);
-			path = impl;
-			sourceTree = "<group>";
-		};
-		AFFFF00C172206C4009E34B5 /* auth */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF00D172206C4009E34B5 /* KGAuthenticationUtil.h */,
-				AFFFF00E172206C4009E34B5 /* KGAuthenticationUtil.m */,
-			);
-			path = auth;
-			sourceTree = "<group>";
-		};
-		AFFFF00F172206C4009E34B5 /* http */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF010172206C4009E34B5 /* KGHttpRequest.h */,
-				AFFFF011172206C4009E34B5 /* KGHttpRequest.m */,
-				AFFFF012172206C4009E34B5 /* KGHttpRequestAuthenticationHandler.h */,
-				AFFFF013172206C4009E34B5 /* KGHttpRequestAuthenticationHandler.m */,
-				AFFFF014172206C4009E34B5 /* KGHttpRequestFactory.h */,
-				AFFFF015172206C4009E34B5 /* KGHttpRequestHandler.h */,
-				AFFFF016172206C4009E34B5 /* KGHttpRequestHandlerAdapter.h */,
-				AFFFF017172206C4009E34B5 /* KGHttpRequestHandlerAdapter.m */,
-				AFFFF018172206C4009E34B5 /* KGHttpRequestHandlerFactory.h */,
-				AFFFF019172206C4009E34B5 /* KGHttpRequestIoHandler.h */,
-				AFFFF01A172206C4009E34B5 /* KGHttpRequestIoHandler.m */,
-				AFFFF01B172206C4009E34B5 /* KGHttpRequestListener.h */,
-				AFFFF01C172206C4009E34B5 /* KGHttpRequestLoggingHandler.h */,
-				AFFFF01D172206C4009E34B5 /* KGHttpRequestLoggingHandler.m */,
-				AFFFF01E172206C4009E34B5 /* KGHttpRequestRedirectHandler.h */,
-				AFFFF01F172206C4009E34B5 /* KGHttpRequestRedirectHandler.m */,
-				AFFFF020172206C4009E34B5 /* KGHttpResponse.h */,
-				AFFFF021172206C4009E34B5 /* KGHttpResponse.m */,
-			);
-			path = http;
-			sourceTree = "<group>";
-		};
-		AFFFF036172206C4009E34B5 /* transport */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF037172206C4009E34B5 /* KGAuthenticateEvent.h */,
-				AFFFF038172206C4009E34B5 /* KGAuthenticateEvent.m */,
-				AFFFF039172206C4009E34B5 /* KGCloseEvent.h */,
-				AFFFF03A172206C4009E34B5 /* KGCloseEvent.m */,
-				AFFFF03B172206C4009E34B5 /* KGErrorEvent.h */,
-				AFFFF03C172206C4009E34B5 /* KGErrorEvent.m */,
-				AFFFF03D172206C4009E34B5 /* KGEvent.h */,
-				AFFFF03E172206C4009E34B5 /* KGEvent.m */,
-				AFFFF03F172206C4009E34B5 /* KGMessageEvent.h */,
-				AFFFF040172206C4009E34B5 /* KGMessageEvent.m */,
-				AFFFF041172206C4009E34B5 /* KGOpenEvent.h */,
-				AFFFF042172206C4009E34B5 /* KGOpenEvent.m */,
-				AFFFF043172206C4009E34B5 /* KGRedirectEvent.h */,
-				AFFFF044172206C4009E34B5 /* KGRedirectEvent.m */,
-				AFFFF045172206C4009E34B5 /* KGWebSocketDelegateImpl.h */,
-				AFFFF046172206C4009E34B5 /* KGWebSocketDelegateImpl.m */,
-				AFFFF047172206C4009E34B5 /* KGWebSocketDelegateListener.h */,
-				AFFFF048172206C4009E34B5 /* KGWebSocketNaiveDelegate.h */,
-				AFFFF049172206C4009E34B5 /* KGWsMessage.h */,
-				AFFFF04A172206C4009E34B5 /* KGWsMessage.m */,
-			);
-			path = transport;
-			sourceTree = "<group>";
-		};
-		AFFFF04B172206C4009E34B5 /* ws */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF04C172206C4009E34B5 /* KGWebSocketCompositeChannel.h */,
-				AFFFF04D172206C4009E34B5 /* KGWebSocketCompositeChannel.m */,
-				AFFFF04E172206C4009E34B5 /* KGWebSocketCompositeHandler.h */,
-				AFFFF04F172206C4009E34B5 /* KGWebSocketCompositeHandler.m */,
-				AFFFF050172206C4009E34B5 /* KGWebSocketHandshakeObject.h */,
-				AFFFF051172206C4009E34B5 /* KGWebSocketHandshakeObject.m */,
-				AFFFF052172206C4009E34B5 /* KGWebSocketLogginHandler.h */,
-				AFFFF053172206C4009E34B5 /* KGWebSocketLogginHandler.m */,
-				AFFFF054172206C4009E34B5 /* KGWebSocketReAuthenticateHandler.h */,
-				AFFFF055172206C4009E34B5 /* KGWebSocketReAuthenticateHandler.m */,
-				AFFFF056172206C4009E34B5 /* KGWebSocketSelectedChannel.h */,
-				AFFFF057172206C4009E34B5 /* KGWebSocketSelectedChannel.m */,
-				AFFFF058172206C4009E34B5 /* KGWebSocketSelectedHandler.h */,
-				AFFFF059172206C4009E34B5 /* KGWebSocketSelectedHandler.m */,
-			);
-			path = ws;
-			sourceTree = "<group>";
-		};
-		AFFFF05A172206C4009E34B5 /* wseb */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF05B172206C4009E34B5 /* KGCreateChannel.h */,
-				AFFFF05C172206C4009E34B5 /* KGCreateChannel.m */,
-				AFFFF05D172206C4009E34B5 /* KGCreateHandler.h */,
-				AFFFF05E172206C4009E34B5 /* KGCreateHandler.m */,
-				AFFFF05F172206C4009E34B5 /* KGCreateHandlerListener.h */,
-				AFFFF060172206C4009E34B5 /* KGDownstreamChannel.h */,
-				AFFFF061172206C4009E34B5 /* KGDownstreamChannel.m */,
-				AFFFF062172206C4009E34B5 /* KGDownstreamHandler.h */,
-				AFFFF063172206C4009E34B5 /* KGDownstreamHandler.m */,
-				AFFFF064172206C4009E34B5 /* KGDownstreamHandlerListener.h */,
-				AFFFF065172206C4009E34B5 /* KGUpstreamChannel.h */,
-				AFFFF066172206C4009E34B5 /* KGUpstreamChannel.m */,
-				AFFFF067172206C4009E34B5 /* KGUpstreamHandler.h */,
-				AFFFF068172206C4009E34B5 /* KGUpstreamHandler.m */,
-				AFFFF069172206C4009E34B5 /* KGUpstreamHandlerListener.h */,
-				AFFFF06A172206C4009E34B5 /* KGWebSocketEmulatedChannel.h */,
-				AFFFF06B172206C4009E34B5 /* KGWebSocketEmulatedChannel.m */,
-				AFFFF06C172206C4009E34B5 /* KGWebSocketEmulatedDecoder.h */,
-				AFFFF06D172206C4009E34B5 /* KGWebSocketEmulatedDecoder.m */,
-				AFFFF06E172206C4009E34B5 /* KGWebSocketEmulatedDecoderListener.h */,
-				AFFFF06F172206C4009E34B5 /* KGWebSocketEmulatedEncoder.h */,
-				AFFFF070172206C4009E34B5 /* KGWebSocketEmulatedEncoder.m */,
-				AFFFF071172206C4009E34B5 /* KGWebSocketEmulatedHandler.h */,
-				AFFFF072172206C4009E34B5 /* KGWebSocketEmulatedHandler.m */,
-			);
-			path = wseb;
-			sourceTree = "<group>";
-		};
-		AFFFF073172206C4009E34B5 /* wsn */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF074172206C4009E34B5 /* KGWebSocketNativeAuthenticationHandler.h */,
-				AFFFF075172206C4009E34B5 /* KGWebSocketNativeAuthenticationHandler.m */,
-				AFFFF076172206C4009E34B5 /* KGWebSocketNativeBalancingHandler.h */,
-				AFFFF077172206C4009E34B5 /* KGWebSocketNativeBalancingHandler.m */,
-				AFFFF078172206C4009E34B5 /* KGWebSocketNativeChannel.h */,
-				AFFFF079172206C4009E34B5 /* KGWebSocketNativeChannel.m */,
-				AFFFF07A172206C4009E34B5 /* KGWebSocketNativeCodec.h */,
-				AFFFF07B172206C4009E34B5 /* KGWebSocketNativeCodec.m */,
-				AFFFF07C172206C4009E34B5 /* KGWebSocketNativeControlFrameHandler.h */,
-				AFFFF07D172206C4009E34B5 /* KGWebSocketNativeControlFrameHandler.m */,
-				AFFFF07E172206C4009E34B5 /* KGWebSocketNativeDelegateHandler.h */,
-				AFFFF07F172206C4009E34B5 /* KGWebSocketNativeDelegateHandler.m */,
-				AFFFF080172206C4009E34B5 /* KGWebSocketNativeEncoder.h */,
-				AFFFF081172206C4009E34B5 /* KGWebSocketNativeEncoder.m */,
-				AFFFF082172206C4009E34B5 /* KGWebSocketNativeHandler.h */,
-				AFFFF083172206C4009E34B5 /* KGWebSocketNativeHandler.m */,
-				AFFFF084172206C4009E34B5 /* KGWebSocketNativeHandshakeHandler.h */,
-				AFFFF085172206C4009E34B5 /* KGWebSocketNativeHandshakeHandler.m */,
-			);
-			path = wsn;
-			sourceTree = "<group>";
-		};
-		AFFFF093172206C4009E34B5 /* util */ = {
-			isa = PBXGroup;
-			children = (
-				AF26FDDF17265B3A00FAED38 /* KGSecurityUtil.h */,
-				AF26FDE017265B3A00FAED38 /* KGSecurityUtil.m */,
-				AFFFF094172206C4009E34B5 /* KGGenericURI.h */,
-				AFFFF095172206C4009E34B5 /* KGGenericURI.m */,
-				AFFFF096172206C4009E34B5 /* KGHexUtil.h */,
-				AFFFF097172206C4009E34B5 /* KGHexUtil.m */,
-				AFFFF098172206C4009E34B5 /* KGHttpURI.h */,
-				AFFFF099172206C4009E34B5 /* KGHttpURI.m */,
-				AFFFF09A172206C4009E34B5 /* KGWSCompositeURI.h */,
-				AFFFF09B172206C4009E34B5 /* KGWSCompositeURI.m */,
-				AFFFF09C172206C4009E34B5 /* KGWSURI.h */,
-				AFFFF09D172206C4009E34B5 /* KGWSURI.m */,
-				AFFFF09E172206C4009E34B5 /* NSArray+KZNGAdditions.h */,
-				AFFFF09F172206C4009E34B5 /* NSArray+KZNGAdditions.m */,
-				AFFFF0A0172206C4009E34B5 /* NSURL+KZNGAdditions.h */,
-				AFFFF0A1172206C4009E34B5 /* NSURL+KZNGAdditions.m */,
-			);
-			path = util;
-			sourceTree = "<group>";
-		};
-		AFFFF0A5172206C4009E34B5 /* security */ = {
-			isa = PBXGroup;
-			children = (
-				AFFFF0A6172206C4009E34B5 /* impl */,
-				AFFFF0B5172206C4009E34B5 /* KGBasicChallengeHandler.h */,
-				AFFFF0B6172206C4009E34B5 /* KGBasicChallengeHandler.m */,
-				AFFFF0B7172206C4009E34B5 /* KGChallengeHandler.h */,
-				AFFFF0B8172206C4009E34B5 /* KGChallengeHandler.m */,
-				AFFFF0B9172206C4009E34B5 /* KGChallengeHandlers.h */,
-				AFFFF0BA172206C4009E34B5 /* KGChallengeHandlers.m */,
-				AFFFF0BB172206C4009E34B5 /* KGChallengeRequest.h */,
-				AFFFF0BC172206C4009E34B5 /* KGChallengeRequest.m */,
-				AFFFF0BD172206C4009E34B5 /* KGChallengeResponse.h */,
-				AFFFF0BE172206C4009E34B5 /* KGChallengeResponse.m */,
-				AFFFF0BF172206C4009E34B5 /* KGDispatchChallengeHandler.h */,
-				AFFFF0C0172206C4009E34B5 /* KGDispatchChallengeHandler.m */,
-				AFFFF0C1172206C4009E34B5 /* KGLoginHandler.h */,
-				AFFFF0C2172206C4009E34B5 /* KGLoginHandler.m */,
-				AFFFF0C3172206C4009E34B5 /* KGNegotiableChallengeHandler.h */,
-				AFFFF0C4172206C4009E34B5 /* KGNegotiableChallengeHandler.m */,
-				AFFFF0C5172206C4009E34B5 /* KGNegotiateChallengeHandler.h */,
-				AFFFF0C6172206C4009E34B5 /* KGNegotiateChallengeHandler.m */,
+				AF05502E17469C44001C32E2 /* impl */,
+				AF05503D17469C44001C32E2 /* KGBasicChallengeHandler.h */,
+				AF05503E17469C44001C32E2 /* KGBasicChallengeHandler.m */,
+				AF05503F17469C44001C32E2 /* KGChallengeHandler+Internal.h */,
+				AF05504017469C44001C32E2 /* KGChallengeHandler.h */,
+				AF05504117469C44001C32E2 /* KGChallengeHandler.m */,
+				AF05504217469C44001C32E2 /* KGChallengeRequest.h */,
+				AF05504317469C44001C32E2 /* KGChallengeRequest.m */,
+				AF05504417469C44001C32E2 /* KGChallengeResponse.h */,
+				AF05504517469C44001C32E2 /* KGChallengeResponse.m */,
+				AF05504617469C44001C32E2 /* KGDispatchChallengeHandler.h */,
+				AF05504717469C44001C32E2 /* KGDispatchChallengeHandler.m */,
+				AF05504817469C44001C32E2 /* KGLoginHandler.h */,
+				AF05504917469C44001C32E2 /* KGLoginHandler.m */,
+				AF05504A17469C44001C32E2 /* KGNegotiableChallengeHandler.h */,
+				AF05504B17469C44001C32E2 /* KGNegotiableChallengeHandler.m */,
+				AF05504C17469C44001C32E2 /* KGNegotiateChallengeHandler.h */,
+				AF05504D17469C44001C32E2 /* KGNegotiateChallengeHandler.m */,
 			);
 			path = security;
 			sourceTree = "<group>";
 		};
-		AFFFF0A6172206C4009E34B5 /* impl */ = {
+		AF05502E17469C44001C32E2 /* impl */ = {
 			isa = PBXGroup;
 			children = (
-				AFFFF0A7172206C4009E34B5 /* BasicChallengeResponseFactory.h */,
-				AFFFF0A8172206C4009E34B5 /* BasicChallengeResponseFactory.m */,
-				AFFFF0A9172206C4009E34B5 /* DefaultBasicChallengeHandler.h */,
-				AFFFF0AA172206C4009E34B5 /* DefaultBasicChallengeHandler.m */,
-				AFFFF0AB172206C4009E34B5 /* DefaultDispatchChallengeHandler.h */,
-				AFFFF0AC172206C4009E34B5 /* DefaultDispatchChallengeHandler.m */,
-				AFFFF0AD172206C4009E34B5 /* Node.h */,
-				AFFFF0AE172206C4009E34B5 /* Node.m */,
-				AFFFF0AF172206C4009E34B5 /* OrderedDictionary.h */,
-				AFFFF0B0172206C4009E34B5 /* OrderedDictionary.m */,
-				AFFFF0B1172206C4009E34B5 /* RealmUtils.h */,
-				AFFFF0B2172206C4009E34B5 /* RealmUtils.m */,
-				AFFFF0B3172206C4009E34B5 /* Token.h */,
-				AFFFF0B4172206C4009E34B5 /* Token.m */,
+				AF05502F17469C44001C32E2 /* BasicChallengeResponseFactory.h */,
+				AF05503017469C44001C32E2 /* BasicChallengeResponseFactory.m */,
+				AF05503117469C44001C32E2 /* DefaultBasicChallengeHandler.h */,
+				AF05503217469C44001C32E2 /* DefaultBasicChallengeHandler.m */,
+				AF05503317469C44001C32E2 /* DefaultDispatchChallengeHandler.h */,
+				AF05503417469C44001C32E2 /* DefaultDispatchChallengeHandler.m */,
+				AF05503517469C44001C32E2 /* Node.h */,
+				AF05503617469C44001C32E2 /* Node.m */,
+				AF05503717469C44001C32E2 /* OrderedDictionary.h */,
+				AF05503817469C44001C32E2 /* OrderedDictionary.m */,
+				AF05503917469C44001C32E2 /* RealmUtils.h */,
+				AF05503A17469C44001C32E2 /* RealmUtils.m */,
+				AF05503B17469C44001C32E2 /* Token.h */,
+				AF05503C17469C44001C32E2 /* Token.m */,
 			);
 			path = impl;
+			sourceTree = "<group>";
+		};
+		AF05504E17469C44001C32E2 /* websocket */ = {
+			isa = PBXGroup;
+			children = (
+				AF05504F17469C44001C32E2 /* impl */,
+				AF0550C617469C44001C32E2 /* KGBase64Util.h */,
+				AF0550C717469C44001C32E2 /* KGBase64Util.m */,
+				AF0550C817469C44001C32E2 /* KGByteBuffer.h */,
+				AF0550C917469C44001C32E2 /* KGByteBuffer.m */,
+				AF0550CA17469C44001C32E2 /* KGParameterValuesContainer.h */,
+				AF0550CB17469C44001C32E2 /* KGParameterValuesContainer.m */,
+				AF0550CC17469C44001C32E2 /* KGRevalidateExtension.h */,
+				AF0550CD17469C44001C32E2 /* KGRevalidateExtension.m */,
+				AF0550CE17469C44001C32E2 /* KGWebSocket+Internal.h */,
+				AF0550CF17469C44001C32E2 /* KGWebSocket.h */,
+				AF0550D017469C44001C32E2 /* KGWebSocket.m */,
+				AF0550D117469C44001C32E2 /* KGWebSocketDelegate.h */,
+				AF0550D217469C44001C32E2 /* KGWebSocketExtension.h */,
+				AF0550D317469C44001C32E2 /* KGWebSocketExtension.m */,
+				AF0550D417469C44001C32E2 /* KGWebSocketExtensionParameter+Internal.h */,
+				AF0550D517469C44001C32E2 /* KGWebSocketExtensionParameter.h */,
+				AF0550D617469C44001C32E2 /* KGWebSocketExtensionParameter.m */,
+				AF0550D717469C44001C32E2 /* KGWebSocketFactory.h */,
+				AF0550D817469C44001C32E2 /* KGWebSocketFactory.m */,
+				AF0550D917469C44001C32E2 /* NSString+KZNGAdditions.h */,
+				AF0550DA17469C44001C32E2 /* NSString+KZNGAdditions.m */,
+				AF0550DB17469C44001C32E2 /* util */,
+			);
+			path = websocket;
+			sourceTree = "<group>";
+		};
+		AF05504F17469C44001C32E2 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				AF05505017469C44001C32E2 /* auth */,
+				AF05505317469C44001C32E2 /* http */,
+				AF05506617469C44001C32E2 /* KGChannel.h */,
+				AF05506717469C44001C32E2 /* KGChannel.m */,
+				AF05506817469C44001C32E2 /* KGCommandMessage.h */,
+				AF05506917469C44001C32E2 /* KGDecoderInput.h */,
+				AF05506A17469C44001C32E2 /* KGDecoderInput.m */,
+				AF05506B17469C44001C32E2 /* KGDecoderListener.h */,
+				AF05506C17469C44001C32E2 /* KGEncoderOutput.h */,
+				AF05506D17469C44001C32E2 /* KGHandler.h */,
+				AF05506E17469C44001C32E2 /* KGTransportFactory.h */,
+				AF05506F17469C44001C32E2 /* KGTransportFactory.m */,
+				AF05507017469C44001C32E2 /* KGWebSocketChannel.h */,
+				AF05507117469C44001C32E2 /* KGWebSocketChannel.m */,
+				AF05507217469C44001C32E2 /* KGWebSocketHandler.h */,
+				AF05507317469C44001C32E2 /* KGWebSocketHandlerAdapter.h */,
+				AF05507417469C44001C32E2 /* KGWebSocketHandlerAdapter.m */,
+				AF05507517469C44001C32E2 /* KGWebSocketHandlerListener.h */,
+				AF05507617469C44001C32E2 /* transport */,
+				AF05508B17469C44001C32E2 /* ws */,
+				AF05509A17469C44001C32E2 /* wseb */,
+				AF0550B317469C44001C32E2 /* wsn */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		AF05505017469C44001C32E2 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				AF05505117469C44001C32E2 /* KGAuthenticationUtil.h */,
+				AF05505217469C44001C32E2 /* KGAuthenticationUtil.m */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		AF05505317469C44001C32E2 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				AF05505417469C44001C32E2 /* KGHttpRequest.h */,
+				AF05505517469C44001C32E2 /* KGHttpRequest.m */,
+				AF05505617469C44001C32E2 /* KGHttpRequestAuthenticationHandler.h */,
+				AF05505717469C44001C32E2 /* KGHttpRequestAuthenticationHandler.m */,
+				AF05505817469C44001C32E2 /* KGHttpRequestFactory.h */,
+				AF05505917469C44001C32E2 /* KGHttpRequestHandler.h */,
+				AF05505A17469C44001C32E2 /* KGHttpRequestHandlerAdapter.h */,
+				AF05505B17469C44001C32E2 /* KGHttpRequestHandlerAdapter.m */,
+				AF05505C17469C44001C32E2 /* KGHttpRequestHandlerFactory.h */,
+				AF05505D17469C44001C32E2 /* KGHttpRequestIoHandler.h */,
+				AF05505E17469C44001C32E2 /* KGHttpRequestIoHandler.m */,
+				AF05505F17469C44001C32E2 /* KGHttpRequestListener.h */,
+				AF05506017469C44001C32E2 /* KGHttpRequestLoggingHandler.h */,
+				AF05506117469C44001C32E2 /* KGHttpRequestLoggingHandler.m */,
+				AF05506217469C44001C32E2 /* KGHttpRequestRedirectHandler.h */,
+				AF05506317469C44001C32E2 /* KGHttpRequestRedirectHandler.m */,
+				AF05506417469C44001C32E2 /* KGHttpResponse.h */,
+				AF05506517469C44001C32E2 /* KGHttpResponse.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		AF05507617469C44001C32E2 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				AF05507717469C44001C32E2 /* KGAuthenticateEvent.h */,
+				AF05507817469C44001C32E2 /* KGAuthenticateEvent.m */,
+				AF05507917469C44001C32E2 /* KGCloseEvent.h */,
+				AF05507A17469C44001C32E2 /* KGCloseEvent.m */,
+				AF05507B17469C44001C32E2 /* KGErrorEvent.h */,
+				AF05507C17469C44001C32E2 /* KGErrorEvent.m */,
+				AF05507D17469C44001C32E2 /* KGEvent.h */,
+				AF05507E17469C44001C32E2 /* KGEvent.m */,
+				AF05507F17469C44001C32E2 /* KGMessageEvent.h */,
+				AF05508017469C44001C32E2 /* KGMessageEvent.m */,
+				AF05508117469C44001C32E2 /* KGOpenEvent.h */,
+				AF05508217469C44001C32E2 /* KGOpenEvent.m */,
+				AF05508317469C44001C32E2 /* KGRedirectEvent.h */,
+				AF05508417469C44001C32E2 /* KGRedirectEvent.m */,
+				AF05508517469C44001C32E2 /* KGWebSocketDelegateImpl.h */,
+				AF05508617469C44001C32E2 /* KGWebSocketDelegateImpl.m */,
+				AF05508717469C44001C32E2 /* KGWebSocketDelegateListener.h */,
+				AF05508817469C44001C32E2 /* KGWebSocketNativeDelegate.h */,
+				AF05508917469C44001C32E2 /* KGWsMessage.h */,
+				AF05508A17469C44001C32E2 /* KGWsMessage.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		AF05508B17469C44001C32E2 /* ws */ = {
+			isa = PBXGroup;
+			children = (
+				AF05508C17469C44001C32E2 /* KGWebSocketCompositeChannel.h */,
+				AF05508D17469C44001C32E2 /* KGWebSocketCompositeChannel.m */,
+				AF05508E17469C44001C32E2 /* KGWebSocketCompositeHandler.h */,
+				AF05508F17469C44001C32E2 /* KGWebSocketCompositeHandler.m */,
+				AF05509017469C44001C32E2 /* KGWebSocketHandshakeObject.h */,
+				AF05509117469C44001C32E2 /* KGWebSocketHandshakeObject.m */,
+				AF05509217469C44001C32E2 /* KGWebSocketLoggingHandler.h */,
+				AF05509317469C44001C32E2 /* KGWebSocketLoggingHandler.m */,
+				AF05509417469C44001C32E2 /* KGWebSocketReAuthenticateHandler.h */,
+				AF05509517469C44001C32E2 /* KGWebSocketReAuthenticateHandler.m */,
+				AF05509617469C44001C32E2 /* KGWebSocketSelectedChannel.h */,
+				AF05509717469C44001C32E2 /* KGWebSocketSelectedChannel.m */,
+				AF05509817469C44001C32E2 /* KGWebSocketSelectedHandler.h */,
+				AF05509917469C44001C32E2 /* KGWebSocketSelectedHandler.m */,
+			);
+			path = ws;
+			sourceTree = "<group>";
+		};
+		AF05509A17469C44001C32E2 /* wseb */ = {
+			isa = PBXGroup;
+			children = (
+				AF05509B17469C44001C32E2 /* KGCreateChannel.h */,
+				AF05509C17469C44001C32E2 /* KGCreateChannel.m */,
+				AF05509D17469C44001C32E2 /* KGCreateHandler.h */,
+				AF05509E17469C44001C32E2 /* KGCreateHandler.m */,
+				AF05509F17469C44001C32E2 /* KGCreateHandlerListener.h */,
+				AF0550A017469C44001C32E2 /* KGDownstreamChannel.h */,
+				AF0550A117469C44001C32E2 /* KGDownstreamChannel.m */,
+				AF0550A217469C44001C32E2 /* KGDownstreamHandler.h */,
+				AF0550A317469C44001C32E2 /* KGDownstreamHandler.m */,
+				AF0550A417469C44001C32E2 /* KGDownstreamHandlerListener.h */,
+				AF0550A517469C44001C32E2 /* KGUpstreamChannel.h */,
+				AF0550A617469C44001C32E2 /* KGUpstreamChannel.m */,
+				AF0550A717469C44001C32E2 /* KGUpstreamHandler.h */,
+				AF0550A817469C44001C32E2 /* KGUpstreamHandler.m */,
+				AF0550A917469C44001C32E2 /* KGUpstreamHandlerListener.h */,
+				AF0550AA17469C44001C32E2 /* KGWebSocketEmulatedChannel.h */,
+				AF0550AB17469C44001C32E2 /* KGWebSocketEmulatedChannel.m */,
+				AF0550AC17469C44001C32E2 /* KGWebSocketEmulatedDecoder.h */,
+				AF0550AD17469C44001C32E2 /* KGWebSocketEmulatedDecoder.m */,
+				AF0550AE17469C44001C32E2 /* KGWebSocketEmulatedDecoderListener.h */,
+				AF0550AF17469C44001C32E2 /* KGWebSocketEmulatedEncoder.h */,
+				AF0550B017469C44001C32E2 /* KGWebSocketEmulatedEncoder.m */,
+				AF0550B117469C44001C32E2 /* KGWebSocketEmulatedHandler.h */,
+				AF0550B217469C44001C32E2 /* KGWebSocketEmulatedHandler.m */,
+			);
+			path = wseb;
+			sourceTree = "<group>";
+		};
+		AF0550B317469C44001C32E2 /* wsn */ = {
+			isa = PBXGroup;
+			children = (
+				AF0550B417469C44001C32E2 /* KGWebSocketNativeAuthenticationHandler.h */,
+				AF0550B517469C44001C32E2 /* KGWebSocketNativeAuthenticationHandler.m */,
+				AF0550B617469C44001C32E2 /* KGWebSocketNativeBalancingHandler.h */,
+				AF0550B717469C44001C32E2 /* KGWebSocketNativeBalancingHandler.m */,
+				AF0550B817469C44001C32E2 /* KGWebSocketNativeChannel.h */,
+				AF0550B917469C44001C32E2 /* KGWebSocketNativeChannel.m */,
+				AF0550BA17469C44001C32E2 /* KGWebSocketNativeCodec.h */,
+				AF0550BB17469C44001C32E2 /* KGWebSocketNativeCodec.m */,
+				AF0550BC17469C44001C32E2 /* KGWebSocketNativeControlFrameHandler.h */,
+				AF0550BD17469C44001C32E2 /* KGWebSocketNativeControlFrameHandler.m */,
+				AF0550BE17469C44001C32E2 /* KGWebSocketNativeDelegateHandler.h */,
+				AF0550BF17469C44001C32E2 /* KGWebSocketNativeDelegateHandler.m */,
+				AF0550C017469C44001C32E2 /* KGWebSocketNativeEncoder.h */,
+				AF0550C117469C44001C32E2 /* KGWebSocketNativeEncoder.m */,
+				AF0550C217469C44001C32E2 /* KGWebSocketNativeHandler.h */,
+				AF0550C317469C44001C32E2 /* KGWebSocketNativeHandler.m */,
+				AF0550C417469C44001C32E2 /* KGWebSocketNativeHandshakeHandler.h */,
+				AF0550C517469C44001C32E2 /* KGWebSocketNativeHandshakeHandler.m */,
+			);
+			path = wsn;
+			sourceTree = "<group>";
+		};
+		AF0550DB17469C44001C32E2 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				AF0550DC17469C44001C32E2 /* KGGenericURI.h */,
+				AF0550DD17469C44001C32E2 /* KGGenericURI.m */,
+				AF0550DE17469C44001C32E2 /* KGHexUtil.h */,
+				AF0550DF17469C44001C32E2 /* KGHexUtil.m */,
+				AF0550E017469C44001C32E2 /* KGHttpURI.h */,
+				AF0550E117469C44001C32E2 /* KGHttpURI.m */,
+				AF0550E217469C44001C32E2 /* KGTracer.h */,
+				AF0550E317469C44001C32E2 /* KGTracer.m */,
+				AF0550E417469C44001C32E2 /* KGWSCompositeURI.h */,
+				AF0550E517469C44001C32E2 /* KGWSCompositeURI.m */,
+				AF0550E617469C44001C32E2 /* KGWSURI.h */,
+				AF0550E717469C44001C32E2 /* KGWSURI.m */,
+				AF0550E817469C44001C32E2 /* NSArray+KZNGAdditions.h */,
+				AF0550E917469C44001C32E2 /* NSArray+KZNGAdditions.m */,
+				AF0550EA17469C44001C32E2 /* NSURL+KZNGAdditions.h */,
+				AF0550EB17469C44001C32E2 /* NSURL+KZNGAdditions.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		AFFFEFFA172206A2009E34B5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AF05501A17469C44001C32E2 /* objc */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -874,91 +885,92 @@
 				A04CEC2A1591AB0400A0A93D /* main.m in Sources */,
 				A04CEC2E1591AB0400A0A93D /* KGAppDelegate.m in Sources */,
 				A04CEC341591AB0400A0A93D /* KGViewController.m in Sources */,
-				AFFFF0C7172206C4009E34B5 /* KGApnsWebSocketExtension.m in Sources */,
-				AFFFF0C8172206C4009E34B5 /* KGBaseSoundNotification.m in Sources */,
-				AFFFF0C9172206C4009E34B5 /* KGLocalizedAlertNotification.m in Sources */,
-				AFFFF0CA172206C4009E34B5 /* KGNotificationPayload.m in Sources */,
-				AFFFF0CB172206C4009E34B5 /* KGSimpleAlertNotification.m in Sources */,
-				AFFFF0CC172206C4009E34B5 /* KGAuthenticationUtil.m in Sources */,
-				AFFFF0CD172206C4009E34B5 /* KGHttpRequest.m in Sources */,
-				AFFFF0CE172206C4009E34B5 /* KGHttpRequestAuthenticationHandler.m in Sources */,
-				AFFFF0CF172206C4009E34B5 /* KGHttpRequestHandlerAdapter.m in Sources */,
-				AFFFF0D0172206C4009E34B5 /* KGHttpRequestIoHandler.m in Sources */,
-				AFFFF0D1172206C4009E34B5 /* KGHttpRequestLoggingHandler.m in Sources */,
-				AFFFF0D2172206C4009E34B5 /* KGHttpRequestRedirectHandler.m in Sources */,
-				AFFFF0D3172206C4009E34B5 /* KGHttpResponse.m in Sources */,
-				AFFFF0D4172206C4009E34B5 /* KGChannel.m in Sources */,
-				AFFFF0D5172206C4009E34B5 /* KGDecoderInput.m in Sources */,
-				AFFFF0D6172206C4009E34B5 /* KGTransportFactory.m in Sources */,
-				AFFFF0D7172206C4009E34B5 /* KGWebSocketChannel.m in Sources */,
-				AFFFF0D8172206C4009E34B5 /* KGWebSocketExtensionDelegate.m in Sources */,
-				AFFFF0D9172206C4009E34B5 /* KGWebSocketFactoryDelegate.m in Sources */,
-				AFFFF0DA172206C4009E34B5 /* KGWebSocketHandlerAdapter.m in Sources */,
-				AFFFF0DB172206C4009E34B5 /* KGAuthenticateEvent.m in Sources */,
-				AFFFF0DC172206C4009E34B5 /* KGCloseEvent.m in Sources */,
-				AFFFF0DD172206C4009E34B5 /* KGErrorEvent.m in Sources */,
-				AFFFF0DE172206C4009E34B5 /* KGEvent.m in Sources */,
-				AFFFF0DF172206C4009E34B5 /* KGMessageEvent.m in Sources */,
-				AFFFF0E0172206C4009E34B5 /* KGOpenEvent.m in Sources */,
-				AFFFF0E1172206C4009E34B5 /* KGRedirectEvent.m in Sources */,
-				AFFFF0E2172206C4009E34B5 /* KGWebSocketDelegateImpl.m in Sources */,
-				AFFFF0E3172206C4009E34B5 /* KGWsMessage.m in Sources */,
-				AFFFF0E4172206C4009E34B5 /* KGWebSocketCompositeChannel.m in Sources */,
-				AFFFF0E5172206C4009E34B5 /* KGWebSocketCompositeHandler.m in Sources */,
-				AFFFF0E6172206C4009E34B5 /* KGWebSocketHandshakeObject.m in Sources */,
-				AFFFF0E7172206C4009E34B5 /* KGWebSocketLogginHandler.m in Sources */,
-				AFFFF0E8172206C4009E34B5 /* KGWebSocketReAuthenticateHandler.m in Sources */,
-				AFFFF0E9172206C4009E34B5 /* KGWebSocketSelectedChannel.m in Sources */,
-				AFFFF0EA172206C4009E34B5 /* KGWebSocketSelectedHandler.m in Sources */,
-				AFFFF0EB172206C4009E34B5 /* KGCreateChannel.m in Sources */,
-				AFFFF0EC172206C4009E34B5 /* KGCreateHandler.m in Sources */,
-				AFFFF0ED172206C4009E34B5 /* KGDownstreamChannel.m in Sources */,
-				AFFFF0EE172206C4009E34B5 /* KGDownstreamHandler.m in Sources */,
-				AFFFF0EF172206C4009E34B5 /* KGUpstreamChannel.m in Sources */,
-				AFFFF0F0172206C4009E34B5 /* KGUpstreamHandler.m in Sources */,
-				AFFFF0F1172206C4009E34B5 /* KGWebSocketEmulatedChannel.m in Sources */,
-				AFFFF0F2172206C4009E34B5 /* KGWebSocketEmulatedDecoder.m in Sources */,
-				AFFFF0F3172206C4009E34B5 /* KGWebSocketEmulatedEncoder.m in Sources */,
-				AFFFF0F4172206C4009E34B5 /* KGWebSocketEmulatedHandler.m in Sources */,
-				AFFFF0F5172206C4009E34B5 /* KGWebSocketNativeAuthenticationHandler.m in Sources */,
-				AFFFF0F6172206C4009E34B5 /* KGWebSocketNativeBalancingHandler.m in Sources */,
-				AFFFF0F7172206C4009E34B5 /* KGWebSocketNativeChannel.m in Sources */,
-				AFFFF0F8172206C4009E34B5 /* KGWebSocketNativeCodec.m in Sources */,
-				AFFFF0F9172206C4009E34B5 /* KGWebSocketNativeControlFrameHandler.m in Sources */,
-				AFFFF0FA172206C4009E34B5 /* KGWebSocketNativeDelegateHandler.m in Sources */,
-				AFFFF0FB172206C4009E34B5 /* KGWebSocketNativeEncoder.m in Sources */,
-				AFFFF0FC172206C4009E34B5 /* KGWebSocketNativeHandler.m in Sources */,
-				AFFFF0FD172206C4009E34B5 /* KGWebSocketNativeHandshakeHandler.m in Sources */,
-				AFFFF0FE172206C4009E34B5 /* KGBase64Util.m in Sources */,
-				AFFFF0FF172206C4009E34B5 /* KGByteBuffer.m in Sources */,
-				AFFFF100172206C4009E34B5 /* KGWebSocket.m in Sources */,
-				AFFFF101172206C4009E34B5 /* KGWebSocketExtension.m in Sources */,
-				AFFFF102172206C4009E34B5 /* KGWebSocketFactory.m in Sources */,
-				AFFFF103172206C4009E34B5 /* NSString+KZNGAdditions.m in Sources */,
-				AFFFF104172206C4009E34B5 /* KGGenericURI.m in Sources */,
-				AFFFF105172206C4009E34B5 /* KGHexUtil.m in Sources */,
-				AFFFF106172206C4009E34B5 /* KGHttpURI.m in Sources */,
-				AFFFF107172206C4009E34B5 /* KGWSCompositeURI.m in Sources */,
-				AFFFF108172206C4009E34B5 /* KGWSURI.m in Sources */,
-				AFFFF109172206C4009E34B5 /* NSArray+KZNGAdditions.m in Sources */,
-				AFFFF10A172206C4009E34B5 /* NSURL+KZNGAdditions.m in Sources */,
-				AFFFF10B172206C4009E34B5 /* BasicChallengeResponseFactory.m in Sources */,
-				AFFFF10C172206C4009E34B5 /* DefaultBasicChallengeHandler.m in Sources */,
-				AFFFF10D172206C4009E34B5 /* DefaultDispatchChallengeHandler.m in Sources */,
-				AFFFF10E172206C4009E34B5 /* Node.m in Sources */,
-				AFFFF10F172206C4009E34B5 /* OrderedDictionary.m in Sources */,
-				AFFFF110172206C4009E34B5 /* RealmUtils.m in Sources */,
-				AFFFF111172206C4009E34B5 /* Token.m in Sources */,
-				AFFFF112172206C4009E34B5 /* KGBasicChallengeHandler.m in Sources */,
-				AFFFF113172206C4009E34B5 /* KGChallengeHandler.m in Sources */,
-				AFFFF114172206C4009E34B5 /* KGChallengeHandlers.m in Sources */,
-				AFFFF115172206C4009E34B5 /* KGChallengeRequest.m in Sources */,
-				AFFFF116172206C4009E34B5 /* KGChallengeResponse.m in Sources */,
-				AFFFF117172206C4009E34B5 /* KGDispatchChallengeHandler.m in Sources */,
-				AFFFF118172206C4009E34B5 /* KGLoginHandler.m in Sources */,
-				AFFFF119172206C4009E34B5 /* KGNegotiableChallengeHandler.m in Sources */,
-				AFFFF11A172206C4009E34B5 /* KGNegotiateChallengeHandler.m in Sources */,
-				AF26FDE117265B3A00FAED38 /* KGSecurityUtil.m in Sources */,
+				AF0550ED17469C44001C32E2 /* KGApnsExtension.m in Sources */,
+				AF0550EE17469C44001C32E2 /* KGBaseSoundNotification.m in Sources */,
+				AF0550EF17469C44001C32E2 /* KGLocalizedAlertNotification.m in Sources */,
+				AF0550F017469C44001C32E2 /* KGNotificationPayload.m in Sources */,
+				AF0550F117469C44001C32E2 /* KGSimpleAlertNotification.m in Sources */,
+				AF0550F217469C44001C32E2 /* KGConstants.m in Sources */,
+				AF0550F317469C44001C32E2 /* BasicChallengeResponseFactory.m in Sources */,
+				AF0550F417469C44001C32E2 /* DefaultBasicChallengeHandler.m in Sources */,
+				AF0550F517469C44001C32E2 /* DefaultDispatchChallengeHandler.m in Sources */,
+				AF0550F617469C44001C32E2 /* Node.m in Sources */,
+				AF0550F717469C44001C32E2 /* OrderedDictionary.m in Sources */,
+				AF0550F817469C44001C32E2 /* RealmUtils.m in Sources */,
+				AF0550F917469C44001C32E2 /* Token.m in Sources */,
+				AF0550FA17469C44001C32E2 /* KGBasicChallengeHandler.m in Sources */,
+				AF0550FB17469C44001C32E2 /* KGChallengeHandler.m in Sources */,
+				AF0550FC17469C44001C32E2 /* KGChallengeRequest.m in Sources */,
+				AF0550FD17469C44001C32E2 /* KGChallengeResponse.m in Sources */,
+				AF0550FE17469C44001C32E2 /* KGDispatchChallengeHandler.m in Sources */,
+				AF0550FF17469C44001C32E2 /* KGLoginHandler.m in Sources */,
+				AF05510017469C44001C32E2 /* KGNegotiableChallengeHandler.m in Sources */,
+				AF05510117469C44001C32E2 /* KGNegotiateChallengeHandler.m in Sources */,
+				AF05510217469C44001C32E2 /* KGAuthenticationUtil.m in Sources */,
+				AF05510317469C44001C32E2 /* KGHttpRequest.m in Sources */,
+				AF05510417469C44001C32E2 /* KGHttpRequestAuthenticationHandler.m in Sources */,
+				AF05510517469C44001C32E2 /* KGHttpRequestHandlerAdapter.m in Sources */,
+				AF05510617469C44001C32E2 /* KGHttpRequestIoHandler.m in Sources */,
+				AF05510717469C44001C32E2 /* KGHttpRequestLoggingHandler.m in Sources */,
+				AF05510817469C44001C32E2 /* KGHttpRequestRedirectHandler.m in Sources */,
+				AF05510917469C44001C32E2 /* KGHttpResponse.m in Sources */,
+				AF05510A17469C44001C32E2 /* KGChannel.m in Sources */,
+				AF05510B17469C44001C32E2 /* KGDecoderInput.m in Sources */,
+				AF05510C17469C44001C32E2 /* KGTransportFactory.m in Sources */,
+				AF05510D17469C44001C32E2 /* KGWebSocketChannel.m in Sources */,
+				AF05510E17469C44001C32E2 /* KGWebSocketHandlerAdapter.m in Sources */,
+				AF05510F17469C44001C32E2 /* KGAuthenticateEvent.m in Sources */,
+				AF05511017469C44001C32E2 /* KGCloseEvent.m in Sources */,
+				AF05511117469C44001C32E2 /* KGErrorEvent.m in Sources */,
+				AF05511217469C44001C32E2 /* KGEvent.m in Sources */,
+				AF05511317469C44001C32E2 /* KGMessageEvent.m in Sources */,
+				AF05511417469C44001C32E2 /* KGOpenEvent.m in Sources */,
+				AF05511517469C44001C32E2 /* KGRedirectEvent.m in Sources */,
+				AF05511617469C44001C32E2 /* KGWebSocketDelegateImpl.m in Sources */,
+				AF05511717469C44001C32E2 /* KGWsMessage.m in Sources */,
+				AF05511817469C44001C32E2 /* KGWebSocketCompositeChannel.m in Sources */,
+				AF05511917469C44001C32E2 /* KGWebSocketCompositeHandler.m in Sources */,
+				AF05511A17469C44001C32E2 /* KGWebSocketHandshakeObject.m in Sources */,
+				AF05511B17469C44001C32E2 /* KGWebSocketLoggingHandler.m in Sources */,
+				AF05511C17469C44001C32E2 /* KGWebSocketReAuthenticateHandler.m in Sources */,
+				AF05511D17469C44001C32E2 /* KGWebSocketSelectedChannel.m in Sources */,
+				AF05511E17469C44001C32E2 /* KGWebSocketSelectedHandler.m in Sources */,
+				AF05511F17469C44001C32E2 /* KGCreateChannel.m in Sources */,
+				AF05512017469C44001C32E2 /* KGCreateHandler.m in Sources */,
+				AF05512117469C44001C32E2 /* KGDownstreamChannel.m in Sources */,
+				AF05512217469C44001C32E2 /* KGDownstreamHandler.m in Sources */,
+				AF05512317469C44001C32E2 /* KGUpstreamChannel.m in Sources */,
+				AF05512417469C44001C32E2 /* KGUpstreamHandler.m in Sources */,
+				AF05512517469C44001C32E2 /* KGWebSocketEmulatedChannel.m in Sources */,
+				AF05512617469C44001C32E2 /* KGWebSocketEmulatedDecoder.m in Sources */,
+				AF05512717469C44001C32E2 /* KGWebSocketEmulatedEncoder.m in Sources */,
+				AF05512817469C44001C32E2 /* KGWebSocketEmulatedHandler.m in Sources */,
+				AF05512917469C44001C32E2 /* KGWebSocketNativeAuthenticationHandler.m in Sources */,
+				AF05512A17469C44001C32E2 /* KGWebSocketNativeBalancingHandler.m in Sources */,
+				AF05512B17469C44001C32E2 /* KGWebSocketNativeChannel.m in Sources */,
+				AF05512C17469C44001C32E2 /* KGWebSocketNativeCodec.m in Sources */,
+				AF05512D17469C44001C32E2 /* KGWebSocketNativeControlFrameHandler.m in Sources */,
+				AF05512E17469C44001C32E2 /* KGWebSocketNativeDelegateHandler.m in Sources */,
+				AF05512F17469C44001C32E2 /* KGWebSocketNativeEncoder.m in Sources */,
+				AF05513017469C44001C32E2 /* KGWebSocketNativeHandler.m in Sources */,
+				AF05513117469C44001C32E2 /* KGWebSocketNativeHandshakeHandler.m in Sources */,
+				AF05513217469C44001C32E2 /* KGBase64Util.m in Sources */,
+				AF05513317469C44001C32E2 /* KGByteBuffer.m in Sources */,
+				AF05513417469C44001C32E2 /* KGParameterValuesContainer.m in Sources */,
+				AF05513517469C44001C32E2 /* KGRevalidateExtension.m in Sources */,
+				AF05513617469C44001C32E2 /* KGWebSocket.m in Sources */,
+				AF05513717469C44001C32E2 /* KGWebSocketExtension.m in Sources */,
+				AF05513817469C44001C32E2 /* KGWebSocketExtensionParameter.m in Sources */,
+				AF05513917469C44001C32E2 /* KGWebSocketFactory.m in Sources */,
+				AF05513A17469C44001C32E2 /* NSString+KZNGAdditions.m in Sources */,
+				AF05513B17469C44001C32E2 /* KGGenericURI.m in Sources */,
+				AF05513C17469C44001C32E2 /* KGHexUtil.m in Sources */,
+				AF05513D17469C44001C32E2 /* KGHttpURI.m in Sources */,
+				AF05513E17469C44001C32E2 /* KGTracer.m in Sources */,
+				AF05513F17469C44001C32E2 /* KGWSCompositeURI.m in Sources */,
+				AF05514017469C44001C32E2 /* KGWSURI.m in Sources */,
+				AF05514117469C44001C32E2 /* NSArray+KZNGAdditions.m in Sources */,
+				AF05514217469C44001C32E2 /* NSURL+KZNGAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1060,9 +1072,16 @@
 		A04CEC4D1591AB0500A0A93D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../gateway.client.ios/target/com.kaazing.gateway.client.ios-4.0.0.2-SNAPSHOT-bin\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "html5.client.ios.demo/html5.client.ios.demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/usr/\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/usr/\"",
+					"/Users/chaosun/Subversion/trunk/gateway/gateway.client.ios/target/com.kaazing.gateway.client.ios-4.0.0.2-SNAPSHOT-bin/KGWebSocket.framework/Headers",
+				);
 				INFOPLIST_FILE = "html5.client.ios.demo/html5.client.ios.demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1081,9 +1100,16 @@
 		A04CEC4E1591AB0500A0A93D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../gateway.client.ios/target/com.kaazing.gateway.client.ios-4.0.0.2-SNAPSHOT-bin\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "html5.client.ios.demo/html5.client.ios.demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/usr/\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/usr/\"",
+					"/Users/chaosun/Subversion/trunk/gateway/gateway.client.ios/target/com.kaazing.gateway.client.ios-4.0.0.2-SNAPSHOT-bin/KGWebSocket.framework/Headers",
+				);
 				INFOPLIST_FILE = "html5.client.ios.demo/html5.client.ios.demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

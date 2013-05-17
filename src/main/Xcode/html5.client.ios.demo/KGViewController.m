@@ -7,7 +7,7 @@
 //
 
 #import "KGViewController.h"
-#import "Core.h"
+#import "WebSocket.h"
 
 //LoginHandler API:
 @interface KGDemoLoginHandler : KGLoginHandler
@@ -92,6 +92,7 @@ extern SecIdentityRef KGWebSocketIdentity;
     
     KGWebSocket* _websocket;
     BOOL _reconnect;
+    SecIdentityRef _identity;
     
 }
 
@@ -112,12 +113,16 @@ extern SecIdentityRef KGWebSocketIdentity;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"client" ofType:@"p12"];
     NSData *p12data = [NSData dataWithContentsOfFile:path];
     CFDataRef inP12data = (__bridge CFDataRef)p12data;
-    NSString* keyPassword = @"ab987c";
+    NSString* keyPassword = @"changeit";
     
     SecIdentityRef myIdentity = importPKCS12(inP12data, (__bridge CFDataRef)(keyPassword));
     if (myIdentity) {
         NSString* certicateInfo = [self copySummaryString:myIdentity];
         [self log:[NSString stringWithFormat:@"Imported certificate: [%@]", certicateInfo]];
+        _identity = myIdentity;
+    }
+    else {
+        _identity = nil;
     }
 }
 
@@ -147,14 +152,15 @@ extern SecIdentityRef KGWebSocketIdentity;
     // set up Login Handler:
     KGLoginHandler* loginHandler = [[KGDemoLoginHandler alloc] init];
     
-    KGBasicChallengeHandler* challengeHandler = [KGChallengeHandlers load:@"KGBasicChallengeHandler"];
+    KGBasicChallengeHandler* challengeHandler = [KGBasicChallengeHandler create];
     [challengeHandler setLoginHandler:loginHandler];
-    [KGChallengeHandlers setDefault:challengeHandler];
     
     
+    KGWebSocketFactory* factory = [KGWebSocketFactory createWebSocketFactory];
+    [factory setClientIdentity:_identity];
+    [factory setDefaultChallengeHandler:challengeHandler];
+    _websocket = [factory createWebSocket:[NSURL URLWithString:location] protocols:nil];
     
-    
-    _websocket = [KGWebSocket connectionWithURLString:location];
     [self setupWebSocketListeners];
         
     [_websocket connect];
@@ -214,7 +220,7 @@ extern SecIdentityRef KGWebSocketIdentity;
         });
     };
     
-    _websocket.didCloseWithCode = ^(KGWebSocket* websocket, NSInteger code, NSString* reason, BOOL wasClean) {
+    _websocket.didClose = ^(KGWebSocket* websocket, NSInteger code, NSString* reason, BOOL wasClean) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [ref log:[@"CLOSED" stringByAppendingFormat:@"(%i)", code]];
             [ref updateUIcomponents:NO];
@@ -264,7 +270,6 @@ extern SecIdentityRef KGWebSocketIdentity;
         if (_reconnect) {
             //connection was open when application enter background, reconnect!
             NSString *location = self.uriTextField.text;
-            _websocket = [KGWebSocket connectionWithURLString:location];
             [self setupWebSocketListeners];
             
             [_websocket connect];
