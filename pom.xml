@@ -4,189 +4,189 @@
     Copyright (c) 2007-2012, Kaazing Corporation. All rights reserved.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>com.kaazing.gateway.core</groupId>
-    <artifactId>com.kaazing.gateway.core.common</artifactId>
-    <version>1.0.0.10</version>
-  </parent>
+    <parent>
+        <groupId>com.kaazing.gateway.core</groupId>
+        <artifactId>com.kaazing.gateway.core.common</artifactId>
+        <version>1.0.0.10</version>
+    </parent>
 
-  <groupId>com.kaazing.gateway</groupId>
-  <artifactId>com.kaazing.gateway.client.ios.demo</artifactId>
-  <packaging>pom</packaging>
-  <version>4.0.0.0-SNAPSHOT</version>
-  <name>Kaazing WebSocket Gateway - iOS Client Demo</name>
+    <groupId>com.kaazing.gateway</groupId>
+    <artifactId>com.kaazing.gateway.client.ios.demo</artifactId>
+    <packaging>pom</packaging>
+    <version>4.0.0.0-SNAPSHOT</version>
+    <name>Kaazing WebSocket Gateway - iOS Client Demo</name>
 
 
-  <organization>
-    <name>Kaazing Corporation</name>
-  </organization>
-  <inceptionYear>2007</inceptionYear>
+    <organization>
+        <name>Kaazing Corporation</name>
+    </organization>
+    <inceptionYear>2007</inceptionYear>
 
-  <scm>
-      <connection>scm:svn:http://svn.kaazing.wan/gateway.client.ios.demo/trunk</connection>
-      <url>http://fisheye.kaazing.wan/browse/KaazingSVN/gateway.client.ios.demo/trunk</url>
-  </scm>
-  <dependencies>
-      <!-- iOS library -->
-      <dependency>
-          <groupId>com.kaazing.gateway</groupId>
-          <artifactId>com.kaazing.gateway.client.ios</artifactId>
-          <version>4.0.0.0-SNAPSHOT</version>
-          <classifier>bin</classifier>
-          <type>zip</type>
-      </dependency>
+    <scm>
+        <connection>scm:svn:http://svn.kaazing.wan/gateway.client.ios.demo.clientCertificate/trunk</connection>
+        <url>http://fisheye.kaazing.wan/browse/KaazingSVN/gateway.client.ios.demo.clientCertificate/trunk</url>
+    </scm>
+    <dependencies>
+        <!-- iOS library -->
+        <dependency>
+            <groupId>com.kaazing.gateway</groupId>
+            <artifactId>com.kaazing.gateway.client.ios</artifactId>
+            <version>4.0.0.0-SNAPSHOT</version>
+            <classifier>bin</classifier>
+            <type>zip</type>
+        </dependency>
 
-      <!-- demo resources / webpages -->
-      <dependency>
-          <groupId>com.kaazing.gateway.core</groupId>
-          <artifactId>com.kaazing.gateway.core.demo.resources</artifactId>
-          <version>3.3.0.27</version>
-          <type>zip</type>
-          <classifier>headers</classifier>
-      </dependency>
-  </dependencies>
+        <!-- demo resources / webpages -->
+        <dependency>
+            <groupId>com.kaazing.gateway.core</groupId>
+            <artifactId>com.kaazing.gateway.core.demo.resources</artifactId>
+            <version>3.3.0.27</version>
+            <type>zip</type>
+            <classifier>headers</classifier>
+        </dependency>
+    </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>1.2.1</version>
-        <executions>
-          <execution>
-            <id>clean-previous-build</id>
-            <phase>clean</phase>
-            <configuration>
-              <executable>rm</executable>
-              <arguments>
-                <argument>-rf</argument>
-                <argument>src/main/Xcode/usr</argument>
-              </arguments>
-            </configuration>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <id>clean-previous-build</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <executable>rm</executable>
+                            <arguments>
+                                <argument>-rf</argument>
+                                <argument>src/main/Xcode/usr</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
-      <!-- Copy the demo resources -->
-      <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <executions>
-              <execution>
-                  <goals>
-                      <goal>resources</goal>
-                  </goals>
-                  <configuration>
-                      <outputDirectory>target/content</outputDirectory>
-                  </configuration>
-              </execution>
-          </executions>
-      </plugin>
+            <!-- Copy the demo resources -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target/content</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
-      <plugin>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>unpack-content</id>
-            <phase>process-sources</phase>
-            <goals>
-              <goal>unpack</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>unpack-content</id>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
 
-                <artifactItem>
-                  <groupId>com.kaazing.gateway.html5</groupId>
-                  <artifactId>com.kaazing.gateway.html5.client.ios</artifactId>
-                  <classifier>bin</classifier>
-                  <type>zip</type>
-	              <includes>**</includes>
-	              <outputDirectory>src/main/Xcode/usr</outputDirectory>
-                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.kaazing.gateway.html5</groupId>
+                                    <artifactId>com.kaazing.gateway.html5.client.ios</artifactId>
+                                    <classifier>bin</classifier>
+                                    <type>zip</type>
+                                    <includes>**</includes>
+                                    <outputDirectory>src/main/Xcode/usr</outputDirectory>
+                                </artifactItem>
 
-                <artifactItem>
-                  <groupId>com.kaazing.gateway.core</groupId>
-                  <artifactId>com.kaazing.gateway.core.demo.resources</artifactId>
-                  <type>zip</type>
-                  <classifier>headers</classifier>
-                  <includes>**/*</includes>
-                  <overWrite>true</overWrite>
-                  <outputDirectory>target/headers</outputDirectory>
-                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.kaazing.gateway.core</groupId>
+                                    <artifactId>com.kaazing.gateway.core.demo.resources</artifactId>
+                                    <type>zip</type>
+                                    <classifier>headers</classifier>
+                                    <includes>**/*</includes>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>target/headers</outputDirectory>
+                                </artifactItem>
 
-              </artifactItems>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
-      <!-- Build the demo index file -->
-      <plugin>
-          <artifactId>maven-antrun-plugin</artifactId>
-          <executions>
-              <execution>
-                  <id>assemble-index-files</id>
-                  <phase>package</phase>
-                  <goals>
-                    <goal>run</goal>
-                  </goals>
-                  <configuration>
-                    <tasks>
-                      <concat destfile="${basedir}/target/content/index.html">
-                        <filelist dir="${basedir}/target/headers" files="header.html" />
-                        <filelist dir="${basedir}/src/main/content" files="content.html" />
-                        <filelist dir="${basedir}/target/headers" files="footer.html" />
-                      </concat>
-                    </tasks>
-                  </configuration>
-              </execution>
-          </executions>
-      </plugin>
+            <!-- Build the demo index file -->
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>assemble-index-files</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <concat destfile="${basedir}/target/content/index.html">
+                                    <filelist dir="${basedir}/target/headers" files="header.html" />
+                                    <filelist dir="${basedir}/src/main/content" files="content.html" />
+                                    <filelist dir="${basedir}/target/headers" files="footer.html" />
+                                </concat>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
-      <!-- Attach Demo Source Files -->
-      <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <!-- this works for assembly build, but breaks from top-level -->
-          <configuration>
-              <filters>
-                  <filter>src/main/assembly/filter.properties</filter>
-              </filters>
-          </configuration>
-          <executions>
-              <execution>
-                  <phase>verify</phase>
-                  <goals>
-                      <goal>attached</goal>
-                  </goals>
-                  <configuration>
-                      <descriptors>
-                          <descriptor>src/main/assembly/sources.xml</descriptor>
-                          <descriptor>src/main/assembly/content.xml</descriptor>
-                      </descriptors>
-                  </configuration>
-              </execution>
-          </executions>
-      </plugin>
-      <plugin>
-        <groupId>com.google.code.maven-license-plugin</groupId>
-        <artifactId>maven-license-plugin</artifactId>
-        <configuration>
-          <mapping>
-            <xaml>xml</xaml>
-            <cs>java</cs>
-          </mapping>
-          <excludes>
-          <!-- Demo HTML snippet -->
-            <exclude>src/main/content/content.html</exclude>
-            </excludes>
-          </configuration>
-       </plugin>
-    </plugins>
-  </build>
+            <!-- Attach Demo Source Files -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <!-- this works for assembly build, but breaks from top-level -->
+                <configuration>
+                    <filters>
+                        <filter>src/main/assembly/filter.properties</filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/sources.xml</descriptor>
+                                <descriptor>src/main/assembly/content.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.google.code.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <configuration>
+                    <mapping>
+                        <xaml>xml</xaml>
+                        <cs>java</cs>
+                    </mapping>
+                    <excludes>
+                        <!-- Demo HTML snippet -->
+                        <exclude>src/main/content/content.html</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
