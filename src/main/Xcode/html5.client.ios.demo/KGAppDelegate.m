@@ -1,10 +1,6 @@
-//
-//  KGAppDelegate.m
-//  html5.client.ios.demo
-//
-//  Created by Matthias Wessendorf on 20.06.12.
-//  Copyright (c) 2012 Kaazing. All rights reserved.
-//
+/**
+ * Copyright (c) 2007-2013, Kaazing Corporation. All rights reserved.
+ */
 
 #import "KGAppDelegate.h"
 #import "KGViewController.h"

@@ -1,13 +1,9 @@
-//
-//  KGViewController.m
-//  html5.client.ios.demo
-//
-//  Created by Matthias Wessendorf on 20.06.12.
-//  Copyright (c) 2012 Kaazing. All rights reserved.
-//
+/**
+ * Copyright (c) 2007-2013, Kaazing Corporation. All rights reserved.
+ */
 
 #import "KGViewController.h"
-#import "WebSocket.h"
+#import <KGWebSocket/WebSocket.h>
 
 //LoginHandler API:
 @interface KGDemoLoginHandler : KGLoginHandler
