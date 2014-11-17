@@ -26,7 +26,7 @@
     <inceptionYear>2007</inceptionYear>
 
     <scm>
-        <connection>scm:svn:http://svn.kaazing.wan/gateway.client.ios.demo.clientCertificate/trunk</connection>
+        <connection>scm:git:ssh://git@stash.kaazing.wan/KG2/gateway.client.ios.demo.clientCertificate.git</connection>
         <url>http://fisheye.kaazing.wan/browse/KaazingSVN/gateway.client.ios.demo.clientCertificate/trunk</url>
     </scm>
     <dependencies>
