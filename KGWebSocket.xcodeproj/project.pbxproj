@@ -1,0 +1,1398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04398DEE19991CA000446889 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04398DED19991CA000446889 /* XCTest.framework */; };
+		400C24BE172DB97800465C9F /* KGConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 400C24BC172DB97800465C9F /* KGConstants.h */; };
+		400C24BF172DB97800465C9F /* KGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 400C24BD172DB97800465C9F /* KGConstants.m */; };
+		402517211757DB660043B68D /* KGWebSocketTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 402517201757DB660043B68D /* KGWebSocketTest.m */; };
+		402517221757DD2F0043B68D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750851537002700FF9FA2 /* CFNetwork.framework */; };
+		402517231757DD330043B68D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750811537000100FF9FA2 /* Security.framework */; };
+		402517241757DD610043B68D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750871537003B00FF9FA2 /* libicucore.dylib */; };
+		402517251757DD640043B68D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E90D13144F17D600666B29 /* Foundation.framework */; };
+		403B39BB17187FAC0036890C /* KGBase64Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39A617187FAC0036890C /* KGBase64Util.h */; };
+		403B39BC17187FAC0036890C /* KGBase64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39A717187FAC0036890C /* KGBase64Util.m */; };
+		403B39BD17187FAC0036890C /* KGByteBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39A817187FAC0036890C /* KGByteBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		403B39BE17187FAC0036890C /* KGByteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39A917187FAC0036890C /* KGByteBuffer.m */; };
+		403B39C117187FAC0036890C /* KGWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39AC17187FAC0036890C /* KGWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		403B39C217187FAC0036890C /* KGWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39AD17187FAC0036890C /* KGWebSocket.m */; };
+		403B39C317187FAC0036890C /* KGWebSocket+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39AE17187FAC0036890C /* KGWebSocket+Internal.h */; };
+		403B39C417187FAC0036890C /* KGWebSocketDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39AF17187FAC0036890C /* KGWebSocketDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		403B39C517187FAC0036890C /* KGWebSocketExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B017187FAC0036890C /* KGWebSocketExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		403B39C617187FAC0036890C /* KGWebSocketExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B117187FAC0036890C /* KGWebSocketExtension.m */; };
+		403B39C717187FAC0036890C /* KGWebSocketExtensionParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B217187FAC0036890C /* KGWebSocketExtensionParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		403B39C817187FAC0036890C /* KGWebSocketExtensionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B317187FAC0036890C /* KGWebSocketExtensionParameter.m */; };
+		403B39C917187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B417187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h */; };
+		403B39CA17187FAC0036890C /* KGWebSocketFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B517187FAC0036890C /* KGWebSocketFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		403B39CB17187FAC0036890C /* KGWebSocketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B617187FAC0036890C /* KGWebSocketFactory.m */; };
+		403B39CC17187FAC0036890C /* KGParameterValuesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B717187FAC0036890C /* KGParameterValuesContainer.h */; };
+		403B39CD17187FAC0036890C /* KGParameterValuesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B817187FAC0036890C /* KGParameterValuesContainer.m */; };
+		403B39CE17187FAC0036890C /* NSString+KZNGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B917187FAC0036890C /* NSString+KZNGAdditions.h */; };
+		403B39CF17187FAC0036890C /* NSString+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39BA17187FAC0036890C /* NSString+KZNGAdditions.m */; };
+		403B39E017187FD70036890C /* KGChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D017187FD70036890C /* KGChannel.h */; };
+		403B39E117187FD70036890C /* KGChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39D117187FD70036890C /* KGChannel.m */; };
+		403B39E217187FD70036890C /* KGCommandMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D217187FD70036890C /* KGCommandMessage.h */; };
+		403B39E317187FD70036890C /* KGDecoderInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D317187FD70036890C /* KGDecoderInput.h */; };
+		403B39E417187FD70036890C /* KGDecoderInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39D417187FD70036890C /* KGDecoderInput.m */; };
+		403B39E517187FD70036890C /* KGDecoderListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D517187FD70036890C /* KGDecoderListener.h */; };
+		403B39E617187FD70036890C /* KGEncoderOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D617187FD70036890C /* KGEncoderOutput.h */; };
+		403B39E717187FD70036890C /* KGHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D717187FD70036890C /* KGHandler.h */; };
+		403B39E817187FD70036890C /* KGTransportFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D817187FD70036890C /* KGTransportFactory.h */; };
+		403B39E917187FD70036890C /* KGTransportFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39D917187FD70036890C /* KGTransportFactory.m */; };
+		403B39EA17187FD70036890C /* KGWebSocketChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39DA17187FD70036890C /* KGWebSocketChannel.h */; };
+		403B39EB17187FD70036890C /* KGWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39DB17187FD70036890C /* KGWebSocketChannel.m */; };
+		403B39EC17187FD70036890C /* KGWebSocketHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39DC17187FD70036890C /* KGWebSocketHandler.h */; };
+		403B39ED17187FD70036890C /* KGWebSocketHandlerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39DD17187FD70036890C /* KGWebSocketHandlerAdapter.h */; };
+		403B39EE17187FD70036890C /* KGWebSocketHandlerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39DE17187FD70036890C /* KGWebSocketHandlerAdapter.m */; };
+		403B39EF17187FD70036890C /* KGWebSocketHandlerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39DF17187FD70036890C /* KGWebSocketHandlerListener.h */; };
+		403B39F217187FF50036890C /* KGAuthenticationUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39F017187FF50036890C /* KGAuthenticationUtil.h */; };
+		403B39F317187FF50036890C /* KGAuthenticationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39F117187FF50036890C /* KGAuthenticationUtil.m */; };
+		403B3A06171880080036890C /* KGHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39F4171880080036890C /* KGHttpRequest.h */; };
+		403B3A07171880080036890C /* KGHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39F5171880080036890C /* KGHttpRequest.m */; };
+		403B3A08171880080036890C /* KGHttpRequestAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39F6171880080036890C /* KGHttpRequestAuthenticationHandler.h */; };
+		403B3A09171880080036890C /* KGHttpRequestAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39F7171880080036890C /* KGHttpRequestAuthenticationHandler.m */; };
+		403B3A0A171880080036890C /* KGHttpRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39F8171880080036890C /* KGHttpRequestFactory.h */; };
+		403B3A0B171880080036890C /* KGHttpRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39F9171880080036890C /* KGHttpRequestHandler.h */; };
+		403B3A0C171880080036890C /* KGHttpRequestHandlerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39FA171880080036890C /* KGHttpRequestHandlerAdapter.h */; };
+		403B3A0D171880080036890C /* KGHttpRequestHandlerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39FB171880080036890C /* KGHttpRequestHandlerAdapter.m */; };
+		403B3A0E171880080036890C /* KGHttpRequestHandlerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39FC171880080036890C /* KGHttpRequestHandlerFactory.h */; };
+		403B3A0F171880080036890C /* KGHttpRequestIoHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39FD171880080036890C /* KGHttpRequestIoHandler.h */; };
+		403B3A10171880080036890C /* KGHttpRequestIoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39FE171880080036890C /* KGHttpRequestIoHandler.m */; };
+		403B3A11171880080036890C /* KGHttpRequestListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39FF171880080036890C /* KGHttpRequestListener.h */; };
+		403B3A12171880080036890C /* KGHttpRequestLoggingHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A00171880080036890C /* KGHttpRequestLoggingHandler.h */; };
+		403B3A13171880080036890C /* KGHttpRequestLoggingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A01171880080036890C /* KGHttpRequestLoggingHandler.m */; };
+		403B3A14171880080036890C /* KGHttpRequestRedirectHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A02171880080036890C /* KGHttpRequestRedirectHandler.h */; };
+		403B3A15171880080036890C /* KGHttpRequestRedirectHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A03171880080036890C /* KGHttpRequestRedirectHandler.m */; };
+		403B3A16171880080036890C /* KGHttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A04171880080036890C /* KGHttpResponse.h */; };
+		403B3A17171880080036890C /* KGHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A05171880080036890C /* KGHttpResponse.m */; };
+		403B3A26171880300036890C /* KGWebSocketCompositeChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A18171880300036890C /* KGWebSocketCompositeChannel.h */; };
+		403B3A27171880300036890C /* KGWebSocketCompositeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A19171880300036890C /* KGWebSocketCompositeChannel.m */; };
+		403B3A28171880300036890C /* KGWebSocketCompositeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A1A171880300036890C /* KGWebSocketCompositeHandler.h */; };
+		403B3A29171880300036890C /* KGWebSocketCompositeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A1B171880300036890C /* KGWebSocketCompositeHandler.m */; };
+		403B3A2A171880300036890C /* KGWebSocketHandshakeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A1C171880300036890C /* KGWebSocketHandshakeObject.h */; };
+		403B3A2B171880300036890C /* KGWebSocketHandshakeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A1D171880300036890C /* KGWebSocketHandshakeObject.m */; };
+		403B3A2C171880300036890C /* KGWebSocketLoggingHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A1E171880300036890C /* KGWebSocketLoggingHandler.h */; };
+		403B3A2D171880300036890C /* KGWebSocketLoggingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A1F171880300036890C /* KGWebSocketLoggingHandler.m */; };
+		403B3A2E171880300036890C /* KGWebSocketReAuthenticateHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A20171880300036890C /* KGWebSocketReAuthenticateHandler.h */; };
+		403B3A2F171880300036890C /* KGWebSocketReAuthenticateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A21171880300036890C /* KGWebSocketReAuthenticateHandler.m */; };
+		403B3A30171880300036890C /* KGWebSocketSelectedChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A22171880300036890C /* KGWebSocketSelectedChannel.h */; };
+		403B3A31171880300036890C /* KGWebSocketSelectedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A23171880300036890C /* KGWebSocketSelectedChannel.m */; };
+		403B3A32171880300036890C /* KGWebSocketSelectedHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A24171880300036890C /* KGWebSocketSelectedHandler.h */; };
+		403B3A33171880300036890C /* KGWebSocketSelectedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A25171880300036890C /* KGWebSocketSelectedHandler.m */; };
+		403B3A4C1718806E0036890C /* KGCreateChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A341718806E0036890C /* KGCreateChannel.h */; };
+		403B3A4D1718806E0036890C /* KGCreateChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A351718806E0036890C /* KGCreateChannel.m */; };
+		403B3A4E1718806E0036890C /* KGCreateHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A361718806E0036890C /* KGCreateHandler.h */; };
+		403B3A4F1718806E0036890C /* KGCreateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A371718806E0036890C /* KGCreateHandler.m */; };
+		403B3A501718806E0036890C /* KGCreateHandlerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A381718806E0036890C /* KGCreateHandlerListener.h */; };
+		403B3A511718806E0036890C /* KGDownstreamChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A391718806E0036890C /* KGDownstreamChannel.h */; };
+		403B3A521718806E0036890C /* KGDownstreamChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A3A1718806E0036890C /* KGDownstreamChannel.m */; };
+		403B3A531718806E0036890C /* KGDownstreamHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A3B1718806E0036890C /* KGDownstreamHandler.h */; };
+		403B3A541718806E0036890C /* KGDownstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A3C1718806E0036890C /* KGDownstreamHandler.m */; };
+		403B3A551718806E0036890C /* KGDownstreamHandlerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A3D1718806E0036890C /* KGDownstreamHandlerListener.h */; };
+		403B3A561718806E0036890C /* KGUpstreamChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A3E1718806E0036890C /* KGUpstreamChannel.h */; };
+		403B3A571718806E0036890C /* KGUpstreamChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A3F1718806E0036890C /* KGUpstreamChannel.m */; };
+		403B3A581718806E0036890C /* KGUpstreamHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A401718806E0036890C /* KGUpstreamHandler.h */; };
+		403B3A591718806E0036890C /* KGUpstreamHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A411718806E0036890C /* KGUpstreamHandler.m */; };
+		403B3A5A1718806E0036890C /* KGUpstreamHandlerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A421718806E0036890C /* KGUpstreamHandlerListener.h */; };
+		403B3A5B1718806E0036890C /* KGWebSocketEmulatedChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A431718806E0036890C /* KGWebSocketEmulatedChannel.h */; };
+		403B3A5C1718806E0036890C /* KGWebSocketEmulatedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A441718806E0036890C /* KGWebSocketEmulatedChannel.m */; };
+		403B3A5D1718806E0036890C /* KGWebSocketEmulatedDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A451718806E0036890C /* KGWebSocketEmulatedDecoder.h */; };
+		403B3A5E1718806E0036890C /* KGWebSocketEmulatedDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A461718806E0036890C /* KGWebSocketEmulatedDecoder.m */; };
+		403B3A5F1718806E0036890C /* KGWebSocketEmulatedDecoderListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A471718806E0036890C /* KGWebSocketEmulatedDecoderListener.h */; };
+		403B3A601718806E0036890C /* KGWebSocketEmulatedEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A481718806E0036890C /* KGWebSocketEmulatedEncoder.h */; };
+		403B3A611718806E0036890C /* KGWebSocketEmulatedEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A491718806E0036890C /* KGWebSocketEmulatedEncoder.m */; };
+		403B3A621718806E0036890C /* KGWebSocketEmulatedHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A4A1718806E0036890C /* KGWebSocketEmulatedHandler.h */; };
+		403B3A631718806E0036890C /* KGWebSocketEmulatedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A4B1718806E0036890C /* KGWebSocketEmulatedHandler.m */; };
+		403B3A76171880810036890C /* KGWebSocketNativeAuthenticationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A64171880800036890C /* KGWebSocketNativeAuthenticationHandler.h */; };
+		403B3A77171880810036890C /* KGWebSocketNativeAuthenticationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A65171880800036890C /* KGWebSocketNativeAuthenticationHandler.m */; };
+		403B3A78171880810036890C /* KGWebSocketNativeBalancingHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A66171880800036890C /* KGWebSocketNativeBalancingHandler.h */; };
+		403B3A79171880810036890C /* KGWebSocketNativeBalancingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A67171880800036890C /* KGWebSocketNativeBalancingHandler.m */; };
+		403B3A7A171880810036890C /* KGWebSocketNativeChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A68171880800036890C /* KGWebSocketNativeChannel.h */; };
+		403B3A7B171880810036890C /* KGWebSocketNativeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A69171880800036890C /* KGWebSocketNativeChannel.m */; };
+		403B3A7C171880810036890C /* KGWebSocketNativeCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A6A171880810036890C /* KGWebSocketNativeCodec.h */; };
+		403B3A7D171880810036890C /* KGWebSocketNativeCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A6B171880810036890C /* KGWebSocketNativeCodec.m */; };
+		403B3A80171880810036890C /* KGWebSocketNativeDelegateHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A6E171880810036890C /* KGWebSocketNativeDelegateHandler.h */; };
+		403B3A81171880810036890C /* KGWebSocketNativeDelegateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A6F171880810036890C /* KGWebSocketNativeDelegateHandler.m */; };
+		403B3A82171880810036890C /* KGWebSocketNativeEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A70171880810036890C /* KGWebSocketNativeEncoder.h */; };
+		403B3A83171880810036890C /* KGWebSocketNativeEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A71171880810036890C /* KGWebSocketNativeEncoder.m */; };
+		403B3A84171880810036890C /* KGWebSocketNativeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A72171880810036890C /* KGWebSocketNativeHandler.h */; };
+		403B3A85171880810036890C /* KGWebSocketNativeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A73171880810036890C /* KGWebSocketNativeHandler.m */; };
+		403B3A86171880810036890C /* KGWebSocketNativeHandshakeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A74171880810036890C /* KGWebSocketNativeHandshakeHandler.h */; };
+		403B3A87171880810036890C /* KGWebSocketNativeHandshakeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A75171880810036890C /* KGWebSocketNativeHandshakeHandler.m */; };
+		403B3A9C171880B30036890C /* KGAuthenticateEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A88171880B30036890C /* KGAuthenticateEvent.h */; };
+		403B3A9D171880B30036890C /* KGAuthenticateEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A89171880B30036890C /* KGAuthenticateEvent.m */; };
+		403B3A9E171880B30036890C /* KGCloseEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A8A171880B30036890C /* KGCloseEvent.h */; };
+		403B3A9F171880B30036890C /* KGCloseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A8B171880B30036890C /* KGCloseEvent.m */; };
+		403B3AA0171880B30036890C /* KGErrorEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A8C171880B30036890C /* KGErrorEvent.h */; };
+		403B3AA1171880B30036890C /* KGErrorEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A8D171880B30036890C /* KGErrorEvent.m */; };
+		403B3AA2171880B30036890C /* KGEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A8E171880B30036890C /* KGEvent.h */; };
+		403B3AA3171880B30036890C /* KGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A8F171880B30036890C /* KGEvent.m */; };
+		403B3AA4171880B30036890C /* KGMessageEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A90171880B30036890C /* KGMessageEvent.h */; };
+		403B3AA5171880B30036890C /* KGMessageEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A91171880B30036890C /* KGMessageEvent.m */; };
+		403B3AA6171880B30036890C /* KGOpenEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A92171880B30036890C /* KGOpenEvent.h */; };
+		403B3AA7171880B30036890C /* KGOpenEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A93171880B30036890C /* KGOpenEvent.m */; };
+		403B3AA8171880B30036890C /* KGRedirectEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A94171880B30036890C /* KGRedirectEvent.h */; };
+		403B3AA9171880B30036890C /* KGRedirectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A95171880B30036890C /* KGRedirectEvent.m */; };
+		403B3AAA171880B30036890C /* KGWebSocketDelegateImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A96171880B30036890C /* KGWebSocketDelegateImpl.h */; };
+		403B3AAB171880B30036890C /* KGWebSocketDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A97171880B30036890C /* KGWebSocketDelegateImpl.m */; };
+		403B3AAC171880B30036890C /* KGWebSocketDelegateListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A98171880B30036890C /* KGWebSocketDelegateListener.h */; };
+		403B3AAD171880B30036890C /* KGWebSocketNativeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A99171880B30036890C /* KGWebSocketNativeDelegate.h */; };
+		403B3AAE171880B30036890C /* KGWsMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A9A171880B30036890C /* KGWsMessage.h */; };
+		403B3AAF171880B30036890C /* KGWsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A9B171880B30036890C /* KGWsMessage.m */; };
+		403B3ABE171880FA0036890C /* KGGenericURI.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3AB0171880FA0036890C /* KGGenericURI.h */; };
+		403B3ABF171880FA0036890C /* KGGenericURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3AB1171880FA0036890C /* KGGenericURI.m */; };
+		403B3AC0171880FA0036890C /* KGHexUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3AB2171880FA0036890C /* KGHexUtil.h */; };
+		403B3AC1171880FA0036890C /* KGHexUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3AB3171880FA0036890C /* KGHexUtil.m */; };
+		403B3AC2171880FA0036890C /* KGHttpURI.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3AB4171880FA0036890C /* KGHttpURI.h */; };
+		403B3AC3171880FA0036890C /* KGHttpURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3AB5171880FA0036890C /* KGHttpURI.m */; };
+		403B3AC4171880FA0036890C /* KGWSCompositeURI.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3AB6171880FA0036890C /* KGWSCompositeURI.h */; };
+		403B3AC5171880FA0036890C /* KGWSCompositeURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3AB7171880FA0036890C /* KGWSCompositeURI.m */; };
+		403B3AC6171880FA0036890C /* KGWSURI.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3AB8171880FA0036890C /* KGWSURI.h */; };
+		403B3AC7171880FA0036890C /* KGWSURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3AB9171880FA0036890C /* KGWSURI.m */; };
+		403B3AC8171880FA0036890C /* NSArray+KZNGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3ABA171880FA0036890C /* NSArray+KZNGAdditions.h */; };
+		403B3AC9171880FA0036890C /* NSArray+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3ABB171880FA0036890C /* NSArray+KZNGAdditions.m */; };
+		403B3ACA171880FA0036890C /* NSURL+KZNGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3ABC171880FA0036890C /* NSURL+KZNGAdditions.h */; };
+		403B3ACB171880FA0036890C /* NSURL+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3ABD171880FA0036890C /* NSURL+KZNGAdditions.m */; };
+		40401F671719261F0051621A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40401F651719261F0051621A /* InfoPlist.strings */; };
+		40401F71171927110051621A /* libKGWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E90D10144F17D600666B29 /* libKGWebSocket.a */; };
+		40401F77171928D10051621A /* KGByteBufferTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40401F76171928D10051621A /* KGByteBufferTest.m */; };
+		4047AC5217208CFA008C0A66 /* KGWebSocketExtension+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4047AC5017208CFA008C0A66 /* KGWebSocketExtension+Internal.h */; };
+		4076EE18170E047C00497AA1 /* KGChallengeHandler+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4076EE17170E047C00497AA1 /* KGChallengeHandler+Internal.h */; };
+		4076EFB2170E296600497AA1 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4076EFB1170E296600497AA1 /* WebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40D15A0517590CC300B437D4 /* KGWSCompositeURITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D15A0417590CC300B437D4 /* KGWSCompositeURITest.m */; };
+		40D15A08175911A600B437D4 /* KGWebSocketFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D15A07175911A600B437D4 /* KGWebSocketFactoryTest.m */; };
+		40D23182171CB59F00343A29 /* KGTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D23180171CB59F00343A29 /* KGTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40D23183171CB59F00343A29 /* KGTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D23181171CB59F00343A29 /* KGTracer.m */; };
+		40D865041759661B004C5BFF /* KGBasicChallengeHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D865031759661B004C5BFF /* KGBasicChallengeHandlerTest.m */; };
+		40D86508175979C0004C5BFF /* KGChallengeHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86507175979C0004C5BFF /* KGChallengeHandlerTest.m */; };
+		40D8650B17597D4E004C5BFF /* KGTestLoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D8650A17597D4E004C5BFF /* KGTestLoginHandler.m */; };
+		40D8650E17597E09004C5BFF /* KGChallengeRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D8650D17597E08004C5BFF /* KGChallengeRequestTest.m */; };
+		40D86515175D20EB004C5BFF /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D86514175D20EB004C5BFF /* libOCMock.a */; };
+		40D86518175D3098004C5BFF /* TestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86517175D3098004C5BFF /* TestUtil.m */; };
+		40D8651E175D5F23004C5BFF /* KGWebSocketDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D8651D175D5F23004C5BFF /* KGWebSocketDelegateTest.m */; };
+		A01818791518F4BC0082EC25 /* KGChallengeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A01818771518F4BB0082EC25 /* KGChallengeResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A018187A1518F4BC0082EC25 /* KGChallengeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A01818781518F4BB0082EC25 /* KGChallengeResponse.m */; };
+		A0227185157E1F5700CC1B51 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = A0227183157E1F5600CC1B51 /* Token.h */; };
+		A0227186157E1F5700CC1B51 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = A0227184157E1F5700CC1B51 /* Token.m */; };
+		A0227189157E1FEF00CC1B51 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = A0227187157E1FEF00CC1B51 /* Node.h */; };
+		A022718A157E1FEF00CC1B51 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = A0227188157E1FEF00CC1B51 /* Node.m */; };
+		A022718D157E202F00CC1B51 /* OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = A022718B157E202E00CC1B51 /* OrderedDictionary.h */; };
+		A022718E157E202F00CC1B51 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A022718C157E202E00CC1B51 /* OrderedDictionary.m */; };
+		A0383E42156B893B0078DE15 /* BasicChallengeResponseFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A0383E40156B893B0078DE15 /* BasicChallengeResponseFactory.h */; };
+		A0383E43156B893B0078DE15 /* BasicChallengeResponseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A0383E41156B893B0078DE15 /* BasicChallengeResponseFactory.m */; };
+		A0383E46156B894D0078DE15 /* DefaultBasicChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A0383E44156B894D0078DE15 /* DefaultBasicChallengeHandler.h */; };
+		A0383E47156B894D0078DE15 /* DefaultBasicChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A0383E45156B894D0078DE15 /* DefaultBasicChallengeHandler.m */; };
+		A0383E4A156B895D0078DE15 /* DefaultDispatchChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A0383E48156B895D0078DE15 /* DefaultDispatchChallengeHandler.h */; };
+		A0383E4B156B895D0078DE15 /* DefaultDispatchChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A0383E49156B895D0078DE15 /* DefaultDispatchChallengeHandler.m */; };
+		A0383E4F156B89900078DE15 /* RealmUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0383E4D156B89900078DE15 /* RealmUtils.h */; };
+		A0383E50156B89900078DE15 /* RealmUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0383E4E156B89900078DE15 /* RealmUtils.m */; };
+		A06FB2D0156AA4340028064D /* KGChallengeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FB2CE156AA4340028064D /* KGChallengeRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06FB2D1156AA4340028064D /* KGChallengeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2CF156AA4340028064D /* KGChallengeRequest.m */; };
+		A06FB2D5156AA4520028064D /* KGLoginHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FB2D3156AA4510028064D /* KGLoginHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06FB2D6156AA4520028064D /* KGLoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2D4156AA4520028064D /* KGLoginHandler.m */; };
+		A06FB2D9156AA46D0028064D /* KGChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FB2D7156AA46D0028064D /* KGChallengeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06FB2DA156AA46D0028064D /* KGChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2D8156AA46D0028064D /* KGChallengeHandler.m */; };
+		A06FB2E1156AA49D0028064D /* KGDispatchChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FB2DF156AA49D0028064D /* KGDispatchChallengeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06FB2E2156AA49D0028064D /* KGDispatchChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2E0156AA49D0028064D /* KGDispatchChallengeHandler.m */; };
+		A06FB2E5156AA4AE0028064D /* KGNegotiableChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FB2E3156AA4AD0028064D /* KGNegotiableChallengeHandler.h */; settings = {ATTRIBUTES = (); }; };
+		A06FB2E6156AA4AE0028064D /* KGNegotiableChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2E4156AA4AE0028064D /* KGNegotiableChallengeHandler.m */; };
+		A06FB2E9156AA4BB0028064D /* KGNegotiateChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FB2E7156AA4BA0028064D /* KGNegotiateChallengeHandler.h */; settings = {ATTRIBUTES = (); }; };
+		A06FB2EA156AA4BB0028064D /* KGNegotiateChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2E8156AA4BA0028064D /* KGNegotiateChallengeHandler.m */; };
+		A06FB2ED156AA4CA0028064D /* KGBasicChallengeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A06FB2EB156AA4CA0028064D /* KGBasicChallengeHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06FB2EE156AA4CA0028064D /* KGBasicChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2EC156AA4CA0028064D /* KGBasicChallengeHandler.m */; };
+		A0B750841537000D00FF9FA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750811537000100FF9FA2 /* Security.framework */; };
+		A0B750861537002700FF9FA2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750851537002700FF9FA2 /* CFNetwork.framework */; };
+		A0B750881537003B00FF9FA2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750871537003B00FF9FA2 /* libicucore.dylib */; };
+		A0E90D14144F17D600666B29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E90D13144F17D600666B29 /* Foundation.framework */; };
+		B5E56DFB190B607D00F80FBD /* KGResumableTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E56DF9190B607D00F80FBD /* KGResumableTimer.m */; };
+		B5E56DFC190B607D00F80FBD /* KGResumableTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E56DFA190B607D00F80FBD /* KGResumableTimer.h */; };
+		B5E56E00190B61EC00F80FBD /* KGResumableTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E56DFF190B61EC00F80FBD /* KGResumableTimerTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40401F6F1719270C0051621A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0E90D07144F17D600666B29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0E90D0F144F17D600666B29;
+			remoteInfo = Core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04398DED19991CA000446889 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		400C24BC172DB97800465C9F /* KGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGConstants.h; sourceTree = "<group>"; };
+		400C24BD172DB97800465C9F /* KGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGConstants.m; sourceTree = "<group>"; };
+		4025171F1757DB660043B68D /* KGWebSocketTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketTest.h; sourceTree = "<group>"; };
+		402517201757DB660043B68D /* KGWebSocketTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketTest.m; sourceTree = "<group>"; };
+		403B39A617187FAC0036890C /* KGBase64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGBase64Util.h; path = websocket/KGBase64Util.h; sourceTree = "<group>"; };
+		403B39A717187FAC0036890C /* KGBase64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGBase64Util.m; path = websocket/KGBase64Util.m; sourceTree = "<group>"; };
+		403B39A817187FAC0036890C /* KGByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGByteBuffer.h; path = websocket/KGByteBuffer.h; sourceTree = "<group>"; };
+		403B39A917187FAC0036890C /* KGByteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGByteBuffer.m; path = websocket/KGByteBuffer.m; sourceTree = "<group>"; };
+		403B39AC17187FAC0036890C /* KGWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocket.h; path = websocket/KGWebSocket.h; sourceTree = "<group>"; };
+		403B39AD17187FAC0036890C /* KGWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocket.m; path = websocket/KGWebSocket.m; sourceTree = "<group>"; };
+		403B39AE17187FAC0036890C /* KGWebSocket+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KGWebSocket+Internal.h"; path = "websocket/KGWebSocket+Internal.h"; sourceTree = "<group>"; };
+		403B39AF17187FAC0036890C /* KGWebSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketDelegate.h; path = websocket/KGWebSocketDelegate.h; sourceTree = "<group>"; };
+		403B39B017187FAC0036890C /* KGWebSocketExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketExtension.h; path = websocket/KGWebSocketExtension.h; sourceTree = "<group>"; };
+		403B39B117187FAC0036890C /* KGWebSocketExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketExtension.m; path = websocket/KGWebSocketExtension.m; sourceTree = "<group>"; };
+		403B39B217187FAC0036890C /* KGWebSocketExtensionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketExtensionParameter.h; path = websocket/KGWebSocketExtensionParameter.h; sourceTree = "<group>"; };
+		403B39B317187FAC0036890C /* KGWebSocketExtensionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketExtensionParameter.m; path = websocket/KGWebSocketExtensionParameter.m; sourceTree = "<group>"; };
+		403B39B417187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KGWebSocketExtensionParameter+Internal.h"; path = "websocket/KGWebSocketExtensionParameter+Internal.h"; sourceTree = "<group>"; };
+		403B39B517187FAC0036890C /* KGWebSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketFactory.h; path = websocket/KGWebSocketFactory.h; sourceTree = "<group>"; };
+		403B39B617187FAC0036890C /* KGWebSocketFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketFactory.m; path = websocket/KGWebSocketFactory.m; sourceTree = "<group>"; };
+		403B39B717187FAC0036890C /* KGParameterValuesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGParameterValuesContainer.h; path = websocket/KGParameterValuesContainer.h; sourceTree = "<group>"; };
+		403B39B817187FAC0036890C /* KGParameterValuesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGParameterValuesContainer.m; path = websocket/KGParameterValuesContainer.m; sourceTree = "<group>"; };
+		403B39B917187FAC0036890C /* NSString+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+KZNGAdditions.h"; path = "websocket/NSString+KZNGAdditions.h"; sourceTree = "<group>"; };
+		403B39BA17187FAC0036890C /* NSString+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+KZNGAdditions.m"; path = "websocket/NSString+KZNGAdditions.m"; sourceTree = "<group>"; };
+		403B39D017187FD70036890C /* KGChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGChannel.h; path = websocket/impl/KGChannel.h; sourceTree = "<group>"; };
+		403B39D117187FD70036890C /* KGChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGChannel.m; path = websocket/impl/KGChannel.m; sourceTree = "<group>"; };
+		403B39D217187FD70036890C /* KGCommandMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGCommandMessage.h; path = websocket/impl/KGCommandMessage.h; sourceTree = "<group>"; };
+		403B39D317187FD70036890C /* KGDecoderInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGDecoderInput.h; path = websocket/impl/KGDecoderInput.h; sourceTree = "<group>"; };
+		403B39D417187FD70036890C /* KGDecoderInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGDecoderInput.m; path = websocket/impl/KGDecoderInput.m; sourceTree = "<group>"; };
+		403B39D517187FD70036890C /* KGDecoderListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGDecoderListener.h; path = websocket/impl/KGDecoderListener.h; sourceTree = "<group>"; };
+		403B39D617187FD70036890C /* KGEncoderOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGEncoderOutput.h; path = websocket/impl/KGEncoderOutput.h; sourceTree = "<group>"; };
+		403B39D717187FD70036890C /* KGHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHandler.h; path = websocket/impl/KGHandler.h; sourceTree = "<group>"; };
+		403B39D817187FD70036890C /* KGTransportFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGTransportFactory.h; path = websocket/impl/KGTransportFactory.h; sourceTree = "<group>"; };
+		403B39D917187FD70036890C /* KGTransportFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGTransportFactory.m; path = websocket/impl/KGTransportFactory.m; sourceTree = "<group>"; };
+		403B39DA17187FD70036890C /* KGWebSocketChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketChannel.h; path = websocket/impl/KGWebSocketChannel.h; sourceTree = "<group>"; };
+		403B39DB17187FD70036890C /* KGWebSocketChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketChannel.m; path = websocket/impl/KGWebSocketChannel.m; sourceTree = "<group>"; };
+		403B39DC17187FD70036890C /* KGWebSocketHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketHandler.h; path = websocket/impl/KGWebSocketHandler.h; sourceTree = "<group>"; };
+		403B39DD17187FD70036890C /* KGWebSocketHandlerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketHandlerAdapter.h; path = websocket/impl/KGWebSocketHandlerAdapter.h; sourceTree = "<group>"; };
+		403B39DE17187FD70036890C /* KGWebSocketHandlerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketHandlerAdapter.m; path = websocket/impl/KGWebSocketHandlerAdapter.m; sourceTree = "<group>"; };
+		403B39DF17187FD70036890C /* KGWebSocketHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketHandlerListener.h; path = websocket/impl/KGWebSocketHandlerListener.h; sourceTree = "<group>"; };
+		403B39F017187FF50036890C /* KGAuthenticationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGAuthenticationUtil.h; path = websocket/impl/auth/KGAuthenticationUtil.h; sourceTree = "<group>"; };
+		403B39F117187FF50036890C /* KGAuthenticationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGAuthenticationUtil.m; path = websocket/impl/auth/KGAuthenticationUtil.m; sourceTree = "<group>"; };
+		403B39F4171880080036890C /* KGHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequest.h; path = websocket/impl/http/KGHttpRequest.h; sourceTree = "<group>"; };
+		403B39F5171880080036890C /* KGHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpRequest.m; path = websocket/impl/http/KGHttpRequest.m; sourceTree = "<group>"; };
+		403B39F6171880080036890C /* KGHttpRequestAuthenticationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestAuthenticationHandler.h; path = websocket/impl/http/KGHttpRequestAuthenticationHandler.h; sourceTree = "<group>"; };
+		403B39F7171880080036890C /* KGHttpRequestAuthenticationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpRequestAuthenticationHandler.m; path = websocket/impl/http/KGHttpRequestAuthenticationHandler.m; sourceTree = "<group>"; };
+		403B39F8171880080036890C /* KGHttpRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestFactory.h; path = websocket/impl/http/KGHttpRequestFactory.h; sourceTree = "<group>"; };
+		403B39F9171880080036890C /* KGHttpRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestHandler.h; path = websocket/impl/http/KGHttpRequestHandler.h; sourceTree = "<group>"; };
+		403B39FA171880080036890C /* KGHttpRequestHandlerAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestHandlerAdapter.h; path = websocket/impl/http/KGHttpRequestHandlerAdapter.h; sourceTree = "<group>"; };
+		403B39FB171880080036890C /* KGHttpRequestHandlerAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpRequestHandlerAdapter.m; path = websocket/impl/http/KGHttpRequestHandlerAdapter.m; sourceTree = "<group>"; };
+		403B39FC171880080036890C /* KGHttpRequestHandlerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestHandlerFactory.h; path = websocket/impl/http/KGHttpRequestHandlerFactory.h; sourceTree = "<group>"; };
+		403B39FD171880080036890C /* KGHttpRequestIoHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestIoHandler.h; path = websocket/impl/http/KGHttpRequestIoHandler.h; sourceTree = "<group>"; };
+		403B39FE171880080036890C /* KGHttpRequestIoHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpRequestIoHandler.m; path = websocket/impl/http/KGHttpRequestIoHandler.m; sourceTree = "<group>"; };
+		403B39FF171880080036890C /* KGHttpRequestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestListener.h; path = websocket/impl/http/KGHttpRequestListener.h; sourceTree = "<group>"; };
+		403B3A00171880080036890C /* KGHttpRequestLoggingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestLoggingHandler.h; path = websocket/impl/http/KGHttpRequestLoggingHandler.h; sourceTree = "<group>"; };
+		403B3A01171880080036890C /* KGHttpRequestLoggingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpRequestLoggingHandler.m; path = websocket/impl/http/KGHttpRequestLoggingHandler.m; sourceTree = "<group>"; };
+		403B3A02171880080036890C /* KGHttpRequestRedirectHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpRequestRedirectHandler.h; path = websocket/impl/http/KGHttpRequestRedirectHandler.h; sourceTree = "<group>"; };
+		403B3A03171880080036890C /* KGHttpRequestRedirectHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpRequestRedirectHandler.m; path = websocket/impl/http/KGHttpRequestRedirectHandler.m; sourceTree = "<group>"; };
+		403B3A04171880080036890C /* KGHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpResponse.h; path = websocket/impl/http/KGHttpResponse.h; sourceTree = "<group>"; };
+		403B3A05171880080036890C /* KGHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpResponse.m; path = websocket/impl/http/KGHttpResponse.m; sourceTree = "<group>"; };
+		403B3A18171880300036890C /* KGWebSocketCompositeChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketCompositeChannel.h; path = websocket/impl/ws/KGWebSocketCompositeChannel.h; sourceTree = "<group>"; };
+		403B3A19171880300036890C /* KGWebSocketCompositeChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketCompositeChannel.m; path = websocket/impl/ws/KGWebSocketCompositeChannel.m; sourceTree = "<group>"; };
+		403B3A1A171880300036890C /* KGWebSocketCompositeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketCompositeHandler.h; path = websocket/impl/ws/KGWebSocketCompositeHandler.h; sourceTree = "<group>"; };
+		403B3A1B171880300036890C /* KGWebSocketCompositeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketCompositeHandler.m; path = websocket/impl/ws/KGWebSocketCompositeHandler.m; sourceTree = "<group>"; };
+		403B3A1C171880300036890C /* KGWebSocketHandshakeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketHandshakeObject.h; path = websocket/impl/ws/KGWebSocketHandshakeObject.h; sourceTree = "<group>"; };
+		403B3A1D171880300036890C /* KGWebSocketHandshakeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketHandshakeObject.m; path = websocket/impl/ws/KGWebSocketHandshakeObject.m; sourceTree = "<group>"; };
+		403B3A1E171880300036890C /* KGWebSocketLoggingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketLoggingHandler.h; path = websocket/impl/ws/KGWebSocketLoggingHandler.h; sourceTree = "<group>"; };
+		403B3A1F171880300036890C /* KGWebSocketLoggingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketLoggingHandler.m; path = websocket/impl/ws/KGWebSocketLoggingHandler.m; sourceTree = "<group>"; };
+		403B3A20171880300036890C /* KGWebSocketReAuthenticateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketReAuthenticateHandler.h; path = websocket/impl/ws/KGWebSocketReAuthenticateHandler.h; sourceTree = "<group>"; };
+		403B3A21171880300036890C /* KGWebSocketReAuthenticateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketReAuthenticateHandler.m; path = websocket/impl/ws/KGWebSocketReAuthenticateHandler.m; sourceTree = "<group>"; };
+		403B3A22171880300036890C /* KGWebSocketSelectedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketSelectedChannel.h; path = websocket/impl/ws/KGWebSocketSelectedChannel.h; sourceTree = "<group>"; };
+		403B3A23171880300036890C /* KGWebSocketSelectedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketSelectedChannel.m; path = websocket/impl/ws/KGWebSocketSelectedChannel.m; sourceTree = "<group>"; };
+		403B3A24171880300036890C /* KGWebSocketSelectedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketSelectedHandler.h; path = websocket/impl/ws/KGWebSocketSelectedHandler.h; sourceTree = "<group>"; };
+		403B3A25171880300036890C /* KGWebSocketSelectedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketSelectedHandler.m; path = websocket/impl/ws/KGWebSocketSelectedHandler.m; sourceTree = "<group>"; };
+		403B3A341718806E0036890C /* KGCreateChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGCreateChannel.h; path = websocket/impl/wseb/KGCreateChannel.h; sourceTree = "<group>"; };
+		403B3A351718806E0036890C /* KGCreateChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGCreateChannel.m; path = websocket/impl/wseb/KGCreateChannel.m; sourceTree = "<group>"; };
+		403B3A361718806E0036890C /* KGCreateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGCreateHandler.h; path = websocket/impl/wseb/KGCreateHandler.h; sourceTree = "<group>"; };
+		403B3A371718806E0036890C /* KGCreateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGCreateHandler.m; path = websocket/impl/wseb/KGCreateHandler.m; sourceTree = "<group>"; };
+		403B3A381718806E0036890C /* KGCreateHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGCreateHandlerListener.h; path = websocket/impl/wseb/KGCreateHandlerListener.h; sourceTree = "<group>"; };
+		403B3A391718806E0036890C /* KGDownstreamChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGDownstreamChannel.h; path = websocket/impl/wseb/KGDownstreamChannel.h; sourceTree = "<group>"; };
+		403B3A3A1718806E0036890C /* KGDownstreamChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGDownstreamChannel.m; path = websocket/impl/wseb/KGDownstreamChannel.m; sourceTree = "<group>"; };
+		403B3A3B1718806E0036890C /* KGDownstreamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGDownstreamHandler.h; path = websocket/impl/wseb/KGDownstreamHandler.h; sourceTree = "<group>"; };
+		403B3A3C1718806E0036890C /* KGDownstreamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGDownstreamHandler.m; path = websocket/impl/wseb/KGDownstreamHandler.m; sourceTree = "<group>"; };
+		403B3A3D1718806E0036890C /* KGDownstreamHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGDownstreamHandlerListener.h; path = websocket/impl/wseb/KGDownstreamHandlerListener.h; sourceTree = "<group>"; };
+		403B3A3E1718806E0036890C /* KGUpstreamChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGUpstreamChannel.h; path = websocket/impl/wseb/KGUpstreamChannel.h; sourceTree = "<group>"; };
+		403B3A3F1718806E0036890C /* KGUpstreamChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGUpstreamChannel.m; path = websocket/impl/wseb/KGUpstreamChannel.m; sourceTree = "<group>"; };
+		403B3A401718806E0036890C /* KGUpstreamHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGUpstreamHandler.h; path = websocket/impl/wseb/KGUpstreamHandler.h; sourceTree = "<group>"; };
+		403B3A411718806E0036890C /* KGUpstreamHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGUpstreamHandler.m; path = websocket/impl/wseb/KGUpstreamHandler.m; sourceTree = "<group>"; };
+		403B3A421718806E0036890C /* KGUpstreamHandlerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGUpstreamHandlerListener.h; path = websocket/impl/wseb/KGUpstreamHandlerListener.h; sourceTree = "<group>"; };
+		403B3A431718806E0036890C /* KGWebSocketEmulatedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketEmulatedChannel.h; path = websocket/impl/wseb/KGWebSocketEmulatedChannel.h; sourceTree = "<group>"; };
+		403B3A441718806E0036890C /* KGWebSocketEmulatedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketEmulatedChannel.m; path = websocket/impl/wseb/KGWebSocketEmulatedChannel.m; sourceTree = "<group>"; };
+		403B3A451718806E0036890C /* KGWebSocketEmulatedDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketEmulatedDecoder.h; path = websocket/impl/wseb/KGWebSocketEmulatedDecoder.h; sourceTree = "<group>"; };
+		403B3A461718806E0036890C /* KGWebSocketEmulatedDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketEmulatedDecoder.m; path = websocket/impl/wseb/KGWebSocketEmulatedDecoder.m; sourceTree = "<group>"; };
+		403B3A471718806E0036890C /* KGWebSocketEmulatedDecoderListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketEmulatedDecoderListener.h; path = websocket/impl/wseb/KGWebSocketEmulatedDecoderListener.h; sourceTree = "<group>"; };
+		403B3A481718806E0036890C /* KGWebSocketEmulatedEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketEmulatedEncoder.h; path = websocket/impl/wseb/KGWebSocketEmulatedEncoder.h; sourceTree = "<group>"; };
+		403B3A491718806E0036890C /* KGWebSocketEmulatedEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketEmulatedEncoder.m; path = websocket/impl/wseb/KGWebSocketEmulatedEncoder.m; sourceTree = "<group>"; };
+		403B3A4A1718806E0036890C /* KGWebSocketEmulatedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketEmulatedHandler.h; path = websocket/impl/wseb/KGWebSocketEmulatedHandler.h; sourceTree = "<group>"; };
+		403B3A4B1718806E0036890C /* KGWebSocketEmulatedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketEmulatedHandler.m; path = websocket/impl/wseb/KGWebSocketEmulatedHandler.m; sourceTree = "<group>"; };
+		403B3A64171880800036890C /* KGWebSocketNativeAuthenticationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeAuthenticationHandler.h; path = websocket/impl/wsn/KGWebSocketNativeAuthenticationHandler.h; sourceTree = "<group>"; };
+		403B3A65171880800036890C /* KGWebSocketNativeAuthenticationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeAuthenticationHandler.m; path = websocket/impl/wsn/KGWebSocketNativeAuthenticationHandler.m; sourceTree = "<group>"; };
+		403B3A66171880800036890C /* KGWebSocketNativeBalancingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeBalancingHandler.h; path = websocket/impl/wsn/KGWebSocketNativeBalancingHandler.h; sourceTree = "<group>"; };
+		403B3A67171880800036890C /* KGWebSocketNativeBalancingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeBalancingHandler.m; path = websocket/impl/wsn/KGWebSocketNativeBalancingHandler.m; sourceTree = "<group>"; };
+		403B3A68171880800036890C /* KGWebSocketNativeChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeChannel.h; path = websocket/impl/wsn/KGWebSocketNativeChannel.h; sourceTree = "<group>"; };
+		403B3A69171880800036890C /* KGWebSocketNativeChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeChannel.m; path = websocket/impl/wsn/KGWebSocketNativeChannel.m; sourceTree = "<group>"; };
+		403B3A6A171880810036890C /* KGWebSocketNativeCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeCodec.h; path = websocket/impl/wsn/KGWebSocketNativeCodec.h; sourceTree = "<group>"; };
+		403B3A6B171880810036890C /* KGWebSocketNativeCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeCodec.m; path = websocket/impl/wsn/KGWebSocketNativeCodec.m; sourceTree = "<group>"; };
+		403B3A6E171880810036890C /* KGWebSocketNativeDelegateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeDelegateHandler.h; path = websocket/impl/wsn/KGWebSocketNativeDelegateHandler.h; sourceTree = "<group>"; };
+		403B3A6F171880810036890C /* KGWebSocketNativeDelegateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeDelegateHandler.m; path = websocket/impl/wsn/KGWebSocketNativeDelegateHandler.m; sourceTree = "<group>"; };
+		403B3A70171880810036890C /* KGWebSocketNativeEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeEncoder.h; path = websocket/impl/wsn/KGWebSocketNativeEncoder.h; sourceTree = "<group>"; };
+		403B3A71171880810036890C /* KGWebSocketNativeEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeEncoder.m; path = websocket/impl/wsn/KGWebSocketNativeEncoder.m; sourceTree = "<group>"; };
+		403B3A72171880810036890C /* KGWebSocketNativeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeHandler.h; path = websocket/impl/wsn/KGWebSocketNativeHandler.h; sourceTree = "<group>"; };
+		403B3A73171880810036890C /* KGWebSocketNativeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeHandler.m; path = websocket/impl/wsn/KGWebSocketNativeHandler.m; sourceTree = "<group>"; };
+		403B3A74171880810036890C /* KGWebSocketNativeHandshakeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeHandshakeHandler.h; path = websocket/impl/wsn/KGWebSocketNativeHandshakeHandler.h; sourceTree = "<group>"; };
+		403B3A75171880810036890C /* KGWebSocketNativeHandshakeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketNativeHandshakeHandler.m; path = websocket/impl/wsn/KGWebSocketNativeHandshakeHandler.m; sourceTree = "<group>"; };
+		403B3A88171880B30036890C /* KGAuthenticateEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGAuthenticateEvent.h; path = src/main/objc/websocket/impl/transport/KGAuthenticateEvent.h; sourceTree = SOURCE_ROOT; };
+		403B3A89171880B30036890C /* KGAuthenticateEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGAuthenticateEvent.m; path = src/main/objc/websocket/impl/transport/KGAuthenticateEvent.m; sourceTree = SOURCE_ROOT; };
+		403B3A8A171880B30036890C /* KGCloseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGCloseEvent.h; path = src/main/objc/websocket/impl/transport/KGCloseEvent.h; sourceTree = SOURCE_ROOT; };
+		403B3A8B171880B30036890C /* KGCloseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGCloseEvent.m; path = src/main/objc/websocket/impl/transport/KGCloseEvent.m; sourceTree = SOURCE_ROOT; };
+		403B3A8C171880B30036890C /* KGErrorEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGErrorEvent.h; path = src/main/objc/websocket/impl/transport/KGErrorEvent.h; sourceTree = SOURCE_ROOT; };
+		403B3A8D171880B30036890C /* KGErrorEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGErrorEvent.m; path = src/main/objc/websocket/impl/transport/KGErrorEvent.m; sourceTree = SOURCE_ROOT; };
+		403B3A8E171880B30036890C /* KGEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGEvent.h; path = src/main/objc/websocket/impl/transport/KGEvent.h; sourceTree = SOURCE_ROOT; };
+		403B3A8F171880B30036890C /* KGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGEvent.m; path = src/main/objc/websocket/impl/transport/KGEvent.m; sourceTree = SOURCE_ROOT; };
+		403B3A90171880B30036890C /* KGMessageEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGMessageEvent.h; path = src/main/objc/websocket/impl/transport/KGMessageEvent.h; sourceTree = SOURCE_ROOT; };
+		403B3A91171880B30036890C /* KGMessageEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGMessageEvent.m; path = src/main/objc/websocket/impl/transport/KGMessageEvent.m; sourceTree = SOURCE_ROOT; };
+		403B3A92171880B30036890C /* KGOpenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGOpenEvent.h; path = src/main/objc/websocket/impl/transport/KGOpenEvent.h; sourceTree = SOURCE_ROOT; };
+		403B3A93171880B30036890C /* KGOpenEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGOpenEvent.m; path = src/main/objc/websocket/impl/transport/KGOpenEvent.m; sourceTree = SOURCE_ROOT; };
+		403B3A94171880B30036890C /* KGRedirectEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGRedirectEvent.h; path = src/main/objc/websocket/impl/transport/KGRedirectEvent.h; sourceTree = SOURCE_ROOT; };
+		403B3A95171880B30036890C /* KGRedirectEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGRedirectEvent.m; path = src/main/objc/websocket/impl/transport/KGRedirectEvent.m; sourceTree = SOURCE_ROOT; };
+		403B3A96171880B30036890C /* KGWebSocketDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketDelegateImpl.h; path = src/main/objc/websocket/impl/transport/KGWebSocketDelegateImpl.h; sourceTree = SOURCE_ROOT; };
+		403B3A97171880B30036890C /* KGWebSocketDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketDelegateImpl.m; path = src/main/objc/websocket/impl/transport/KGWebSocketDelegateImpl.m; sourceTree = SOURCE_ROOT; };
+		403B3A98171880B30036890C /* KGWebSocketDelegateListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketDelegateListener.h; path = src/main/objc/websocket/impl/transport/KGWebSocketDelegateListener.h; sourceTree = SOURCE_ROOT; };
+		403B3A99171880B30036890C /* KGWebSocketNativeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketNativeDelegate.h; path = src/main/objc/websocket/impl/transport/KGWebSocketNativeDelegate.h; sourceTree = SOURCE_ROOT; };
+		403B3A9A171880B30036890C /* KGWsMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWsMessage.h; path = src/main/objc/websocket/impl/transport/KGWsMessage.h; sourceTree = SOURCE_ROOT; };
+		403B3A9B171880B30036890C /* KGWsMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWsMessage.m; path = src/main/objc/websocket/impl/transport/KGWsMessage.m; sourceTree = SOURCE_ROOT; };
+		403B3AB0171880FA0036890C /* KGGenericURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGGenericURI.h; path = websocket/util/KGGenericURI.h; sourceTree = "<group>"; };
+		403B3AB1171880FA0036890C /* KGGenericURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGGenericURI.m; path = websocket/util/KGGenericURI.m; sourceTree = "<group>"; };
+		403B3AB2171880FA0036890C /* KGHexUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHexUtil.h; path = websocket/util/KGHexUtil.h; sourceTree = "<group>"; };
+		403B3AB3171880FA0036890C /* KGHexUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHexUtil.m; path = websocket/util/KGHexUtil.m; sourceTree = "<group>"; };
+		403B3AB4171880FA0036890C /* KGHttpURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGHttpURI.h; path = websocket/util/KGHttpURI.h; sourceTree = "<group>"; };
+		403B3AB5171880FA0036890C /* KGHttpURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGHttpURI.m; path = websocket/util/KGHttpURI.m; sourceTree = "<group>"; };
+		403B3AB6171880FA0036890C /* KGWSCompositeURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWSCompositeURI.h; path = websocket/util/KGWSCompositeURI.h; sourceTree = "<group>"; };
+		403B3AB7171880FA0036890C /* KGWSCompositeURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWSCompositeURI.m; path = websocket/util/KGWSCompositeURI.m; sourceTree = "<group>"; };
+		403B3AB8171880FA0036890C /* KGWSURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWSURI.h; path = websocket/util/KGWSURI.h; sourceTree = "<group>"; };
+		403B3AB9171880FA0036890C /* KGWSURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWSURI.m; path = websocket/util/KGWSURI.m; sourceTree = "<group>"; };
+		403B3ABA171880FA0036890C /* NSArray+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+KZNGAdditions.h"; path = "websocket/util/NSArray+KZNGAdditions.h"; sourceTree = "<group>"; };
+		403B3ABB171880FA0036890C /* NSArray+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+KZNGAdditions.m"; path = "websocket/util/NSArray+KZNGAdditions.m"; sourceTree = "<group>"; };
+		403B3ABC171880FA0036890C /* NSURL+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+KZNGAdditions.h"; path = "websocket/util/NSURL+KZNGAdditions.h"; sourceTree = "<group>"; };
+		403B3ABD171880FA0036890C /* NSURL+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+KZNGAdditions.m"; path = "websocket/util/NSURL+KZNGAdditions.m"; sourceTree = "<group>"; };
+		40401F591719261F0051621A /* KGWebSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGWebSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40401F641719261F0051621A /* KGWebSocketTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KGWebSocketTests-Info.plist"; sourceTree = "<group>"; };
+		40401F661719261F0051621A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40401F75171928D10051621A /* KGByteBufferTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGByteBufferTest.h; sourceTree = "<group>"; };
+		40401F76171928D10051621A /* KGByteBufferTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGByteBufferTest.m; sourceTree = "<group>"; };
+		4047AC5017208CFA008C0A66 /* KGWebSocketExtension+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KGWebSocketExtension+Internal.h"; sourceTree = "<group>"; };
+		4076EE17170E047C00497AA1 /* KGChallengeHandler+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KGChallengeHandler+Internal.h"; path = "security/KGChallengeHandler+Internal.h"; sourceTree = "<group>"; };
+		4076EFB1170E296600497AA1 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		40D15A0317590CC200B437D4 /* KGWSCompositeURITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWSCompositeURITest.h; sourceTree = "<group>"; };
+		40D15A0417590CC300B437D4 /* KGWSCompositeURITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWSCompositeURITest.m; sourceTree = "<group>"; };
+		40D15A06175911A600B437D4 /* KGWebSocketFactoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketFactoryTest.h; sourceTree = "<group>"; };
+		40D15A07175911A600B437D4 /* KGWebSocketFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketFactoryTest.m; sourceTree = "<group>"; };
+		40D23180171CB59F00343A29 /* KGTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGTracer.h; path = websocket/util/KGTracer.h; sourceTree = "<group>"; };
+		40D23181171CB59F00343A29 /* KGTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGTracer.m; path = websocket/util/KGTracer.m; sourceTree = "<group>"; };
+		40D865021759661B004C5BFF /* KGBasicChallengeHandlerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBasicChallengeHandlerTest.h; sourceTree = "<group>"; };
+		40D865031759661B004C5BFF /* KGBasicChallengeHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBasicChallengeHandlerTest.m; sourceTree = "<group>"; };
+		40D86506175979C0004C5BFF /* KGChallengeHandlerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeHandlerTest.h; sourceTree = "<group>"; };
+		40D86507175979C0004C5BFF /* KGChallengeHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeHandlerTest.m; sourceTree = "<group>"; };
+		40D8650917597D4E004C5BFF /* KGTestLoginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGTestLoginHandler.h; sourceTree = "<group>"; };
+		40D8650A17597D4E004C5BFF /* KGTestLoginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGTestLoginHandler.m; sourceTree = "<group>"; };
+		40D8650C17597E08004C5BFF /* KGChallengeRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGChallengeRequestTest.h; sourceTree = "<group>"; };
+		40D8650D17597E08004C5BFF /* KGChallengeRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGChallengeRequestTest.m; sourceTree = "<group>"; };
+		40D86514175D20EB004C5BFF /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = CoreTests/include/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		40D86516175D3098004C5BFF /* TestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUtil.h; sourceTree = "<group>"; };
+		40D86517175D3098004C5BFF /* TestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtil.m; sourceTree = "<group>"; };
+		40D8651C175D5F23004C5BFF /* KGWebSocketDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGWebSocketDelegateTest.h; sourceTree = "<group>"; };
+		40D8651D175D5F23004C5BFF /* KGWebSocketDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGWebSocketDelegateTest.m; sourceTree = "<group>"; };
+		A01818771518F4BB0082EC25 /* KGChallengeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGChallengeResponse.h; path = security/KGChallengeResponse.h; sourceTree = "<group>"; };
+		A01818781518F4BB0082EC25 /* KGChallengeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGChallengeResponse.m; path = security/KGChallengeResponse.m; sourceTree = "<group>"; };
+		A0227183157E1F5600CC1B51 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Token.h; path = security/impl/Token.h; sourceTree = "<group>"; };
+		A0227184157E1F5700CC1B51 /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Token.m; path = security/impl/Token.m; sourceTree = "<group>"; };
+		A0227187157E1FEF00CC1B51 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = security/impl/Node.h; sourceTree = "<group>"; };
+		A0227188157E1FEF00CC1B51 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Node.m; path = security/impl/Node.m; sourceTree = "<group>"; };
+		A022718B157E202E00CC1B51 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderedDictionary.h; path = security/impl/OrderedDictionary.h; sourceTree = "<group>"; };
+		A022718C157E202E00CC1B51 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderedDictionary.m; path = security/impl/OrderedDictionary.m; sourceTree = "<group>"; };
+		A0383E40156B893B0078DE15 /* BasicChallengeResponseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicChallengeResponseFactory.h; path = security/impl/BasicChallengeResponseFactory.h; sourceTree = "<group>"; };
+		A0383E41156B893B0078DE15 /* BasicChallengeResponseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicChallengeResponseFactory.m; path = security/impl/BasicChallengeResponseFactory.m; sourceTree = "<group>"; };
+		A0383E44156B894D0078DE15 /* DefaultBasicChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultBasicChallengeHandler.h; path = security/impl/DefaultBasicChallengeHandler.h; sourceTree = "<group>"; };
+		A0383E45156B894D0078DE15 /* DefaultBasicChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultBasicChallengeHandler.m; path = security/impl/DefaultBasicChallengeHandler.m; sourceTree = "<group>"; };
+		A0383E48156B895D0078DE15 /* DefaultDispatchChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultDispatchChallengeHandler.h; path = security/impl/DefaultDispatchChallengeHandler.h; sourceTree = "<group>"; };
+		A0383E49156B895D0078DE15 /* DefaultDispatchChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultDispatchChallengeHandler.m; path = security/impl/DefaultDispatchChallengeHandler.m; sourceTree = "<group>"; };
+		A0383E4C156B896E0078DE15 /* LoginHandlerProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHandlerProvider.h; sourceTree = "<group>"; };
+		A0383E4D156B89900078DE15 /* RealmUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealmUtils.h; path = security/impl/RealmUtils.h; sourceTree = "<group>"; };
+		A0383E4E156B89900078DE15 /* RealmUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealmUtils.m; path = security/impl/RealmUtils.m; sourceTree = "<group>"; };
+		A06FB2CE156AA4340028064D /* KGChallengeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGChallengeRequest.h; path = security/KGChallengeRequest.h; sourceTree = "<group>"; };
+		A06FB2CF156AA4340028064D /* KGChallengeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGChallengeRequest.m; path = security/KGChallengeRequest.m; sourceTree = "<group>"; };
+		A06FB2D3156AA4510028064D /* KGLoginHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGLoginHandler.h; path = security/KGLoginHandler.h; sourceTree = "<group>"; };
+		A06FB2D4156AA4520028064D /* KGLoginHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGLoginHandler.m; path = security/KGLoginHandler.m; sourceTree = "<group>"; };
+		A06FB2D7156AA46D0028064D /* KGChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGChallengeHandler.h; path = security/KGChallengeHandler.h; sourceTree = "<group>"; };
+		A06FB2D8156AA46D0028064D /* KGChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGChallengeHandler.m; path = security/KGChallengeHandler.m; sourceTree = "<group>"; };
+		A06FB2DF156AA49D0028064D /* KGDispatchChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGDispatchChallengeHandler.h; path = security/KGDispatchChallengeHandler.h; sourceTree = "<group>"; };
+		A06FB2E0156AA49D0028064D /* KGDispatchChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGDispatchChallengeHandler.m; path = security/KGDispatchChallengeHandler.m; sourceTree = "<group>"; };
+		A06FB2E3156AA4AD0028064D /* KGNegotiableChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGNegotiableChallengeHandler.h; path = security/KGNegotiableChallengeHandler.h; sourceTree = "<group>"; };
+		A06FB2E4156AA4AE0028064D /* KGNegotiableChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGNegotiableChallengeHandler.m; path = security/KGNegotiableChallengeHandler.m; sourceTree = "<group>"; };
+		A06FB2E7156AA4BA0028064D /* KGNegotiateChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGNegotiateChallengeHandler.h; path = security/KGNegotiateChallengeHandler.h; sourceTree = "<group>"; };
+		A06FB2E8156AA4BA0028064D /* KGNegotiateChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGNegotiateChallengeHandler.m; path = security/KGNegotiateChallengeHandler.m; sourceTree = "<group>"; };
+		A06FB2EB156AA4CA0028064D /* KGBasicChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGBasicChallengeHandler.h; path = security/KGBasicChallengeHandler.h; sourceTree = "<group>"; };
+		A06FB2EC156AA4CA0028064D /* KGBasicChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGBasicChallengeHandler.m; path = security/KGBasicChallengeHandler.m; sourceTree = "<group>"; };
+		A0B750811537000100FF9FA2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A0B750851537002700FF9FA2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A0B750871537003B00FF9FA2 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		A0E90D10144F17D600666B29 /* libKGWebSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKGWebSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E90D13144F17D600666B29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0E90D17144F17D600666B29 /* HttpRequestIoHandler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HttpRequestIoHandler-Prefix.pch"; sourceTree = "<group>"; };
+		B5E56DF9190B607D00F80FBD /* KGResumableTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGResumableTimer.m; path = websocket/util/KGResumableTimer.m; sourceTree = "<group>"; };
+		B5E56DFA190B607D00F80FBD /* KGResumableTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGResumableTimer.h; path = websocket/util/KGResumableTimer.h; sourceTree = "<group>"; };
+		B5E56DFF190B61EC00F80FBD /* KGResumableTimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGResumableTimerTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40401F551719261F0051621A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04398DEE19991CA000446889 /* XCTest.framework in Frameworks */,
+				402517241757DD610043B68D /* libicucore.dylib in Frameworks */,
+				40401F71171927110051621A /* libKGWebSocket.a in Frameworks */,
+				402517231757DD330043B68D /* Security.framework in Frameworks */,
+				402517221757DD2F0043B68D /* CFNetwork.framework in Frameworks */,
+				402517251757DD640043B68D /* Foundation.framework in Frameworks */,
+				40D86515175D20EB004C5BFF /* libOCMock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E90D0D144F17D600666B29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B750881537003B00FF9FA2 /* libicucore.dylib in Frameworks */,
+				A0B750861537002700FF9FA2 /* CFNetwork.framework in Frameworks */,
+				A0B750841537000D00FF9FA2 /* Security.framework in Frameworks */,
+				A0E90D14144F17D600666B29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40401F621719261F0051621A /* CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				40D8650517597966004C5BFF /* security */,
+				40401F631719261F0051621A /* Supporting Files */,
+				40401F75171928D10051621A /* KGByteBufferTest.h */,
+				40401F76171928D10051621A /* KGByteBufferTest.m */,
+				4025171F1757DB660043B68D /* KGWebSocketTest.h */,
+				402517201757DB660043B68D /* KGWebSocketTest.m */,
+				40D15A0317590CC200B437D4 /* KGWSCompositeURITest.h */,
+				40D15A0417590CC300B437D4 /* KGWSCompositeURITest.m */,
+				40D15A06175911A600B437D4 /* KGWebSocketFactoryTest.h */,
+				40D15A07175911A600B437D4 /* KGWebSocketFactoryTest.m */,
+				40D86516175D3098004C5BFF /* TestUtil.h */,
+				40D86517175D3098004C5BFF /* TestUtil.m */,
+				40D8651C175D5F23004C5BFF /* KGWebSocketDelegateTest.h */,
+				40D8651D175D5F23004C5BFF /* KGWebSocketDelegateTest.m */,
+				B5E56DFF190B61EC00F80FBD /* KGResumableTimerTest.m */,
+			);
+			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		40401F631719261F0051621A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40401F641719261F0051621A /* KGWebSocketTests-Info.plist */,
+				40401F651719261F0051621A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40D8650517597966004C5BFF /* security */ = {
+			isa = PBXGroup;
+			children = (
+				40D865021759661B004C5BFF /* KGBasicChallengeHandlerTest.h */,
+				40D865031759661B004C5BFF /* KGBasicChallengeHandlerTest.m */,
+				40D86506175979C0004C5BFF /* KGChallengeHandlerTest.h */,
+				40D86507175979C0004C5BFF /* KGChallengeHandlerTest.m */,
+				40D8650917597D4E004C5BFF /* KGTestLoginHandler.h */,
+				40D8650A17597D4E004C5BFF /* KGTestLoginHandler.m */,
+				40D8650C17597E08004C5BFF /* KGChallengeRequestTest.h */,
+				40D8650D17597E08004C5BFF /* KGChallengeRequestTest.m */,
+			);
+			name = security;
+			sourceTree = "<group>";
+		};
+		A0031476153D5DC2004C8ED1 /* security */ = {
+			isa = PBXGroup;
+			children = (
+				4076EE17170E047C00497AA1 /* KGChallengeHandler+Internal.h */,
+				A0383E3F156B890C0078DE15 /* impl */,
+				A01818771518F4BB0082EC25 /* KGChallengeResponse.h */,
+				A01818781518F4BB0082EC25 /* KGChallengeResponse.m */,
+				A06FB2CE156AA4340028064D /* KGChallengeRequest.h */,
+				A06FB2CF156AA4340028064D /* KGChallengeRequest.m */,
+				A06FB2D3156AA4510028064D /* KGLoginHandler.h */,
+				A06FB2D4156AA4520028064D /* KGLoginHandler.m */,
+				A06FB2D7156AA46D0028064D /* KGChallengeHandler.h */,
+				A06FB2D8156AA46D0028064D /* KGChallengeHandler.m */,
+				A06FB2DF156AA49D0028064D /* KGDispatchChallengeHandler.h */,
+				A06FB2E0156AA49D0028064D /* KGDispatchChallengeHandler.m */,
+				A06FB2E3156AA4AD0028064D /* KGNegotiableChallengeHandler.h */,
+				A06FB2E4156AA4AE0028064D /* KGNegotiableChallengeHandler.m */,
+				A06FB2E7156AA4BA0028064D /* KGNegotiateChallengeHandler.h */,
+				A06FB2E8156AA4BA0028064D /* KGNegotiateChallengeHandler.m */,
+				A06FB2EB156AA4CA0028064D /* KGBasicChallengeHandler.h */,
+				A06FB2EC156AA4CA0028064D /* KGBasicChallengeHandler.m */,
+			);
+			name = security;
+			sourceTree = "<group>";
+		};
+		A004C7A015348B6B003BF426 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B5E56DF9190B607D00F80FBD /* KGResumableTimer.m */,
+				B5E56DFA190B607D00F80FBD /* KGResumableTimer.h */,
+				403B3AB0171880FA0036890C /* KGGenericURI.h */,
+				403B3AB1171880FA0036890C /* KGGenericURI.m */,
+				403B3AB2171880FA0036890C /* KGHexUtil.h */,
+				403B3AB3171880FA0036890C /* KGHexUtil.m */,
+				403B3AB4171880FA0036890C /* KGHttpURI.h */,
+				403B3AB5171880FA0036890C /* KGHttpURI.m */,
+				403B3AB6171880FA0036890C /* KGWSCompositeURI.h */,
+				403B3AB7171880FA0036890C /* KGWSCompositeURI.m */,
+				403B3AB8171880FA0036890C /* KGWSURI.h */,
+				403B3AB9171880FA0036890C /* KGWSURI.m */,
+				403B3ABA171880FA0036890C /* NSArray+KZNGAdditions.h */,
+				403B3ABB171880FA0036890C /* NSArray+KZNGAdditions.m */,
+				403B3ABC171880FA0036890C /* NSURL+KZNGAdditions.h */,
+				403B3ABD171880FA0036890C /* NSURL+KZNGAdditions.m */,
+				40D23180171CB59F00343A29 /* KGTracer.h */,
+				40D23181171CB59F00343A29 /* KGTracer.m */,
+				400C24BC172DB97800465C9F /* KGConstants.h */,
+				400C24BD172DB97800465C9F /* KGConstants.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		A0383E3F156B890C0078DE15 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				A0383E40156B893B0078DE15 /* BasicChallengeResponseFactory.h */,
+				A0383E41156B893B0078DE15 /* BasicChallengeResponseFactory.m */,
+				A0383E44156B894D0078DE15 /* DefaultBasicChallengeHandler.h */,
+				A0383E45156B894D0078DE15 /* DefaultBasicChallengeHandler.m */,
+				A0383E48156B895D0078DE15 /* DefaultDispatchChallengeHandler.h */,
+				A0383E49156B895D0078DE15 /* DefaultDispatchChallengeHandler.m */,
+				A0383E4C156B896E0078DE15 /* LoginHandlerProvider.h */,
+				A0383E4D156B89900078DE15 /* RealmUtils.h */,
+				A0383E4E156B89900078DE15 /* RealmUtils.m */,
+				A0227183157E1F5600CC1B51 /* Token.h */,
+				A0227184157E1F5700CC1B51 /* Token.m */,
+				A0227187157E1FEF00CC1B51 /* Node.h */,
+				A0227188157E1FEF00CC1B51 /* Node.m */,
+				A022718B157E202E00CC1B51 /* OrderedDictionary.h */,
+				A022718C157E202E00CC1B51 /* OrderedDictionary.m */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+		A06EB9561521FEFE0057D878 /* websocket */ = {
+			isa = PBXGroup;
+			children = (
+				403B39A617187FAC0036890C /* KGBase64Util.h */,
+				403B39A717187FAC0036890C /* KGBase64Util.m */,
+				403B39A817187FAC0036890C /* KGByteBuffer.h */,
+				403B39A917187FAC0036890C /* KGByteBuffer.m */,
+				403B39AC17187FAC0036890C /* KGWebSocket.h */,
+				403B39AD17187FAC0036890C /* KGWebSocket.m */,
+				403B39AE17187FAC0036890C /* KGWebSocket+Internal.h */,
+				403B39AF17187FAC0036890C /* KGWebSocketDelegate.h */,
+				403B39B017187FAC0036890C /* KGWebSocketExtension.h */,
+				403B39B117187FAC0036890C /* KGWebSocketExtension.m */,
+				403B39B217187FAC0036890C /* KGWebSocketExtensionParameter.h */,
+				403B39B317187FAC0036890C /* KGWebSocketExtensionParameter.m */,
+				403B39B417187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h */,
+				403B39B517187FAC0036890C /* KGWebSocketFactory.h */,
+				403B39B617187FAC0036890C /* KGWebSocketFactory.m */,
+				403B39B717187FAC0036890C /* KGParameterValuesContainer.h */,
+				403B39B817187FAC0036890C /* KGParameterValuesContainer.m */,
+				403B39B917187FAC0036890C /* NSString+KZNGAdditions.h */,
+				403B39BA17187FAC0036890C /* NSString+KZNGAdditions.m */,
+				A06EB975152209BA0057D878 /* impl */,
+				A004C7A015348B6B003BF426 /* util */,
+				4047AC5017208CFA008C0A66 /* KGWebSocketExtension+Internal.h */,
+			);
+			name = websocket;
+			sourceTree = "<group>";
+		};
+		A06EB975152209BA0057D878 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				403B39D017187FD70036890C /* KGChannel.h */,
+				403B39D117187FD70036890C /* KGChannel.m */,
+				403B39D217187FD70036890C /* KGCommandMessage.h */,
+				403B39D317187FD70036890C /* KGDecoderInput.h */,
+				403B39D417187FD70036890C /* KGDecoderInput.m */,
+				403B39D517187FD70036890C /* KGDecoderListener.h */,
+				403B39D617187FD70036890C /* KGEncoderOutput.h */,
+				403B39D717187FD70036890C /* KGHandler.h */,
+				403B39D817187FD70036890C /* KGTransportFactory.h */,
+				403B39D917187FD70036890C /* KGTransportFactory.m */,
+				403B39DA17187FD70036890C /* KGWebSocketChannel.h */,
+				403B39DB17187FD70036890C /* KGWebSocketChannel.m */,
+				403B39DC17187FD70036890C /* KGWebSocketHandler.h */,
+				403B39DD17187FD70036890C /* KGWebSocketHandlerAdapter.h */,
+				403B39DE17187FD70036890C /* KGWebSocketHandlerAdapter.m */,
+				403B39DF17187FD70036890C /* KGWebSocketHandlerListener.h */,
+				A06EB97715220A070057D878 /* auth */,
+				A06EB97815220A170057D878 /* http */,
+				AF0A463415E591CD00AB110A /* transport */,
+				A06EB97915220A250057D878 /* ws */,
+				A06EB97A15220A2E0057D878 /* wseb */,
+				A08E6D24153C12FC007E4C78 /* wsn */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+		A06EB97715220A070057D878 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				403B39F017187FF50036890C /* KGAuthenticationUtil.h */,
+				403B39F117187FF50036890C /* KGAuthenticationUtil.m */,
+			);
+			name = auth;
+			sourceTree = "<group>";
+		};
+		A06EB97815220A170057D878 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				403B39F4171880080036890C /* KGHttpRequest.h */,
+				403B39F5171880080036890C /* KGHttpRequest.m */,
+				403B39F6171880080036890C /* KGHttpRequestAuthenticationHandler.h */,
+				403B39F7171880080036890C /* KGHttpRequestAuthenticationHandler.m */,
+				403B39F8171880080036890C /* KGHttpRequestFactory.h */,
+				403B39F9171880080036890C /* KGHttpRequestHandler.h */,
+				403B39FA171880080036890C /* KGHttpRequestHandlerAdapter.h */,
+				403B39FB171880080036890C /* KGHttpRequestHandlerAdapter.m */,
+				403B39FC171880080036890C /* KGHttpRequestHandlerFactory.h */,
+				403B39FD171880080036890C /* KGHttpRequestIoHandler.h */,
+				403B39FE171880080036890C /* KGHttpRequestIoHandler.m */,
+				403B39FF171880080036890C /* KGHttpRequestListener.h */,
+				403B3A00171880080036890C /* KGHttpRequestLoggingHandler.h */,
+				403B3A01171880080036890C /* KGHttpRequestLoggingHandler.m */,
+				403B3A02171880080036890C /* KGHttpRequestRedirectHandler.h */,
+				403B3A03171880080036890C /* KGHttpRequestRedirectHandler.m */,
+				403B3A04171880080036890C /* KGHttpResponse.h */,
+				403B3A05171880080036890C /* KGHttpResponse.m */,
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
+		A06EB97915220A250057D878 /* ws */ = {
+			isa = PBXGroup;
+			children = (
+				403B3A18171880300036890C /* KGWebSocketCompositeChannel.h */,
+				403B3A19171880300036890C /* KGWebSocketCompositeChannel.m */,
+				403B3A1A171880300036890C /* KGWebSocketCompositeHandler.h */,
+				403B3A1B171880300036890C /* KGWebSocketCompositeHandler.m */,
+				403B3A1C171880300036890C /* KGWebSocketHandshakeObject.h */,
+				403B3A1D171880300036890C /* KGWebSocketHandshakeObject.m */,
+				403B3A1E171880300036890C /* KGWebSocketLoggingHandler.h */,
+				403B3A1F171880300036890C /* KGWebSocketLoggingHandler.m */,
+				403B3A20171880300036890C /* KGWebSocketReAuthenticateHandler.h */,
+				403B3A21171880300036890C /* KGWebSocketReAuthenticateHandler.m */,
+				403B3A22171880300036890C /* KGWebSocketSelectedChannel.h */,
+				403B3A23171880300036890C /* KGWebSocketSelectedChannel.m */,
+				403B3A24171880300036890C /* KGWebSocketSelectedHandler.h */,
+				403B3A25171880300036890C /* KGWebSocketSelectedHandler.m */,
+			);
+			name = ws;
+			sourceTree = "<group>";
+		};
+		A06EB97A15220A2E0057D878 /* wseb */ = {
+			isa = PBXGroup;
+			children = (
+				403B3A341718806E0036890C /* KGCreateChannel.h */,
+				403B3A351718806E0036890C /* KGCreateChannel.m */,
+				403B3A361718806E0036890C /* KGCreateHandler.h */,
+				403B3A371718806E0036890C /* KGCreateHandler.m */,
+				403B3A381718806E0036890C /* KGCreateHandlerListener.h */,
+				403B3A391718806E0036890C /* KGDownstreamChannel.h */,
+				403B3A3A1718806E0036890C /* KGDownstreamChannel.m */,
+				403B3A3B1718806E0036890C /* KGDownstreamHandler.h */,
+				403B3A3C1718806E0036890C /* KGDownstreamHandler.m */,
+				403B3A3D1718806E0036890C /* KGDownstreamHandlerListener.h */,
+				403B3A3E1718806E0036890C /* KGUpstreamChannel.h */,
+				403B3A3F1718806E0036890C /* KGUpstreamChannel.m */,
+				403B3A401718806E0036890C /* KGUpstreamHandler.h */,
+				403B3A411718806E0036890C /* KGUpstreamHandler.m */,
+				403B3A421718806E0036890C /* KGUpstreamHandlerListener.h */,
+				403B3A431718806E0036890C /* KGWebSocketEmulatedChannel.h */,
+				403B3A441718806E0036890C /* KGWebSocketEmulatedChannel.m */,
+				403B3A451718806E0036890C /* KGWebSocketEmulatedDecoder.h */,
+				403B3A461718806E0036890C /* KGWebSocketEmulatedDecoder.m */,
+				403B3A471718806E0036890C /* KGWebSocketEmulatedDecoderListener.h */,
+				403B3A481718806E0036890C /* KGWebSocketEmulatedEncoder.h */,
+				403B3A491718806E0036890C /* KGWebSocketEmulatedEncoder.m */,
+				403B3A4A1718806E0036890C /* KGWebSocketEmulatedHandler.h */,
+				403B3A4B1718806E0036890C /* KGWebSocketEmulatedHandler.m */,
+			);
+			name = wseb;
+			sourceTree = "<group>";
+		};
+		A08E6D24153C12FC007E4C78 /* wsn */ = {
+			isa = PBXGroup;
+			children = (
+				403B3A64171880800036890C /* KGWebSocketNativeAuthenticationHandler.h */,
+				403B3A65171880800036890C /* KGWebSocketNativeAuthenticationHandler.m */,
+				403B3A66171880800036890C /* KGWebSocketNativeBalancingHandler.h */,
+				403B3A67171880800036890C /* KGWebSocketNativeBalancingHandler.m */,
+				403B3A68171880800036890C /* KGWebSocketNativeChannel.h */,
+				403B3A69171880800036890C /* KGWebSocketNativeChannel.m */,
+				403B3A6A171880810036890C /* KGWebSocketNativeCodec.h */,
+				403B3A6B171880810036890C /* KGWebSocketNativeCodec.m */,
+				403B3A6E171880810036890C /* KGWebSocketNativeDelegateHandler.h */,
+				403B3A6F171880810036890C /* KGWebSocketNativeDelegateHandler.m */,
+				403B3A70171880810036890C /* KGWebSocketNativeEncoder.h */,
+				403B3A71171880810036890C /* KGWebSocketNativeEncoder.m */,
+				403B3A72171880810036890C /* KGWebSocketNativeHandler.h */,
+				403B3A73171880810036890C /* KGWebSocketNativeHandler.m */,
+				403B3A74171880810036890C /* KGWebSocketNativeHandshakeHandler.h */,
+				403B3A75171880810036890C /* KGWebSocketNativeHandshakeHandler.m */,
+			);
+			name = wsn;
+			sourceTree = "<group>";
+		};
+		A0E90D05144F17D600666B29 = {
+			isa = PBXGroup;
+			children = (
+				A0E90D15144F17D600666B29 /* Core */,
+				40401F621719261F0051621A /* CoreTests */,
+				A0E90D12144F17D600666B29 /* Frameworks */,
+				A0E90D11144F17D600666B29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0E90D11144F17D600666B29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0E90D10144F17D600666B29 /* libKGWebSocket.a */,
+				40401F591719261F0051621A /* KGWebSocketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0E90D12144F17D600666B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04398DED19991CA000446889 /* XCTest.framework */,
+				40D86514175D20EB004C5BFF /* libOCMock.a */,
+				A0B750871537003B00FF9FA2 /* libicucore.dylib */,
+				A0B750851537002700FF9FA2 /* CFNetwork.framework */,
+				A0B750811537000100FF9FA2 /* Security.framework */,
+				A0E90D13144F17D600666B29 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0E90D15144F17D600666B29 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4076EFB1170E296600497AA1 /* WebSocket.h */,
+				A06EB9561521FEFE0057D878 /* websocket */,
+				A0031476153D5DC2004C8ED1 /* security */,
+				A0E90D16144F17D600666B29 /* Supporting Files */,
+			);
+			name = Core;
+			path = src/main/objc;
+			sourceTree = "<group>";
+		};
+		A0E90D16144F17D600666B29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0E90D17144F17D600666B29 /* HttpRequestIoHandler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF0A463415E591CD00AB110A /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				403B3A88171880B30036890C /* KGAuthenticateEvent.h */,
+				403B3A89171880B30036890C /* KGAuthenticateEvent.m */,
+				403B3A8A171880B30036890C /* KGCloseEvent.h */,
+				403B3A8B171880B30036890C /* KGCloseEvent.m */,
+				403B3A8C171880B30036890C /* KGErrorEvent.h */,
+				403B3A8D171880B30036890C /* KGErrorEvent.m */,
+				403B3A8E171880B30036890C /* KGEvent.h */,
+				403B3A8F171880B30036890C /* KGEvent.m */,
+				403B3A90171880B30036890C /* KGMessageEvent.h */,
+				403B3A91171880B30036890C /* KGMessageEvent.m */,
+				403B3A92171880B30036890C /* KGOpenEvent.h */,
+				403B3A93171880B30036890C /* KGOpenEvent.m */,
+				403B3A94171880B30036890C /* KGRedirectEvent.h */,
+				403B3A95171880B30036890C /* KGRedirectEvent.m */,
+				403B3A96171880B30036890C /* KGWebSocketDelegateImpl.h */,
+				403B3A97171880B30036890C /* KGWebSocketDelegateImpl.m */,
+				403B3A98171880B30036890C /* KGWebSocketDelegateListener.h */,
+				403B3A99171880B30036890C /* KGWebSocketNativeDelegate.h */,
+				403B3A9A171880B30036890C /* KGWsMessage.h */,
+				403B3A9B171880B30036890C /* KGWsMessage.m */,
+			);
+			name = transport;
+			path = html5/impl/transport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A0E90D0E144F17D600666B29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D23182171CB59F00343A29 /* KGTracer.h in Headers */,
+				403B39CA17187FAC0036890C /* KGWebSocketFactory.h in Headers */,
+				403B39C417187FAC0036890C /* KGWebSocketDelegate.h in Headers */,
+				403B39C517187FAC0036890C /* KGWebSocketExtension.h in Headers */,
+				403B39C717187FAC0036890C /* KGWebSocketExtensionParameter.h in Headers */,
+				403B39BD17187FAC0036890C /* KGByteBuffer.h in Headers */,
+				403B39C117187FAC0036890C /* KGWebSocket.h in Headers */,
+				4076EFB2170E296600497AA1 /* WebSocket.h in Headers */,
+				A06FB2E1156AA49D0028064D /* KGDispatchChallengeHandler.h in Headers */,
+				A01818791518F4BC0082EC25 /* KGChallengeResponse.h in Headers */,
+				A06FB2D0156AA4340028064D /* KGChallengeRequest.h in Headers */,
+				A06FB2D5156AA4520028064D /* KGLoginHandler.h in Headers */,
+				A06FB2D9156AA46D0028064D /* KGChallengeHandler.h in Headers */,
+				A06FB2ED156AA4CA0028064D /* KGBasicChallengeHandler.h in Headers */,
+				403B39BB17187FAC0036890C /* KGBase64Util.h in Headers */,
+				A06FB2E5156AA4AE0028064D /* KGNegotiableChallengeHandler.h in Headers */,
+				A06FB2E9156AA4BB0028064D /* KGNegotiateChallengeHandler.h in Headers */,
+				A0383E42156B893B0078DE15 /* BasicChallengeResponseFactory.h in Headers */,
+				A0383E46156B894D0078DE15 /* DefaultBasicChallengeHandler.h in Headers */,
+				A0383E4A156B895D0078DE15 /* DefaultDispatchChallengeHandler.h in Headers */,
+				A0383E4F156B89900078DE15 /* RealmUtils.h in Headers */,
+				A0227185157E1F5700CC1B51 /* Token.h in Headers */,
+				A0227189157E1FEF00CC1B51 /* Node.h in Headers */,
+				A022718D157E202F00CC1B51 /* OrderedDictionary.h in Headers */,
+				4076EE18170E047C00497AA1 /* KGChallengeHandler+Internal.h in Headers */,
+				403B39C317187FAC0036890C /* KGWebSocket+Internal.h in Headers */,
+				403B39C917187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h in Headers */,
+				403B39CC17187FAC0036890C /* KGParameterValuesContainer.h in Headers */,
+				403B39CE17187FAC0036890C /* NSString+KZNGAdditions.h in Headers */,
+				403B39E017187FD70036890C /* KGChannel.h in Headers */,
+				403B39E217187FD70036890C /* KGCommandMessage.h in Headers */,
+				403B39E317187FD70036890C /* KGDecoderInput.h in Headers */,
+				403B39E517187FD70036890C /* KGDecoderListener.h in Headers */,
+				403B39E617187FD70036890C /* KGEncoderOutput.h in Headers */,
+				403B39E717187FD70036890C /* KGHandler.h in Headers */,
+				403B39E817187FD70036890C /* KGTransportFactory.h in Headers */,
+				B5E56DFC190B607D00F80FBD /* KGResumableTimer.h in Headers */,
+				403B39EA17187FD70036890C /* KGWebSocketChannel.h in Headers */,
+				403B39EC17187FD70036890C /* KGWebSocketHandler.h in Headers */,
+				403B39ED17187FD70036890C /* KGWebSocketHandlerAdapter.h in Headers */,
+				403B39EF17187FD70036890C /* KGWebSocketHandlerListener.h in Headers */,
+				403B39F217187FF50036890C /* KGAuthenticationUtil.h in Headers */,
+				403B3A06171880080036890C /* KGHttpRequest.h in Headers */,
+				403B3A08171880080036890C /* KGHttpRequestAuthenticationHandler.h in Headers */,
+				403B3A0A171880080036890C /* KGHttpRequestFactory.h in Headers */,
+				403B3A0B171880080036890C /* KGHttpRequestHandler.h in Headers */,
+				403B3A0C171880080036890C /* KGHttpRequestHandlerAdapter.h in Headers */,
+				403B3A0E171880080036890C /* KGHttpRequestHandlerFactory.h in Headers */,
+				403B3A0F171880080036890C /* KGHttpRequestIoHandler.h in Headers */,
+				403B3A11171880080036890C /* KGHttpRequestListener.h in Headers */,
+				403B3A12171880080036890C /* KGHttpRequestLoggingHandler.h in Headers */,
+				403B3A14171880080036890C /* KGHttpRequestRedirectHandler.h in Headers */,
+				403B3A16171880080036890C /* KGHttpResponse.h in Headers */,
+				403B3A26171880300036890C /* KGWebSocketCompositeChannel.h in Headers */,
+				403B3A28171880300036890C /* KGWebSocketCompositeHandler.h in Headers */,
+				403B3A2A171880300036890C /* KGWebSocketHandshakeObject.h in Headers */,
+				403B3A2C171880300036890C /* KGWebSocketLoggingHandler.h in Headers */,
+				403B3A2E171880300036890C /* KGWebSocketReAuthenticateHandler.h in Headers */,
+				403B3A30171880300036890C /* KGWebSocketSelectedChannel.h in Headers */,
+				403B3A32171880300036890C /* KGWebSocketSelectedHandler.h in Headers */,
+				403B3A4C1718806E0036890C /* KGCreateChannel.h in Headers */,
+				403B3A4E1718806E0036890C /* KGCreateHandler.h in Headers */,
+				403B3A501718806E0036890C /* KGCreateHandlerListener.h in Headers */,
+				403B3A511718806E0036890C /* KGDownstreamChannel.h in Headers */,
+				403B3A531718806E0036890C /* KGDownstreamHandler.h in Headers */,
+				403B3A551718806E0036890C /* KGDownstreamHandlerListener.h in Headers */,
+				403B3A561718806E0036890C /* KGUpstreamChannel.h in Headers */,
+				403B3A581718806E0036890C /* KGUpstreamHandler.h in Headers */,
+				403B3A5A1718806E0036890C /* KGUpstreamHandlerListener.h in Headers */,
+				403B3A5B1718806E0036890C /* KGWebSocketEmulatedChannel.h in Headers */,
+				403B3A5D1718806E0036890C /* KGWebSocketEmulatedDecoder.h in Headers */,
+				403B3A5F1718806E0036890C /* KGWebSocketEmulatedDecoderListener.h in Headers */,
+				403B3A601718806E0036890C /* KGWebSocketEmulatedEncoder.h in Headers */,
+				403B3A621718806E0036890C /* KGWebSocketEmulatedHandler.h in Headers */,
+				403B3A76171880810036890C /* KGWebSocketNativeAuthenticationHandler.h in Headers */,
+				403B3A78171880810036890C /* KGWebSocketNativeBalancingHandler.h in Headers */,
+				403B3A7A171880810036890C /* KGWebSocketNativeChannel.h in Headers */,
+				403B3A7C171880810036890C /* KGWebSocketNativeCodec.h in Headers */,
+				403B3A80171880810036890C /* KGWebSocketNativeDelegateHandler.h in Headers */,
+				403B3A82171880810036890C /* KGWebSocketNativeEncoder.h in Headers */,
+				403B3A84171880810036890C /* KGWebSocketNativeHandler.h in Headers */,
+				403B3A86171880810036890C /* KGWebSocketNativeHandshakeHandler.h in Headers */,
+				403B3A9C171880B30036890C /* KGAuthenticateEvent.h in Headers */,
+				403B3A9E171880B30036890C /* KGCloseEvent.h in Headers */,
+				403B3AA0171880B30036890C /* KGErrorEvent.h in Headers */,
+				403B3AA2171880B30036890C /* KGEvent.h in Headers */,
+				403B3AA4171880B30036890C /* KGMessageEvent.h in Headers */,
+				403B3AA6171880B30036890C /* KGOpenEvent.h in Headers */,
+				403B3AA8171880B30036890C /* KGRedirectEvent.h in Headers */,
+				403B3AAA171880B30036890C /* KGWebSocketDelegateImpl.h in Headers */,
+				403B3AAC171880B30036890C /* KGWebSocketDelegateListener.h in Headers */,
+				403B3AAD171880B30036890C /* KGWebSocketNativeDelegate.h in Headers */,
+				403B3AAE171880B30036890C /* KGWsMessage.h in Headers */,
+				403B3ABE171880FA0036890C /* KGGenericURI.h in Headers */,
+				403B3AC0171880FA0036890C /* KGHexUtil.h in Headers */,
+				403B3AC2171880FA0036890C /* KGHttpURI.h in Headers */,
+				403B3AC4171880FA0036890C /* KGWSCompositeURI.h in Headers */,
+				403B3AC6171880FA0036890C /* KGWSURI.h in Headers */,
+				403B3AC8171880FA0036890C /* NSArray+KZNGAdditions.h in Headers */,
+				403B3ACA171880FA0036890C /* NSURL+KZNGAdditions.h in Headers */,
+				4047AC5217208CFA008C0A66 /* KGWebSocketExtension+Internal.h in Headers */,
+				400C24BE172DB97800465C9F /* KGConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40401F581719261F0051621A /* KGWebSocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40401F6E1719261F0051621A /* Build configuration list for PBXNativeTarget "KGWebSocketTests" */;
+			buildPhases = (
+				40401F541719261F0051621A /* Sources */,
+				40401F551719261F0051621A /* Frameworks */,
+				40401F561719261F0051621A /* Resources */,
+				40401F571719261F0051621A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40401F701719270C0051621A /* PBXTargetDependency */,
+			);
+			name = KGWebSocketTests;
+			productName = CoreTests;
+			productReference = 40401F591719261F0051621A /* KGWebSocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0E90D0F144F17D600666B29 /* KGWebSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E90D34144F17D600666B29 /* Build configuration list for PBXNativeTarget "KGWebSocket" */;
+			buildPhases = (
+				A0E90D0C144F17D600666B29 /* Sources */,
+				A0E90D0D144F17D600666B29 /* Frameworks */,
+				A0E90D0E144F17D600666B29 /* Headers */,
+				406AF5D916DC2A8400E7E100 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGWebSocket;
+			productName = HttpRequestIoHandler;
+			productReference = A0E90D10144F17D600666B29 /* libKGWebSocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0E90D07144F17D600666B29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Kaazing;
+			};
+			buildConfigurationList = A0E90D0A144F17D600666B29 /* Build configuration list for PBXProject "KGWebSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0E90D05144F17D600666B29;
+			productRefGroup = A0E90D11144F17D600666B29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0E90D0F144F17D600666B29 /* KGWebSocket */,
+				40401F581719261F0051621A /* KGWebSocketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40401F561719261F0051621A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40401F671719261F0051621A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40401F571719261F0051621A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		406AF5D916DC2A8400E7E100 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -e\n\nif [ ! -d \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}Headers\" ]\nthen\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}Headers\"\n\nelse\n\necho \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}Headers\" already populated, skipping...\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40401F541719261F0051621A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40401F77171928D10051621A /* KGByteBufferTest.m in Sources */,
+				402517211757DB660043B68D /* KGWebSocketTest.m in Sources */,
+				40D15A0517590CC300B437D4 /* KGWSCompositeURITest.m in Sources */,
+				40D15A08175911A600B437D4 /* KGWebSocketFactoryTest.m in Sources */,
+				B5E56E00190B61EC00F80FBD /* KGResumableTimerTest.m in Sources */,
+				40D865041759661B004C5BFF /* KGBasicChallengeHandlerTest.m in Sources */,
+				40D86508175979C0004C5BFF /* KGChallengeHandlerTest.m in Sources */,
+				40D8650B17597D4E004C5BFF /* KGTestLoginHandler.m in Sources */,
+				40D8650E17597E09004C5BFF /* KGChallengeRequestTest.m in Sources */,
+				40D86518175D3098004C5BFF /* TestUtil.m in Sources */,
+				40D8651E175D5F23004C5BFF /* KGWebSocketDelegateTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E90D0C144F17D600666B29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A018187A1518F4BC0082EC25 /* KGChallengeResponse.m in Sources */,
+				A06FB2D1156AA4340028064D /* KGChallengeRequest.m in Sources */,
+				A06FB2D6156AA4520028064D /* KGLoginHandler.m in Sources */,
+				A06FB2DA156AA46D0028064D /* KGChallengeHandler.m in Sources */,
+				A06FB2E2156AA49D0028064D /* KGDispatchChallengeHandler.m in Sources */,
+				A06FB2E6156AA4AE0028064D /* KGNegotiableChallengeHandler.m in Sources */,
+				A06FB2EA156AA4BB0028064D /* KGNegotiateChallengeHandler.m in Sources */,
+				A06FB2EE156AA4CA0028064D /* KGBasicChallengeHandler.m in Sources */,
+				A0383E43156B893B0078DE15 /* BasicChallengeResponseFactory.m in Sources */,
+				A0383E47156B894D0078DE15 /* DefaultBasicChallengeHandler.m in Sources */,
+				A0383E4B156B895D0078DE15 /* DefaultDispatchChallengeHandler.m in Sources */,
+				A0383E50156B89900078DE15 /* RealmUtils.m in Sources */,
+				A0227186157E1F5700CC1B51 /* Token.m in Sources */,
+				A022718A157E1FEF00CC1B51 /* Node.m in Sources */,
+				A022718E157E202F00CC1B51 /* OrderedDictionary.m in Sources */,
+				403B39BC17187FAC0036890C /* KGBase64Util.m in Sources */,
+				403B39BE17187FAC0036890C /* KGByteBuffer.m in Sources */,
+				403B39C217187FAC0036890C /* KGWebSocket.m in Sources */,
+				403B39C617187FAC0036890C /* KGWebSocketExtension.m in Sources */,
+				403B39C817187FAC0036890C /* KGWebSocketExtensionParameter.m in Sources */,
+				403B39CB17187FAC0036890C /* KGWebSocketFactory.m in Sources */,
+				403B39CD17187FAC0036890C /* KGParameterValuesContainer.m in Sources */,
+				403B39CF17187FAC0036890C /* NSString+KZNGAdditions.m in Sources */,
+				403B39E117187FD70036890C /* KGChannel.m in Sources */,
+				403B39E417187FD70036890C /* KGDecoderInput.m in Sources */,
+				403B39E917187FD70036890C /* KGTransportFactory.m in Sources */,
+				403B39EB17187FD70036890C /* KGWebSocketChannel.m in Sources */,
+				403B39EE17187FD70036890C /* KGWebSocketHandlerAdapter.m in Sources */,
+				403B39F317187FF50036890C /* KGAuthenticationUtil.m in Sources */,
+				403B3A07171880080036890C /* KGHttpRequest.m in Sources */,
+				403B3A09171880080036890C /* KGHttpRequestAuthenticationHandler.m in Sources */,
+				403B3A0D171880080036890C /* KGHttpRequestHandlerAdapter.m in Sources */,
+				403B3A10171880080036890C /* KGHttpRequestIoHandler.m in Sources */,
+				403B3A13171880080036890C /* KGHttpRequestLoggingHandler.m in Sources */,
+				403B3A15171880080036890C /* KGHttpRequestRedirectHandler.m in Sources */,
+				403B3A17171880080036890C /* KGHttpResponse.m in Sources */,
+				403B3A27171880300036890C /* KGWebSocketCompositeChannel.m in Sources */,
+				403B3A29171880300036890C /* KGWebSocketCompositeHandler.m in Sources */,
+				403B3A2B171880300036890C /* KGWebSocketHandshakeObject.m in Sources */,
+				403B3A2D171880300036890C /* KGWebSocketLoggingHandler.m in Sources */,
+				403B3A2F171880300036890C /* KGWebSocketReAuthenticateHandler.m in Sources */,
+				403B3A31171880300036890C /* KGWebSocketSelectedChannel.m in Sources */,
+				B5E56DFB190B607D00F80FBD /* KGResumableTimer.m in Sources */,
+				403B3A33171880300036890C /* KGWebSocketSelectedHandler.m in Sources */,
+				403B3A4D1718806E0036890C /* KGCreateChannel.m in Sources */,
+				403B3A4F1718806E0036890C /* KGCreateHandler.m in Sources */,
+				403B3A521718806E0036890C /* KGDownstreamChannel.m in Sources */,
+				403B3A541718806E0036890C /* KGDownstreamHandler.m in Sources */,
+				403B3A571718806E0036890C /* KGUpstreamChannel.m in Sources */,
+				403B3A591718806E0036890C /* KGUpstreamHandler.m in Sources */,
+				403B3A5C1718806E0036890C /* KGWebSocketEmulatedChannel.m in Sources */,
+				403B3A5E1718806E0036890C /* KGWebSocketEmulatedDecoder.m in Sources */,
+				403B3A611718806E0036890C /* KGWebSocketEmulatedEncoder.m in Sources */,
+				403B3A631718806E0036890C /* KGWebSocketEmulatedHandler.m in Sources */,
+				403B3A77171880810036890C /* KGWebSocketNativeAuthenticationHandler.m in Sources */,
+				403B3A79171880810036890C /* KGWebSocketNativeBalancingHandler.m in Sources */,
+				403B3A7B171880810036890C /* KGWebSocketNativeChannel.m in Sources */,
+				403B3A7D171880810036890C /* KGWebSocketNativeCodec.m in Sources */,
+				403B3A81171880810036890C /* KGWebSocketNativeDelegateHandler.m in Sources */,
+				403B3A83171880810036890C /* KGWebSocketNativeEncoder.m in Sources */,
+				403B3A85171880810036890C /* KGWebSocketNativeHandler.m in Sources */,
+				403B3A87171880810036890C /* KGWebSocketNativeHandshakeHandler.m in Sources */,
+				403B3A9D171880B30036890C /* KGAuthenticateEvent.m in Sources */,
+				403B3A9F171880B30036890C /* KGCloseEvent.m in Sources */,
+				403B3AA1171880B30036890C /* KGErrorEvent.m in Sources */,
+				403B3AA3171880B30036890C /* KGEvent.m in Sources */,
+				403B3AA5171880B30036890C /* KGMessageEvent.m in Sources */,
+				403B3AA7171880B30036890C /* KGOpenEvent.m in Sources */,
+				403B3AA9171880B30036890C /* KGRedirectEvent.m in Sources */,
+				403B3AAB171880B30036890C /* KGWebSocketDelegateImpl.m in Sources */,
+				403B3AAF171880B30036890C /* KGWsMessage.m in Sources */,
+				403B3ABF171880FA0036890C /* KGGenericURI.m in Sources */,
+				403B3AC1171880FA0036890C /* KGHexUtil.m in Sources */,
+				403B3AC3171880FA0036890C /* KGHttpURI.m in Sources */,
+				403B3AC5171880FA0036890C /* KGWSCompositeURI.m in Sources */,
+				403B3AC7171880FA0036890C /* KGWSURI.m in Sources */,
+				403B3AC9171880FA0036890C /* NSArray+KZNGAdditions.m in Sources */,
+				403B3ACB171880FA0036890C /* NSURL+KZNGAdditions.m in Sources */,
+				40D23183171CB59F00343A29 /* KGTracer.m in Sources */,
+				400C24BF172DB97800465C9F /* KGConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40401F701719270C0051621A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0E90D0F144F17D600666B29 /* KGWebSocket */;
+			targetProxy = 40401F6F1719270C0051621A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40401F651719261F0051621A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40401F661719261F0051621A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40401F6C1719261F0051621A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/CoreTests/include\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CoreTests/include/**";
+				INFOPLIST_FILE = "CoreTests/KGWebSocketTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CoreTests/include/OCMock\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/CoreTests/include/OCMock/libOCMock.a",
+					"-ObjC",
+				);
+				PRODUCT_NAME = KGWebSocketTests;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40401F6D1719261F0051621A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/CoreTests/include\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CoreTests/include/**";
+				INFOPLIST_FILE = "CoreTests/KGWebSocketTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CoreTests/include/OCMock\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/CoreTests/include/OCMock/libOCMock.a",
+					"-ObjC",
+				);
+				PRODUCT_NAME = KGWebSocketTests;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A0E90D32144F17D600666B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fobjc-arc-exceptions";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0E90D33144F17D600666B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fobjc-arc-exceptions";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0E90D35144F17D600666B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DSTROOT = /tmp/HttpRequestIoHandler.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CoreTests/test-framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/main/objc/HttpRequestIoHandler-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = KGWebSocket;
+				PUBLIC_HEADERS_FOLDER_PATH = Core/;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A0E90D36144F17D600666B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DSTROOT = /tmp/HttpRequestIoHandler.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CoreTests/test-framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/main/objc/HttpRequestIoHandler-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = KGWebSocket;
+				PUBLIC_HEADERS_FOLDER_PATH = Core/;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40401F6E1719261F0051621A /* Build configuration list for PBXNativeTarget "KGWebSocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40401F6C1719261F0051621A /* Debug */,
+				40401F6D1719261F0051621A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E90D0A144F17D600666B29 /* Build configuration list for PBXProject "KGWebSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E90D32144F17D600666B29 /* Debug */,
+				A0E90D33144F17D600666B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E90D34144F17D600666B29 /* Build configuration list for PBXNativeTarget "KGWebSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E90D35144F17D600666B29 /* Debug */,
+				A0E90D36144F17D600666B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0E90D07144F17D600666B29 /* Project object */;
+}
