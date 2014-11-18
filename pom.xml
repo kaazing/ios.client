@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2007-2012, Kaazing Corporation. All rights reserved.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.kaazing.gateway.core</groupId>
+        <artifactId>com.kaazing.gateway.core.common</artifactId>
+        <version>1.0.0.44</version>
+    </parent>
+
+    <groupId>com.kaazing.gateway</groupId>
+    <artifactId>com.kaazing.gateway.client.ios.demo</artifactId>
+    <packaging>pom</packaging>
+    <version>4.0.2.25-SNAPSHOT</version>
+    <name>Kaazing WebSocket Gateway - iOS Client Demo</name>
+
+    <organization>
+        <name>Kaazing Corporation</name>
+    </organization>
+    <inceptionYear>2007</inceptionYear>
+
+    <url>https://github.com/kaazing-private/gateway.client.ios.demo.git</url>
+    <scm>
+        <connection>scm:git:${project.scm.url}</connection>
+        <developerConnection>scm:git:${project.scm.url}</developerConnection>
+        <url>git@github.com:kaazing-private/gateway.client.ios.demo.git</url>
+    </scm>
+
+    <dependencies>
+        <!-- iOS library -->
+        <dependency>
+            <groupId>com.kaazing.gateway</groupId>
+            <artifactId>com.kaazing.gateway.client.ios</artifactId>
+            <version>[4.0.0.0,4.1.0.0)</version>
+            <classifier>bin</classifier>
+            <type>zip</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>clean-previous-build</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <executable>rm</executable>
+                            <arguments>
+                                <argument>-rf</argument>
+                                <argument>src/main/Xcode/usr</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>unpack-library</id>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includesGroupIds>com.kaazing.gateway</includesGroupIds>
+                            <includesArtifactIds>com.kaazing.gateway.client.ios</includesArtifactIds>
+                            <includesClassifiers>bin</includesClassifiers>
+                            <includesTypes>zip</includesTypes>
+                            <includes>KGWebSocket.framework/**/*</includes>
+                            <outputDirectory>src/main/Xcode/usr</outputDirectory>
+                            <markersDirectory>target/dependency-sources-markers</markersDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Attach Demo Source Files -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <!-- this works for assembly build, but breaks from top-level -->
+                <configuration>
+                    <filters>
+                        <filter>src/main/assembly/filter.properties</filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/sources.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.google.code.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <configuration>
+                    <useDefaultExcludes>true</useDefaultExcludes>
+                    <excludes>
+                        <exclude>**/*.a</exclude>
+                        <exclude>**/*.pch</exclude>
+                        <exclude>**/*.strings</exclude>
+                        <exclude>**/*.plist</exclude>
+                    </excludes>
+                    <mapping>
+                        <h>java</h>
+                        <m>java</m>
+                    </mapping>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
