@@ -30,7 +30,7 @@
 
     <groupId>org.kaazing</groupId>
     <artifactId>gateway.client.ios.common</artifactId>
-    <version>5.0.0.7</version>
+    <version>5.0.0.8-SNAPSHOT</version>
     <name>Kaazing WebSocket Gateway Core - Common iOS Environment</name>
     <packaging>pom</packaging>
 
