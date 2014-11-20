@@ -37,7 +37,7 @@
     <groupId>org.kaazing</groupId>
     <artifactId>gateway.client.ios.demo</artifactId>
     <packaging>pom</packaging>
-    <version>5.0.0.3-SNAPSHOT</version>
+    <version>5.0.0.2</version>
     <name>Kaazing WebSocket Gateway - iOS WebSocket Client Demo</name>
 
     <organization>
