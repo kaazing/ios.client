@@ -48,41 +48,28 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>com.kaazing.maven.plugins</groupId>
-                <artifactId>maven-ios-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <target>framework</target>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>clean-library</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>build-library</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>prepare-package</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>prepare-package</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
+                  <execution>
+                    <id>Build Framework</id>
+                    <phase>compile</phase>
+                    <configuration>
+                      <executable>xctool</executable>
+                      <arguments>
+                        <argument>-project</argument>
+                        <argument>${project.projectName}.xcodeproj</argument>
+                        <argument>-scheme</argument>
+                        <argument>Framework</argument>
+                      </arguments>
+                    </configuration>
+                    <goals>
+                      <goal>exec</goal>
+                    </goals>
+                  </execution>
+                  
                   <!-- execute a custom script that tests the 32 bit ios lib -->
                   <execution>
                     <id>test-32bit-ios-gateway-lib</id>
