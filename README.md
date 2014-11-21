@@ -1,9 +1,9 @@
-iOS WebSocket Client Demo
-=========================
+Objective-C WebSocket Client Demo
+=================================
 
 About this project
 ------------------
-This is a simple Xcode project that shows how to use the Kaazing WebSocket iOS Client library!
+This is a simple Xcode project that shows how to use the Kaazing WebSocket Objective-C Client library!
 
 Requirements
 ------------
