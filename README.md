@@ -3,7 +3,7 @@ iOS WebSocket Client Demo
 
 About this project
 ------------------
-This is a simple Xcode project that show how to use the Kaazing WebSocekt iOS Client library!
+This is a simple Xcode project that shows how to use the Kaazing WebSocket iOS Client library!
 
 Requirements
 ------------
@@ -16,8 +16,9 @@ Requirements
 
 Steps for building this project
 --------------------------------
-0. Clone the repo
-0. mvn clean package
+0. Clone the repo: ```git clone https://github.com/kaazing/gateway.client.ios.demo.git```
+0. Go to the cloned directory: ```cd gateway.client.ios.demo```
+0. Build the project: ```mvn clean package```
 
 This downloads the required iOS library (including its headers) and puts them into the _right_ directory.
 
@@ -28,6 +29,6 @@ Once the above steps have been done, start Xcode and open the project, by going 
 
     src/main/Xcode
 
-This _should_ get the project included into your Xcode IDE and you should be able to run the project in the simulator;
+This _should_ get the project included into your Xcode IDE and you should be able to run the project in the simulator.
 
 Have fun!
