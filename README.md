@@ -9,6 +9,7 @@ gateway.client.ios.common is a parent project of gateway.client.ios and future i
 ## Minimum requirements for building the project
 
 * Java SE Development Kit (JDK) 7 or higher
+* Maven 3.0.5 or higher
 
 ## Steps for building this project
 
