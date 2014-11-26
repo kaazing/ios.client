@@ -25,10 +25,6 @@ gateway.client.ios is an implementation of WebSocket specification [RFC-6455] (h
 0. Integrate this component in gateway.distribution by updating the version in gateway.distribution's pom
 0. Build the corresponding gateway.distribution and use it for application development
 
-# Running a Prebuilt Project
-
-You can also obtain the WebSocket iOS Client library by downloading the full Kaazing WebSocket Gateway from kaazing.org. The iOS WebSocket Client library - KGWebSocket.dmg - will be found under GATEWAY_HOME/lib/client/ios folder.
-
 # Learning How to Develop Client Applications
 
 Learn to develop RFC-6455 based [iOS client applications](http://kazing.org/documentaton/5.0/dev-ios/o_dev_ios.html).
