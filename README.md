@@ -27,7 +27,7 @@ gateway.client.ios is an implementation of WebSocket specification [RFC-6455] (h
 
 # Learning How to Develop Client Applications
 
-Learn to develop RFC-6455 based [iOS client applications](http://kazing.org/documentaton/5.0/dev-ios/o_dev_ios.html).
+Learn to develop RFC-6455 based [iOS client applications](http://kaazing.org/documentaton/5.0/dev-ios/o_dev_ios.html).
 
 # View a Running Demo
 
