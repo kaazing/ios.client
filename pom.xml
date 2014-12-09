@@ -54,12 +54,6 @@
             <plugins>
                 <plugin>
                     <groupId>com.kaazing.maven.plugins</groupId>
-                    <artifactId>maven-ios-plugin</artifactId>
-                    <version>1.0.0.8</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>com.kaazing.maven.plugins</groupId>
                     <artifactId>maven-appledoc-plugin</artifactId>
                     <version>1.0.0.7</version>
                 </plugin>
