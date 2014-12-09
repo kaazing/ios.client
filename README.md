@@ -16,7 +16,7 @@ gateway.client.ios is an implementation of WebSocket specification [RFC-6455] (h
 
 ## Steps for building this project
 
-0. Clone the repo: ```git clone https://github.com/kaazing/gateway.client.java.git```
+0. Clone the repo: ```git clone https://github.com/kaazing/gateway.client.ios```
 0. Go to the cloned directory: ```cd gateway.client.ios```
 0. Build the project: ```mvn clean install```
 
