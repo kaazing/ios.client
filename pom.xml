@@ -30,7 +30,7 @@
 
     <groupId>org.kaazing</groupId>
     <artifactId>gateway.client.ios</artifactId>
-    <version>5.0.0.8</version>
+    <version>5.0.0.9</version>
     <name>Kaazing WebSocket Gateway - iOS Library</name>
     <packaging>pom</packaging>
 
@@ -40,6 +40,9 @@
     <inceptionYear>2007</inceptionYear>
 
     <url>https://github.com/kaazing/gateway.client.ios.git</url>
+    <description>
+        Objective-C implementation of WebSocket RFC-6455 specification.
+    </description>
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
