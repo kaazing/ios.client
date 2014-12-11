@@ -60,7 +60,6 @@ DerivedData
 
 # Precompiled Headers
 *.gch
-*.pch
 
 # Libraries
 *.lib
@@ -82,3 +81,5 @@ DerivedData
 *.x86_64
 *.hex
 
+# Framework is built and included automatically
+src/main/Xcode/usr/KGWebSocket.framework/*
