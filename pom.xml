@@ -40,9 +40,7 @@
     <inceptionYear>2007</inceptionYear>
 
     <url>https://github.com/kaazing/gateway.client.ios.common.git</url>
-    <description>
-        Common environment for iOS client projects.
-    </description>
+    <description>Common environment for iOS client projects.</description>
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
