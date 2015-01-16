@@ -38,16 +38,6 @@
                ReferencedContainer = "container:KGWebSocket.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40E577FC199B1E0B00C06601"
-               BuildableName = "RobotTests.xctest"
-               BlueprintName = "RobotTests"
-               ReferencedContainer = "container:KGWebSocket.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
