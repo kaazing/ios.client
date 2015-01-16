@@ -1,9 +1,4 @@
-language: Java
-os: osx
-jdk:
-  - oraclejdk7
-  - openjdk7
-before_install:
-    - brew update
-    - brew upgrade xctool
-script: mvn verify
+language: objective-c
+xcode_project: KGWebSocket.xcodeproj
+xcode_scheme: KGWebSocket
+xcode_sdk: iphonesimulator
