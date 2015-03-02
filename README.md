@@ -2,8 +2,8 @@
 
 [![Build Status][build-status-image]][build-status]
 
-[build-status-image]: https://travis-ci.org/kaazing/gateway.client.ios.common-1.svg?branch=develop
-[build-status]: https://travis-ci.org/kaazing/gateway.client.ios.common-1
+[build-status-image]: https://travis-ci.org/kaazing/gateway.client.ios.common.svg?branch=develop
+[build-status]: https://travis-ci.org/kaazing/gateway.client.ios.common
 
 # About this Project
 
