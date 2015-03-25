@@ -28,6 +28,7 @@
 #import "KGWebSocketEmulatedHandler.h"
 #import "KGTransportFactory.h"
 #import "KGTracer.h"
+#import "KGConstants.h"
 
 // "Constants":
 NSMutableData* RECONNECT_EVENT_BYTES;
@@ -218,6 +219,8 @@ unsigned char WSE_PONG_FRAME_CODE = 0x8a;
     
     KGHttpRequest * request = [[KGHttpRequest HTTP_REQUEST_FACTORY] createHttpRequest:@"POST" uri:[channel location] async:YES];
     [request setHeader:HEADER_CONTENT_TYPE value:@"application/octet-stream"];
+    NSString *sequence = [NSString stringWithFormat:@"%qi", [channel nextSequence]];
+    [request setHeader:HEADER_SEQUENCE_NO value:sequence];
 
     // stash the channel:
     [request setParent:channel];
@@ -243,6 +246,8 @@ unsigned char WSE_PONG_FRAME_CODE = 0x8a;
     
     KGHttpRequest * request = [[KGHttpRequest HTTP_REQUEST_FACTORY] createHttpRequest:@"POST" uri:[channel location] async:YES];
     [request setHeader:HEADER_CONTENT_TYPE value:@"application/octet-stream"];
+    NSString *sequence = [NSString stringWithFormat:@"%qi", [channel nextSequence]];
+    [request setHeader:HEADER_SEQUENCE_NO value:sequence];
     
     // stash the channel:
     [request setParent:channel];
@@ -284,6 +289,8 @@ unsigned char WSE_PONG_FRAME_CODE = 0x8a;
     // SendIfReady(channel...
     
     KGHttpRequest * request = [[KGHttpRequest HTTP_REQUEST_FACTORY] createHttpRequest:@"POST" uri:[channel location] async:YES];
+    NSString *sequence = [NSString stringWithFormat:@"%qi", [channel nextSequence]];
+    [request setHeader:HEADER_SEQUENCE_NO value:sequence];
     
     // stash the channel:
     [request setParent:channel];
@@ -310,6 +317,8 @@ unsigned char WSE_PONG_FRAME_CODE = 0x8a;
     // SendIfReady(channel...
     
     KGHttpRequest * request = [[KGHttpRequest HTTP_REQUEST_FACTORY] createHttpRequest:@"POST" uri:[channel location] async:YES];
+    NSString *sequence = [NSString stringWithFormat:@"%qi", [channel nextSequence]];
+    [request setHeader:HEADER_SEQUENCE_NO value:sequence];
     
     // stash the channel:
     [request setParent:channel];

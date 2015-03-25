@@ -30,7 +30,7 @@
 @property (nonatomic, copy) NSString* protocol;
 
 // ctor::
-- (id) initWithLocation:(KGHttpURI *) location cookie:(NSString*)cookie;
+- (id) initWithLocation:(KGHttpURI *) location cookie:(NSString*)cookie sequence:(long long)sequence;
 
 - (KGWebSocketEmulatedDecoder *) decoder;
 - (void) setClientIdentity:(SecIdentityRef) clientIdenity;

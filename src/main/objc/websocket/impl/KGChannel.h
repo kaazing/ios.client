@@ -24,6 +24,8 @@
 
 @interface KGChannel : NSObject
 
+- (id) initWithSequence:(long long) sequence;
+
 // Top level class (no subclasses) - so it has init0
 - (void) init0;
 
@@ -38,5 +40,9 @@
 -(BOOL)authenticationReceived;
 
 // toString...
+
+- (long long) nextSequence;
+
+- (long long) currentSequence;
 
 @end

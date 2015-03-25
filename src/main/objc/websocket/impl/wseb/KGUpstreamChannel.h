@@ -35,7 +35,9 @@
 @property (nonatomic, retain) KGWebSocketEmulatedChannel * parent;
 
 // methods:
-- (id) initWithLocation:(KGHttpURI *) location cookie:(NSString*)cookie;
+- (id) initWithLocation:(KGHttpURI *) location
+                 cookie:(NSString*)cookie
+               sequence:(long long)sequence;
 
 - (void) setClientIdentity:(SecIdentityRef) clientIdenity;
 - (SecIdentityRef) clientIdentity;
