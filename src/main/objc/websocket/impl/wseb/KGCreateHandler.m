@@ -240,6 +240,8 @@
     
     // Notify gateway that client supports PING/PONG
     [[request headers] setValue:@"ping" forKey:HEADER_ACCEPT_COMMANDS];
+    NSString *sequence = [NSString stringWithFormat:@"%qi", [createChannel nextSequence]];
+    [request setHeader:HEADER_SEQUENCE_NO value:sequence];
     [request setParent:createChannel];
     [request setClientIdentity:[createChannel clientIdentity]];
     [_nextHandler processOpen:request];

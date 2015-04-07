@@ -35,6 +35,7 @@ NSString *const HEADER_PROTOCOL = @"WebSocket-Protocol";
 NSString *const HEADER_SEC_PROTOCOL = @"Sec-WebSocket-Protocol";
 NSString *const HEADER_SEC_EXTENSIONS = @"Sec-WebSocket-Extensions";
 NSString *const HEADER_ACCEPT_COMMANDS = @"X-Accept-Commands";
+NSString *const HEADER_SEQUENCE_NO = @"X-Sequence-No";
 
 @implementation KGConstants
 

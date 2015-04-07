@@ -20,17 +20,20 @@
  */
 
 #import "KGChannel.h"
+#import <libkern/OSAtomic.h>
 
 @implementation KGChannel {
     KGChannel * _parent;
     KGChallengeResponse * _challengeResponse;
     BOOL _authenticationReceived;
+    long long _sequence;
 }
 
 - (void) init0 {
     // Top level class - no reason to call [super init0]
     _challengeResponse = [[KGChallengeResponse alloc] init];
     _authenticationReceived = NO;
+    _sequence = 0;
 }
 
 - (id)init {
@@ -38,6 +41,14 @@
     if (self) {
         // Only Top level class should call init0
         [self init0];
+    }
+    return self;
+}
+
+- (id) initWithSequence:(long long)sequence {
+    self = [self init];
+    if (self) {
+        _sequence = sequence;
     }
     return self;
 }
@@ -71,6 +82,15 @@
 
 -(KGChallengeResponse *)challengeResponse {
     return _challengeResponse;
+}
+
+- (long long) nextSequence {
+    OSAtomicIncrement64(&_sequence);
+    return _sequence;
+}
+
+- (long long) currentSequence {
+    return _sequence;
 }
 
 @end

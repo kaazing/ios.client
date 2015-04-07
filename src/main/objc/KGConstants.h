@@ -31,6 +31,7 @@ extern NSString *const HEADER_PROTOCOL;
 extern NSString *const HEADER_SEC_PROTOCOL;
 extern NSString *const HEADER_SEC_EXTENSIONS;
 extern NSString *const HEADER_ACCEPT_COMMANDS;
+extern NSString *const HEADER_SEQUENCE_NO;
 
 @interface KGConstants : NSObject
 

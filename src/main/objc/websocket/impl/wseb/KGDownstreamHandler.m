@@ -32,6 +32,7 @@
 #import "KGWebSocketEmulatedChannel.h"
 #import "KGWebSocketEmulatedDecoder.h"
 #import "KGTracer.h"
+#import "KGConstants.h"
 
 
 @interface KGDS_WebSocketEmulatedDecoderListener_1 : NSObject <KGWebSocketEmulatedDecoderListener>
@@ -235,7 +236,8 @@
     NSLog(@"[KGDownstreamHandler processConnect]: %@", uri);
 #endif
     KGHttpRequest * request = [[KGHttpRequest HTTP_REQUEST_FACTORY] createHttpRequest:@"POST" uri:uri async:YES];
-    
+    NSString *sequence = [NSString stringWithFormat:@"%qi", [channel nextSequence]];
+    [request setHeader:HEADER_SEQUENCE_NO value:sequence];
     [request setParent:channel];
     KGWebSocketChannel *parentChannel = (KGWebSocketChannel *)[channel parent];
     SecIdentityRef identity = [parentChannel clientIdentity];

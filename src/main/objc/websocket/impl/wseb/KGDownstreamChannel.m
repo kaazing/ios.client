@@ -35,16 +35,18 @@
 
 - (void) init0 {
 }
-- (id)init {
-    self = [super init];
+- (id)initWithSequence:(long long)sequence {
+    self = [super initWithSequence:sequence];
     if (self) {
         [self init0];
     }
     return self;
 }
 
-- (id) initWithLocation:(KGHttpURI *) location cookie:(NSString*)cookie {
-    self = [self init];
+- (id) initWithLocation:(KGHttpURI *) location
+                 cookie:(NSString*)cookie
+               sequence:(long long)sequence {
+    self = [self initWithSequence:sequence];
     if (self) {
         _cookie = cookie;
         _location = location;

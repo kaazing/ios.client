@@ -68,10 +68,11 @@
 #ifdef DEBUG
     NSLog(@"[KGWebSocketEmulatedHandler (KGCreateHandlerListener_1) createCompleted]");
 #endif
+    long long sequence = [channel currentSequence];
     
     KGWebSocketEmulatedChannel * parent = (KGWebSocketEmulatedChannel *) [channel parent];
     parent.createChannel = nil;
-    KGUpstreamChannel * upstreamChannel = [[KGUpstreamChannel alloc] initWithLocation:upstreamUri cookie:[channel cookie]];
+    KGUpstreamChannel * upstreamChannel = [[KGUpstreamChannel alloc] initWithLocation:upstreamUri cookie:[channel cookie] sequence:sequence];
     [upstreamChannel setParent:parent];
     [parent setUpstreamChannel:upstreamChannel];
     KGWebSocketChannel *parentChannel = (KGWebSocketChannel *)[channel parent];
@@ -79,7 +80,7 @@
     
     // ios specific setting...
     downstreamUri = (KGHttpURI *) [downstreamUri addQueryParameter:@".kc=text/plain;charset=windows-1252"];
-    KGDownstreamChannel * downstreamChannel = [[KGDownstreamChannel alloc] initWithLocation:downstreamUri cookie:[channel cookie]];
+    KGDownstreamChannel * downstreamChannel = [[KGDownstreamChannel alloc] initWithLocation:downstreamUri cookie:[channel cookie] sequence:sequence];
     [downstreamChannel setParent:parent];
     [parent setDownstreamChannel:downstreamChannel];
     [downstreamChannel setClientIdentity:[parentChannel clientIdentity]];
@@ -286,7 +287,7 @@ NSString *const HEADER_CONTENT_TYPE = @"Content-Type";
         path = [path substringWithRange:NSMakeRange(0, ([path length]-1))];
     }
     
-    KGCreateChannel * createChannel = [[KGCreateChannel alloc] init];
+    KGCreateChannel * createChannel = [[KGCreateChannel alloc] initWithSequence:0];
     [createChannel setParent:channel];
     KGWebSocketChannel *parentChannel = (KGWebSocketChannel *)[channel parent];
     [createChannel setClientIdentity:[parentChannel clientIdentity]];
