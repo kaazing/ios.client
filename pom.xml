@@ -8,9 +8,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.kaazing.gateway.core</groupId>
-        <artifactId>com.kaazing.gateway.core.client.ios.common</artifactId>
-        <version>1.0.0.13</version>
+        <groupId>com.kaazing.gateway</groupId>
+        <artifactId>com.kaazing.gateway.client.ios.common</artifactId>
+        <version>1.0.0.17</version>
     </parent>
 
     <groupId>com.kaazing.gateway</groupId>
