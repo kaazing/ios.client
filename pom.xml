@@ -15,7 +15,7 @@
 
     <groupId>com.kaazing.gateway</groupId>
     <artifactId>com.kaazing.gateway.client.ios.doc</artifactId>
-    <version>4.0.0.33</version>
+    <version>4.0.0.34-SNAPSHOT</version>
     <name>Kaazing WebSocket Gateway - iOS Library API doc</name>
     <packaging>pom</packaging>
 
