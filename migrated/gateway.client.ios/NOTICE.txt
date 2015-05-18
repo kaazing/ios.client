@@ -1,0 +1,4 @@
+This product depends on ocmock 3.1.1
+
+    License:  http://www.apache.org/licenses/LICENSE-2.0 (Apache 2.0 License)
+    Homepage: http://www.ocmock.org/

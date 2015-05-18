@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: KGWebSocket.xcodeproj
+xcode_scheme: KGWebSocket
+xcode_sdk: iphonesimulator
