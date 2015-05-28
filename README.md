@@ -1,4 +1,4 @@
-# gateway.client.ios.common
+# ios.client
 
 [![Build Status][build-status-image]][build-status]
 
