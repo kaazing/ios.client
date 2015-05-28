@@ -1,32 +1,33 @@
-iOS HTML5 client demo
-=====================
+Objective-C WebSocket Client Demo
+=================================
 
 About this project
 ------------------
-This is a simple Xcode project that show how to use the Kaazing HTML5 iOS library!
-
+This is a simple Xcode project that shows how to use the [Kaazing WebSocket Objective-C Client library](https://github.com/kaazing/gateway.client.ios)!
 Requirements
 ------------
 
-You need to have Xcode 4.3 ready and the iphone simulator in place
-
-Before you can open the project you have to execute the following maven command:
-
-    mvn clean install
-
-This download the required iOS library (including its headers) and puts them into the _right_ directory.
+* Java SE Development Kit (JDK) 7 or higher
+* Maven 3.0.5 or higher
+* Xcode 5 or higher
+* You'll need Xcode's Command Line Tools installed.  From Xcode, install via _Xcode &rarr; Preferences &rarr; Downloads_.
 
 
-Getting started
----------------
+Steps for building this project
+--------------------------------
+0. Clone the repo: ```git clone https://github.com/kaazing/ios.client.git```
+0. Go to the cloned directory: ```cd ios.client```
+0. Build the project: ```mvn clean install```
+
+This builds the required iOS library (including its headers) and puts them into the _right_ directory.
+
+
+Running the demo from within Xcode
+------------------------------------
 Once the above steps have been done, start Xcode and open the project, by going the following folder with the Xcode wizard:
 
     src/main/Xcode
 
-This _should_ get the project included into your Xcode IDE and you should be able to start the project on the emulator;
+This _should_ get the project included into your Xcode IDE and you should be able to run the project in the simulator.
 
 Have fun!
-
-
-
-
