@@ -1,53 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright (c) 2007-2012, Kaazing Corporation. All rights reserved.
-
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.kaazing.gateway.core</groupId>
-        <artifactId>com.kaazing.gateway.core.common</artifactId>
-        <version>1.0.0.52</version>
+        <groupId>org.kaazing</groupId>
+        <artifactId>ios.client.ws.common</artifactId>
+        <version>develop-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.kaazing.gateway</groupId>
-    <artifactId>com.kaazing.gateway.client.ios.demo.clientCertificate</artifactId>
+    <groupId>org.kaazing</groupId>
+    <artifactId>gateway.client.ios.demo</artifactId>
     <packaging>pom</packaging>
-    <version>4.0.0.0-SNAPSHOT</version>
-    <name>Kaazing WebSocket Gateway - iOS Client Demo</name>
-
+    <version>develop-SNAPSHOT</version>
+    <name>Kaazing iOS Client - WebSocket Demo</name>
 
     <organization>
         <name>Kaazing Corporation</name>
     </organization>
     <inceptionYear>2007</inceptionYear>
 
-    <url>https://github.com/kaazing-private/gateway.client.ios.demo.clientCertificate.git</url>
+    <url>https://github.com/kaazing/ios.client.git</url>
+    <description>Objective-C demo for WebSocket RFC-6455 implementation.</description>
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
-        <url>git@github.com:kaazing-private/gateway.client.ios.demo.clientCertificate.git</url>
+        <url>git@github.com:kaazing/ios.client.git</url>
     </scm>
+
     <dependencies>
-        <!-- iOS library -->
+        <!-- WebSocket iOS library -->
         <dependency>
-            <groupId>com.kaazing.gateway</groupId>
-            <artifactId>com.kaazing.gateway.client.ios</artifactId>
-            <version>[4.0.0.0,4.1.0.0)</version>
+            <groupId>org.kaazing</groupId>
+            <artifactId>gateway.client.ios</artifactId>
+            <version>${project.version}</version>
             <classifier>bin</classifier>
             <type>zip</type>
-        </dependency>
-
-        <!-- demo resources / webpages -->
-        <dependency>
-            <groupId>com.kaazing.gateway.core</groupId>
-            <artifactId>com.kaazing.gateway.core.demo.resources</artifactId>
-            <version>3.3.0.27</version>
-            <type>zip</type>
-            <classifier>headers</classifier>
         </dependency>
     </dependencies>
 
@@ -56,7 +43,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
                 <executions>
                     <execution>
                         <id>clean-previous-build</id>
@@ -75,21 +61,6 @@
                 </executions>
             </plugin>
 
-            <!-- Copy the demo resources -->
-            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>target/content</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
@@ -100,8 +71,8 @@
                             <goal>unpack-dependencies</goal>
                         </goals>
                         <configuration>
-                            <includesGroupIds>com.kaazing.gateway</includesGroupIds>
-                            <includesArtifactIds>com.kaazing.gateway.client.ios</includesArtifactIds>
+                            <includesGroupIds>org.kaazing</includesGroupIds>
+                            <includesArtifactIds>gateway.client.ios</includesArtifactIds>
                             <includesClassifiers>bin</includesClassifiers>
                             <includesTypes>zip</includesTypes>
                             <includes>KGWebSocket.framework/**/*</includes>
@@ -146,14 +117,19 @@
                         <exclude>**/*.pch</exclude>
                         <exclude>**/*.strings</exclude>
                         <exclude>**/*.plist</exclude>
-                        <exclude>src/main/content/content.html</exclude>
                     </excludes>
                     <mapping>
                         <h>java</h>
                         <m>java</m>
-                        <xaml>xml</xaml>
-                        <cs>java</cs>
                     </mapping>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.code.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <configuration>
+                    <useDefaultExcludes>true</useDefaultExcludes>
+                    <failIfMissing>false</failIfMissing>
                 </configuration>
             </plugin>
         </plugins>

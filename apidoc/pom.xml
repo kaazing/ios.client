@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright (c) 2007-2012, Kaazing Corporation. All rights reserved.
-
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.kaazing.gateway</groupId>
-        <artifactId>com.kaazing.gateway.client.ios.common</artifactId>
-        <version>1.0.0.17</version>
+        <groupId>org.kaazing</groupId>
+        <artifactId>ios.client.parent</artifactId>
+        <version>develop-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.kaazing.gateway</groupId>
-    <artifactId>com.kaazing.gateway.client.ios.doc</artifactId>
-    <version>4.0.0.34-SNAPSHOT</version>
-    <name>Kaazing WebSocket Gateway - iOS Library API doc</name>
+    <groupId>org.kaazing</groupId>
+    <artifactId>ios.client.doc</artifactId>
+    <version>develop-SNAPSHOT</version>
+    <name>Kaazing iOS Client - API Documentation</name>
     <packaging>pom</packaging>
 
     <organization>
@@ -24,19 +19,19 @@
     </organization>
     <inceptionYear>2007</inceptionYear>
 
-    <url>https://github.com/kaazing-private/gateway.client.ios.doc.git</url>
+    <url>https://github.com/kaazing/ios.client.git</url>
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
-        <url>git@github.com:kaazing-private/gateway.client.ios.doc.git</url>
+        <url>git@github.com:kaazing/ios.client.git</url>
     </scm>
 
     <dependencies>
-        <!-- iOS library -->
+        <!-- WebSocket iOS Client Library -->
         <dependency>
-            <groupId>com.kaazing.gateway</groupId>
-            <artifactId>com.kaazing.gateway.client.ios</artifactId>
-            <version>[4.0.0.0,4.1.0.0)</version>
+            <groupId>org.kaazing</groupId>
+            <artifactId>gateway.client.ios</artifactId>
+            <version>${project.version}</version>
             <classifier>bin</classifier>
             <type>zip</type>
         </dependency>
@@ -78,8 +73,8 @@
                             <goal>unpack-dependencies</goal>
                         </goals>
                         <configuration>
-                            <includesGroupIds>com.kaazing.gateway</includesGroupIds>
-                            <includesArtifactIds>com.kaazing.gateway.client.ios</includesArtifactIds>
+                            <includesGroupIds>org.kaazing</includesGroupIds>
+                            <includesArtifactIds>gateway.client.ios</includesArtifactIds>
                             <includesClassifiers>bin</includesClassifiers>
                             <includesTypes>zip</includesTypes>
                             <includes>KGWebSocket.framework/**/*</includes>
@@ -93,7 +88,7 @@
             <plugin>
                 <groupId>com.kaazing.maven.plugins</groupId>
                 <artifactId>maven-appledoc-plugin</artifactId>
-                <version>1.0.0.8</version>
+                <version>${appledoc.version}</version>
                 <executions>
                     <execution>
                         <id>generate-appledoc</id>
