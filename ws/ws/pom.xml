@@ -29,7 +29,6 @@
 
     <build>
         <plugins>
-            
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -50,7 +49,7 @@
                       <goal>exec</goal>
                     </goals>
                   </execution>
-                  
+
                   <!-- execute a custom script that tests the 32 bit ios lib -->
                   <execution>
                     <id>test-32bit-ios-gateway-lib</id>

@@ -18,6 +18,7 @@ ios.client is a parent project of iOS based client projects.
 * Xcode 5 or higher
 * Xcode's Command Line Tools.  From Xcode, install via _Xcode &rarr; Preferences &rarr; Downloads_.
 * xctool: ```brew install -v --HEAD xctool```
+* [appledoc](https://github.com/tomaz/appledoc): ```brew install appledoc```
 
 ## Steps for building this project
 

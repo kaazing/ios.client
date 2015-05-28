@@ -86,22 +86,37 @@
             </plugin>
             <!-- Generate appledoc files -->
             <plugin>
-                <groupId>com.kaazing.maven.plugins</groupId>
-                <artifactId>maven-appledoc-plugin</artifactId>
-                <version>${appledoc.version}</version>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
                 <executions>
-                    <execution>
-                        <id>generate-appledoc</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>${project.projectName}</projectName>
-                            <inputDirectory>target/dependency/KGWebSocket/${project.projectName}.framework/Headers</inputDirectory>
-                            <searchUndocumentedDoc>true</searchUndocumentedDoc>
-                        </configuration>
-                    </execution>
+                  <execution>
+                    <id>generate-appledoc</id>
+                    <phase>package</phase>
+                    <goals>
+                      <goal>exec</goal>
+                    </goals>
+                    <configuration>
+                      <executable>appledoc</executable>
+                      <arguments>
+                        <argument>--exit-threshold</argument>
+                        <argument>2</argument>
+                        <argument>--company-id</argument>
+                        <argument>org.kaazing</argument>
+                        <argument>--project-company</argument>
+                        <argument>KAAZING Corporation</argument>
+                        <argument>--project-name</argument>
+                        <argument>${project.projectName}</argument>
+                        <argument>--docset-install-path</argument>
+                        <argument>${project.basedir}/target/docset</argument>
+                        <argument>--output</argument>
+                        <argument>${project.basedir}/target/appledoc-output</argument>
+                        <argument>--templates</argument>
+                        <argument>${project.basedir}/templates</argument>
+                        <argument>--search-undocumented-doc</argument>
+                        <argument>${project.basedir}/target/dependency/${project.projectName}/${project.projectName}.framework/Headers</argument>
+                      </arguments>
+                    </configuration>
+                  </execution>
                 </executions>
             </plugin>
             <plugin>
