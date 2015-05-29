@@ -33,7 +33,6 @@
         <!-- Override project.projectName property in individual project poms -->
         <project.projectName>DefaultProjectName</project.projectName>
 
-        <appledoc.version>1.0.0.8</appledoc.version>
         <exec_maven.version>1.2.1</exec_maven.version>
     </properties>
 
@@ -45,12 +44,6 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>com.kaazing.maven.plugins</groupId>
-                    <artifactId>maven-appledoc-plugin</artifactId>
-                    <version>${appledoc.version}</version>
-                </plugin>
-
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
