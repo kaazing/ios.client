@@ -1,13 +1,13 @@
-# gateway.client.ios
+# ios.client
 
 [![Build Status][build-status-image]][build-status]
 
-[build-status-image]: https://travis-ci.org/kaazing/gateway.client.ios.svg?branch=develop
-[build-status]: https://travis-ci.org/kaazing/gateway.client.ios
+[build-status-image]: https://travis-ci.org/kaazing/ios.client.svg?branch=develop
+[build-status]: https://travis-ci.org/kaazing/ios.client
 
 # About this Project
 
-gateway.client.ios is an implementation of WebSocket specification [RFC-6455] (https://tools.ietf.org/html/rfc6455) in Objective-C.
+ios.client is a parent project of iOS based client projects.
 
 # Building this Project
 
@@ -18,11 +18,18 @@ gateway.client.ios is an implementation of WebSocket specification [RFC-6455] (h
 * Xcode 5 or higher
 * Xcode's Command Line Tools.  From Xcode, install via _Xcode &rarr; Preferences &rarr; Downloads_.
 * xctool: ```brew install -v --HEAD xctool```
+* [appledoc](https://github.com/tomaz/appledoc): 
+
+```
+git clone https://github.com/tomaz/appledoc.git
+cd appledoc
+sudo sh install-appledoc.sh
+```
 
 ## Steps for building this project
 
-0. Clone the repo: ```git clone https://github.com/kaazing/gateway.client.ios```
-0. Go to the cloned directory: ```cd gateway.client.ios```
+0. Clone the repo: ```git clone https://github.com/kaazing/ios.client.git```
+0. Go to the cloned directory: ```cd ios.client```
 0. Build the project: ```mvn clean install```
 
 # Learning How to Develop Client Applications

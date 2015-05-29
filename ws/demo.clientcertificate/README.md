@@ -1,10 +1,5 @@
 Objective-C WebSocket Client Demo
 =================================
-[![Build Status][build-status-image]][build-status]
-
-[build-status-image]: https://travis-ci.org/kaazing/gateway.client.ios.demo-1.svg?branch=develop
-[build-status]: https://travis-ci.org/kaazing/gateway.client.ios.demo-1
-
 
 About this project
 ------------------
@@ -20,11 +15,11 @@ Requirements
 
 Steps for building this project
 --------------------------------
-0. Clone the repo: ```git clone https://github.com/kaazing/gateway.client.ios.demo.git```
-0. Go to the cloned directory: ```cd gateway.client.ios.demo```
-0. Build the project: ```mvn clean package```
+0. Clone the repo: ```git clone https://github.com/kaazing/ios.client.git```
+0. Go to the cloned directory: ```cd ios.client```
+0. Build the project: ```mvn clean install```
 
-This downloads the required iOS library (including its headers) and puts them into the _right_ directory.
+This builds the required iOS library (including its headers) and puts them into the _right_ directory.
 
 
 Running the demo from within Xcode

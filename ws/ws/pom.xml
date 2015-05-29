@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
- * Copyright (c) 2007-2014 Kaazing Corporation. All rights reserved.
- * 
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- * 
- *   http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.kaazing</groupId>
-        <artifactId>gateway.client.ios.common</artifactId>
-        <version>5.0.0.9</version>
+        <artifactId>ios.client.ws.common</artifactId>
+        <version>develop-SNAPSHOT</version>
     </parent>
 
     <groupId>org.kaazing</groupId>
     <artifactId>gateway.client.ios</artifactId>
-    <version>5.0.0.10-SNAPSHOT</version>
-    <name>Kaazing WebSocket Gateway - iOS Library</name>
+    <version>develop-SNAPSHOT</version>
+    <name>Kaazing iOS Client - WebSocket RFC-6455 Implementation</name>
     <packaging>pom</packaging>
 
     <organization>
@@ -39,17 +19,16 @@
     </organization>
     <inceptionYear>2007</inceptionYear>
 
-    <url>https://github.com/kaazing/gateway.client.ios.git</url>
+    <url>https://github.com/kaazing/ios.client.git</url>
     <description>Objective-C implementation of WebSocket RFC-6455 specification.</description>
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
-        <url>git@github.com:kaazing/gateway.client.ios.git</url>
+        <url>git@github.com:kaazing/ios.client.git</url>
     </scm>
 
     <build>
         <plugins>
-            
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -70,7 +49,7 @@
                       <goal>exec</goal>
                     </goals>
                   </execution>
-                  
+
                   <!-- execute a custom script that tests the 32 bit ios lib -->
                   <execution>
                     <id>test-32bit-ios-gateway-lib</id>

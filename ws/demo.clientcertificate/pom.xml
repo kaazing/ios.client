@@ -1,67 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-** This is free and unencumbered software released into the public domain.
-**
-** Anyone is free to copy, modify, publish, use, compile, sell, or
-** distribute this software, either in source code form or as a compiled
-** binary, for any purpose, commercial or non-commercial, and by any
-** means.
-**
-** In jurisdictions that recognize copyright laws, the author or authors
-** of this software dedicate any and all copyright interest in the
-** software to the public domain. We make this dedication for the benefit
-** of the public at large and to the detriment of our heirs and
-** successors. We intend this dedication to be an overt act of
-** relinquishment in perpetuity of all present and future rights to this
-** software under copyright law.
-**
-** THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-** EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-** MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-** IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-** OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-** ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-** OTHER DEALINGS IN THE SOFTWARE.
-**
-** For more information, please refer to <http://unlicense.org />
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.kaazing</groupId>
-        <artifactId>gateway.client.ios.common</artifactId>
-        <version>5.0.0.9</version>
+        <artifactId>ios.client.ws.common</artifactId>
+        <version>develop-SNAPSHOT</version>
     </parent>
 
     <groupId>org.kaazing</groupId>
-    <artifactId>gateway.client.ios.demo</artifactId>
+    <artifactId>gateway.client.ios.demo.clientCertificate</artifactId>
     <packaging>pom</packaging>
-    <version>5.0.0.7-SNAPSHOT</version>
-    <name>Kaazing WebSocket Gateway - iOS WebSocket Client Demo</name>
+    <version>develop-SNAPSHOT</version>
+    <name>Kaazing iOS Client - WebSocket Client-Certificate Demo</name>
 
     <organization>
         <name>Kaazing Corporation</name>
     </organization>
     <inceptionYear>2007</inceptionYear>
 
-    <url>https://github.com/kaazing/gateway.client.ios.demo.git</url>
-    <description>Objective-C demo for WebSocket RFC-6455 implementation.</description>
+    <url>https://github.com/kaazing/ios.client.git</url>
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
-        <url>git@github.com:kaazing/gateway.client.ios.demo.git</url>
+        <url>git@github.com:kaazing-private/ios.client.git</url>
     </scm>
-
     <dependencies>
-        <!-- iOS library -->
+        <!-- WebSocket iOS library -->
         <dependency>
             <groupId>org.kaazing</groupId>
             <artifactId>gateway.client.ios</artifactId>
-            <version>[5.0.0.0,5.1.0.0)</version>
+            <version>${project.version}</version>
             <classifier>bin</classifier>
             <type>zip</type>
         </dependency>
+
+        <!-- demo resources / webpages -->
+        <!--dependency>
+            <groupId>com.kaazing.gateway.core</groupId>
+            <artifactId>com.kaazing.gateway.core.demo.resources</artifactId>
+            <version>3.3.0.27</version>
+            <type>zip</type>
+            <classifier>headers</classifier>
+        </dependency-->
     </dependencies>
 
     <build>
@@ -69,6 +50,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
                 <executions>
                     <execution>
                         <id>clean-previous-build</id>
@@ -87,6 +69,21 @@
                 </executions>
             </plugin>
 
+            <!-- Copy the demo resources -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target/content</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
@@ -97,8 +94,8 @@
                             <goal>unpack-dependencies</goal>
                         </goals>
                         <configuration>
-                            <includesGroupIds>com.kaazing.gateway</includesGroupIds>
-                            <includesArtifactIds>com.kaazing.gateway.client.ios</includesArtifactIds>
+                            <includesGroupIds>org.kaazing</includesGroupIds>
+                            <includesArtifactIds>gateway.client.ios</includesArtifactIds>
                             <includesClassifiers>bin</includesClassifiers>
                             <includesTypes>zip</includesTypes>
                             <includes>KGWebSocket.framework/**/*</includes>
@@ -143,19 +140,14 @@
                         <exclude>**/*.pch</exclude>
                         <exclude>**/*.strings</exclude>
                         <exclude>**/*.plist</exclude>
+                        <exclude>src/main/content/content.html</exclude>
                     </excludes>
                     <mapping>
                         <h>java</h>
                         <m>java</m>
+                        <xaml>xml</xaml>
+                        <cs>java</cs>
                     </mapping>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.google.code.maven-license-plugin</groupId>
-                <artifactId>maven-license-plugin</artifactId>
-                <configuration>
-                    <useDefaultExcludes>true</useDefaultExcludes>
-                    <failIfMissing>false</failIfMissing>
                 </configuration>
             </plugin>
         </plugins>
