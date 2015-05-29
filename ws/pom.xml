@@ -5,13 +5,13 @@
     <parent>
         <groupId>org.kaazing</groupId>
         <artifactId>ios.client.parent</artifactId>
-        <version>develop-SNAPSHOT</version>
+        <version>5.0.0.10</version>
     </parent>
 
     <groupId>org.kaazing</groupId>
     <artifactId>ios.client.ws.common</artifactId>
     <name>Kaazing iOS Client - WebSocket Common</name>
-    <version>develop-SNAPSHOT</version>
+    <version>5.0.0.10</version>
     <packaging>pom</packaging>
 
     <url>https://github.com/kaazing/ios.client</url>

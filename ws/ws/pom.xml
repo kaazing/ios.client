@@ -5,12 +5,12 @@
     <parent>
         <groupId>org.kaazing</groupId>
         <artifactId>ios.client.ws.common</artifactId>
-        <version>develop-SNAPSHOT</version>
+        <version>5.0.0.10</version>
     </parent>
 
     <groupId>org.kaazing</groupId>
     <artifactId>gateway.client.ios</artifactId>
-    <version>develop-SNAPSHOT</version>
+    <version>5.0.0.10</version>
     <name>Kaazing iOS Client - WebSocket RFC-6455 Implementation</name>
     <packaging>pom</packaging>
 

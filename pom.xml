@@ -10,7 +10,7 @@
 
     <groupId>org.kaazing</groupId>
     <artifactId>ios.client.parent</artifactId>
-    <version>develop-SNAPSHOT</version>
+    <version>5.0.0.10</version>
     <name>Kaazing iOS Client</name>
     <packaging>pom</packaging>
 
