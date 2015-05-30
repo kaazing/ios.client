@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.kaazing</groupId>
+        <artifactId>ios.client.parent</artifactId>
+        <version>5.0.0.10</version>
+    </parent>
+
+    <groupId>org.kaazing</groupId>
+    <artifactId>ios.client.doc</artifactId>
+    <version>5.0.0.10</version>
+    <name>Kaazing iOS Client - API Documentation</name>
+    <packaging>pom</packaging>
+
+    <organization>
+        <name>Kaazing Corporation</name>
+    </organization>
+    <inceptionYear>2007</inceptionYear>
+
+    <url>https://github.com/kaazing/ios.client.git</url>
+    <scm>
+        <connection>scm:git:${project.scm.url}</connection>
+        <developerConnection>scm:git:${project.scm.url}</developerConnection>
+        <url>git@github.com:kaazing/ios.client.git</url>
+    </scm>
+
+    <dependencies>
+        <!-- WebSocket iOS Client Library -->
+        <dependency>
+            <groupId>org.kaazing</groupId>
+            <artifactId>gateway.client.ios</artifactId>
+            <version>${project.version}</version>
+            <classifier>bin</classifier>
+            <type>zip</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>external.atlassian.jgitflow</groupId>
+                    <artifactId>jgitflow-maven-plugin</artifactId>
+                    <version>1.0-m4.3</version>
+                    <configuration>
+                        <flowInitContext>
+                            <!-- see goals wiki page for configuration options -->
+                            <masterBranchName>${jgitflow.masterBranchName}</masterBranchName>
+                            <developBranchName>${jgitflow.developBranchName}</developBranchName>
+                            <featureBranchPrefix>feature-</featureBranchPrefix>
+                            <releaseBranchPrefix>jgitflow-release-</releaseBranchPrefix>
+                            <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+                            <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
+                        </flowInitContext>
+                        <pullMaster>true</pullMaster>
+                        <pullDevelop>true</pullDevelop>
+                        <defaultOriginUrl>${project.scm.url}</defaultOriginUrl>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>unpack-library</id>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includesGroupIds>org.kaazing</includesGroupIds>
+                            <includesArtifactIds>gateway.client.ios</includesArtifactIds>
+                            <includesClassifiers>bin</includesClassifiers>
+                            <includesTypes>zip</includesTypes>
+                            <includes>KGWebSocket.framework/**/*</includes>
+                            <outputDirectory>target/dependency/KGWebSocket/</outputDirectory>
+                            <markersDirectory>target/dependency-sources-markers</markersDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Generate appledoc files -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                  <execution>
+                    <id>generate-appledoc</id>
+                    <phase>package</phase>
+                    <goals>
+                      <goal>exec</goal>
+                    </goals>
+                    <configuration>
+                      <executable>appledoc</executable>
+                      <arguments>
+                        <argument>--exit-threshold</argument>
+                        <argument>2</argument>
+                        <argument>--company-id</argument>
+                        <argument>org.kaazing</argument>
+                        <argument>--project-company</argument>
+                        <argument>KAAZING Corporation</argument>
+                        <argument>--project-name</argument>
+                        <argument>${project.projectName}</argument>
+                        <argument>--docset-install-path</argument>
+                        <argument>${project.basedir}/target/docset</argument>
+                        <argument>--output</argument>
+                        <argument>${project.basedir}/target/appledoc-output</argument>
+                        <argument>--templates</argument>
+                        <argument>${project.basedir}/templates</argument>
+                        <argument>--search-undocumented-doc</argument>
+                        <argument>${project.basedir}/target/dependency/${project.projectName}/${project.projectName}.framework/Headers</argument>
+                      </arguments>
+                    </configuration>
+                  </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-appledoc</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>doc</classifier>
+                            <classesDirectory>target/docset/${project.companyId}.${project.projectName}.docset/Contents/Resources/Documents</classesDirectory>
+                            <excludes>
+                                <exclude>**/.svn/**</exclude>
+                            </excludes>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-appledoc-docset</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>docset</classifier>
+                            <classesDirectory>target/docset/${project.companyId}.${project.projectName}.docset</classesDirectory>
+                            <excludes>
+                                <exclude>**/.svn/**</exclude>
+                            </excludes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <project.projectName>KGWebSocket</project.projectName>
+        <jgitflow.masterBranchName>master</jgitflow.masterBranchName>
+        <jgitflow.developBranchName>develop</jgitflow.developBranchName>
+    </properties>
+</project>
