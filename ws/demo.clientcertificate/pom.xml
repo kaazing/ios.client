@@ -105,31 +105,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- Attach Demo Source Files -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <!-- this works for assembly build, but breaks from top-level -->
-                <configuration>
-                    <filters>
-                        <filter>src/main/assembly/filter.properties</filter>
-                    </filters>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>attached</goal>
-                        </goals>
-                        <configuration>
-                            <descriptors>
-                                <descriptor>src/main/assembly/sources.xml</descriptor>
-                            </descriptors>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>com.google.code.maven-license-plugin</groupId>
                 <artifactId>maven-license-plugin</artifactId>
