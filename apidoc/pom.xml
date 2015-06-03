@@ -133,7 +133,7 @@
                             <classifier>doc</classifier>
                             <classesDirectory>target/docset/${project.companyId}.${project.projectName}.docset/Contents/Resources/Documents</classesDirectory>
                             <excludes>
-                                <exclude>**/.svn/**</exclude>
+                                <exclude>**/.git/**</exclude>
                             </excludes>
                         </configuration>
                     </execution>
@@ -147,7 +147,7 @@
                             <classifier>docset</classifier>
                             <classesDirectory>target/docset/${project.companyId}.${project.projectName}.docset</classesDirectory>
                             <excludes>
-                                <exclude>**/.svn/**</exclude>
+                                <exclude>**/.git/**</exclude>
                             </excludes>
                         </configuration>
                     </execution>
