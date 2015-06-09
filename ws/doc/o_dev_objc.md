@@ -31,7 +31,7 @@ WebSocket and Objective-C
 
 KAAZING Gateway provides support for the HTML5 Communication protocol libraries in Objective-C. Using the Objective-C Client API, you can enable the HTML5 WebSocket protocols in new or existing Objective-C applications. For example, you can create an Objective-C client to get streaming financial or news data from a back-end server using WebSocket. The following figure shows a high-level overview of the architecture:
 
-![](../images/f-html5-objc-client-web.png)
+![](images/f-html5-objc-client-web.png)
 
 **Figure: Enable Communication Between Your iOS Client and a Back-end Server over WebSocket**
 
