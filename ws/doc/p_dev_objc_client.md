@@ -65,7 +65,7 @@ The examples in this section will demonstrate how to open and close a WebSocket 
 
 The following example demonstrates how to open and close a connection. A best practice when connecting is to use a `try...catch` block. Note that the WebSocket connection is also closed when the app enters the background and is set to reconnect when the app enters the foreground.
 
-``` m
+``` objective-c
 - (void) createAndEstablishWebSocketConnection:(NSString *)location {
     @try {
         [self log:@&quot;CONNECTING&quot;];
