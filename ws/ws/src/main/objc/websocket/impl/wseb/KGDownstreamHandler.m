@@ -24,11 +24,9 @@
 #import "KGHttpRequestHandler.h"
 #import "KGHttpRequestIoHandler.h"
 #import "KGHttpRequestListener.h"
-#import "KGWebSocketReAuthenticateHandler.h"
 #import "KGTransportFactory.h"
 #import "KGHexUtil.h"
 #import "KGWebSocketHandshakeObject.h"
-#import "KGWebSocketReAuthenticateHandler.h"
 #import "KGWebSocketEmulatedChannel.h"
 #import "KGWebSocketEmulatedDecoder.h"
 #import "KGTracer.h"
@@ -285,23 +283,6 @@
     NSLog(@"[KGDownstreamHandler processProgressEvent]: %@", text);
 #endif
         [_listener textmessageReceived:channel data:text];
-}
-
--(void) handleReAuthenticationRequested:(KGDownstreamChannel *) channel location:(NSString*) location challenge:(NSString*) challenge {
-     //LOG.entering(CLASS_NAME, "handleAuthenticationRequested");
-    NSString* authority = [[channel location] host];
-    if ([[channel location] port] > 0) {
-        authority = [NSString stringWithFormat:@"%@:%@", authority, [[channel location] port]];
-    }
-    NSString* url = [NSString stringWithFormat:@"%@://%@%@", [[channel location] scheme], authority, location];
-         
-     KGWebSocketReAuthenticateHandler * reAuthHandler = [[KGWebSocketReAuthenticateHandler alloc] init];
-     @try {
-         KGWebSocketEmulatedChannel * parent = (KGWebSocketEmulatedChannel *) [channel parent];
-         [reAuthHandler processOpen:parent uri:[[KGHttpURI alloc] initWithURI:url]];
-     } @catch (id ex) {
-         //LOG.log(Level.SEVERE, null, ex);
-     }
 }
      
 -(void) processClose:(KGDownstreamChannel *)channel {

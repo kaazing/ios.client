@@ -23,7 +23,7 @@
 
 /*
  * WebSocket Native KGHandler Chain
- * NativeHandler - AuthenticationHandler - HandshakeHandler - ControlFrameHandler - BalanceingHandler - {Nodec} - BridgeHandler
+ * NativeHandler - AuthenticationHandler - HandshakeHandler - BalanceingHandler - {Nodec} - BridgeHandler
  * Responsibilities:
  *     a). encode message to follow WebSocket standard
  */

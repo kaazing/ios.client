@@ -199,11 +199,6 @@
     [[_parent listener] textmessageReceived:wsebChannel text:data];
 }
 
--(void) revalidateReceived:(KGDownstreamChannel *) channel revalidateURL:(NSString*) revalidateURL {
-//    KGWebSocketEmulatedChannel wsebChannel = (KGWebSocketEmulatedChannel)channel.Parent;
-//    _parentHandler.ProcessRevalidate(wsebChannel, revalidateURL);
-}
-
 -(void) downstreamFailed:(KGDownstreamChannel *)channel exception:(NSException *)exception {
 #ifdef DEBUG
     NSLog(@"[KGWebSocketEmulatedHandler (KGDownstreamHandlerListener_1) downstreamFailed]");
@@ -300,11 +295,6 @@ NSString *const HEADER_CONTENT_TYPE = @"Content-Type";
 }
 
 -(void) processAuthorize:(KGWebSocketChannel *) channel authorizeToken:(NSString*) authorizeToken {
-    
-}
-
--(void) processRevalidate:(KGWebSocketChannel *) channel revalidateURL:(NSString*) revalidateURL {
-    //_upstreamHandler.ProcessRevalidate(wsebChannel._upstreamChannel, revalidateURL);
     
 }
 

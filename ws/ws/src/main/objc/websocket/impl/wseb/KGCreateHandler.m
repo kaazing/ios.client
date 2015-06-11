@@ -100,22 +100,6 @@
             NSString* extensionsHeader = [response header:HEADER_SEC_EXTENSIONS_EMULATED];
             KGWebSocketCompositeChannel *compositeChannel = (KGWebSocketCompositeChannel *)[[channel parent] parent];
             [compositeChannel setNegotiatedExtensions:extensionsHeader];
-            if (extensionsHeader != nil) {
-                NSArray* extensions = [extensionsHeader componentsSeparatedByString:@","];
-                for (int i=0; i< [extensions count]; i++) {
-                    NSString* extension = [extensions objectAtIndex:i];
-                    NSArray * tmp = [extension componentsSeparatedByString:@";"];
-                    if ([tmp count] > 1) {
-                        //has escape bytes
-                        NSString* escape = [[tmp objectAtIndex:1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-                        //Integer.parseInt(escape, 16)
-                        int key;
-                        NSScanner *scanner = [NSScanner scannerWithString:escape];
-                        [scanner scanHexInt:(unsigned int *)&key];
-                        [[channel controlFrames] setValue:[[tmp objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] forKey:[[NSNumber numberWithInt:key] stringValue]];
-                    }
-                }    
-            }
             
             NSString* payload = [[NSString alloc] initWithData:[[response body] data] encoding:NSUTF8StringEncoding];;
 

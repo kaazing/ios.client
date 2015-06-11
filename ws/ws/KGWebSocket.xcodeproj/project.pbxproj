@@ -93,8 +93,6 @@
 		403B3A2B171880300036890C /* KGWebSocketHandshakeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A1D171880300036890C /* KGWebSocketHandshakeObject.m */; };
 		403B3A2C171880300036890C /* KGWebSocketLoggingHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A1E171880300036890C /* KGWebSocketLoggingHandler.h */; };
 		403B3A2D171880300036890C /* KGWebSocketLoggingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A1F171880300036890C /* KGWebSocketLoggingHandler.m */; };
-		403B3A2E171880300036890C /* KGWebSocketReAuthenticateHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A20171880300036890C /* KGWebSocketReAuthenticateHandler.h */; };
-		403B3A2F171880300036890C /* KGWebSocketReAuthenticateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A21171880300036890C /* KGWebSocketReAuthenticateHandler.m */; };
 		403B3A30171880300036890C /* KGWebSocketSelectedChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A22171880300036890C /* KGWebSocketSelectedChannel.h */; };
 		403B3A31171880300036890C /* KGWebSocketSelectedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B3A23171880300036890C /* KGWebSocketSelectedChannel.m */; };
 		403B3A32171880300036890C /* KGWebSocketSelectedHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B3A24171880300036890C /* KGWebSocketSelectedHandler.h */; };
@@ -315,8 +313,6 @@
 		403B3A1D171880300036890C /* KGWebSocketHandshakeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketHandshakeObject.m; path = websocket/impl/ws/KGWebSocketHandshakeObject.m; sourceTree = "<group>"; };
 		403B3A1E171880300036890C /* KGWebSocketLoggingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketLoggingHandler.h; path = websocket/impl/ws/KGWebSocketLoggingHandler.h; sourceTree = "<group>"; };
 		403B3A1F171880300036890C /* KGWebSocketLoggingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketLoggingHandler.m; path = websocket/impl/ws/KGWebSocketLoggingHandler.m; sourceTree = "<group>"; };
-		403B3A20171880300036890C /* KGWebSocketReAuthenticateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketReAuthenticateHandler.h; path = websocket/impl/ws/KGWebSocketReAuthenticateHandler.h; sourceTree = "<group>"; };
-		403B3A21171880300036890C /* KGWebSocketReAuthenticateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketReAuthenticateHandler.m; path = websocket/impl/ws/KGWebSocketReAuthenticateHandler.m; sourceTree = "<group>"; };
 		403B3A22171880300036890C /* KGWebSocketSelectedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketSelectedChannel.h; path = websocket/impl/ws/KGWebSocketSelectedChannel.h; sourceTree = "<group>"; };
 		403B3A23171880300036890C /* KGWebSocketSelectedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketSelectedChannel.m; path = websocket/impl/ws/KGWebSocketSelectedChannel.m; sourceTree = "<group>"; };
 		403B3A24171880300036890C /* KGWebSocketSelectedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketSelectedHandler.h; path = websocket/impl/ws/KGWebSocketSelectedHandler.h; sourceTree = "<group>"; };
@@ -716,8 +712,6 @@
 				403B3A1D171880300036890C /* KGWebSocketHandshakeObject.m */,
 				403B3A1E171880300036890C /* KGWebSocketLoggingHandler.h */,
 				403B3A1F171880300036890C /* KGWebSocketLoggingHandler.m */,
-				403B3A20171880300036890C /* KGWebSocketReAuthenticateHandler.h */,
-				403B3A21171880300036890C /* KGWebSocketReAuthenticateHandler.m */,
 				403B3A22171880300036890C /* KGWebSocketSelectedChannel.h */,
 				403B3A23171880300036890C /* KGWebSocketSelectedChannel.m */,
 				403B3A24171880300036890C /* KGWebSocketSelectedHandler.h */,
@@ -924,7 +918,6 @@
 				403B3A28171880300036890C /* KGWebSocketCompositeHandler.h in Headers */,
 				403B3A2A171880300036890C /* KGWebSocketHandshakeObject.h in Headers */,
 				403B3A2C171880300036890C /* KGWebSocketLoggingHandler.h in Headers */,
-				403B3A2E171880300036890C /* KGWebSocketReAuthenticateHandler.h in Headers */,
 				403B3A30171880300036890C /* KGWebSocketSelectedChannel.h in Headers */,
 				403B3A32171880300036890C /* KGWebSocketSelectedHandler.h in Headers */,
 				403B3A4C1718806E0036890C /* KGCreateChannel.h in Headers */,
@@ -1164,7 +1157,6 @@
 				403B3A29171880300036890C /* KGWebSocketCompositeHandler.m in Sources */,
 				403B3A2B171880300036890C /* KGWebSocketHandshakeObject.m in Sources */,
 				403B3A2D171880300036890C /* KGWebSocketLoggingHandler.m in Sources */,
-				403B3A2F171880300036890C /* KGWebSocketReAuthenticateHandler.m in Sources */,
 				403B3A31171880300036890C /* KGWebSocketSelectedChannel.m in Sources */,
 				B5E56DFB190B607D00F80FBD /* KGResumableTimer.m in Sources */,
 				403B3A33171880300036890C /* KGWebSocketSelectedHandler.m in Sources */,
