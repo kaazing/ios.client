@@ -690,7 +690,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
         ```
 
 24. Ensure that the `KGViewController` implementation class ends with its `@end` statement.
-25. Start the Gateway as described in **How do I start and stop the Gateway?** in [Setting Up KAAZING Gateway](../about/setup-guide.md).
+25. Start the Gateway as described in **How do I start and stop the Gateway?** in [Setting Up KAAZING Gateway](https://github.com/kaazing/gateway/blob/develop/doc/about/setup-guide.md).
 26. Build and run the client in the iPhone Simulator.
     1.  In the **Scheme** menu, select **iPhone 5.1 Simulator** or **iPhone 6.1 Simulator**.
     2.  Click **Run**.
