@@ -20,6 +20,7 @@
  */
 
 #import "KGWebSocketNativeHandler.h"
+#import "KGWebSocketExtensionHandler.h"
 #import "KGWebSocketNativeAuthenticationHandler.h"
 #import "KGWebSocketNativeHandshakeHandler.h"
 #import "KGWebSocketNativeBalancingHandler.h"
@@ -109,6 +110,7 @@
 
 
 @implementation KGWebSocketNativeHandler {
+    KGWebSocketExtensionHandler * _extensionHandler;
     KGWebSocketNativeAuthenticationHandler * _authHandler;
     KGWebSocketNativeHandshakeHandler * _handshakeHandler;
     KGWebSocketNativeBalancingHandler * _balancingHandler;
@@ -120,6 +122,7 @@
 
 
 - (void) init0 {
+    _extensionHandler = [[KGWebSocketExtensionHandler alloc] init];
     _authHandler = [[KGWebSocketNativeAuthenticationHandler alloc] init];
     _handshakeHandler = [[KGWebSocketNativeHandshakeHandler alloc] init];
     _balancingHandler = [[KGWebSocketNativeBalancingHandler alloc] init];
@@ -127,6 +130,7 @@
     _delegate = [[KGWebSocketNativeDelegateHandler alloc] init];
     
     // Build the pipeline:
+    [_extensionHandler setNextHandler:_authHandler];
     [_authHandler setNextHandler:_handshakeHandler];
     [_handshakeHandler setNextHandler:_balancingHandler];
     
@@ -141,7 +145,7 @@
     }
     [_codec setNextHandler:_delegate];
     
-    [self setNextHandler:_authHandler];
+    [self setNextHandler:_extensionHandler];
     
     //_nextHandler = _srDelegate;
     KGNative_WebSocketHandlerListener_1 * listener = [[KGNative_WebSocketHandlerListener_1 alloc] initWithWebSocketNativeHandler:self];

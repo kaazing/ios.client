@@ -100,7 +100,9 @@
             NSString* extensionsHeader = [response header:HEADER_SEC_EXTENSIONS_EMULATED];
             KGWebSocketCompositeChannel *compositeChannel = (KGWebSocketCompositeChannel *)[[channel parent] parent];
             [compositeChannel setNegotiatedExtensions:extensionsHeader];
-            
+#ifdef DEBUG
+            NSLog(@"KGCreateHandler setNegotiatedExtensions %@", extensionsHeader);
+#endif
             NSString* payload = [[NSString alloc] initWithData:[[response body] data] encoding:NSUTF8StringEncoding];;
 
             NSUInteger del = [payload rangeOfString:@"\n"].location;
@@ -218,7 +220,7 @@
     NSString *enabledExtensions = [compositeChannel enabledExtensions];
     NSString *trimmedExtensions = [enabledExtensions trim];
     if ([trimmedExtensions length] > 0) {
-        [headers setValue:[compositeChannel enabledExtensions] forKey:HEADER_SEC_EXTENSIONS_EMULATED];
+        [headers setValue:trimmedExtensions forKey:HEADER_SEC_EXTENSIONS_EMULATED];
     }
     [[request headers] setValue:WEBSOCKET_VERSION forKey:HEADER_WEBSOCKET_VERSION];
     

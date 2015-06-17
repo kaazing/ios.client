@@ -40,13 +40,8 @@
 		403B39C417187FAC0036890C /* KGWebSocketDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39AF17187FAC0036890C /* KGWebSocketDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		403B39C517187FAC0036890C /* KGWebSocketExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B017187FAC0036890C /* KGWebSocketExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		403B39C617187FAC0036890C /* KGWebSocketExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B117187FAC0036890C /* KGWebSocketExtension.m */; };
-		403B39C717187FAC0036890C /* KGWebSocketExtensionParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B217187FAC0036890C /* KGWebSocketExtensionParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		403B39C817187FAC0036890C /* KGWebSocketExtensionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B317187FAC0036890C /* KGWebSocketExtensionParameter.m */; };
-		403B39C917187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B417187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h */; };
 		403B39CA17187FAC0036890C /* KGWebSocketFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B517187FAC0036890C /* KGWebSocketFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		403B39CB17187FAC0036890C /* KGWebSocketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B617187FAC0036890C /* KGWebSocketFactory.m */; };
-		403B39CC17187FAC0036890C /* KGParameterValuesContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B717187FAC0036890C /* KGParameterValuesContainer.h */; };
-		403B39CD17187FAC0036890C /* KGParameterValuesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39B817187FAC0036890C /* KGParameterValuesContainer.m */; };
 		403B39CE17187FAC0036890C /* NSString+KZNGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39B917187FAC0036890C /* NSString+KZNGAdditions.h */; };
 		403B39CF17187FAC0036890C /* NSString+KZNGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39BA17187FAC0036890C /* NSString+KZNGAdditions.m */; };
 		403B39E017187FD70036890C /* KGChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39D017187FD70036890C /* KGChannel.h */; };
@@ -222,6 +217,10 @@
 		A0B750861537002700FF9FA2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750851537002700FF9FA2 /* CFNetwork.framework */; };
 		A0B750881537003B00FF9FA2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750871537003B00FF9FA2 /* libicucore.dylib */; };
 		A0E90D14144F17D600666B29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E90D13144F17D600666B29 /* Foundation.framework */; };
+		AF1764DA1B30B48F00D90A90 /* KGWebSocketExtensionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1764D81B30B48F00D90A90 /* KGWebSocketExtensionHandler.h */; };
+		AF1764DB1B30B48F00D90A90 /* KGWebSocketExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1764D91B30B48F00D90A90 /* KGWebSocketExtensionHandler.m */; };
+		AF1764DE1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1764DC1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.h */; };
+		AF1764DF1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1764DD1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.m */; };
 		B5E56DFB190B607D00F80FBD /* KGResumableTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E56DF9190B607D00F80FBD /* KGResumableTimer.m */; };
 		B5E56DFC190B607D00F80FBD /* KGResumableTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E56DFA190B607D00F80FBD /* KGResumableTimer.h */; };
 		B5E56E00190B61EC00F80FBD /* KGResumableTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E56DFF190B61EC00F80FBD /* KGResumableTimerTest.m */; };
@@ -260,13 +259,8 @@
 		403B39AF17187FAC0036890C /* KGWebSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketDelegate.h; path = websocket/KGWebSocketDelegate.h; sourceTree = "<group>"; };
 		403B39B017187FAC0036890C /* KGWebSocketExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketExtension.h; path = websocket/KGWebSocketExtension.h; sourceTree = "<group>"; };
 		403B39B117187FAC0036890C /* KGWebSocketExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketExtension.m; path = websocket/KGWebSocketExtension.m; sourceTree = "<group>"; };
-		403B39B217187FAC0036890C /* KGWebSocketExtensionParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketExtensionParameter.h; path = websocket/KGWebSocketExtensionParameter.h; sourceTree = "<group>"; };
-		403B39B317187FAC0036890C /* KGWebSocketExtensionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketExtensionParameter.m; path = websocket/KGWebSocketExtensionParameter.m; sourceTree = "<group>"; };
-		403B39B417187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KGWebSocketExtensionParameter+Internal.h"; path = "websocket/KGWebSocketExtensionParameter+Internal.h"; sourceTree = "<group>"; };
 		403B39B517187FAC0036890C /* KGWebSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketFactory.h; path = websocket/KGWebSocketFactory.h; sourceTree = "<group>"; };
 		403B39B617187FAC0036890C /* KGWebSocketFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketFactory.m; path = websocket/KGWebSocketFactory.m; sourceTree = "<group>"; };
-		403B39B717187FAC0036890C /* KGParameterValuesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGParameterValuesContainer.h; path = websocket/KGParameterValuesContainer.h; sourceTree = "<group>"; };
-		403B39B817187FAC0036890C /* KGParameterValuesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGParameterValuesContainer.m; path = websocket/KGParameterValuesContainer.m; sourceTree = "<group>"; };
 		403B39B917187FAC0036890C /* NSString+KZNGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+KZNGAdditions.h"; path = "websocket/NSString+KZNGAdditions.h"; sourceTree = "<group>"; };
 		403B39BA17187FAC0036890C /* NSString+KZNGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+KZNGAdditions.m"; path = "websocket/NSString+KZNGAdditions.m"; sourceTree = "<group>"; };
 		403B39D017187FD70036890C /* KGChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGChannel.h; path = websocket/impl/KGChannel.h; sourceTree = "<group>"; };
@@ -455,6 +449,10 @@
 		A0E90D10144F17D600666B29 /* libKGWebSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKGWebSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E90D13144F17D600666B29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0E90D17144F17D600666B29 /* HttpRequestIoHandler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HttpRequestIoHandler-Prefix.pch"; sourceTree = "<group>"; };
+		AF1764D81B30B48F00D90A90 /* KGWebSocketExtensionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketExtensionHandler.h; path = websocket/impl/ws/KGWebSocketExtensionHandler.h; sourceTree = "<group>"; };
+		AF1764D91B30B48F00D90A90 /* KGWebSocketExtensionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketExtensionHandler.m; path = websocket/impl/ws/KGWebSocketExtensionHandler.m; sourceTree = "<group>"; };
+		AF1764DC1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGWebSocketEmulatedHandshakeHandler.h; path = websocket/impl/wseb/KGWebSocketEmulatedHandshakeHandler.h; sourceTree = "<group>"; };
+		AF1764DD1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGWebSocketEmulatedHandshakeHandler.m; path = websocket/impl/wseb/KGWebSocketEmulatedHandshakeHandler.m; sourceTree = "<group>"; };
 		B5E56DF9190B607D00F80FBD /* KGResumableTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGResumableTimer.m; path = websocket/util/KGResumableTimer.m; sourceTree = "<group>"; };
 		B5E56DFA190B607D00F80FBD /* KGResumableTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGResumableTimer.h; path = websocket/util/KGResumableTimer.h; sourceTree = "<group>"; };
 		B5E56DFF190B61EC00F80FBD /* KGResumableTimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGResumableTimerTest.m; sourceTree = "<group>"; };
@@ -622,13 +620,8 @@
 				403B39AF17187FAC0036890C /* KGWebSocketDelegate.h */,
 				403B39B017187FAC0036890C /* KGWebSocketExtension.h */,
 				403B39B117187FAC0036890C /* KGWebSocketExtension.m */,
-				403B39B217187FAC0036890C /* KGWebSocketExtensionParameter.h */,
-				403B39B317187FAC0036890C /* KGWebSocketExtensionParameter.m */,
-				403B39B417187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h */,
 				403B39B517187FAC0036890C /* KGWebSocketFactory.h */,
 				403B39B617187FAC0036890C /* KGWebSocketFactory.m */,
-				403B39B717187FAC0036890C /* KGParameterValuesContainer.h */,
-				403B39B817187FAC0036890C /* KGParameterValuesContainer.m */,
 				403B39B917187FAC0036890C /* NSString+KZNGAdditions.h */,
 				403B39BA17187FAC0036890C /* NSString+KZNGAdditions.m */,
 				A06EB975152209BA0057D878 /* impl */,
@@ -708,6 +701,8 @@
 				403B3A19171880300036890C /* KGWebSocketCompositeChannel.m */,
 				403B3A1A171880300036890C /* KGWebSocketCompositeHandler.h */,
 				403B3A1B171880300036890C /* KGWebSocketCompositeHandler.m */,
+				AF1764D81B30B48F00D90A90 /* KGWebSocketExtensionHandler.h */,
+				AF1764D91B30B48F00D90A90 /* KGWebSocketExtensionHandler.m */,
 				403B3A1C171880300036890C /* KGWebSocketHandshakeObject.h */,
 				403B3A1D171880300036890C /* KGWebSocketHandshakeObject.m */,
 				403B3A1E171880300036890C /* KGWebSocketLoggingHandler.h */,
@@ -723,6 +718,8 @@
 		A06EB97A15220A2E0057D878 /* wseb */ = {
 			isa = PBXGroup;
 			children = (
+				AF1764DC1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.h */,
+				AF1764DD1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.m */,
 				403B3A341718806E0036890C /* KGCreateChannel.h */,
 				403B3A351718806E0036890C /* KGCreateChannel.m */,
 				403B3A361718806E0036890C /* KGCreateHandler.h */,
@@ -865,7 +862,6 @@
 				403B39CA17187FAC0036890C /* KGWebSocketFactory.h in Headers */,
 				403B39C417187FAC0036890C /* KGWebSocketDelegate.h in Headers */,
 				403B39C517187FAC0036890C /* KGWebSocketExtension.h in Headers */,
-				403B39C717187FAC0036890C /* KGWebSocketExtensionParameter.h in Headers */,
 				403B39BD17187FAC0036890C /* KGByteBuffer.h in Headers */,
 				403B39C117187FAC0036890C /* KGWebSocket.h in Headers */,
 				4076EFB2170E296600497AA1 /* WebSocket.h in Headers */,
@@ -887,9 +883,8 @@
 				A022718D157E202F00CC1B51 /* OrderedDictionary.h in Headers */,
 				4076EE18170E047C00497AA1 /* KGChallengeHandler+Internal.h in Headers */,
 				403B39C317187FAC0036890C /* KGWebSocket+Internal.h in Headers */,
-				403B39C917187FAC0036890C /* KGWebSocketExtensionParameter+Internal.h in Headers */,
-				403B39CC17187FAC0036890C /* KGParameterValuesContainer.h in Headers */,
 				403B39CE17187FAC0036890C /* NSString+KZNGAdditions.h in Headers */,
+				AF1764DE1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.h in Headers */,
 				403B39E017187FD70036890C /* KGChannel.h in Headers */,
 				403B39E217187FD70036890C /* KGCommandMessage.h in Headers */,
 				403B39E317187FD70036890C /* KGDecoderInput.h in Headers */,
@@ -946,6 +941,7 @@
 				403B3A9E171880B30036890C /* KGCloseEvent.h in Headers */,
 				403B3AA0171880B30036890C /* KGErrorEvent.h in Headers */,
 				403B3AA2171880B30036890C /* KGEvent.h in Headers */,
+				AF1764DA1B30B48F00D90A90 /* KGWebSocketExtensionHandler.h in Headers */,
 				403B3AA4171880B30036890C /* KGMessageEvent.h in Headers */,
 				403B3AA6171880B30036890C /* KGOpenEvent.h in Headers */,
 				403B3AA8171880B30036890C /* KGRedirectEvent.h in Headers */,
@@ -1136,9 +1132,7 @@
 				403B39BE17187FAC0036890C /* KGByteBuffer.m in Sources */,
 				403B39C217187FAC0036890C /* KGWebSocket.m in Sources */,
 				403B39C617187FAC0036890C /* KGWebSocketExtension.m in Sources */,
-				403B39C817187FAC0036890C /* KGWebSocketExtensionParameter.m in Sources */,
 				403B39CB17187FAC0036890C /* KGWebSocketFactory.m in Sources */,
-				403B39CD17187FAC0036890C /* KGParameterValuesContainer.m in Sources */,
 				403B39CF17187FAC0036890C /* NSString+KZNGAdditions.m in Sources */,
 				403B39E117187FD70036890C /* KGChannel.m in Sources */,
 				403B39E417187FD70036890C /* KGDecoderInput.m in Sources */,
@@ -1165,6 +1159,7 @@
 				403B3A521718806E0036890C /* KGDownstreamChannel.m in Sources */,
 				403B3A541718806E0036890C /* KGDownstreamHandler.m in Sources */,
 				403B3A571718806E0036890C /* KGUpstreamChannel.m in Sources */,
+				AF1764DB1B30B48F00D90A90 /* KGWebSocketExtensionHandler.m in Sources */,
 				403B3A591718806E0036890C /* KGUpstreamHandler.m in Sources */,
 				403B3A5C1718806E0036890C /* KGWebSocketEmulatedChannel.m in Sources */,
 				403B3A5E1718806E0036890C /* KGWebSocketEmulatedDecoder.m in Sources */,
@@ -1196,6 +1191,7 @@
 				403B3ACB171880FA0036890C /* NSURL+KZNGAdditions.m in Sources */,
 				40D23183171CB59F00343A29 /* KGTracer.m in Sources */,
 				400C24BF172DB97800465C9F /* KGConstants.m in Sources */,
+				AF1764DF1B30C80700D90A90 /* KGWebSocketEmulatedHandshakeHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

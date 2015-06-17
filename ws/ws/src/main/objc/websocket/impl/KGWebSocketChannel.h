@@ -24,6 +24,7 @@
 #import "KGWebSocketHandler.h"
 #import "KGByteBuffer.h"
 #import "KGWSURI.h"
+#import "KGWebSocketExtension.h"
 
 extern int nextId;
 @interface KGWebSocketChannel : KGChannel
@@ -44,6 +45,9 @@ extern int nextId;
 
 - (NSString *) negotiatedExtensions;
 - (void) setNegotiatedExtensions:(NSString *)extensions;
+
+- (NSArray *) extensionPipeline;
+- (void) addExtensionToPipeline:(KGWebSocketExtension *)extension;
 
 - (BOOL) isBinary;
 

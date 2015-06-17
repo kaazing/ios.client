@@ -23,22 +23,7 @@
 
 #import "KGWebSocketHandlerAdapter.h"
 #import "KGWebSocketHandler.h"
-#import "KGCreateHandler.h"
-#import "KGDownstreamHandler.h"
-#import "KGUpstreamHandler.h"
 
-
-extern NSString *const HEADER_CONTENT_TYPE;
-@interface KGWebSocketEmulatedHandler : KGWebSocketHandlerAdapter {
-    KGCreateHandler * _createHandler;
-    KGDownstreamHandler * _downstreamHandler;
-    KGUpstreamHandler * _upstreamHandler;
-}
-
-//- (void) setListener:(id <KGWebSocketHandlerListener>)listener;
-
--(KGDownstreamHandler *) downstreamHandler;
-- (KGUpstreamHandler *) upstreamHandler;
-//-(id <KGWebSocketHandlerListener>) listener;
+@interface KGWebSocketEmulatedHandler : KGWebSocketHandlerAdapter
 
 @end

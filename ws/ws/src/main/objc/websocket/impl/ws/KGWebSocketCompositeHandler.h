@@ -27,6 +27,8 @@
 #import "KGWebSocketSelectedHandler.h"
 #import "KGWebSocketCompositeChannel.h"
 
+extern NSArray* Kaazing_Enterprise_Extensions;
+
 @protocol KGWebSocketSelectedHandlerFactory <NSObject>
 -(KGWebSocketSelectedHandler *)createSelectedHandler;
 @end

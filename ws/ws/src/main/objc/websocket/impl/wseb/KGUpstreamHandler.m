@@ -25,7 +25,7 @@
 #import "KGHttpRequestIoHandler.h"
 #import "KGHttpRequestListener.h"
 #import "KGWebSocketEmulatedEncoder.h"
-#import "KGWebSocketEmulatedHandler.h"
+#import "KGWebSocketEmulatedHandshakeHandler.h"
 #import "KGTransportFactory.h"
 #import "KGTracer.h"
 #import "KGConstants.h"

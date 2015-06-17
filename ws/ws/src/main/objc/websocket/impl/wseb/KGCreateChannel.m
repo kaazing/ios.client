@@ -39,7 +39,6 @@
 
 - (void)dealloc
 {
-
     _clientIdentity = nil;
     _cookie = nil;
 }
@@ -51,6 +50,7 @@
 -(void)setCookie:(NSString*)cookie {
     _cookie = cookie;
 }
+
 
 - (void) setClientIdentity:(SecIdentityRef)clientIdentity {
     _clientIdentity = clientIdentity;

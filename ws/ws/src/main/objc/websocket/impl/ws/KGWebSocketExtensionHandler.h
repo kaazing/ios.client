@@ -19,26 +19,19 @@
  * under the License.
  */
 
-#import "KGParameterValuesContainer.h"
+#import "KGWebSocketHandlerAdapter.h"
 
-@implementation KGParameterValuesContainer {
-    NSMutableDictionary *_values;
-}
+/*
+ * WebSocket Native KGHandler Chain
+ * NativeHandler - AuthenticationHandler - ExtensionHandler - HandshakeHandler -  BalancingHandler - Codec - BridgeHandler
+ * Responsibilities:
+ *     a) handle control frame messages
+ *     		call messageReceived on extensions pipeline, popup message if all extensions return non-null object
+ */
 
-- (id) init {
-    self = [super init];
-    if (self) {
-        _values = [[NSMutableDictionary alloc] init];
-    }
-    return self;
-    
-}
+@interface KGWebSocketExtensionHandler : KGWebSocketHandlerAdapter
 
-- (void) setValue:(id)value forParameter:(KGWebSocketExtensionParameter *)parameter {
-    [_values setObject:value forKey:parameter];
-}
+- (void) handleBinaryMessageReceived:(KGWebSocketChannel *) channel message:(KGByteBuffer *) message;
+- (void) handleTextMessageReceived:(KGWebSocketChannel *) channel message:(NSString*) message;
 
-- (id) valueForParameter:(KGWebSocketExtensionParameter *)parameter {
-    return [_values objectForKey:parameter];
-}
 @end
