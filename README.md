@@ -7,7 +7,7 @@
 
 # About This Project
 
-ios.client is a parent project of iOS based client projects.
+The ios.client project implements the WebSocket standard in Objective-C (iOS). It provides a client API that enables developers to build iOS applications that communicate with an RFC-6455 endpoint over WebSocket.
 
 # Building This Project
 
