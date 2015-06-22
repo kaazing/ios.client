@@ -23,8 +23,6 @@
 
     <modules>
         <module>ws</module>
-        <module>demo</module>
-        <module>demo.clientCertificate</module>
     </modules>
 
     <properties>
