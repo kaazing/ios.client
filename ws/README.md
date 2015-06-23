@@ -1,10 +1,5 @@
 # ios.client/ws
 
-[![Build Status][build-status-image]][build-status]
-
-[build-status-image]: https://travis-ci.org/kaazing/ios.client.svg?branch=develop
-[build-status]: https://travis-ci.org/kaazing/ios.client
-
 # About This Project
 
 The ws project implements the [WebSocket standard](https://tools.ietf.org/html/rfc6455) in iOS. It provides a WebSocket client API that enables developers to build iOS applications that communicate over WebSocket with an RFC-6455 endpoint, such as KAAZING Gateway.
@@ -38,8 +33,8 @@ You can use an RFC-6455 endpoint, such as KAAZING Gateway, to connect to a back-
 
 # Learning How to Develop Client Applications
 
-To learn how to develop client applications with these projects, see the documentation on [developer.kaazing.com](http://developer.kaazing.com/documentation/5.0/index.html).
+To learn how to develop client applications with this project, see the documentation on [developer.kaazing.com](http://developer.kaazing.com/documentation/5.0/index.html).
 
 # View a Running Demo
 
-To view demos of clients built with these projects, see [kaazing.org](http://kaazing.org/)
+To view demos of clients built with this project, see [kaazing.org](http://kaazing.org/)
