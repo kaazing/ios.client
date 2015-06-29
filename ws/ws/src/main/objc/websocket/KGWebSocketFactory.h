@@ -75,21 +75,6 @@
 - (KGWebSocket *) createWebSocket:(NSURL *)url protocols:(NSArray *)protocols;
 
 /**
- * Returns the default value of the specified KGWebSocketExtensionParameter
- */
-- (id) defaultParameter:(KGWebSocketExtensionParameter *)parameter;
-
-/**
- * Sets the default value of the specified KGWebSocketExtensionParameter
- * that will be inherited by all the KGWebSocket instances that are created
- * using this factory instance. KGWebSocket created before
- * setting the parameter using this API will not be able to inherit the 
- * default value of the parameter.
- *
- */
-- (void) setDefaultParameter:(KGWebSocketExtensionParameter *)parameter value:(id)value;
-
-/**
  * Gets the names of the default enabled extensions that will be inherited
  * by all the KGWebSocket objectes created using this factory. These
  * extensions are negotiated between the client and the server during the

@@ -28,7 +28,6 @@
 -(void) downstreamOpened:(KGDownstreamChannel *)channel;
 -(void) messageReceived:(KGDownstreamChannel *)channel data:(KGByteBuffer *)data;
 -(void) textmessageReceived:(KGDownstreamChannel *)channel data:(NSString*)data;
--(void) revalidateReceived:(KGDownstreamChannel *) channel revalidateURL:(NSString*) revalidateURL;
 -(void) downstreamFailed:(KGDownstreamChannel *)channel exception:(NSException* )exception;
 -(void) downstreamClosed:(KGDownstreamChannel *)channel;
 - (void) pingReceived:(KGDownstreamChannel *)channel;

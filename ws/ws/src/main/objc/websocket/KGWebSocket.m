@@ -24,12 +24,10 @@
 #import "KGWebSocketFactory.h"
 #import "KGWebSocketCompositeChannel.h"
 #import "KGWebSocketCompositeHandler.h"
-#import "KGWebSocketExtensionParameter+Internal.h"
-#import "KGParameterValuesContainer.h"
 #import "NSString+KZNGAdditions.h"
 #import "KGTracer.h"
-#import "KGWebSocketExtension+Internal.h"
 #import "KGResumableTimer.h"
+//#import "KGWebSocketExtension.h"
 
 //<KGWebSocketHandlerListener>
 @interface KGWebSocketHandlerListener_1 : NSObject<KGWebSocketHandlerListener> {
@@ -282,8 +280,6 @@
     id<KGWebSocketDelegate>      _delegate;
     NSMutableArray               *_negotiatedExtensions;
     NSMutableArray               *_enabledExtensions;
-    NSMutableDictionary          *_enabledParameters; /*<NSString,KGWsExtensionParameterValuesContainer>*/
-    NSMutableDictionary          *_negotiatedParameters; /*<NSString,KGWsExtensionParameterValuesContainer>*/
     KGChallengeHandler           *_challengeHandler;
     SecIdentityRef               _clientIdentity;
     int                          _connectTimeout;
@@ -312,13 +308,6 @@ static id<KGWebSocketHandlerListener> _handlerListener;
         [_enabledExtensions removeAllObjects];
     }
     
-    if (_negotiatedParameters != nil) {
-        [_negotiatedParameters removeAllObjects];
-    }
-
-    if (_enabledParameters != nil) {
-        [_enabledParameters removeAllObjects];
-    }
     
     _uri = nil;
     _handler = nil;
@@ -328,15 +317,11 @@ static id<KGWebSocketHandlerListener> _handlerListener;
     _channel = nil;
     _negotiatedExtensions = nil;
     _enabledExtensions = nil;
-    _enabledParameters = nil;
-    _negotiatedParameters = nil;
     _challengeHandler = nil;
     _webSocketThread = nil;
 }
 
 - (void) init0 {
-    _enabledParameters = [[NSMutableDictionary alloc] init];
-    _negotiatedParameters = [[NSMutableDictionary alloc] init];
     _connectTimeout = 0;
 
     //start wsRunLoop
@@ -359,7 +344,6 @@ static id<KGWebSocketHandlerListener> _handlerListener;
 - (id) initWithURL:(NSURL*)url
  enabledExtensions:(NSArray *)enabledExtensions
   enabledProtocols:(NSArray *)enabledProtocols
- enabledParameters:(NSDictionary *)enabledParameters
   challengeHandler:(KGChallengeHandler *)challengeHandler
     clientIdentity:(SecIdentityRef)clientIdentity
     connectTimeout:(int)connectTimeout {
@@ -372,7 +356,6 @@ static id<KGWebSocketHandlerListener> _handlerListener;
         [self setEnabledExtensions:enabledExtensions];
         _challengeHandler = challengeHandler;
         _enabledProtocols = [NSArray arrayWithArray:enabledProtocols];
-        [_enabledParameters addEntriesFromDictionary:enabledParameters];
         _channel = [[KGWebSocketCompositeChannel alloc] initWithLocation:compositeUri
                                                                   binary:NO];
         [_channel setWebSocket:self];
@@ -393,6 +376,10 @@ static id<KGWebSocketHandlerListener> _handlerListener;
     [_channel setClientIdentity:_clientIdentity];
     NSString  *extensions = [self rfc3864FormattedExtensions];
     [_channel setChallengeHandler:_challengeHandler];
+    //add enterprise extensions if framework is loaded
+    if (Kaazing_Enterprise_Extensions != nil) {
+        extensions = [extensions stringByAppendingString:[Kaazing_Enterprise_Extensions componentsJoinedByString:@","]];
+    }
     [_channel setEnabledExtensions:extensions];
     [self performSelector:@selector(connectInternal) onThread:_webSocketThread withObject:NULL waitUntilDone:NO];
 }
@@ -475,7 +462,7 @@ static id<KGWebSocketHandlerListener> _handlerListener;
     }
     
     if (extensions == nil) {
-        _enabledExtensions = nil;
+        //_enabledExtensions = nil;
         return;
     }
     
@@ -492,57 +479,6 @@ static id<KGWebSocketHandlerListener> _handlerListener;
                     format:@"Extensions have not been negotiated as the webSocket as the WebSocket connection is not yet established"];
     }
     return [NSArray arrayWithArray:_negotiatedExtensions];
-}
-
-
-- (id) enabledParameter:(KGWebSocketExtensionParameter *)parameter {
-    NSString *extensionName = [[parameter extension] name];
-    KGParameterValuesContainer *paramValueContainer = [_enabledParameters objectForKey:extensionName];
-    if (paramValueContainer == nil) {
-        return nil;
-    }
-    
-    return [paramValueContainer valueForParameter:parameter];
-
-}
-
-- (id) negotiatedParameter:(KGWebSocketExtensionParameter *)parameter {
-    if ([self readyState] != KGReadyState_OPEN) {
-        [NSException raise:@"Illegal State"
-                    format:@"Extensions have not been negotiated as the webSocket is not yet connected"];
-    }
-    NSString *extensionName = [[parameter extension] name];
-    KGParameterValuesContainer *paramValueContainer = [_negotiatedParameters objectForKey:extensionName];
-    if (paramValueContainer == nil) {
-        return nil;
-    }
-    return [paramValueContainer valueForParameter:parameter];
-
-}
-
-- (void) setEnabledParameter:(KGWebSocketExtensionParameter *)parameter value:(id)value {
-    if ([self readyState] != KGReadyState_CLOSED) {
-        [NSException raise:@"Illegal State"
-                    format:@"ExtensionParameters can be set only when the WebSocket is closed"];
-    }
-    
-    // If the type of the value does not match the type specified in
-    // corresponding KGWebSocketExtensionParameter, throw an exception.
-    if (![value isKindOfClass:[parameter type]]) {
-        [NSException raise:@"NSInvalidArgumentException"
-                    format:@"Invalid value type. It should %@.", NSStringFromClass([parameter type])];
-        
-    }
-    
-    NSString *extensionName = [[parameter extension] name];
-    
-    KGParameterValuesContainer *paramValueContainer = [_enabledParameters objectForKey:extensionName];
-    if (paramValueContainer == nil) {
-        paramValueContainer = [[KGParameterValuesContainer alloc] init];
-        [_enabledParameters setObject:paramValueContainer forKey:extensionName];
-    }
-    
-    [paramValueContainer setValue:value forParameter:parameter];
 }
 
 - (id<KGWebSocketDelegate>) delegate {
@@ -598,7 +534,6 @@ static id<KGWebSocketHandlerListener> _handlerListener;
     
     NSArray              *extensionElements = [extension componentsSeparatedByString:@";"];
     NSString             *extensionName = extensionElements[0];
-    KGWebSocketExtension *negotiatedExtension = [KGWebSocketExtension extensionWithName:extensionName];
     
     // The negotiated extension should be one of the enabled extensions
     if (![_enabledExtensions containsObject:extensionName]) {
@@ -609,36 +544,6 @@ static id<KGWebSocketHandlerListener> _handlerListener;
     }
     
     [_negotiatedExtensions addObject:extensionName];
-    if ([extensionElements count] > 1) {
-        
-        for (int i = 1; i < [extensionElements count]; i++) {
-            NSString                      *paramValueString = extensionElements[1];
-            NSArray                       *paramValueElements = [paramValueString componentsSeparatedByString:@"="];
-            NSArray                       *anonymousParameters = [negotiatedExtension parametersWithMetadata:[NSArray arrayWithObjects:ANONYMOUS, nil]];
-            NSEnumerator                  *anonymousParameterEnumerator = [anonymousParameters objectEnumerator];
-            KGWebSocketExtensionParameter *parameter = nil;
-            NSString                      *paramValue = nil;
-            
-            // Occassionally, negotiated extension can have value sent by the server
-            // For example: In case of revalidate extension, server sends the escape key
-            if ([paramValueElements count] == 1) {
-                parameter = [anonymousParameterEnumerator nextObject];
-                paramValue = [paramValueElements[0] trim];
-            }
-            else if ([paramValueElements count] == 2) {
-                parameter = [negotiatedExtension parameter:paramValueElements[0]];
-                paramValue = [paramValueElements[1] trim];
-            }
-            id value;
-            if ([parameter type] == [NSString class]) {
-                value = paramValue;
-            }
-            else {
-                value = [negotiatedExtension stringToParameterValue:parameter value:paramValue];
-            }
-            [self setNegotiatedParameter:parameter value:value];
-        }
-    }    
 }
 
 - (void) setNegotiatedProtocol:(NSString *)protocol {
@@ -646,74 +551,22 @@ static id<KGWebSocketHandlerListener> _handlerListener;
 }
 
 - (void) cleanUpAfterClose {
-    [_negotiatedParameters removeAllObjects];
+    [_negotiatedExtensions removeAllObjects];
     _negotiatedExtensions= nil;
     _negotiatedProtocol = nil; 
 }
 
 #pragma mark <Private Methods>
 
-- (void) setNegotiatedParameter:(KGWebSocketExtensionParameter *)parameter value:(id)value {
-    NSString *extensionName = [[parameter extension] name];
-    KGParameterValuesContainer *paramValueContainer = [_negotiatedParameters objectForKey:extensionName];
-    if (paramValueContainer == nil) {
-        paramValueContainer = [[KGParameterValuesContainer alloc] init];
-        [_negotiatedParameters setObject:paramValueContainer forKey:extensionName];
-    }
-    [paramValueContainer setValue:value forParameter:parameter];
-}
 
 // The method creates extension string to negotiate from
 // extension elements - definition objects (KGWebSocketExtension) and
-// corresponding value objects (KGWsExtensionParameterValue).
 // It is used internally by the KGCreateHandler and KGWebSocketNativeHandshakeHandler
 // during handshake to set extension header.
 - (NSString *) rfc3864FormattedExtensions {
     NSMutableArray *extensionStringArray = [[NSMutableArray alloc] init];
     for (NSString *extensionName in _enabledExtensions) {
-        // Step 1. The first part of extension string is the extension name
-        NSMutableArray *currentExtensionElements = [[NSMutableArray alloc] initWithObjects:extensionName, nil];
-        KGWebSocketExtension *extension = [KGWebSocketExtension extensionWithName:extensionName];
-        NSArray *parameters = [extension parameters];
-        KGParameterValuesContainer *paramValueContainer = [_enabledParameters objectForKey:extensionName];
-        for (KGWebSocketExtensionParameter *parameter in parameters) {
-            id value = [paramValueContainer valueForParameter:parameter];
-            
-            // Pre-Condition: The value of the parameter(s) marked required should be available
-            if ((paramValueContainer == nil) || (value == nil)) {
-                if ([parameter isRequired]) {
-                    [NSException raise:@"Illegal State"
-                                format:@"Extension '%@': Required parameter '%@' must be set.", extensionName, [parameter name]];
-                }
-                else {
-                    // if parameter is not required and value is not set, skip it
-                    continue;
-                }
-            }
-            
-            // If the parameter is temporal, it is not meant to be put on wire
-            if (![parameter isTemporal]) {
-                
-                NSMutableString *paramValueString = [[NSMutableString alloc] init];
-                
-                // If the parameter is anonymous, the name of the parameter is not
-                // put on the wire
-                if (![parameter isAnonymous]) {
-                    [paramValueString appendFormat:@"%@=",[parameter name]];
-                }
-                NSString *valueAsString;
-                if ([value isKindOfClass:[NSString class]]) {
-                    valueAsString = (NSString *)value;
-                }
-                else {
-                    valueAsString = [extension parameterValueToString:parameter value:value];
-                }
-                [paramValueString appendString:valueAsString];
-                [currentExtensionElements addObject:paramValueString];
-            }
-        }
-        NSString *extensionString = [currentExtensionElements componentsJoinedByString:@";"];
-        [extensionStringArray addObject:extensionString];
+        [extensionStringArray addObject:extensionName];
     }
     
     // multiple extensions are separated by ','

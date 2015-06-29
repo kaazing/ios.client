@@ -25,8 +25,6 @@
 @interface KGCreateChannel : KGChannel
 -( NSString*) cookie;
 - (void) setCookie:(NSString*)cookie;
-- (void) setControlFrames:(NSMutableDictionary*)frames;
-- (NSMutableDictionary*) controlFrames;
 - (void) setClientIdentity:(SecIdentityRef)clientIdentity;
 - (SecIdentityRef) clientIdentity;
 @end

@@ -19,13 +19,26 @@
  * under the License.
  */
 
-#import "KGWebSocketExtensionParameter.h"
+#import <Foundation/Foundation.h>
 
-// Internal to framework
-@interface KGWebSocketExtensionParameter (Internal)
+#import "KGWebSocketHandlerAdapter.h"
+#import "KGWebSocketHandler.h"
+#import "KGCreateHandler.h"
+#import "KGDownstreamHandler.h"
+#import "KGUpstreamHandler.h"
 
-- (id) initWithParent:(KGWebSocketExtension *)parent
-                 name:(NSString *)name
-                 type:(Class)type
-             metadata:(NSSet *)metadata;
+
+extern NSString *const HEADER_CONTENT_TYPE;
+@interface KGWebSocketEmulatedHandshakeHandler : KGWebSocketHandlerAdapter {
+    KGCreateHandler * _createHandler;
+    KGDownstreamHandler * _downstreamHandler;
+    KGUpstreamHandler * _upstreamHandler;
+}
+
+//- (void) setListener:(id <KGWebSocketHandlerListener>)listener;
+
+-(KGDownstreamHandler *) downstreamHandler;
+- (KGUpstreamHandler *) upstreamHandler;
+//-(id <KGWebSocketHandlerListener>) listener;
+
 @end

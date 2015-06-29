@@ -28,7 +28,6 @@
 - (id) initWithURL:(NSURL*)url
  enabledExtensions:(NSArray *)enabledExtensions
   enabledProtocols:(NSArray *)enabledProtocols
- enabledParameters:(NSDictionary *)enabledParameters
   challengeHandler:(KGChallengeHandler *)challengeHandler
     clientIdentity:(SecIdentityRef)clientIdentity
     connectTimeout:(int)connectTimeout;

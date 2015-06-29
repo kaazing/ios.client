@@ -35,6 +35,7 @@ int nextId = 1;
     int                      _id;
     NSString                *_enabledExtensions;
     NSString                *_negotiatedExtensions;
+    NSMutableArray          *_extensionPipeline;
     SecIdentityRef          _clientIdentity;
 }
 
@@ -100,6 +101,17 @@ int nextId = 1;
     _negotiatedExtensions = extensions;
 }
 
+- (NSArray *) extensionPipeline {
+    return _extensionPipeline;
+}
+
+- (void) addExtensionToPipeline:(KGWebSocketExtension *)extension {
+    if (_extensionPipeline == nil) {
+        _extensionPipeline = [[NSMutableArray alloc] init];
+    }
+    [_extensionPipeline addObject:extension];
+}
+
 - (void) setHandshakePayload:(NSString*) handshakePayload {
     _handshakePayload = handshakePayload;
 }
@@ -140,5 +152,9 @@ int nextId = 1;
     _handshakePayload = nil;
     _transportHandler = nil;
     _clientIdentity = nil;
+    if (_extensionPipeline != nil) {
+        [_extensionPipeline removeAllObjects];
+        _extensionPipeline = nil;
+    }
 }
 @end

@@ -21,7 +21,6 @@
 
 #import "KGWebSocketDelegate.h"
 #import "KGByteBuffer.h"
-#import "KGWebSocketExtensionParameter.h"
 #import "KGChallengeHandler.h"
 
 @class KGWebSocketFactory;
@@ -134,50 +133,6 @@ typedef enum {
  *
  */
 - (void) setEnabledExtensions:(NSArray *)extensions;
-
-/**
- *
- * Gets the value of the specified KGWebSocketExtensionParameter defined 
- * in an enabled extension. If the parameter is not defined for this 
- * connection but a default value for the parameter is set using the method
- * [KGWebSocketFactory setDefaultParameter:value:], then the default value 
- * is returned.
- */
-- (id) enabledParameter:(KGWebSocketExtensionParameter *)parameter;
-
-/**
- *
- * Returns the value of the specified KGWebSocketExtensionParameter of a negotiated
- * extension.
- * 
- * If this method is invoked before the connection is successfully
- * established, an IllegalStateException is thrown.
- * 
- * Once the connection is closed, the negotiated parameters are cleared.
- * Trying to retrieve the value will result in an IllegalStateException.
- * 
- *
- */
-- (id) negotiatedParameter:(KGWebSocketExtensionParameter *)parameter;
-
-/**
- * Sets the value of the specified KGWebSocketExtensionParameter defined in an enabled
- * extension. The application developer should set the extension parameters of the 
- * enabled extensions before invoking the connect method.
- *
- * Setting the parameter value when the connection is successfully
- * established will result in an IllegalStateException.
- * 
- * If the parameter has a default value that was specified using
- * [KGWebSocketFactory setDefaultParameter:value], then setting the 
- * same parameter using this method will override the default value.
- *
- * @param parameter    KGWebSocketExtensionParameter whose value needs to be set
- * @param value        value of the specified parameter
- * @exception NSException   if this method is invoked after WebSocket connection is established
- * @exception NSException   if the type of the value is not the type specified in the KGWebSocketExtensionParameter
- */
-- (void) setEnabledParameter:(KGWebSocketExtensionParameter *)parameter value:(id)value;
 
 /**
  * Establishes the websocket connection to the server.

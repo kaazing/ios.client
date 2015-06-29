@@ -23,7 +23,7 @@
 
 /*
  * WebSocket Native KGHandler Chain
- * NativeHandler - AuthenticationHandler - HandshakeHandler - ControlFrameHandler - {BalancingHandler} - Codec - BridgeHandler
+ * NativeHandler - AuthenticationHandler - HandshakeHandler - {BalancingHandler} - Codec - BridgeHandler
  * Responsibilities:
  *     a) handle balancer messages
  *     		balancer message is the first message after connection is established

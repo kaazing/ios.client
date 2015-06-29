@@ -23,12 +23,10 @@
 
 @implementation KGCreateChannel {
     NSString             *_cookie;
-    NSMutableDictionary  *_controlFrames;
     SecIdentityRef       _clientIdentity;
 }
 
 - (void) init0 {
-    _controlFrames = [[NSMutableDictionary alloc] initWithCapacity:1];
 }
 
 - (id)init {
@@ -41,11 +39,6 @@
 
 - (void)dealloc
 {
-    if (_controlFrames != nil) {
-        [_controlFrames removeAllObjects];
-    }
-    
-    _controlFrames = nil;
     _clientIdentity = nil;
     _cookie = nil;
 }
@@ -58,13 +51,6 @@
     _cookie = cookie;
 }
 
--(void)setControlFrames:(NSMutableDictionary*) frames {
-    _controlFrames = frames;
-}
-
--(NSMutableDictionary*)controlFrames {
-    return _controlFrames;
-}
 
 - (void) setClientIdentity:(SecIdentityRef)clientIdentity {
     _clientIdentity = clientIdentity;

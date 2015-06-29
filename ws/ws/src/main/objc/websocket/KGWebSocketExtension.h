@@ -19,13 +19,46 @@
  * under the License.
  */
 
-#import "KGWebSocketExtensionParameter.h"
+#import "KGWebSocket.h"
+
+@protocol KGWebSocketExtensionCallback <NSObject>
+
+/**
+ * KGWebSocketExtensionCallback is the callback protocol
+ *
+ */
+
+/**
+ * This funnction is called when the extension is successful negotiated with server
+ */
+-(BOOL) extensionNegotiated:(NSDictionary *) wsContext response:(NSString *) response;
+
+/**
+ * This funnction is called when a text message is about to send to server
+ */
+-(NSString*) processTextMessage:(NSString*) text;
+
+/**
+ * This funnction is called when a binary message is about to send to server
+ */
+-(KGByteBuffer*) processBinaryMessage:(KGByteBuffer *) buffer;
+
+/**
+ * This funnction is called when a text message is received from server
+ */
+-(NSString*) textMessageReceived:(NSString*) text;
+
+/**
+ * This funnction is called when a binary message is received from server
+ */
+-(KGByteBuffer*) binaryMessageReceived:(KGByteBuffer *) buffer;
+
+@end
 
 /**
  * KGWebSocketExtension is an abstract class that should be extended to 
  * define custom extension. The custom extension can include one or more 
- * theKGWebSocketExtensionParameter constants that defines the parameters corresponding 
- * to the custom extension.
+ * parameter constants that defines the key/value pair
  *
  * @warning This is an abstract class. This should not be created directly. It is inherited 
  *          by the subclasses such as KGApnsExtension.
@@ -47,8 +80,7 @@
  * <pre><code>
  * @interface CustomExtension : KGWebSocketExtension
  * + (CustomExtension *) customExtension;
- * + (KGWebSocketExtensionParamter *) foo;
- * + (KGWebSocketExtensionParamter *) bar;
+ *
  * @end
  * </pre></code>
  *
@@ -64,13 +96,11 @@
  * NSString * const CUSTOM_EXTENSION_NAME = @"custom-extension";
  * 
  * static CustomExtension                *CUSTOM_EXTENSION;
- * static KGWebSocketExtensionParameter  *FOO;
- * static KGWebSocketExtensionParameter  *BAR;
  *
  * + (void) initialize {
- *      CUSTOM_EXTENSION = [[CustomExtension alloc] init];
- *      FOO = [CUSTOM_EXTENSION createParameter:CUSTOM_EXTENSION name:@"foo" type:[NSString class] metadata:[NSSet setWithObjects:REQUIRED, nil]];
- *      BAR = [CUSTOM_EXTENSION CUSTOM_EXTENSION name:@"bar" type:[NSString class] metadata:[NSSet setWithObjects:REQUIRED, ANONYMOUS, nil]];
+ *      CUSTOM_EXTENSION = [[CustomExtension alloc] initWithName:CUSTOM_EXTENSION_NAME];
+ *      [CUSTOM_EXTENSION setParameter:@"FOO" key:@"foo"];
+ *      [CUSTOM_EXTENSION setParameter:@"BAR" key:@"bar"];
  * }
  * 
  * - (NSString *) name {
@@ -81,65 +111,16 @@
  *      return CUSTOM_EXTENSION;
  * }
  *
- * + (KGWebSocketExtensionParameter *) foo {
- *       return FOO;
- * }
- *
- * + (KGWebSocketExtensionParameter *) bar {
- *       return BAR;
- * }
  * @end
  * </pre></code>
  */
-@interface KGWebSocketExtension : NSObject
+@interface KGWebSocketExtension : NSObject <KGWebSocketExtensionCallback>
+
 
 /**
- * Creates KGWebSocketExtensionParamter.
- *
- * @param extension The KGWebSocketExtension instance that the parameter belongs to
- * @param parameterName The name of the parameter
- * @param parameterType Parameter type
- * @param parameterMetadata NSSet containing parameter metadata. The parameter metadata 
- *                          is one or more of following constants<br /> 
- *                          1. ANONYMOUS: The name of the parameter will not be put on the
- *                                       wire during the handshake.<br/>
- *                          2. REQUIRED: Parameter marked as required must be set for
- *                                      the entire extension to be negotiated during 
- *                                      the handshake. By default, a parameter is considered 
- *                                      to be optional.<br/>
- *                          3. TEMPORAL: Parameter marked as temporal will not be negotiated 
- *                                      during the handshake.
- *                          
- *
- * @exception NSException if parameter name is nil or empty
- * @exception NSException if parameter type is nil
- * 
+ * init the KGWebSocketExtension with the specified name.
  */
-- (KGWebSocketExtensionParameter *) createParameter:(KGWebSocketExtension *)extension
-                                               name:(NSString *)parameterName
-                                               type:(Class)parameterType
-                                           metadata:(NSSet *)parameterMetadata;
-
-/**
- * Returns the KGWebSocketExtensionParameter defined in this
- * KGWebSoketExtension with the specified name.
- */
-- (KGWebSocketExtensionParameter *) parameter:(NSString *)name;
-
-/**
- * Returns KGWebSocketExtensionParameter(s) that are defined in
- * this KGWebSocketExtension. An empty array is returned if there
- * are no KGWebSocketExtensionParameter(s) defined.
- */
-- (NSArray *) parameters;
-
-/**
-* Returns KGWebSocketExtensionParameter(s) defined in this
-* KGWebSocketExtension that match all the specified metadata.
-* An empty array is returned if none of the parameter(s) defined 
-* in this class that match all the specified metadata.
-*/
-- (NSArray *) parametersWithMetadata:(NSArray *)metadata;
+- (id) initWithName:(NSString *)name;
 
 /**
  * Returns the name of the extension.
@@ -147,8 +128,19 @@
 - (NSString *) name;
 
 /**
- * Returns the KGWebSocketExtension with the specified name.
+ * Returns Parameter value with paramenter name.
+ * nil is returned if there
+ * are no arameter with this name defined.
  */
-+ (KGWebSocketExtension *) extensionWithName:(NSString *)name;
+- (NSString*) parameter:(NSString*)paramenterName;
+
+/**
+ * Set Parameter with name and value pair */
+- (void) setParameter:(NSString*)value key:(NSString*)key;
+
+/**
+ * Returns the string format of the extension.
+ */
+- (NSString *) toString;
 
 @end

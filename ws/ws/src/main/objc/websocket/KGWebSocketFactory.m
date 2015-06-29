@@ -22,11 +22,8 @@
 #import "KGWebSocketFactory.h"
 #import "KGWebSocketHandshakeObject.h"
 #import "KGWebSocket+Internal.h"
-#import "KGWebSocketExtensionParameter.h"
-#import "KGParameterValuesContainer.h"
 
 @implementation KGWebSocketFactory {
-    NSMutableDictionary *_parameters; //<NSString,KGWsExtensionParameterValuesContainer>
     NSMutableArray      *_defaultEnabledExtensions;
     KGChallengeHandler  *_defaultChallengeHandler;
     SecIdentityRef      _clientIdentity;
@@ -45,14 +42,13 @@
 - (id) initInternal {
     self = [super init];
     if (self) {
-        _parameters = [[NSMutableDictionary alloc] init];
         _connectTimeout = 0;
     }
     return self;
 }
 
 - (void) dealloc {
-    _parameters = nil;
+
 }
 
 #pragma mark <Public Methods>
@@ -65,42 +61,14 @@
 }
 
 - (KGWebSocket *) createWebSocket:(NSURL *)url protocols:(NSArray *)protocols {
-    NSMutableDictionary *enabledParameters = [NSMutableDictionary dictionaryWithDictionary:_parameters];
     KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:url
                                             enabledExtensions:_defaultEnabledExtensions
                                              enabledProtocols:protocols
-                                            enabledParameters:enabledParameters
                                             challengeHandler:_defaultChallengeHandler
                                                clientIdentity:_clientIdentity
                                                connectTimeout:_connectTimeout];
     [webSocket setHandler:[KGWebSocketCompositeHandler compositeHandler]];
     return webSocket;
-}
-
-- (id) defaultParameter:(KGWebSocketExtensionParameter *)parameter {
-    NSString *extensionName = [[parameter extension] name];
-    KGParameterValuesContainer *paramValueContainer = [_parameters objectForKey:extensionName];
-    if (paramValueContainer == nil) {
-        return nil;
-    }
-    
-    return [paramValueContainer valueForParameter:parameter];
-}
-
-- (void) setDefaultParameter:(KGWebSocketExtensionParameter *)parameter value:(id)value {
-    if (![value isKindOfClass:[parameter type]]) {
-        [NSException raise:@"NSInvalidArgumentException"
-                    format:@"Invalid value type. It should %@.", NSStringFromClass([parameter type])];
-
-    }
-    
-    NSString *extensionName = [[parameter extension] name];
-    KGParameterValuesContainer *paramValueContainer = [_parameters objectForKey:extensionName];
-    if (paramValueContainer == nil) {
-        paramValueContainer = [[KGParameterValuesContainer alloc] init];
-        [_parameters setObject:paramValueContainer forKey:extensionName];
-    }
-    [paramValueContainer setValue:value forParameter:parameter];
 }
 
 - (NSArray *) defaultEnabledExtensions {

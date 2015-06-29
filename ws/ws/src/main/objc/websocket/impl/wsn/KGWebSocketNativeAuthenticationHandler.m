@@ -25,7 +25,6 @@
 #import "KGAuthenticationUtil.h"
 #import "KGWebSocketEmulatedChannel.h"
 #import "KGWebSocketHandshakeObject.h"
-#import "KGWebSocketReAuthenticateHandler.h"
 #import "KGWSURI.h"
 #import "NSURL+KZNGAdditions.h"
 
@@ -124,7 +123,7 @@
     }
     
     //handle handshake 401 - use original url as KGChallengeHandler lookup
-    //dispatch_async(dispatch_get_global_queue(0, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     //run challenge handler in background thread
     KGChallengeRequest * challengeRequest = [[KGChallengeRequest alloc] initWithLocation:[serverURI description] challenge:challenge];
     @try {
@@ -154,7 +153,7 @@
 
     [self processAuthorize:channel authorizeToken:authResponse];
     [self clearAuthenticationCredentials:channel];
-    //});
+    });
 }
 
 -(void) doError:(KGWebSocketChannel *) channel {

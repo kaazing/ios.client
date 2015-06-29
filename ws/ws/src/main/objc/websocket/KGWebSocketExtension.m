@@ -20,110 +20,67 @@
  */
 
 #import "KGWebSocketExtension.h"
-#import "KGWebSocketExtension+Internal.h"
-#import "KGWebSocketExtensionParameter+Internal.h"
-#import "NSString+KZNGAdditions.h"
 
 // Abstract class
 @implementation KGWebSocketExtension {
-    NSMutableArray      *_parameters;
+    NSString            *_name;
+    NSMutableDictionary *_parameters;
 }
 
-static NSMutableDictionary *_extensions;
-
-+ (void) initialize {
-    _extensions = [[NSMutableDictionary alloc] init];
-}
 
 - (id) init {
     self = [super init];
     if (self) {
-        _parameters = [[NSMutableArray alloc] init];
-        [_extensions setObject:self forKey:[self name]];
+        _parameters = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
 
-- (KGWebSocketExtensionParameter *) createParameter:(KGWebSocketExtension *)extension
-                                      name:(NSString *)parameterName
-                                      type:(Class)parameterType
-                                  metadata:(NSSet *)parameterMetadata {
-    if ([self isNilOrEmpty:parameterName]) {
-        [NSException raise:@"NSInvalidArgumentException"
-                    format:@"parameter name cannot be nil or empty."];
+
+- (id) initWithName:(NSString*) name {
+    self = [super init];
+    if (self) {
+        _name = name;
+        _parameters = [[NSMutableDictionary alloc] init];
     }
-    if (parameterType == nil) {
-        [NSException raise:@"NSInvalidArgumentException"
-                    format:@"parameter type cannot be nil."];
-    }
-    
-    KGWebSocketExtensionParameter *parameter = [[KGWebSocketExtensionParameter alloc] initWithParent:extension
-                                                                                                name:parameterName
-                                                                                                type:parameterType
-                                                                                            metadata:parameterMetadata];
-    [_parameters addObject:parameter];
-    return parameter;
+    return self;
 }
 
-- (KGWebSocketExtensionParameter *) parameter:(NSString *)name {
-    NSArray *parameters = [self parameters];
-    for (KGWebSocketExtensionParameter *extensionParameter in parameters) {
-        if ([[extensionParameter name] isEqualToString:name]) {
-            return extensionParameter;
-        }
-    }
-    return nil;
+- (NSDictionary *) parameters {
+    return _parameters;
 }
 
-- (NSArray *) parameters {
-    return [NSArray arrayWithArray:_parameters];
+- (void) setParameter:(NSString*)value key:(NSString *)key {
+    [_parameters setObject:value forKey:key];
 }
 
-- (NSArray *) parametersWithMetadata:(NSArray *)metadata {
-    NSMutableArray *result = [[NSMutableArray alloc] init];
-    if (metadata == nil || ([metadata count] == 0)) {
-        return result;
-    }
-    NSSet   *metadataSet = [NSSet setWithArray:metadata];
-    NSArray *parameters = [self parameters];
-    for (KGWebSocketExtensionParameter *extensionParameter in parameters) {
-        NSSet *parameterMetadata = [extensionParameter metadata];
-        if ([metadataSet isSubsetOfSet:parameterMetadata]) {
-            [result addObject:extensionParameter];
-        }
-    }
-    return result;
+- (NSString*) parameter:(NSString*)paramenterName {
+    return [_parameters objectForKey:paramenterName];
 }
 
-- (NSArray *) name {
-    [self doesNotRecognizeSelector:_cmd];
-    return nil;
+- (NSString *) name {
+    return _name;
 }
 
-- (NSString *) parameterValueToString:(KGWebSocketExtensionParameter *) parameter value:(id)value {
-    [self doesNotRecognizeSelector:_cmd];
-    return nil;
+- (NSString *) toString {
+    return _name;
 }
 
-- (id) stringToParameterValue:(KGWebSocketExtensionParameter *) parameter value:(NSString *)value {
-    [self doesNotRecognizeSelector:_cmd];
-    return nil;
+// Default implementaion of KGWebSocketExtensionCallbacks
+-(BOOL) extensionNegotiated:(NSDictionary *) wsContext response:(NSString *) response {
+    return  NO;
+}
+-(NSString*) processTextMessage:(NSString*) text {
+    return text;
 }
 
-+ (KGWebSocketExtension *) extensionWithName:(NSString *)name {
-    return [_extensions objectForKey:name];
+-(KGByteBuffer*) processBinaryMessage:(KGByteBuffer *) buffer {
+    return buffer;
 }
-
-# pragma mark <Private Implementation>
-- (BOOL) isNilOrEmpty:(NSString *)value {
-    if (value == nil) {
-        return YES;
-    }
-    NSString *trimmedString = [value trim];
-    if ([trimmedString length] == 0) {
-        return YES;
-    }
-    
-    return NO;
+-(NSString*) textMessageReceived:(NSString*) text {
+    return text;
+}
+-(KGByteBuffer*) binaryMessageReceived:(KGByteBuffer *) buffer {
+    return buffer;
 }
 @end
