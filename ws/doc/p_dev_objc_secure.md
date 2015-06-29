@@ -21,7 +21,7 @@ Creating a Basic Challenge Handler
 
 A challenge handler is a constructor used in a client to respond to authentication challenges from the Gateway when the client attempts to access a protected resource. Each of the resources protected by the Gateway can be configured with a different authentication scheme (for example, Basic, Application Basic, Negotiate, Application Negotiate, or Application Token), and your client requires a challenge handler for each of the schemes that it will encounter or a single challenge handler that will respond to all challenges.
 
-For information about each authentication scheme type, see [Configure the HTTP Challenge Scheme](../security/p_aaa_config_authscheme.md).
+For information about each authentication scheme type, see [Configure the HTTP Challenge Scheme](https://github.com/kaazing/gateway/blob/develop/doc/security/p_authentication_config_http_challenge_scheme.md).
 
 Clients with a single challenge handling strategy for all 401 challenges can simply set a specific challenge handler as the default using `KGBasicChallengeHandler`. The following is an example of how to implement a single challenge handler for all challenges:
 
