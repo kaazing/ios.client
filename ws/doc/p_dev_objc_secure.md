@@ -1,7 +1,3 @@
--   [Home](../../index.md)
--   [Documentation](../index.md)
--   Secure Your Objective-C Client
-
 Secure Your Objective-C Client
 ==============================
 

@@ -1,7 +1,3 @@
--   [Home](../../index.md)
--   [Documentation](../index.md)
--   Use the Objective-C WebSocket Client API
-
 Use the Objective-C WebSocket Client API
 ========================================
 

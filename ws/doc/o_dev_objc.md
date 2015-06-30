@@ -1,7 +1,3 @@
--   [Home](../../index.md)
--   [Documentation](../index.md)
--   Build Objective-C (iOS) WebSocket Clients
-
 Build Objective-C (iOS) WebSocket Clients
 =========================================
 
