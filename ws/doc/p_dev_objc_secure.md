@@ -5,7 +5,7 @@ Secure Your Objective-C Client
 
 In this procedure, you will learn how to program your Objective-C client built using the KAAZING Gateway Objective-C libraries to authenticate with the KAAZING Gateway. Authenticating your client involves implementing a challenge handler to respond to authentication challenges from the Gateway. If your challenge handler is responsible for obtaining user credentials, then you will also need to implement a login handler.
 
-For information about the KAAZING Gateway Objective-C Client API, see [Objective-C Client API](../apidoc/client/ios/gateway/index.md).
+For information about the KAAZING Gateway Objective-C Client API, see [Objective-C Client API](http://developer.kaazing.com/documentation/5.0/apidoc/client/ios/gateway/index.html).
 
 **Notes:**
  

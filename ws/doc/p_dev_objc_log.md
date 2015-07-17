@@ -40,7 +40,7 @@ Notes
 -----
 
 -   If you run the Objective-C client on an iOS device, the logging output is also displayed in **Console** for the device in Xcode Organizer. In Xcode, click **Window**, click **Organizer**, locate the iOS device in **DEVICES**, and click **Console**.
--   See [KGTracer](../apidoc/client/ios/gateway/Classes/KGTracer.md) for more information.
+-   See [KGTracer](http://developer.kaazing.com/documentation/5.0/apidoc/client/ios/gateway/index.html) for more information.
 
 Next Step
 ---------
