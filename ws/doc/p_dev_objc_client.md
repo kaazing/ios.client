@@ -244,7 +244,7 @@ In this procedure you will do the following:
 16. Add the remaining methods to control the interface of the client, such as when the client loads and unloads on the device.
 17. Build and run the client in the iPhone Simulator.
 
-For information about the KAAZING Gateway Objective-C Client API, see [Objective-C Client API](../apidoc/client/ios/gateway/index.md).
+For information about the KAAZING Gateway Objective-C Client API, see [Objective-C Client API](http://developer.kaazing.com/documentation/5.0/apidoc/client/ios/gateway/index.html).
 
 **Notes:**
 -   The code used in this procedure is taken from the Objective-C (iOS) demo located at [kaazing.org](http://kaazing.org).
