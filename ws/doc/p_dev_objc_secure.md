@@ -9,7 +9,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 **Notes:**
  
--   Before you add security to your clients, follow the steps in [Configure Authentication and Authorization](../security/o_aaa_config_authentication.md) to set up security on KAAZING Gateway for your client. The authentication and authorization methods configured on the Gateway influence your client security implementation. The examples is this topic provide the most common client implementations.
+-   Before you add security to your clients, follow the steps in [Configure Authentication and Authorization](../security/o_auth_configure.md) to set up security on KAAZING Gateway for your client. The authentication and authorization methods configured on the Gateway influence your client security implementation. The examples is this topic provide the most common client implementations.
 -   For information on secure network connections between clients and the Gateway, see [Secure Network Traffic with the Gateway](../security/o_tls.md).
 
 Creating a Basic Challenge Handler
