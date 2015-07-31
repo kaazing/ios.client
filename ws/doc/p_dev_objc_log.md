@@ -25,7 +25,7 @@ This procedure is part of [Build Objective-C (iOS) WebSocket Clients](o_dev_objc
 
     For example:
 
-    ``` m
+    ``` 
     - (void)viewDidLoad {
       [super viewDidLoad];
       KGTracerDebug = YES;
