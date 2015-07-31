@@ -25,7 +25,7 @@ This procedure is part of [Build Objective-C (iOS) WebSocket Clients](o_dev_objc
 3.  [Display Logs for the Objective-C Client](p_dev_objc_log.md)
 4.  [Troubleshoot Your Objective-C Client](p_dev_objc_tshoot.md)
 
-<span id="Components_and_Tools"></span></a>Components and Tools
+Components and Tools
 ---------------------------------------------------------------
 
 Before you get started, review the components and tools used to build the WebSocket Objective-C (iOS) client in this procedure.
@@ -44,7 +44,7 @@ Before you get started, review the components and tools used to build the WebSoc
 | Secure Networking of TLS/SSL                                    | Objective-C (iOS) is run on an iOS device that manages TLS/SSL connections, requesting TLS/SSL certificates from the Gateway or RFC-6455 WebSocket endpoint.                                                                                                                                                                                                                                                                                                                                                                                                     | For more information on securing network connections between the Gateway and an0 Objective-C (iOS) client, see [Secure Network Traffic with the Gateway](../security/o_tls.md "Kaazing Developer Network"). For information on API interfaces needed to configure TLS/SSL trust programmatically for testing, see [Certificate, Key, and Trust Services Reference](https://developer.apple.com/library/ios/documentation/Security/Reference/certifkeytrustservices/index.html#//apple_ref/doc/uid/TP30000157) and [Certificate, Key, and Trust Services Programming Guide](https://developer.apple.com/library/ios/documentation/Security/Conceptual/CertKeyTrustProgGuide/01introduction/introduction.html#//apple_ref/doc/uid/TP40001358). |
 | Authentication with Challenge Handlers                          | Authenticating your Objective-C (iOS) client involves implementing a challenge handler to respond to authentication challenges from the Gateway. If your challenge handler is responsible for obtaining user credentials, then you will also need to implement a login handler.                                                                                                                                                                                                                                                                                  | For examples, see the `KGDemoLoginHandler` interface and implementation in KGViewController.m.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-<span id="Demo"></span></a>Taking a Look at the Objective-C Client Demo
+Taking a Look at the Objective-C Client Demo
 -----------------------------------------------------------------------
 
 Before you start, take a look at a demo built using the Objective-C Client API:
@@ -244,7 +244,7 @@ In this procedure you will do the following:
 16. Add the remaining methods to control the interface of the client, such as when the client loads and unloads on the device.
 17. Build and run the client in the iPhone Simulator.
 
-For information about the KAAZING Gateway Objective-C Client API, see [Objective-C Client API](../apidoc/client/ios/gateway/index.md).
+For information about the KAAZING Gateway Objective-C Client API, see [Objective-C Client API](http://developer.kaazing.com/documentation/5.0/apidoc/client/ios/gateway/index.html).
 
 **Notes:**
 -   The code used in this procedure is taken from the Objective-C (iOS) demo located at [kaazing.org](http://kaazing.org).

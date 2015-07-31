@@ -3,7 +3,7 @@ Build Objective-C (iOS) WebSocket Clients
 
 **Note:** To use the Gateway, a KAAZING client library, or a KAAZING demo, fork the repository from [kaazing.org](http://kaazing.org).
 
-This checklist provides the steps necessary to create an Objective-C client using the KAAZING Gateway [Objective-C Client API](../apidoc/client/ios/gateway/index.md):
+This checklist provides the steps necessary to create an Objective-C client using the KAAZING Gateway [Objective-C Client API](http://developer.kaazing.com/documentation/5.0/apidoc/client/ios/gateway/index.html):
 
 | \#  | Step                                                                                                                                         | Topic or Reference                                                 |
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -20,7 +20,7 @@ In this how-to, you will learn how to use the KAAZING Gateway Objective-C client
 
 This document contains information for an Objective-C developer who wants to add Objective-C to an iOS client to enable communication with a back-end server through KAAZING Gateway or any RFC-6455 WebSocket endpoint.
 
-For more information on the Objective-C API, see [Objective-C Client API](../apidoc/client/ios/gateway/index.md).
+For more information on the Objective-C API, see [Objective-C Client API](http://developer.kaazing.com/documentation/5.0/apidoc/client/ios/gateway/index.html).
 
 WebSocket and Objective-C
 -------------------------
