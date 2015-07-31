@@ -141,7 +141,7 @@ The following example demonstrates how to open and close a connection. A best pr
 
 The following code demonstrates sending messages using all of the supported data types.
 
-``` m
+``` 
 - (IBAction)sendMessage:(id)sender {
     @try {
         id dataToSend;
@@ -207,7 +207,7 @@ The following code demonstrates sending messages using all of the supported data
 
 Error handling is performed using a `try...catch` block and the `e` exception identifier, local to the catch clause.
 
-``` m
+``` 
 ...
     }
     @catch (NSException *exception) {
@@ -342,7 +342,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
     1.  Control-drag the UI controls into the `KGViewController` class in **KGViewController.h** to create actions and outlet connections (an outlet describes a connection between two objects). Configure the actions and outlet connections so that **KGViewController.h** appears as follows:
 
-        ``` m
+        ``` 
         #import <UIKit/UIKit.h>
 
         @interface KGViewController : UIViewController<UITextFieldDelegate>
@@ -389,14 +389,14 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 10. Import the WebSocket header into the **KGViewController.m** implementation file:
 
-    ``` m
+    ``` 
     #import "KGViewController.h"
     #import <KGWebSocket/WebSocket.h>
     ```
 
     The remaining code for this client is contained withIn the implementation for the `KGViewController` class:
 
-    ``` m
+    ``` 
     @implementation KGViewController {
     ...
     @end
@@ -404,7 +404,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 11. Declare variables for the WebSocket and WebSocket Factory objects:
 
-    ``` m
+    ``` 
     @implementation KGViewController {
         KGWebSocket           *_websocket; // WebSocket class
         KGWebSocketFactory    *_factory;   // WebSocketFactory class
@@ -414,7 +414,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 12. Generate the methods for the interface properties you defined in **KGViewController.h**:
 
-    ``` m
+    ``` 
     @synthesize uriTextField;
     @synthesize messageTextField;
     @synthesize connectButton;
@@ -426,7 +426,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 13. Add the `createAndEstablishWebSocketConnection` method to create the WebSocket factory and WebSocket:
 
-    ``` m
+    ``` 
     - (void) createAndEstablishWebSocketConnection {
         @try {
             NSString *location = self.uriTextField.text;
@@ -463,7 +463,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 14. Add the `setupWebSocketListeners` method to manage WebSocket connection events, incoming WebSocket messages, and any errors returned, and write event status to the log:
 
-    ``` m
+    ``` 
     - (void) setupWebSocketListeners {
 
         KGViewController* ref = self;
@@ -511,7 +511,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 15. Binary messages are received as [NSData](http://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/Reference/Reference.html). For more information, see [Introduction to Binary Data Programming Guide for Cocoa](http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/BinaryData/BinaryData.html) from Apple. Text messages are received as [NSString](http://developer.apple.com/library/ios/#documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/Reference/NSString.html).
 16. Modify the `sendMessage:` method for both text and binary messages. The `sendMessage` method was generated automatically when you added the action to the **Send** button, but the method needs to be modified to call the WebSocket object and use its send: method for transmitting data to the Gateway over the WebSocket connection:
 
-    ``` m
+    ``` 
     - (IBAction)sendMessage:(id)sender {
         @try {
             if ([binarySwitch isOn]) {                     // Send binary messages
@@ -539,7 +539,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 17. Modify the `connectButton:` method. The `connectButton:` method was generated automatically when you added the action to the **Connect** button, but the method needs to be modified to call the method for creating the WebSocket connection and updating the UI:
 
-    ``` m
+    ``` 
     - (IBAction)connectButton:(id)sender {
         // Call the method for creating the WebSocket connect
         [self createAndEstablishWebSocketConnection];
@@ -552,7 +552,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 18. Modify the `closeButton:` method to close the WebSocket connection and catch any exceptions:
 
-    ``` m
+    ``` 
     - (IBAction)closeButton:(id)sender {
         [self log:@"CLOSE"];
         @try {
@@ -566,7 +566,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 19. Add the log `log:` that is used by the other event methods:
 
-    ``` m
+    ``` 
     - (void) log:(NSString *)msg {
         NSString *oldText = [textView text];
         NSString *msgWithNewline = [msg stringByAppendingString:@"\n"];
@@ -578,7 +578,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 20. Modify the `clearLog:` method to clear the text area:
 
-    ``` m
+    ``` 
     - (IBAction)clearLog:(id)sender {
         [textView setText:@""];
     }
@@ -586,7 +586,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 21. Add the `updateUIcomponents:` method to update the UI in response to the connection event:
 
-    ``` m
+    ``` 
     - (void) updateUIcomponents:(BOOL)isConnected {
         self.uriTextField.enabled = !isConnected;
         self.uriTextField.backgroundColor = isConnected?[UIColor lightGrayColor]:
@@ -602,7 +602,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
 22. Add the `applicationDidEnterBackground` and `applicationWillEnterForeground` methods for managing the WebSocket connection when the application is sent to the background or returns to the foreground:
 
-    ``` m
+    ``` 
     - (void)applicationDidEnterBackground {
         // when application moves to background,
         // close the open websocket connection, set reconnect to true
@@ -638,7 +638,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 23. Add the remaining methods to control the interface of the client.
     1.  Add the `textFieldShouldReturn:` method to set the text field as first responder and keep this status to receive keyboard input:
 
-        ``` m
+        ``` 
         - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
             if (theTextField == self.messageTextField || theTextField == self.uriTextField) {
                 [theTextField resignFirstResponder];
@@ -649,7 +649,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
     2.  Modify the `viewDidLoad` method to set up the view:
 
-        ``` m
+        ``` 
         - (void)viewDidLoad {
             [super viewDidLoad];
             // Do any additional setup after loading the view, typically from a nib.
@@ -660,7 +660,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
     3.  Add a viewDidUnload method for when the client unloads after the viewDidLoad method that is automatically added by Xcode.
 
-        ``` m
+        ``` 
         - (void)viewDidUnload
         {
             [self setUriTextField:nil];
@@ -677,7 +677,7 @@ For information about the KAAZING Gateway Objective-C Client API, see [Objective
 
     4.  Add a method for managing the UI orientation:
 
-        ``` m
+        ``` 
         - (BOOL)shouldAutorotateToInterfaceOrientation:
                 (UIInterfaceOrientation)interfaceOrientation
         {
