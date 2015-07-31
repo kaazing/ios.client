@@ -25,7 +25,7 @@ Clients with a single challenge handling strategy for all 401 challenges can sim
 
 The preceding example uses static credentials, but you will want to create a login handler to obtain individual user credentials. Here is an example using a login popup that responds when users click a **Connect** button, obtains user credentials, and then responds to the challenge from the Gateway:
 
-``` m
+``` 
 #import "KGViewController.h"
 #import <KGWebSocket/WebSocket.h>
 
@@ -149,7 +149,7 @@ When it is not possible for the KAAZING Gateway client to create a challenge res
 
 The following example demonstrates how to stop the Gateway from issuing further challenges (look for instances of `retry` and `nil`).
 
-``` m
+``` 
 //LoginHandler API:
 @interface KGDemoLoginHandler : KGLoginHandler
 - (int)retry;    // wrong username/password counter

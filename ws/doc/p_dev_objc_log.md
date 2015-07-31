@@ -15,7 +15,7 @@ This procedure is part of [Build Objective-C (iOS) WebSocket Clients](o_dev_objc
 3.  **Display Logs for the Objective-C Client**
 4.  [Troubleshoot Your Objective-C Client](p_dev_objc_tshoot.md)
 
-<span id="logging"></span></a>To Display Logs for the Objective-C Client
+To Display Logs for the Objective-C Client
 ------------------------------------------------------------------------
 
 1.  Build your Objective-C client, as described in [Build Objective-C (iOS) WebSocket Clients](o_dev_objc.md).
@@ -25,7 +25,7 @@ This procedure is part of [Build Objective-C (iOS) WebSocket Clients](o_dev_objc
 
     For example:
 
-    ``` m
+    ``` 
     - (void)viewDidLoad {
       [super viewDidLoad];
       KGTracerDebug = YES;
