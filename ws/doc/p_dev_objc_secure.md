@@ -8,14 +8,14 @@ In this procedure, you will learn how to program your Objective-C client built u
 For information about the KAAZING Gateway Objective-C Client API, see [Objective-C Client API](http://developer.kaazing.com/documentation/5.0/apidoc/client/ios/gateway/index.html).
 
 **Notes:**
- 
+
 -   Before you add security to your clients, follow the steps in [Configure Authentication and Authorization](../security/o_auth_configure.md) to set up security on KAAZING Gateway for your client. The authentication and authorization methods configured on the Gateway influence your client security implementation. The examples is this topic provide the most common client implementations.
 -   For information on secure network connections between clients and the Gateway, see [Secure Network Traffic with the Gateway](../security/o_tls.md).
 
 Creating a Basic Challenge Handler
 ----------------------------------
 
-A challenge handler is a constructor used in a client to respond to authentication challenges from the Gateway when the client attempts to access a protected resource. Each of the resources protected by the Gateway can be configured with a different authentication scheme (for example, Basic, Application Basic, Negotiate, Application Negotiate, or Application Token), and your client requires a challenge handler for each of the schemes that it will encounter or a single challenge handler that will respond to all challenges.
+A challenge handler is a constructor used in a client to respond to authentication challenges from the Gateway when the client attempts to access a protected resource. Each of the resources protected by the Gateway can be configured with a different authentication scheme (for example, Basic, Application Basic, Negotiate, or Application Token), and your client requires a challenge handler for each of the schemes that it will encounter or a single challenge handler that will respond to all challenges.
 
 For information about each authentication scheme type, see [Configure the HTTP Challenge Scheme](https://github.com/kaazing/gateway/blob/develop/doc/security/p_authentication_config_http_challenge_scheme.md).
 
@@ -25,7 +25,7 @@ Clients with a single challenge handling strategy for all 401 challenges can sim
 
 The preceding example uses static credentials, but you will want to create a login handler to obtain individual user credentials. Here is an example using a login popup that responds when users click a **Connect** button, obtains user credentials, and then responds to the challenge from the Gateway:
 
-``` 
+```
 #import "KGViewController.h"
 #import <KGWebSocket/WebSocket.h>
 
@@ -58,12 +58,12 @@ The preceding example uses static credentials, but you will want to create a log
 -(NSURLCredential*) credentials {
     _buttonIndex = -1;
     loginSemaphore = dispatch_semaphore_create(0);
-  
+
     dispatch_async(dispatch_get_main_queue(), ^{
         [self popupLogin];
     });
-  
-    /* 
+
+    /*
     dispatch_semaphore_wait call will decrement the resource count.
     Since the resulting value is less than zero, this call waits in
     for a signal to occur before returning.
@@ -71,7 +71,7 @@ The preceding example uses static credentials, but you will want to create a log
     is clicked
     */
     dispatch_semaphore_wait(loginSemaphore, DISPATCH_TIME_FOREVER);
-  
+
     // Release the reference of semaphore to free up the memory
     dispatch_release(loginSemaphore);
     // Clicked the Submit button
@@ -94,13 +94,13 @@ The preceding example uses static credentials, but you will want to create a log
 
 - (void) popupLogin {
     _buttonIndex = -1;
-    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Please Login:" 
-        message:@"\n \n \n" delegate:self cancelButtonTitle:@"Cancel" 
+    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Please Login:"
+        message:@"\n \n \n" delegate:self cancelButtonTitle:@"Cancel"
         otherButtonTitles:@"OK", nil];
 
     // Adds a username Field
-    usernameTextField = [[UITextField alloc] 
-        initWithFrame:CGRectMake(12.0, 45.0, 260.0, 25.0)]; 
+    usernameTextField = [[UITextField alloc]
+        initWithFrame:CGRectMake(12.0, 45.0, 260.0, 25.0)];
         usernameTextField.placeholder = @"Username";
     [usernameTextField becomeFirstResponder];
     [usernameTextField setBackgroundColor:[UIColor whiteColor]];
@@ -109,26 +109,26 @@ The preceding example uses static credentials, but you will want to create a log
     [alertview addSubview:usernameTextField];
 
     // Adds a password Field
-    passwordTextField = [[UITextField alloc] 
-        initWithFrame:CGRectMake(12.0, 80.0, 260.0, 25.0)]; 
+    passwordTextField = [[UITextField alloc]
+        initWithFrame:CGRectMake(12.0, 80.0, 260.0, 25.0)];
         passwordTextField.placeholder = @"Password";
     [passwordTextField setSecureTextEntry:YES];
     [passwordTextField setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     [passwordTextField setBackgroundColor:[UIColor whiteColor]];
     [passwordTextField setText:@"welcome"];
     [alertview addSubview:passwordTextField];
-  
+
     // Show alert on screen.
     [alertview show];
 }
 @end
 
 @implementation KGViewController {
-    
+
     KGWebSocket           *_websocket;
     KGWebSocketFactory    *_factory;
     BOOL                  _reconnect;
-    
+
 }
 .
 .
@@ -149,7 +149,7 @@ When it is not possible for the KAAZING Gateway client to create a challenge res
 
 The following example demonstrates how to stop the Gateway from issuing further challenges (look for instances of `retry` and `nil`).
 
-``` 
+```
 //LoginHandler API:
 @interface KGDemoLoginHandler : KGLoginHandler
 - (int)retry;    // wrong username/password counter
@@ -186,7 +186,7 @@ The following example demonstrates how to stop the Gateway from issuing further 
   }
   _buttonIndex = -1;
   loginSemaphore = dispatch_semaphore_create(0);
-  
+
   dispatch_async(dispatch_get_main_queue(), ^{
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
       [self popupLogin_70]; // new UIAlertView code in iOS7
@@ -194,20 +194,20 @@ The following example demonstrates how to stop the Gateway from issuing further 
       [self popupLogin];
     }
   });
-  
+
   // dispatch_semaphore_wait call will decrement the resource count.
   // Since the resulting value is less than zero, this call waits in
   // for a signal to occur before returning.
   // dispatch_semaphore_signal is called when OK or Cancel button
   // is clicked
   dispatch_semaphore_wait(loginSemaphore, DISPATCH_TIME_FOREVER);
-  
+
   // Release the reference of semaphore to free up the memory
   dispatch_release(loginSemaphore);
   // Clicked the Submit button
   if (_buttonIndex != 0)
   {
-    return [[NSURLCredential alloc] 
+    return [[NSURLCredential alloc]
       initWithUser:username password:password persistence:NSURLCredentialPersistenceNone];
   } else {
     return nil;    // user click cancel button to abort authentication process
@@ -233,22 +233,22 @@ The following example demonstrates how to stop the Gateway from issuing further 
   [usernameTextField setText:@"joe"];
   [alertview addSubview:usernameTextField];
   // Adds a password Field
-  passwordTextField = [[UITextField alloc] 
+  passwordTextField = [[UITextField alloc]
     initWithFrame:CGRectMake(12.0, 80.0, 260.0, 25.0)]; passwordTextField.placeholder = @"Password";
   [passwordTextField setSecureTextEntry:YES];
   [passwordTextField setAutocapitalizationType:UITextAutocapitalizationTypeNone];
   [passwordTextField setBackgroundColor:[UIColor whiteColor]];
   [passwordTextField setText:@"welcome"];
   [alertview addSubview:passwordTextField];
-  
+
   // Show alert on screen.
-  
+
   [alertview show];
 }
 
 - (void) popupLogin_70 {
   _buttonIndex = -1;
-  UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Please Login:" message:@"\n \n \n" 
+  UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Please Login:" message:@"\n \n \n"
     delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
   alertview.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
   usernameTextField = [alertview textFieldAtIndex:0];
@@ -270,7 +270,7 @@ The following example demonstrates how to stop the Gateway from issuing further 
 @end
 
 @implementation KGViewController {
-  
+
   KGWebSocket           *_websocket;
   KGWebSocketFactory    *_factory;
   BOOL                  _reconnect;
@@ -314,5 +314,3 @@ Next Step
 ---------
 
 [Display Logs for the Objective-C Client](p_dev_objc_log.md)
-
-
