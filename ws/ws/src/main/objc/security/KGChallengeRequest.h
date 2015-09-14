@@ -32,8 +32,7 @@
  * so we model the authentication scheme and parameters in this class.
  * <p/>
  * This class is also responsible for detecting and adapting the `Application Basic`
- * and `Negotiate` authentication schemes into their `Basic` and `Negotiate`
- * counterpart authentication schemes.
+ * scheme into its `Basic` counterpart authentication scheme.
  */
 @interface KGChallengeRequest : NSObject
 
