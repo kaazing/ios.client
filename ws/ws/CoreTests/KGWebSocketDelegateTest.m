@@ -87,7 +87,6 @@ static NSURL *DEFAULT_LOCATION;
                               initWithURL:DEFAULT_LOCATION
                               enabledExtensions:nil
                               enabledProtocols:nil
-                              enabledParameters:nil
                               challengeHandler:nil
                               clientIdentity:nil
                               connectTimeout:5000];
@@ -126,7 +125,6 @@ static NSURL *DEFAULT_LOCATION;
                               initWithURL:DEFAULT_LOCATION
                               enabledExtensions:nil
                               enabledProtocols:nil
-                              enabledParameters:nil
                               challengeHandler:nil
                               clientIdentity:nil
                               connectTimeout:5000];
