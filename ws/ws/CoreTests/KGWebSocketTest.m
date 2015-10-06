@@ -44,7 +44,7 @@ static NSURL *DEFAULT_LOCATION;
 
 // Verify whether or not [KGWebSocket send] will throw an exception if the argument type is neither NSString nor NSData
 - (void) testSend {
-    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil enabledParameters:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
+    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
     NSNumber *invalidArgument = [NSNumber numberWithInt:10];
     
     XCTAssertThrowsSpecificNamed([webSocket send:invalidArgument], NSException, NSInvalidArgumentException, @"call to send on KGWebSocket with argument other than NSString or NSData should throw an exception");
@@ -52,7 +52,7 @@ static NSURL *DEFAULT_LOCATION;
 
 // Verify that [KGWebSocket close] will throw exception if the close code is invalid
 - (void) testCloseWithInvalidCloseCode {
-    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil enabledParameters:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
+    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
     XCTAssertThrowsSpecificNamed([webSocket close:1200 reason:@"test"], NSException, NSInvalidArgumentException, @"call to close on KGWebSocket with invalid close code should throw exception");
 }
 
@@ -83,7 +83,7 @@ static NSURL *DEFAULT_LOCATION;
         [actualScheme isEqualToString:originalScheme];
     }] requestedProtocols:[OCMArg any]];
     
-    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil enabledParameters:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
+    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
     [webSocket setHandler:mockCompositeHandler];
     webSocket.didOpen = ^(KGWebSocket *webSocket) {
         didOpenExecuted = YES;
@@ -119,7 +119,7 @@ static NSURL *DEFAULT_LOCATION;
     }] processTextMessage:[OCMArg any] text:[OCMArg checkWithBlock:^BOOL(NSString *textMessage) {
         return [textMessage isEqualToString:@"text message"];
     }]];
-    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil enabledParameters:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
+    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
     [webSocket setHandler:mockCompositeHandler];
     webSocket.didReceiveMessage = ^(KGWebSocket *webSocket, id message) {
         didReceiveMessageInvoked = YES;
@@ -160,7 +160,7 @@ static NSURL *DEFAULT_LOCATION;
     }] processBinaryMessage:[OCMArg any] buffer:[OCMArg checkWithBlock:^BOOL(KGByteBuffer *binaryMessage) {
         return [[binaryMessage getString] isEqualToString:@"hello"];
     }]];
-    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil enabledParameters:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
+    KGWebSocket *webSocket = [[KGWebSocket alloc] initWithURL:DEFAULT_LOCATION enabledExtensions:nil enabledProtocols:nil challengeHandler:nil clientIdentity:nil connectTimeout:5000];
     [webSocket setHandler:mockCompositeHandler];
     webSocket.didReceiveMessage = ^(KGWebSocket *webSocket, id message) {
         didReceiveMessageInvoked = YES;
