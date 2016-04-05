@@ -28,7 +28,6 @@
 		402517211757DB660043B68D /* KGWebSocketTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 402517201757DB660043B68D /* KGWebSocketTest.m */; };
 		402517221757DD2F0043B68D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750851537002700FF9FA2 /* CFNetwork.framework */; };
 		402517231757DD330043B68D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750811537000100FF9FA2 /* Security.framework */; };
-		402517241757DD610043B68D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750871537003B00FF9FA2 /* libicucore.dylib */; };
 		402517251757DD640043B68D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E90D13144F17D600666B29 /* Foundation.framework */; };
 		403B39BB17187FAC0036890C /* KGBase64Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B39A617187FAC0036890C /* KGBase64Util.h */; };
 		403B39BC17187FAC0036890C /* KGBase64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 403B39A717187FAC0036890C /* KGBase64Util.m */; };
@@ -215,7 +214,6 @@
 		A06FB2EE156AA4CA0028064D /* KGBasicChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A06FB2EC156AA4CA0028064D /* KGBasicChallengeHandler.m */; };
 		A0B750841537000D00FF9FA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750811537000100FF9FA2 /* Security.framework */; };
 		A0B750861537002700FF9FA2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750851537002700FF9FA2 /* CFNetwork.framework */; };
-		A0B750881537003B00FF9FA2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B750871537003B00FF9FA2 /* libicucore.dylib */; };
 		A0E90D14144F17D600666B29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E90D13144F17D600666B29 /* Foundation.framework */; };
 		AF1764DA1B30B48F00D90A90 /* KGWebSocketExtensionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1764D81B30B48F00D90A90 /* KGWebSocketExtensionHandler.h */; };
 		AF1764DB1B30B48F00D90A90 /* KGWebSocketExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1764D91B30B48F00D90A90 /* KGWebSocketExtensionHandler.m */; };
@@ -464,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04398DEE19991CA000446889 /* XCTest.framework in Frameworks */,
-				402517241757DD610043B68D /* libicucore.dylib in Frameworks */,
 				40401F71171927110051621A /* libKGWebSocket.a in Frameworks */,
 				402517231757DD330043B68D /* Security.framework in Frameworks */,
 				402517221757DD2F0043B68D /* CFNetwork.framework in Frameworks */,
@@ -477,7 +474,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B750881537003B00FF9FA2 /* libicucore.dylib in Frameworks */,
 				A0B750861537002700FF9FA2 /* CFNetwork.framework in Frameworks */,
 				A0B750841537000D00FF9FA2 /* Security.framework in Frameworks */,
 				A0E90D14144F17D600666B29 /* Foundation.framework in Frameworks */,
@@ -1339,7 +1335,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fobjc-arc-exceptions";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1359,7 +1355,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fobjc-arc-exceptions";
 				RUN_CLANG_STATIC_ANALYZER = YES;
